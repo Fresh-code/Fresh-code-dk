@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="canonical" href="https://xafxx.github.io/gommehd/">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <title>FreshCode</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/prism.css">
+
+    <script type="text/javascript" src="/js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/scripts.js"></script>
+    <script type="text/javascript" src="/js/libraries/prism.js"></script>
+    <script type="text/javascript" src="/js/libraries/list.min.js"></script>
+    <script type="text/javascript" src="/js/libraries/autogrow.min.js"></script>
+    <script type="text/javascript" src="/js/libraries/materialize.min.js"></script>
+    <script type="text/javascript" src="/js/libraries/lodash.js"></script>
+    <script type="text/javascript" src="/js/libraries/parsley.min.js"></script>
+</head>
+
+
+
+    <body class="proj-details-body gommehd">
+        <div class="site-header-slice__fixer">
+    <div class="site-header-slice__background-2"></div>
+
+    <div class="main-nav-block">
+        <nav>
+            <ul class="main-nav-menu">
+                <li><a href="/services">Services</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li><a href="/job">Career</a></li>
+                <li><a href="/our-approach">Our approach</a></li>
+                <li class="description">
+                    <a class="link" href="">
+                        <div class="color-fill"></div>
+                        <span>Hire us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mail-popup-block">
+
+        <div class="form-thx" style="display: none">
+            <h3 class="fresh-h1 h1">Got It</h3>
+        </div>
+
+        <div class="form-header">
+            <h3 class="fresh-h1 h1">WE OFFER A FREE CONSULTATION</h3>
+        </div>
+        <form class="material-form hire-us-form" data-parsley-validate>
+            <div class="row material-box">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <input class="material-input"
+                           name="name"
+                           type="text"
+                           placeholder="Your Name*"
+                           autocomplete="off"
+                           data-parsley-trigger="change"
+                           data-parsley-required-message="Enter your name"
+                           required>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <input class="material-input"
+                           name="email"
+                           type="email"
+                           placeholder="Your Email*"
+                           pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+                           autocomplete="off"
+                           data-parsley-trigger="change"
+                           data-parsley-required-message="Enter your email"
+                           required>
+                </div>
+            </div>
+            <div class="row material-box">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <input class="material-input"
+                           name="subject"
+                           type="text"
+                           placeholder="Subject"
+                           autocomplete="off"
+                           data-parsley-trigger="change"
+                           data-parsley-required-message="Enter subject"
+                           required>
+                </div>
+            </div>
+            <div class="row material-box">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <input class="material-input"
+                           name="message"
+                           type="text"
+                           autocomplete="off"
+                           placeholder="Your Message*"
+                           data-parsley-required-message="Enter your message"
+                           data-parsley-trigger="change"
+                           required>
+                </div>
+            </div>
+            <div class="description submit-block">
+                <button type="submit" class="hire-btn button">
+                    <div class="color-fill"></div>
+                    <span>Submit</span>
+                </button>
+            </div>
+        </form>
+
+        <script>
+            var $form = $('form.hire-us-form'),
+                $name = $form.find("input[name='name']"),
+                $email = $form.find("input[name='email']"),
+                $subject = $form.find("input[name='subject']"),
+                $message = $form.find("input[name='message']");
+
+            $form.parsley();
+            $form.submit(function (e) {
+                e.preventDefault();
+
+                var data = {
+                    name: $name.val(),
+                    email: $email.val(),
+                    subject: $subject.val(),
+                    message: $message.val()
+                };
+
+                $.ajax({
+                   method: "POST",
+                   url: "https://getform.org/f/2470bd55-f6d2-4752-820e-ec23eccd8202",
+                   data: {
+                       name: $name.val(),
+                       email: $email.val(),
+                       subject: $subject.val(),
+                       message: $message.val()
+                   },
+                   crossDomain: true
+                });
+
+                $form[0].reset();
+                $('.form-header').css('display', 'none');
+                $('.hire-us-form').css('display', 'none');
+                $('.form-thx').css('display', 'block');
+
+               setTimeout(function () {
+                   $('.hamburger').trigger('click');
+               }, 2000);
+            });
+        </script>
+    </div>
+</div>
+
+
+        <div class="fresh-header is-scrolled">
+    <a class="logo-wrapper" href="/">
+        <div class="logo-sign">
+            <img draggable="false" class="logo logo-l" src="/img/logo_light.svg" alt="freshcode logo">
+            <img draggable="false" class="logo logo-d" src="/img/logo_dark.svg" alt="freshcode logo">
+        </div>
+    </a>
+    <div class="icon-wrapper show-on-tablet hide-on-pc">
+        <div class="hamburger">
+            <span class="stripes"></span>
+        </div>
+        <div class="icon-sign">
+            <img class="mail-icon-b mail-activator" src="/img/fresh-mail-ico-black.svg" alt="mail-us">
+            <img class="mail-icon-w mail-activator" src="/img/fresh-mail-ico-white.svg" alt="mail-us">
+        </div>
+    </div>
+    <div class="fresh-menu hide-on-tablet">
+        <nav>
+            <ul class="main-nav-menu">
+                
+                <li class="nav-link "><a href="/services"><span>Services</span></a></li>
+                <li class="nav-link "><a href="/portfolio"><span>Portfolio</span></a></li>
+                <li class="nav-link "><a href="/blog"><span>Blog</span></a></li>
+                <li class="nav-link "><a href="/testimonials"><span>Testimonials</span></a></li>
+                <li class="nav-link "><a href="/job"><span>Career</span></a></li>
+                <li class="nav-link "><a href="/our-approach"><span>Our approach</span></a></li>
+                <li class="mail-icon">
+                    <div class="icon-sign">
+                        <img class="mail-icon-b mail-activator" src="/img/email_icon.svg" alt="mail-us">
+                        <img class="mail-icon-w mail-activator" src="/img/fresh-mail-ico-white.svg" alt="mail-us">
+                    </div>
+                    <div class="hamburger">
+                        <span class="stripes"></span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+        <article id="main-section" class="anim-in-out anim-slide-left" data-anim-speed="300" data-anim-sync="true">
+            <section class="proj-header p-b-0">
+	<div class="row shorted width-fixed">
+		<div class="proj-sub-block">
+			<h1 class="h1 proj-h1">Details</h1>
+			<div class="proj-d-head-text">
+				<span class="proj-d-bold">Client: </span><span class="proj-d-thin">GommeHD</span>
+			</div>
+			<div class="proj-d-head-text">
+				<span class="proj-d-bold">Site: </span>
+				<a href="http://www.gommehd.net" target="_blank" class="proj-d-thin">www.gommehd.net</a>
+			</div>
+			<div class="proj-d-head-text">
+				<span class="proj-d-bold">Industry: </span><span class="proj-d-thin">e-Commerce, Entertainment</span>
+			</div>
+			<div class="proj-d-head-text">
+				<span class="proj-d-bold">Country: </span><span class="proj-d-thin">Germany</span>
+			</div>
+			<div class="proj-d-head-text">
+				<span class="proj-d-bold">Size of the team: </span><span class="proj-d-thin">5 people</span>
+			</div>
+			<div class="proj-d-head-text">
+				<span class="proj-d-bold">Technologies used: </span><span class="proj-d-thin">Elasticsearch, Clojure, PostgreSQL, AngularJS, Bootstrap</span>
+			</div>
+			<div class="proj-d-head-text">
+				<span class="proj-d-bold">Duration of the Project: </span><span class="proj-d-thin">4 months</span>
+			</div>
+		</div>
+		<div class="fresh-sub-block m-t-10">
+			<div class="img-container cl-h-img">
+				<img class="img-responsive" src="/img/gommehd/iMac.png" alt="GommeHD main">
+			</div>
+		</div>
+		<div class="fresh-sub-block no-min-height paddinged">
+			<h1 class="h1 proj-h1">Challenges</h1>
+			<p>GommeHD is one of the leading Minecraft Servers with more than 1 million players throughout the world. Our team was tasked with creating an online e-Commerce platform with Minecraft Servers full integration and user-friendly package constructor with variables customization options. Public and private coupons support was required as well as numerous payment systems support. Informative dashboard and flexible user-management were a must for admin panel.</p>
+		</div>
+	</div>
+</section>
+<section class="proj-body proj-d-sample">
+	<div class="row shorted width-fixed">
+		<div class="fresh-sub-block">
+			<div class="row m-5">
+				<!-- Development -->
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mac">
+					<div class="img-container no-p-m rised-t-10em">
+						<img class="img-responsive w-100" src="/img/gommehd/iMac_view_left.png" alt="GommeHD screenshot">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 sample-container cl-mt-1">
+					<h2>Solutions</h2>
+					<p>Clojure was chosen by our developers to speed up the e-Commerce platform's creation. The site was developed as a single-page application to improve responsiveness while Elasticsearch was implemented to decrease full-text search time. VAT calculations, transactions log, demand analysis and automatic reports generation are provided by admin panel. Full Minecraft Servers integration means that all the packages bought become immediately available to players.</p>
+				</div>
+			</div>
+			<div class="row m-5 mob-f-col">
+				<!-- Development -->
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 sample-container cl-mt-1">
+					<h2>Business Value</h2>
+					<p>GommeHD online e-Commerce platform allowed our client to monetize Minecraft Servers and increase the number of users by providing high-quality services unmatched by the competition. Creating a more sophisticated content and packages constructor with variables customization options considerably boosted online shop's revenue.</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mac">
+					<div class="img-container no-p-m rised-t-10em">
+						<img class="img-responsive w-100 no-margin" src="/img/gommehd/iMac_view_right.png" alt="GommeHD screenshot">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row next-proj center-layout">
+			<div class="flex-box-row description no-padding">
+				<div class="prev">
+					<a class="link" href="/playattention">
+						<div class="color-fill"></div>
+						<span>Prev</span>
+					</a>
+				</div>
+				<div class="pdf hide-on-tablet hide-on-mobile">
+					<a class="link" href="/pdf/freshcode_case_studies_gommehd.pdf" download>
+						<div class="color-fill"></div>
+						<span>Download pdf</span>
+					</a>
+				</div>
+				<div class="next">
+					<a class="link" href="/wall-breaker">
+						<div class="color-fill"></div>
+						<span>Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+        </article>
+        <footer class="fresh-footer dynamic">
+    <div class="row shorted footer-width-fixed">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 no-padding text-center copyright-block hide-on-mobile">
+            <ul class="footer-list">
+                <li class="logo-block-img"><img src="/img/logo_01.svg" alt="freshcode-logo"></li>
+                <li class="footer-logo-text">FRESHCODE</li>
+                <li class="copyright">Copyright &copy 2016.</li>
+                <li class="copyright">All Rights Reserved</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 no-padding text-center hide-on-mobile">
+            <ul class="footer-list contacts links">
+                <li class="li-head">Menu</li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li><a href="/job">Career</a></li>
+                <li><a href="/our-approach">Our approach</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 no-padding text-center show-on-mobile">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 list-footer contacts links">
+                <div class="col-xs-12 col-sm-2 col-md-12 col-lg-12 no-padding li-head">Menu</div>
+                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 no-padding"><a href="/services">Services</a></div>
+                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 no-padding"><a href="/portfolio">Portfolio</a></div>
+                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 no-padding"><a href="/blog">Blog</a></div>
+                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 no-padding"><a href="/testimonials">Testimonials</a></div>
+                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 no-padding"><a href="/job">Career</a></div>
+                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 no-padding"><a href="/our-approach">Our approach</a></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 no-padding text-center hide-on-mobile">
+            <ul class="footer-list contacts social">
+                <li class="li-head">Follow us</li>
+                <li>
+                    <a href="https://www.linkedin.com/company/freshcode-it?trk=biz-companies-cym">
+                        <i><img class="social-icons" src="/img/social/in_icon.svg" alt="linked in"></i>
+                        <span class="social-text hidden-xs">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/FreshCode-1569539716705171/">
+                        <i><img class="social-icons" src="/img/social/facebook_icon.svg" alt="facebook"></i>
+                        <span class="social-text hidden-xs">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/FreshCode1">
+                        <i><img class="social-icons" src="/img/social/twitter.svg" alt="twitter"></i>
+                        <span class="social-text hidden-xs">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i><img class="social-icons" src="/img/social/google.svg" alt="google plus"></i>
+                        <span class="social-text hidden-xs">Google Plus</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/fresh-code">
+                        <i><img class="social-icons" src="/img/social/github_icon.svg" alt="github"></i>
+                        <span class="social-text hidden-xs">GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bitbucket.org/fresh_code/">
+                        <i><img class="social-icons" src="/img/social/bitbucket_icon.svg" alt="bitbucket"></i>
+                        <span class="social-text hidden-xs">Bitbucket</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 no-padding show-on-mobile">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 list-footer contacts social">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding li-head">Follow us</div>
+                <div class="col-xs-2 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <a href="https://www.linkedin.com/company/freshcode-it?trk=biz-companies-cym">
+                        <i><img class="social-icons" src="/img/social/in_icon.svg" alt="linked in"></i>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <a href="https://www.facebook.com/FreshCode-1569539716705171/">
+                        <i><img class="social-icons" src="/img/social/facebook_icon.svg" alt="facebook"></i>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <a href="https://twitter.com/FreshCode1">
+                        <i><img class="social-icons" src="/img/social/twitter.svg" alt="twitter"></i>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <a href="">
+                        <i><img class="social-icons" src="/img/social/google.svg" alt="google plus"></i>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <a href="https://github.com/fresh-code">
+                        <i><img class="social-icons" src="/img/social/github_icon.svg" alt="github"></i>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-12 col-md-12 col-lg-12 no-padding">
+                    <a href="https://bitbucket.org/fresh_code/">
+                        <i><img class="social-icons" src="/img/social/bitbucket_icon.svg" alt="bitbucket"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-padding text-center">
+            <ul class="footer-list contacts info">
+                <li class="li-head">Contact us</li>
+                <li>4a Zaporizhya St.,</li>
+                <li>Zaporizhzhya, Ukraine</li>
+                <li>Phone: +38 (063) 484 63 36</li>
+                <li>Skype: fresh.code</li>
+                <li>E-mail: consult@freshcode.org</li>
+            </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 no-padding text-center show-on-mobile">
+            <div class="col-xs-12 list-footer contacts social">
+                <div class="col-xs-6 no-padding logo-footer">
+                    <a href="/">
+                        <i><img class="social-icons footer" src="/img/logo_01.svg" alt="freshcode-logo"></i>
+                        <span class="social-text">FRESHCODE</span>
+                    </a>
+                </div>
+                <div class="col-xs-6 no-padding">
+                    <div class="col-xs-12 copyright margined no-padding">
+                        Copyright &copy 2016.
+                    </div>
+                    <div class="col-xs-12 copyright margined no-padding">
+                        All Rights Reserved
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+    </body>
+</html>
