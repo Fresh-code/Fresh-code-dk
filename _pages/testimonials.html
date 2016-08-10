@@ -1,0 +1,83 @@
+---
+permalink: /testimonials/
+layout: default
+---
+<section class="section height-fixed height-100 padding-top padding-bottom">
+    <div class="image-background bleed">
+        <img draggable="false" src="{{ site.baseurl }}/img/{{ site.data.testimonials.background }}"
+             srcset="" class="" alt="" post-post-title="Portfolio background">
+    </div>
+    <div class="container">
+        <div class="row row-equal-columns">
+            <div class="column a-center">
+                <div class="flex flex-middle">
+                    <div class="flex-inner">
+                        <div class="block block-text blog width-fixed">
+                            <header>
+                                <h1 class="fresh-h1 h1">{{ site.data.testimonials.title }}</h1>
+                                <h3 class="fresh-h3 centered">{{ site.data.testimonials.text }}</h3>
+                                <div class="testi-head-icons">
+                                    <img id="apple-icon" src="{{ site.baseurl }}/img/testimonials/apple_icon.svg" alt="apple icon">
+                                    <img id="wb-icon" src="{{ site.baseurl }}/img/testimonials/wb_icon.svg" alt="wb icon">
+                                    <img id="lg-icon" src="{{ site.baseurl }}/img/testimonials/lg_icon.svg" alt="lg icon">
+                                </div>
+                            </header>
+                        </div>
+                    </div> <!-- flex-inner -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="proj-body">
+    <div class="testimonials-container width-fixed">
+        {% for testimonial in site.data.testimonials.short %}
+            {% assign loopindex = forloop.index | modulo: 2 %}
+            {% if loopindex == 1 %}
+                <section class="fresh-main testimonial-block">
+                    <div class="fresh-sub-block no-padding">
+                        <div class="row testimonial flex-box shorted">
+                            <div class="col-xs-12 col-md-6 col-lg-6 testimonial-img flex-item">
+                                <img class="img-responsive img-circle" src="{{ site.baseurl }}/img/{{ testimonial.photo }}" alt="{{ testimonial.author }} photo">
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-6 testimonial-writtings flex-item">
+                                <p class="testimonial-text">{{ testimonial.text }}</p>
+                                <span class="testi-name">{{ testimonial.author }}</span>
+                                <span class="testi-company">{{ testimonial.company }}</span>
+                                <div class="description right">
+                                    <a class="link" href="">
+                                        <div class="color-fill"></div>
+                                        <span>Case study</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {% else %}
+                <section class="fresh-main testimonial-block">
+                    <div class="fresh-sub-block no-padding">
+                        <div class="row testimonial flex-box reversed-box shorted">
+                            <div class="col-xs-12 col-md-6 col-lg-6 testimonial-writtings flex-item">
+                                <p class="testimonial-text">{{ testimonial.text }}</p>
+                                <span class="testi-name">{{ testimonial.author }}</span>
+                                <span class="testi-company">{{ testimonial.company }}</span>
+                                <div class="description right">
+                                    <a class="link" href="">
+                                        <div class="color-fill"></div>
+                                        <span>Case study</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-6 testimonial-img flex-item">
+                                <img class="img-responsive img-circle" src="{{ site.baseurl }}/img/testimonials/author2.jpg" alt="author2 photo">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+

@@ -1,0 +1,111 @@
+{
+  "title": "WELCOME TO freshcode DEVELOPMENT!",
+  "text": "<span class='inline-text'>Need a superb online and mobile presence to succeed? </span><span class='inline-text'> We take on any project with infinite passion and devotion, creating efficient and elegant solutions. </span><span class='inline-text'> Consulting, engineering, UI/UX design, maintenance – there’s nothing beyond our power. </span>",
+  "background": "main/banner_main2.jpg",
+  "services": [
+    {
+      "name": "Development",
+      "text": "We live and breath development, either mobile, web or desktop. We build stable architectures, create responsive interfaces and craft streamlined designs for your projects to get ahead and succeed.",
+      "btntext": "more Development",
+      "icon": "main/dev_icon.svg",
+      "link": "/desktop-development"
+    },
+    {
+      "name": "Maintenance",
+      "text": "We perform regular maintenance to prevent system's instability. Our fool-proof backup and recovery options minimize risks of unexpected failures and maximize project's uptime.",
+      "btntext": "more Maintenance",
+      "icon": "main/maintance_icon.svg",
+      "link": "/maintenance"
+    },
+    {
+      "name": "Consulting",
+      "text": "We estimate the time and resources needed, plan the work and choose the best technologies and solutions for your needs. We provide usability analysis, architecture stability, code and UX audits.",
+      "btntext": "more Consulting",
+      "icon": "main/consulting_icon.svg",
+      "link": "/consulting"
+    },
+    {
+      "name": "Dedicated team",
+      "text": "We create a dedicated team for your high priority projects. Each team member boasts specialization and skill set best fitted for your needs to ensure successful and timely development.",
+      "btntext": "more Dedicated team",
+      "icon": "main/dedicated_icon.svg",
+      "link": "/dedicated-team"
+    }
+  ],
+  "works": [
+    {
+      "title": "RHINO SECURITY LABS",
+      "description": "Rhino Security Labs is a company known for its insight into the needs of retail and healthcare, financial services and technology as well as other vertical markets. ",
+      "cover": "main/work_1.jpg",
+      "link": "/rhino",
+      "mainColor": "#2b303c"
+    },
+    {
+      "title": "GOMMEHD",
+      "description": "GommeHD is one of the leading Minecraft Servers with more than 1 million players throughout the world. The site delivers community news and statistics, as well as the latest updates and videos.",
+      "cover": "main/work_2.jpg",
+      "link": "/gommehd",
+      "mainColor": "#775441"
+    },
+    {
+      "title": "Play Attention",
+      "description": "Play Attention is indisputably the best cognitive training system created to improve attention, behavior and cognitive function for children and adults suffering from ADHD.",
+      "cover": "main/work_3.jpg",
+      "link": "/playattention",
+      "mainColor": "#253a57"
+    },
+    {
+      "title": "Tassta",
+      "description": "Tassta is a hardware-software solutions platform providing more effective communication for a number of industries, including Public Transportation, Construction, Courier and Emergency Services, etc.",
+      "cover": "main/work_4.jpg",
+      "link": "/tassta",
+      "mainColor": "#6e8a6d"
+    },
+    {
+      "title": "Data Parser",
+      "description": "Data Parser is a cloud-based ETL application for unstructured data from any number of sources, including JSON files, with advanced search and data aggregation possibilities.",
+      "cover": "main/work_5.jpg",
+      "link": "/data-parser",
+      "mainColor": "#8594b9"
+    },
+    {
+      "title": "Educadio",
+      "description": "Educadio is a Digital Learning Tool that provides a real-time synchronization for instant user collaboration and a wide variety of collaborative work means, including video and text chats.",
+      "cover": "main/work_6.jpg",
+      "link": "/educadio",
+      "mainColor": "#364456"
+    }
+  ],
+  "testimonial": [
+    {
+      "author": "Steve Jobs",
+      "company": "Apple",
+      "text": "Working with Freshcode provides many benefits, but their focus on writing solid maintainable code and a strong work ethic are what elevates them above their peers.",
+      "photo": "main/steve.png",
+      "link": "/data-parser"
+    },
+    {
+      "author": "Bill Geyts",
+      "company": "Microsoft",
+      "text": "Working with Freshcode provides many benefits, but their focus on writing solid maintainable code and a strong work ethic are what elevates them above their peers.",
+      "photo": "main/bill.png",
+      "link": "/gommehd"
+    }
+  ],
+  "social": {
+    "facebook": "https://www.facebook.com/FreshCode-1569539716705171/",
+    "twitter": "https://twitter.com/FreshCode1",
+    "github": "https://github.com/fresh-code",
+    "bitbucket": "https://bitbucket.org/fresh_code/",
+    "linked": "https://www.linkedin.com/company/freshcode-it?trk=biz-companies-cym"
+  },
+  "team": {
+    "title": "The team",
+    "description": "<span class='inline-text'>Freshcode is not just another reliable and detail-oriented team. We are a group of audacious purpose-driven individuals with unbeatable IT expertise and an open-minded attitude to provide you with truly ingenious solutions and daring products.</span> We don’t do average, only the best!",
+    "cover": "main/people.jpg",
+    "clients": 12,
+    "developers": 26,
+    "languages": 7,
+    "projects": 41
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "client": "Rhino Security Labs",
+  "site": "rhinosecuritylabs.com",
+  "link": "http://rhinosecuritylabs.com/",
+  "industry": "Cybersecurity",
+  "country": "Denmark",
+  "teamSize": "4 people",
+  "techUsed": "Node.js, Meteor.js, PouchDB, CouchDB, React.js, Fabric.js",
+  "projDuration": "4 month, ongoing",
+  "workStages": "",
+  "pdf": "pdf/freshcode_case_studies_rhino.pdf",
+  "images": ["img/rhino/Curves.jpg", "img/rhino/logo.png", "img/rhino/macbook_left.png"],
+  "challenges": "The main objectives of Rhino Security Labs services are to identify security vulnerabilities, protect architecture and mitigate risks. Security assessment automatic report building application was in order to replace manual report generation using XML parser to provide	security data aggregation from third-party applications.",
+  "buisValue": "Creating the automated reporting management solution our team simplified the reports generation and editing process. The simplified interface is flexible and user-friendly as well as cheap and easy to support. This solution accelerated Rhino Security Labs' performance and improved service quality. As a result, our client is experiencing an increase in a number of customers.",
+  "solutions": "Our team created a flexible web-application for automatic PDF reports generation using data on vulnerabilities' background, threat level and possible solutions. One of the more daunting tasks was creating several data access layers for admins and basic users. To guarantee data security and prevent security leaks during report generation we created additional tools, including the custom screen-shot editor.",
+  "css": "rhino",
+  "prev": "/twenty-one-learning",
+  "next": "/tassta"
+}

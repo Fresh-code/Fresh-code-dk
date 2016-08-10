@@ -1,0 +1,114 @@
+{
+  "title": "CASE STUDIES",
+  "text": "<span class='inline-text'>We've hand-picked <span id='allWorks' class='service-d-blue-num'></span> most exciting case studies for you to appreciate.</span> <span class='inline-text'> We are proud to have a hand in numerous successful projects.</span>",
+  "textbot": "<span class='inline-text'>These projects have long since paid for themselves and are well on their way to success.</span> <span class='inline-text'>It’s time for your idea to shine.</span> <span class='inline-text'>Let’s build the Next Best Thing together!</span>",
+  "background": "portfolio/banner_portfolio.jpg",
+  "works": [
+    {
+      "title": "Play Attention",
+      "description": "Play Attention is indisputably the best cognitive training system created to improve attention, behavior and cognitive function for children and adults suffering from ADHD.",
+      "cover": "portfolio/work_1.jpg",
+      "link": "/playattention",
+      "type": "education",
+      "mainColor": "#5d738f"
+    },
+    {
+      "title": "GommeHD",
+      "description": "GommeHD is one of the leading Minecraft Servers with more than 1 million players throughout the world. The site delivers community news and statistics, as well as the latest updates and videos.",
+      "cover": "portfolio/work_2.jpg",
+      "link": "/gommehd",
+      "type": "ecommerce",
+      "mainColor": "#775441"
+    },
+    {
+      "title": "Wallbreaker Dynamics",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "cover": "portfolio/work_3.jpg",
+      "link": "/wall-breaker",
+      "type": "media",
+      "mainColor": "#747474"
+    },
+    {
+      "title": "Nova Fabrica Ltd.",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "cover": "portfolio/work_4.jpg",
+      "link": "/flotron",
+      "type": "monitoring",
+      "mainColor": "#a5a5a5"
+    },
+    {
+      "title": "Educadio",
+      "description": "Educadio is a Digital Learning Tool that provides a real-time synchronization for instant user collaboration and a wide variety of collaborative work means, including video and text chats.",
+      "cover": "portfolio/work_5.jpg",
+      "link": "/educadio",
+      "type": "education",
+      "mainColor": "#354356"
+    },
+    {
+      "title": "Twenty One Learning",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "cover": "portfolio/work_6.jpg",
+      "link": "/twenty-one-learning",
+      "type": "education",
+      "mainColor": "#576965"
+    },
+    {
+      "title": "Rhino Security Labs",
+      "description": "Rhino Security Labs is a company known for its insight into the needs of retail and healthcare, financial services and technology as well as other vertical markets. ",
+      "cover": "portfolio/work_7.jpg",
+      "link": "/rhino",
+      "type": "monitoring",
+      "mainColor": "#373d4d"
+    },
+    {
+      "title": "Tassta",
+      "description": "Tassta is a hardware-software solutions platform providing more effective communication for a number of industries, including Public Transportation, Construction, Courier and Emergency Services, etc.",
+      "cover": "portfolio/work_8.jpg",
+      "link": "/tassta",
+      "type": "navigation",
+      "mainColor": "#6e8a6d"
+    },
+    {
+      "title": "PayProve TransAcumen",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "cover": "portfolio/work_9.jpg",
+      "link": "/transacumen",
+      "type": "payments",
+      "mainColor": "#35699c"
+    },
+    {
+      "title": "Outdoor.rocks",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "cover": "portfolio/work_10.jpg",
+      "link": "/outdoor",
+      "type": "navigation",
+      "mainColor": "#65753b"
+    },
+    {
+      "title": "Data Parser",
+      "description": "Data Parser is a cloud-based ETL application for unstructured data from any number of sources, including JSON files, with advanced search and data aggregation possibilities.",
+      "cover": "portfolio/work_11.jpg",
+      "link": "/data-parser",
+      "type": "business",
+      "mainColor": "#8e9bbb"
+    },
+    {
+      "title": "icCube",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "cover": "portfolio/work_12.jpg",
+      "link": "/iccube",
+      "type": "business",
+      "mainColor": "#965793"
+    },
+    {
+      "title": "RoundForest",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "cover": "portfolio/work_13.jpg",
+      "link": "/round-forest",
+      "type": "data",
+      "mainColor": "#729542"
+    }
+  ]
+}
+
+

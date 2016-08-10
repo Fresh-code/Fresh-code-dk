@@ -1,0 +1,70 @@
+{
+  "title": "OUR VACANCIES",
+  "text": "<span class='inline-text'>We're looking for specialists in various fields and with different</span><span class='inline-text'> backgrounds and talents, who want to make a difference every day.</span>",
+  "background": "job/banner_job.jpg",
+  "jobs": [
+    {
+      "title": "Senior QA automation engineer",
+      "skills": [
+        "Multi-platforms and multi-browser testing",
+        "Backend testing and automating testing experience (Java, C#)",
+        "Strong knowledge about test framework structure and developing",
+        "Deep knowledge HTTP-based web services",
+        "Experience with test documentation: test cases, test plans, etc.",
+        "Well-developed communicative and team-working skills",
+        "Intermediate level of English"
+      ]
+    },
+    {
+      "title": "ASP.NET Software Developer",
+      "skills": [
+        "Multi-platforms and multi-browser testing",
+        "Backend testing and automating testing experience (Java, C#)",
+        "Strong knowledge about test framework structure and developing",
+        "Deep knowledge HTTP-based web services",
+        "Experience with test documentation: test cases, test plans, etc.",
+        "Well-developed communicative and team-working skills",
+        "Intermediate level of English"
+      ]
+    },
+    {
+      "title": "IOS Developer",
+      "skills": [
+        "Multi-platforms and multi-browser testing",
+        "Backend testing and automating testing experience (Java, C#)",
+        "Strong knowledge about test framework structure and developing",
+        "Deep knowledge HTTP-based web services",
+        "Experience with test documentation: test cases, test plans, etc.",
+        "Well-developed communicative and team-working skills",
+        "Intermediate level of English"
+      ]
+    },
+    {
+      "title": "Middle Java Engineer",
+      "skills": [
+        "Multi-platforms and multi-browser testing",
+        "Backend testing and automating testing experience (Java, C#)",
+        "Strong knowledge about test framework structure and developing",
+        "Deep knowledge HTTP-based web services",
+        "Experience with test documentation: test cases, test plans, etc.",
+        "Well-developed communicative and team-working skills",
+        "Intermediate level of English"
+      ]
+    },
+    {
+      "title": "Team Lead Ruby on Rails",
+      "skills": [
+        "Multi-platforms and multi-browser testing",
+        "Backend testing and automating testing experience (Java, C#)",
+        "Strong knowledge about test framework structure and developing",
+        "Deep knowledge HTTP-based web services",
+        "Experience with test documentation: test cases, test plans, etc.",
+        "Well-developed communicative and team-working skills",
+        "Intermediate level of English"
+      ]
+    }
+  ]
+}
+
+
+

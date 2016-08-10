@@ -1,0 +1,19 @@
+{
+  "client": "icCube",
+  "site": "iccube.com",
+  "link": "http://iccube.com",
+  "industry": "Business Intelligence",
+  "country": "Switzerland",
+  "teamSize": "3 people",
+  "techUsed": "JavaScript, ReactJS, AmCharts, Ant",
+  "projDuration": "ongoing, 8 months",
+  "workStages": "",
+  "pdf": "pdf/freshcode_case_studies_icCube.pdf",
+  "images": ["img/iccube/iMac.png", "img/iccube/iMac-3_4-view-left.png", "img/iccube/iMac-3_4-view-right.png"],
+  "challenges": "icCube is a young Swiss company that's already among the TOP-10 online analytical processing companies in the world. We were tasked with a drastic remodeling of an existing architecture and creating highly functional yet user-friendly interface. Reports are supposed to provide descriptive information using computational tools while keeping minimal processing time to get operational analytics in real-time and allowing flexible design changes.",
+  "buisValue": "Our solution allowed icCube to drastically cut project support expenses due to the implemented architecture simplification. The new user-friendly GUI development and an added bonus of mobile devices support increased sales and profitability of the project.",
+  "solutions": "Using Lodash library our team streamlined report creating process and cut its development time. Utilizing JQuery, ReactJS, AmCharts and other technologies we achieved the ease of data visualization. Highly customizable reports with additional widgets can be created by means of multiple plug-ins. Additionally, our team implemented mobile devices support and provided possibilities for project's future scaling up.",
+  "css": "iccube",
+  "prev": "/data-parser",
+  "next": "/round-forest"
+}

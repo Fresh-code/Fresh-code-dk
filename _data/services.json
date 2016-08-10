@@ -1,0 +1,107 @@
+{
+  "title": "WHAT WE DO",
+  "text": "Below are our areas of expertise. These are the business dimensions where we collaborate with our clients and help them build great products. Choose those that fit your needs most to learn more.",
+  "background": "services/banner_services.jpg",
+  "short": [
+    {
+      "name": "Web development",
+      "text": "We create responsive, fast and elegant solutions expertly crafted to suit your business needs using the most efficient technologies like Ruby on Rails, Angular.js, Node.js.",
+      "btntext": "more web",
+      "icon": "services/web_dev_icon.svg",
+      "link": "/web-development"
+    },
+    {
+      "name": "Mobile development",
+      "text": "We implement workable solutions for both iOS and Android operation systems and help you build a balanced app with a streamlined design, intuitive interface, and top-notch performance.",
+      "btntext": "more mobile",
+      "icon": "services/mobile_dev_icon.svg",
+      "link": "/mobile-development"
+    },
+    {
+      "name": "Desktop development",
+      "text": "We provide a stable architecture to fulfill your business needs. We ensure application's rich functionality, user-friendliness, high productivity and guarantee seamless synchronization and integration.",
+      "btntext": "more Desktop",
+      "icon": "services/desktop_dev_icon.svg",
+      "link": "/desktop-development"
+    },
+    {
+      "name": "Maintenance",
+      "text": "We perform regular maintenance to prevent system's instability. Our fool-proof backup and recovery options minimize risks of unexpected failures and maximize project's uptime.",
+      "btntext": "more Maintenance",
+      "icon": "services/maintance_icon.svg",
+      "link": "/maintenance"
+    },
+    {
+      "name": "Consulting",
+      "text": "We estimate the time and resources needed, plan the work and choose the best technologies and solutions for your needs. We provide usability analysis, architecture stability, code and UX audits.",
+      "btntext": "more Consulting",
+      "icon": "services/consulting_icon.svg",
+      "link": "/consulting"
+    },
+    {
+      "name": "Dedicated team",
+      "text": "We create a dedicated team for your high priority projects. Each team member boasts specialization and skill set best fitted for your needs to ensure successful and timely development.",
+      "btntext": "more web",
+      "icon": "services/dedicated_icon.svg",
+      "link": "/dedicated-team"
+    }
+  ],
+  "web" : {
+    "name": "Web development",
+    "text": [
+      "<span class='bold'>Don't know where to start?</span>  We guide you through the development process till we reach the final goal – the most efficient, fast and elegant solution.",
+      "<span class='bold'>Need an edge to beat the competition?</span>  We create a responsive solution for your Finance, Education, Entertainment, e-Commerce or any other industry business.",
+      "<span class='bold'>Don't want to finance your own IT team?</span>  Our team of professionals with years of industry experience provides you with high-quality web application expertly crafted to suit your business needs.",
+      "<span class='bold'>Need to upgrade an existing web application?</span>  We enhance and re-engineer your project with the latest and most efficient technologies on the market, including Ruby on rails, Angular.js, Node.js, etc."
+    ]
+  },
+  "mobile" : {
+    "name": "Mobile development",
+    "text": [
+      "<span class='bold'>Can't choose between iOS and Android?</span> We outline the benefits of either platform for your business or provide workable solutions for both.",
+      "<span class='bold'>Want your clients to use the application more than once?</span> We help you find the perfectly balanced solution with a streamlined design, intuitive interface, and top-notch performance that will leave your customers craving for more.",
+      "<span class='bold'>Wish your customers to be forever loyal?</span> We test and update your product even after its successful launch to reflect your growing business and numerous advantages over competitors.",
+      "<span class='bold'>Don't want your brand to be associated with battery death?</span> We use our low-level programming expertise to optimize application's performance and provide engaging user experience without draining the battery life of your client's gadgets."
+    ]
+  },
+  "desktop" : {
+    "name": "Desktop development",
+    "text": [
+      "<span class='bold'>Wish your business to be more productive?</span>  We are here to help you gain a competitive advantage in the ever-evolving market by ensuring your application's rich functionality, smooth user experience, and high productivity.",
+      "<span class='bold'>Have specific integration requirements in mind?</span>  We widen your project's functionality by providing seamless synchronization and any technologies, devices, web services and OS platforms integration.",
+      "<span class='bold'>Want a desktop application to work consistently steady?</span>  We provide you with a stable architecture that will fulfill your needs with little to no maintenance.",
+      "<span class='bold'>Don't have resources for training your employees?</span>  We simplify the most complex processes for you to provide the streamlined and user-friendly interface that doesn’t require users' prior orientation."
+    ]
+  },
+  "dedicated" : {
+    "name": "Dedicated team",
+    "text": [
+      "You don't have to create your own IT team, instead concentrating on project's other aspects.",
+      "Every member of the team is chosen according to specialization and skill set that are best fitted for your project's needs.",
+      "Your project is guaranteed to be completed before the deadline you set.",
+      "You can monitor time and resources spent on your project and keep a close eye on the team's progress.",
+      "You can trust our developers with your project and forget about stress and constant worry.",
+      "You can always count on our support with any problems occurring at any development stage."
+    ],
+    "bottext": "Every project is different from others. Every client poses specific requirements and has certain goals in mind. In order to meet your needs, we create a new dedicated team. All team members focus on the project, giving it their full potential and the highest priority. As a result, the project is successfully developed with minimal time and resources spent."
+  },
+  "consulting" : {
+    "name": "Consulting",
+    "text": [
+      "<span class='bold'>Unwilling to invest in the project without knowing its scope?</span>  We estimate the time and resources needed for the project, help you plan the work and choose the best technologies and solutions for your particular needs.",
+      "<span class='bold'>Have any questions or doubts about your project?</span>  At any time, you can easily access our developers for a thorough consultation involving any occurring issues or new requirements.",
+      "<span class='bold'>Want to learn more about your project from inside out?</span>  We provide you with an accurate report on usability analysis along with architecture stability, code and user experience audit."
+    ],
+    "bottext": "We know how important is to plan the work on the project and we will be glad to help you. At any project stage you can get usability analysis, code audit, consultation about design and optimization of project's architecture."
+  },
+  "maintenance" : {
+    "name": "Maintenance",
+    "text": [
+      "<span class='bold'>Have any questions about project's development?</span>  We organize smooth interaction through a constant stream of updates and reports letting you check the team's progress as well as address any occurring issues and problems.",
+      "<span class='bold'>Want to stay ahead of the competition at all times?</span>  We perform regular adaptive maintenance to make sure that updates have no negative impact on the system's stability.",
+      "<span class='bold'>Afraid your hard work will be gone?</span>  We provide you with fool-proof backup and recovery options to minimize risks of unexpected failures and maximize your project's uptime.",
+      "<span class='bold'>Need a support and maintenance solution for an existing project?</span>  We perform audit and testing before we fix the bugs and fine-tune systems' performance as well as set up a plan for future updates and scheduled maintenance."
+    ],
+    "bottext": "We know how important is to plan the work on the project and we will be glad to help you. At any project stage you can get usability analysis, code audit, consultation about design and optimization of project's architecture."
+  }
+}

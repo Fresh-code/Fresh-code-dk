@@ -1,0 +1,18 @@
+{
+  "client": "PayProve TransAcumen",
+  "site": "transacumen.com",
+  "link": "http://transacumen.com",
+  "industry": "Software",
+  "country": "Australia",
+  "teamSize": "1 person",
+  "techUsed": "Clojure, AngularJS, RestAngular, SmartAdmin",
+  "projDuration": "4 months",
+  "pdf": "pdf/freshcode_case_studies_transacumen.pdf",
+  "images": ["img/transacumen/iMac.png", "img/transacumen/iMac_view_left.png", "img/transacumen/iMac_view_right.png"],
+  "challenges": "PayProve is Transacumen popular quality assurance environment for the simulation, testing, metrics aggregation and certification of payment applications and devices. To improve usability and flexibility of PayProve PC application our team was tasked with creating web application for subscribers that would work along with the existing servers containing subscription data.",
+  "buisValue": "Availability of the PayProve web application for mobile devices and PCs made this service that much more popular among Transacumen's clients. The number of subscribers is constantly increasing therefore leading to the income growth.",
+  "solutions": "Our team developed PayProve web application that allows access to admin console for simulating and testing payment services and devices. Due to Transacumen's tight deadlines our developers used Clojure functional programming. Components of SmartAdmin Bootstrap template for AngularJS were used in the development of admin console. Adaptive user interface accommodates PCs and mobile devices.",
+  "css": "transacumen",
+  "prev": "/tassta",
+  "next": "/outdoor"
+}

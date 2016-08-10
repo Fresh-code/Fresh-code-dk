@@ -1,0 +1,99 @@
+[
+  {
+    "name": "LOREM IPSUM1",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "img/pic_3.jpg",
+    "mainColor": "#91A5AC",
+    "type": "web",
+    "isOur": true
+  },
+  {
+    "name": "App",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "img/pic_1.jpg",
+    "mainColor": "#576886",
+    "type": "web",
+    "isOur": false
+  },
+  {
+    "name": "Web",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "img/pic_2.jpg",
+    "mainColor": "#00DEA5",
+    "type": "web",
+    "isOur": false
+  },
+  {
+    "name": "LOREM IPSUM4",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "",
+    "mainColor": "#91A5AC",
+    "type": "web",
+    "isOur": false
+  },
+  {
+    "name": "PLay Attention",
+    "description": "Play Attention is indisputably the best cognitive training system created to improve attention, behavior and cognitive function for children and adults suffering from ADHD.",
+    "cover": "img/PA/PA_cube.png",
+    "mainColor": "#576886",
+    "type": "web",
+    "isOur": false
+  },
+  {
+    "name": "LOREM IPSUM5",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "",
+    "mainColor": "blue",
+    "type": "web",
+    "isOur": true
+  },
+  {
+    "name": "LOREM IPSUM6",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "",
+    "mainColor": "blue",
+    "type": "web",
+    "isOur": true
+  },
+  {
+    "name": "LOREM",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "",
+    "mainColor": "blue",
+    "type": "web",
+    "isOur": false
+  },
+  {
+    "name": "IPSUM",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "",
+    "mainColor": "blue",
+    "type": "mobile",
+    "isOur": false
+  },
+  {
+    "name": "LORUM",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "",
+    "mainColor": "blue",
+    "type": "mobile",
+    "isOur": false
+  },
+  {
+    "name": "REM",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "",
+    "mainColor": "blue",
+    "type": "mobile",
+    "isOur": true
+  },
+  {
+    "name": "Mobile",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "cover": "",
+    "mainColor": "blue",
+    "type": "mobile",
+    "isOur": true
+  }
+]
+

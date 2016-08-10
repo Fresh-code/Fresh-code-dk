@@ -1,0 +1,55 @@
+---
+permalink: /team/
+layout: default
+---
+
+<section class="section height-fixed height-100 padding-top padding-bottom gradient-body">
+    <div class="container">
+        <div class="row row-equal-columns">
+            <div class="column a-center">
+                <div class="flex flex-middle">
+                    <div class="flex-inner">
+                        <div class="block block-text blog">
+                            <header>
+                                <h1 class="fresh-h1 h1">{{ site.data.team.title }}</h1>
+                                <h3 class="fresh-h3 centered">{{ site.data.team.text }}</h3>
+                            </header>
+                        </div>
+                    </div> <!-- flex-inner -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fresh-main main-team">
+    <div class="row shorted">
+        <div class="team-sub-block">
+            <div class="row ">
+                {% for employee in site.data.team.team %}
+                    <div class="col-xxs col-xs-6 col-sm-4 col-md-3 col-lg-3 employee-card">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                            <img class="img-responsive employee-photo" src="{{ site.baseurl }}/img/our_team/{{ employee.photo }}" alt="{{ employee.name }}">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 employee-info">
+                            <span class="employee-name">{{ employee.name }}</span>
+                            <span class="employee-position">{{ employee.occupation }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section><!--Our team-->
+<section class="team-section">
+    <div class="team-sub-block">
+        <div class="row rest-team shorted">
+            <div class="description no-padding">
+                <a class="link" href="">
+                    <div class="color-fill"></div>
+                    <span>Meet the rest of the team</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,66 @@
+{
+  "title": "Freshcode team",
+  "text": "<span class='inline-text'>Freshcode is not just another reliable and detail-oriented team. We are a group of audacious purpose-driven individuals with unbeatable IT expertise and an open-minded attitude to provide you with truly ingenious solutions and daring products.</span><span class='inline-text'> We don’t do average, only the best!</span>",
+  "team": [
+    {
+      "name": "Andrey Petrov",
+      "occupation": "Software Lead Partner",
+      "photo": "photo_1.jpg"
+    },
+    {
+      "name": "Olga Ivanova",
+      "occupation": "Creative Director",
+      "photo": "photo_2.jpg"
+    },
+    {
+      "name": "Vladislav Koval",
+      "occupation": "Analyst Developer",
+      "photo": "photo_3.jpg"
+    },
+    {
+      "name": "Konstantin Motorniy",
+      "occupation": "Designer",
+      "photo": "photo_4.jpg"
+    },
+    {
+      "name": "Eugeniy Spaskiy",
+      "occupation": "Writer",
+      "photo": "photo_5.jpg"
+    },
+    {
+      "name": "Olga Nikulina",
+      "occupation": "Project Manager",
+      "photo": "photo_6.jpg"
+    },
+    {
+      "name": "Mary Mercier",
+      "occupation": "Project Manager",
+      "photo": "photo_7.jpg"
+    },
+    {
+      "name": "Frederic Lord",
+      "occupation": "Developer",
+      "photo": "photo_8.jpg"
+    },
+    {
+      "name": "Sergey Riskal",
+      "occupation": "Project Manager",
+      "photo": "photo_9.jpg"
+    },
+    {
+      "name": "Anna Petrova",
+      "occupation": "Project Manager",
+      "photo": "photo_10.jpg"
+    },
+    {
+      "name": "Koti Biba",
+      "occupation": "Developer",
+      "photo": "photo_11.jpg"
+    },
+    {
+      "name": "Marina Kotova",
+      "occupation": "Software Lead",
+      "photo": "photo_12.jpg"
+    }
+  ]
+}

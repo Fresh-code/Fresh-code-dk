@@ -1,0 +1,39 @@
+<div class="fresh-header is-scrolled">
+    <a class="logo-wrapper" href="/">
+        <div class="logo-sign">
+            <img draggable="false" class="logo logo-l" src="{{base.url}}/img/logo_light.svg" alt="freshcode logo">
+            <img draggable="false" class="logo logo-d" src="{{base.url}}/img/logo_dark.svg" alt="freshcode logo">
+        </div>
+    </a>
+    <div class="icon-wrapper show-on-tablet hide-on-pc">
+        <div class="hamburger">
+            <span class="stripes"></span>
+        </div>
+        <div class="icon-sign">
+            <img class="mail-icon-b mail-activator" src="{{ site.baseurl }}/img/fresh-mail-ico-black.svg" alt="mail-us">
+            <img class="mail-icon-w mail-activator" src="{{ site.baseurl }}/img/fresh-mail-ico-white.svg" alt="mail-us">
+        </div>
+    </div>
+    <div class="fresh-menu hide-on-tablet">
+        <nav>
+            <ul class="main-nav-menu">
+                {% assign p = page.url | replace:'/','' %}
+                <li class="nav-link {% if p == 'services' %}active{% endif %}"><a href="/services"><span>Services</span></a></li>
+                <li class="nav-link {% if p == 'portfolio' %}active{% endif %}"><a href="/portfolio"><span>Portfolio</span></a></li>
+                <li class="nav-link {% if p == 'blog' %}active{% endif %}"><a href="/blog"><span>Blog</span></a></li>
+                <li class="nav-link {% if p == 'testimonials' %}active{% endif %}"><a href="/testimonials"><span>Testimonials</span></a></li>
+                <li class="nav-link {% if p == 'job' %}active{% endif %}"><a href="/job"><span>Career</span></a></li>
+                <li class="nav-link {% if p == 'our-approach' %}active{% endif %}"><a href="/our-approach"><span>Our approach</span></a></li>
+                <li class="mail-icon">
+                    <div class="icon-sign">
+                        <img class="mail-icon-b mail-activator" src="{{ site.baseurl }}/img/email_icon.svg" alt="mail-us">
+                        <img class="mail-icon-w mail-activator" src="{{ site.baseurl }}/img/fresh-mail-ico-white.svg" alt="mail-us">
+                    </div>
+                    <div class="hamburger">
+                        <span class="stripes"></span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    {% if page.layout == 'post' %}
+    <meta property="og:url"           content="{{ site.url }}{{ page.url }}">
+    <meta property="og:type"          content="article">
+    <meta property="fb:app_id"        content="1077965352288016" />
+    <meta property="og:title"         content="{{ page.share-title }}">
+    <meta property="og:description"   content="{{ page.share-description }}">
+    <meta property="og:image"         content="{{ page.share-image }}">
+    <meta property="og:image:width"   content="644">
+    <meta property="og:image:height"  content="428">
+
+    <meta name="twitter:card"         content="summary_large_image">
+    <meta name="twitter:site"         content="{{ site.twitter_username }}">
+    <meta name="twitter:creator"      content="{{ site.twitter_username }}">
+    <meta name="twitter:title"        content="{{ page.share-title }}">
+    <meta name="twitter:description"  content="{{ page.share-description }}">
+    <meta name="twitter:image"        content="{{ page.share-image }}">
+    {% endif %}
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/prism.css">
+
+    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/scripts.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/libraries/prism.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/libraries/list.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/libraries/autogrow.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/libraries/materialize.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/libraries/lodash.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/libraries/parsley.min.js"></script>
+</head>
+
+
