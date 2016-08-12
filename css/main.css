@@ -2338,9 +2338,6 @@ section.section {
 	font-weight: 300;
 	line-height: 30px; /* Approximation due to font substitution */
 	text-align: justify; }
-.social-btns li {
-	list-style: none;
-	display: inline-block; }
 .post-body h3 { font-weight: bold; }
 span.path {
 	font-size: .8em;
@@ -2353,9 +2350,18 @@ span.path {
 .post-author {
 	padding-left: 4rem;
 	padding-top: 6rem; }
-.twitter-btn { background: #04B4EE; }
-.facebook-btn { background: #4464A2; }
-.linkedin-btn { background: #016FA2; }
+
+.social-btn {
+	display: block;
+	-webkit-transition: background 200ms ease-out;
+	-moz-transition: background 200ms ease-out;
+	-ms-transition: background 200ms ease-out;
+	-o-transition: background 200ms ease-out;
+	transition: background 200ms ease-out; }
+.social-btn { background-color: #ddd; }
+.social-btn.twitter-btn:hover { background: #04B4EE; }
+.social-btn.facebook-btn:hover { background: #4464A2; }
+.social-btn.linkedin-btn:hover { background: #016FA2; }
 .social-btns {
 	padding-left: 0;
 	margin-bottom: 15rem;
