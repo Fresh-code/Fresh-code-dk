@@ -180,7 +180,7 @@ layout: default
 
             {% for post in site.posts limit:3 %}
                 <div class="col-xxs col-xs-6 col-sm-4 col-md-4 col-lg-4 preview-img no-padding {% if forloop.index == 1 %}hidden-xs{% endif %}">
-                    <a href="{{ post.link }}">
+                    <a href="{{ post.permalink }}">
                         <div class="description blog" style="background: {{ post.background-cover }} !important;">
                             <img class="img-responsive" src="{{ site.baseurl }}/img/{{ post.cover }}" alt="preview image">
                             <div class="bckg-cover" style="background: {{ post.background-cover }} !important;"></div>
