@@ -83,47 +83,6 @@
                 </button>
             </div>
         </form>
-
-        <script>
-            var $form = $('form.hire-us-form'),
-                $name = $form.find("input[name='name']"),
-                $email = $form.find("input[name='email']"),
-                $subject = $form.find("input[name='subject']"),
-                $message = $form.find("input[name='message']");
-
-            $form.parsley();
-            $form.submit(function (e) {
-                e.preventDefault();
-
-                var data = {
-                    name: $name.val(),
-                    email: $email.val(),
-                    subject: $subject.val(),
-                    message: $message.val()
-                };
-
-                $.ajax({
-                   method: "POST",
-                   url: "https://getform.org/f/2470bd55-f6d2-4752-820e-ec23eccd8202",
-                   data: {
-                       name: $name.val(),
-                       email: $email.val(),
-                       subject: $subject.val(),
-                       message: $message.val()
-                   },
-                   crossDomain: true
-                });
-
-                $form[0].reset();
-                $('.form-header').css('display', 'none');
-                $('.hire-us-form').css('display', 'none');
-                $('.form-thx').css('display', 'block');
-
-               setTimeout(function () {
-                   $('.hamburger').trigger('click');
-               }, 2000);
-            });
-        </script>
     </div>
 </div>
 

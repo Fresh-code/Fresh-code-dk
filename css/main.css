@@ -54,6 +54,28 @@ body {
 .fresh-h1 { font-family: "Open Middle", sans-serif; }
 .fresh-h3 .text-inline { display: block; }
 
+section { position: relative; }
+
+.image-container {
+	position: absolute !important;
+	width: 100% !important;
+	height: 100% !important;
+	top: 0 !important;
+	left: 0 !important;
+	background: no-repeat center !important;
+}
+
+.image-container.image {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 50%;
+	-webkit-transform: translate(50%);
+	-ms-transform: translate(50%);
+	/* transform: translate(50%); */
+	max-width: none;
+}
+
 .mail-ico.w.onScroll { display: none; }
 
 .m-t-10 { margin-top: 10em; }
@@ -236,6 +258,7 @@ body.locked {
 	margin-bottom: 40px; }
 .hire-btn.light {
 	color: #00ffab;
+	text-decoration: none;
 	border: solid 2px #00ffab; }
 .c-white { color: white !important; }
 .hire-btn {
@@ -247,12 +270,12 @@ body.locked {
 	text-align: center;
     color: #00e1a4;
     font-size: 18px;
+	outline: none;
     padding: 17px 52px;
 	margin-top: 50px;
     position: relative;
     border: solid 2px #00e1a4;
-    letter-spacing: 2px;
-    transition: all 0.7s ease; }
+    letter-spacing: 2px; }
 .hire-btn:hover {
 	text-decoration: none;
 	/*background: #00e1a4;*/
@@ -769,7 +792,8 @@ body.locked {
 	transform: scaleY(1.0003); }
 .collapsible-body h3 {
 	font-family: 'Open Middle';
-	padding-left: 15px;
+	/*padding-left: 15px;*/
+	margin-top: 3rem;
 	font-size: 22px; }
 .collapsible-body { padding-left: 3rem; }
 .collapsible li .collapsible-header + .collapsible-body > ul {
@@ -787,7 +811,7 @@ body.locked {
 	display: block;
 	height: 0;
 	width: 0;
-	left: -5.6rem;
+	left: -5.8rem;
 	top: 2.3rem;
 	position: relative; }
 .collapsible-body {
@@ -1853,7 +1877,7 @@ section.section {
 	position: relative;
 	width: 100%; }
 
-@media (max-width: 991px), (orientation: portrait) {
+@media (max-width: 1000px), (orientation: portrait) {
 	.height-fixed:not(.height-fixed-xs) { height: auto !important; }
 }
 @media (max-width: 768px) and (orientation: landscape) {
@@ -2188,12 +2212,6 @@ section.section {
 	list-style: none; }
 .menu-ico.close-nav .stripes::after { transform: translateY(-2px) rotate(-45deg); }
 
-@media (max-width: 991px) {
-	.gradient-body.padding-bottom { padding-bottom: 363px; }
-	.padding-bottom { padding-bottom: 121px; }
-	.padding-top { padding-top: 121px; }
-}
-
 @media screen and (max-width: 768px) {
 	.height-fixed .container { display: block; }
 	.gradient-body.padding-bottom { padding-bottom: 121px; }
@@ -2271,10 +2289,7 @@ section.section {
 	.logo-block-img img { height: 62px; }
 }
 
-@media screen and (max-width: 350px) {
-	.padding-bottom { padding-bottom: 90px; }
-	.padding-top { padding-top: 90px; }
-}
+
 /* ------------------------------- end TOP MENU / LOGO ----------------------------------------  */
 
 /* Blog-post start */
@@ -2437,7 +2452,16 @@ span.path {
 	}
 }
 
+
+@media screen and (max-height: 1000px) {
+	.gradient-body .height-100 { height: auto; }
+}
+
 @media screen and (max-width: 1000px) {
+
+	.gradient-body.padding-bottom { padding-bottom: 363px; }
+	.padding-bottom { padding-bottom: 121px; }
+	.padding-top { padding-top: 121px; }
 
 	.fresh-header .logo-sign {
 		width: 40px;
@@ -2735,7 +2759,7 @@ span.path {
 		height: 56px;
 		margin: 0 18px;
 		width: 77px; }
-	.collapsible li .collapsible-header + .collapsible-body > ul { padding-left: 5rem; }
+	.collapsible li .collapsible-header + .collapsible-body > ul { padding-left: 4rem; }
 	.collapsible li .collapsible-header + .collapsible-body > ul li:before { left: -2.6rem; }
 	.collapsible li .collapsible-header + .collapsible-body > ul li {
 		padding-bottom: 0;
@@ -2919,7 +2943,7 @@ span.path {
 }
 
 @media screen and (min-width: 1001px) {
-	.proj-header { margin: 16% 0 0; }
+	.proj-header { margin: 11% 0 0; }
 }
 
 @media screen and (max-width: 850px) {
@@ -2980,6 +3004,11 @@ span.path {
 @media screen and (max-width: 450px) {
 	.proj-header-overflow .proj-screenshot img { margin-top: -1em; }
 	.proj-body.proj-body-overflow .macbook-c .img-container img { width: 160%; }
+}
+
+@media screen and (max-width: 350px) {
+	.padding-bottom { padding-bottom: 90px; }
+	.padding-top { padding-top: 90px; }
 }
 
 @media screen and (max-width: 310px) {
