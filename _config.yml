@@ -1,7 +1,8 @@
 # Site settings
-title: FreshCode
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Software development company | Freshcode
+keywords: Freshcode, blog, software development, web development methods, outsourcing, technologies, news
+description: Read the latest Freshcode news and updates in software development, web development methods, outsourcing principles, etc.
+email: alex.freshcode@gmail.com
 baseurl: ""
 url: "http://freshcodeit.com"
 twitter_username: "@FreshCode1"
