@@ -7,12 +7,13 @@
     
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <meta name="description" content="Freshcode provides a wide range of web development services using cutting-edge technologies. We build web applications and websites with the help of JavaScript, Clojure, MEAN stack, etc.">
+    <meta name="keywords" content="web development services, website and app development, ecommerce, educational solutions, JavaScript, Clojure, MEAN stack">
     <link rel="canonical" href="http://freshcodeit.com/web-development/">
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <title>FreshCode</title>
+    <title>Web Development | Freshcode</title>
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -118,47 +119,6 @@
                 </button>
             </div>
         </form>
-
-        <script>
-            var $form = $('form.hire-us-form'),
-                $name = $form.find("input[name='name']"),
-                $email = $form.find("input[name='email']"),
-                $subject = $form.find("input[name='subject']"),
-                $message = $form.find("input[name='message']");
-
-            $form.parsley();
-            $form.submit(function (e) {
-                e.preventDefault();
-
-                var data = {
-                    name: $name.val(),
-                    email: $email.val(),
-                    subject: $subject.val(),
-                    message: $message.val()
-                };
-
-                $.ajax({
-                   method: "POST",
-                   url: "https://getform.org/f/2470bd55-f6d2-4752-820e-ec23eccd8202",
-                   data: {
-                       name: $name.val(),
-                       email: $email.val(),
-                       subject: $subject.val(),
-                       message: $message.val()
-                   },
-                   crossDomain: true
-                });
-
-                $form[0].reset();
-                $('.form-header').css('display', 'none');
-                $('.hire-us-form').css('display', 'none');
-                $('.form-thx').css('display', 'block');
-
-               setTimeout(function () {
-                   $('.hamburger').trigger('click');
-               }, 2000);
-            });
-        </script>
     </div>
 </div>
 
@@ -336,7 +296,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="https://plus.google.com/109449845191701968335">
                         <i><img class="social-icons" src="/img/social/google.svg" alt="google plus"></i>
                         <span class="social-text hidden-xs">Google Plus</span>
                     </a>
@@ -374,7 +334,7 @@
                     </a>
                 </div>
                 <div class="col-xs-2 col-sm-12 col-md-12 col-lg-12 no-padding">
-                    <a href="">
+                    <a href="https://plus.google.com/109449845191701968335">
                         <i><img class="social-icons" src="/img/social/google.svg" alt="google plus"></i>
                     </a>
                 </div>

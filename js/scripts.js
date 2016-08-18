@@ -16,7 +16,6 @@ $(window).on("load", function() {
                 setTimeout(function() {
                     $('body').removeClass('menu-opened');
                     $('body').removeClass('form-opened');
-                        $('.icon-sign').removeClass('hidden');
                     $('body').removeClass('locked');
                 }, 150);
                 byMenuBtn = false;
@@ -53,6 +52,49 @@ $(window).on("load", function() {
         }
     });// mail-popup-block
 
+    function closeForm() {
+        $('.hamburger').removeClass('close-nav');
+        $('body').removeClass('menu-opened');
+        $('body').removeClass('form-opened');
+        $('.icon-sign').removeClass('hidden');
+        setTimeout(function() {
+            $('body').removeClass('locked');
+        }, 150);
+        byMailBtn = false;
+    }
+
+    var $form = $('form.hire-us-form'),
+        $name = $form.find("input[name='name']"),
+        $email = $form.find("input[name='email']"),
+        $subject = $form.find("input[name='subject']"),
+        $message = $form.find("input[name='message']");
+
+    $form.parsley();
+    $form.submit(function (e) {
+        e.preventDefault();
+
+        $.ajax({
+            method: "POST",
+            url: "https://getform.org/f/2470bd55-f6d2-4752-820e-ec23eccd8202",
+            data: {
+                name: $name.val(),
+                email: $email.val(),
+                subject: $subject.val(),
+                message: $message.val()
+            },
+            crossDomain: true
+        });
+
+        $form[0].reset();
+        $('.form-header').css('display', 'none');
+        $('.hire-us-form').css('display', 'none');
+        $('.form-thx').css('display', 'block');
+
+        setTimeout(function () {
+            closeForm();
+        }, 3000);
+    });
+
     menuOnScroll();
 }); //$(window).on("load", function()...
 
@@ -65,6 +107,16 @@ $(window).scroll(function() {
 function menuOnScroll() {
     var header = $('.fresh-header');
     var st = $(this).scrollTop();
+
+    if ($(window).width() > 1000) {
+        $('.parallax-text').css({
+            "transform" : "translate3d(0px, " + st/4 + "px, 0px)"
+        });
+        $('.parallax-section').css({
+            "transform" : "translate3d(0px, " + st/5 + "px, 0px)"
+        });
+    }
+
     if (st < 1) {
         header.removeClass('is-scrolled');
         header.removeClass('scrolled-by');
