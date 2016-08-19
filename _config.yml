@@ -9,6 +9,15 @@ twitter_username: "@FreshCode1"
 github_username: "Fresh-code"
 
 # Build settings
+adaptive_image:
+     cache: 2592000
+     srcset:
+       - 1920
+       - 600
+       - 320
+     sizes:
+       - "(min-width:60em) 42.5em"
+       - 100vw
 include:
   - _pages
 markdown: kramdown
