@@ -1,0 +1,21 @@
+User-agent: Yandex
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /pdf
+Disallow: /email
+
+User-agent: Googlebot
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /pdf
+Disallow: /email
+
+User-agent: *
+Crawl-dekay: 30
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /pdf
+Disallow: /email
