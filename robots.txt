@@ -13,7 +13,7 @@ Disallow: /pdf
 Disallow: /email
 
 User-agent: *
-Crawl-dekay: 30
+Crawl-delay: 30
 Disallow: /css
 Disallow: /img
 Disallow: /js
