@@ -134,7 +134,28 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </footer>
+
+{% assign url = page.url | replace:'/','' %}
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/scripts.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/libraries/lodash.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/libraries/parsley.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/libraries/materialize.min.js"></script>
+{% if url == 'blog' %}
+<script type="text/javascript" src="{{ site.baseurl }}/js/libraries/list.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/blog.js"></script>
+{% endif %}
+{% if page.layout == 'post' %}
+<script type="text/javascript" src="{{ site.baseurl }}/js/libraries/prism.js"></script>
+{% endif %}
+{% if url == 'portfolio' %}
+<script type="text/javascript" src="{{ site.baseurl }}/js/libraries/list.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/portfolio.js"></script>
+{% endif %}
+{% if url == 'job' %}
+<script type="text/javascript" src="{{ site.baseurl }}/js/libraries/autogrow.min.js"></script>
+{% endif %}
