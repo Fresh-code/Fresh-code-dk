@@ -9,11 +9,7 @@ description: Freshcode is a software development outsourcing company with a team
 
 <section class="height-fixed height-100 padding-top padding-bottom">
     <div class="image-background bleed image-container parallax-section">
-
-        <!--{% adaptive_image {{ site.baseurl }}/img/{{ site.data.main.background }} class="image" alt="Freshcode background" title="Freshcode background" %}-->
-
-        <img draggable="false" src="{{ site.baseurl }}/img/{{ site.data.main.background }}"
-             srcset="" class="image" alt="" title="main background">
+        {% adaptive_image {{ site.baseurl }}/img/{{ site.data.main.background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Freshcode background" title="Freshcode background" %}
     </div>
     <div class="container main parallax-text">
         <div class="row row-equal-columns">
@@ -86,7 +82,7 @@ description: Freshcode is a software development outsourcing company with a team
                 <div class="col-xxs col-xs-6 col-sm-3 col-md-3 col-lg-3 no-padding cube preview-img description no-padding-m"
                      style="background: {{ site.data.main.works[0].mainColor }} !important;">
                     <a href="{{ site.data.main.works[0].link }}">
-                        <img class="img-responsive" src="{{ site.baseurl }}/img/{{ site.data.main.works[0].cover }}" alt="preview image">
+                        {% adaptive_image {{ site.baseurl }}/img/{{ site.data.main.works[0].cover }} size="500 350" sizes="min 1400 500;max 1399 350" draggable="false" class="img-responsive" alt="preview image" title="preview image" %}
                         <div class="cover caption absolute" style="background: {{ site.data.main.works[0].mainColor }} !important;">
                             <h3>{{ site.data.main.works[0].title }}</h3>
                             <p>{{ site.data.main.works[0].description }}</p>
@@ -96,7 +92,7 @@ description: Freshcode is a software development outsourcing company with a team
                 <div class="col-xxs col-xs-6 col-sm-3 col-md-3 col-lg-3 no-padding cube preview-img description no-padding-m"
                      style="background: {{ site.data.main.works[1].mainColor }} !important;">
                     <a href="{{ site.data.main.works[1].link }}">
-                        <img class="img-responsive" src="{{ site.baseurl }}/img/{{ site.data.main.works[1].cover }}" alt="preview image">
+                        {% adaptive_image {{ site.baseurl }}/img/{{ site.data.main.works[1].cover }} size="500 350" sizes="min 1400 500;max 1399 350" draggable="false" class="img-responsive" alt="preview image" title="preview image" %}
                         <div class="cover caption absolute" style="background:  {{ site.data.main.works[1].mainColor }} !important;">
                             <h3>{{ site.data.main.works[1].title }}</h3>
                             <p>{{ site.data.main.works[1].description }}</p>
@@ -106,7 +102,7 @@ description: Freshcode is a software development outsourcing company with a team
                 <div class="col-xxs col-xs-6 col-sm-6 col-md-6 col-lg-6 hidden-xs no-padding cube preview-img description no-padding-m"
                      style="background: {{ site.data.main.works[2].mainColor }} !important;">
                     <a href="{{ site.data.main.works[2].link }}">
-                        <img class="img-responsive" src="{{ site.baseurl }}/img/{{ site.data.main.works[2].cover }}" alt="preview image">
+                        {% adaptive_image {{ site.baseurl }}/img/{{ site.data.main.works[2].cover }} size="1000 700" sizes="min 1400 1000;max 1399 700" draggable="false" class="img-responsive" alt="preview image" title="preview image" %}
                         <div class="cover caption absolute" style="background:  {{ site.data.main.works[2].mainColor }} !important;">
                             <h3>{{ site.data.main.works[2].title }}</h3>
                             <p>{{ site.data.main.works[2].description }}</p>
@@ -118,7 +114,7 @@ description: Freshcode is a software development outsourcing company with a team
                 <div class="col-xxs col-xs-6 col-sm-3 col-md-3 col-lg-3 no-padding cube preview-img description no-padding-m"
                      style="background: {{ site.data.main.works[3].mainColor }} !important;">
                     <a href="{{ site.data.main.works[3].link }}">
-                        <img class="img-responsive" src="{{ site.baseurl }}/img/{{ site.data.main.works[3].cover }}" alt="preview image">
+                        {% adaptive_image {{ site.baseurl }}/img/{{ site.data.main.works[3].cover }} size="500 350" sizes="min 1400 500;max 1399 350" draggable="false" class="img-responsive" alt="preview image" title="preview image" %}
                         <div class="cover caption absolute" style="background: {{ site.data.main.works[3].mainColor }} !important;">
                             <h3>{{ site.data.main.works[3].title }}</h3>
                             <p>{{ site.data.main.works[3].description }}</p>
@@ -128,7 +124,7 @@ description: Freshcode is a software development outsourcing company with a team
                 <div class="col-xxs col-xs-6 col-sm-6 col-md-6 col-lg-6 hidden-xs no-padding cube preview-img description no-padding-m"
                      style="background: {{ site.data.main.works[4].mainColor }} !important;">
                     <a href="{{ site.data.main.works[4].link }}">
-                        <img class="img-responsive" src="{{ site.baseurl }}/img/{{ site.data.main.works[4].cover }}" alt="preview image">
+                        {% adaptive_image {{ site.baseurl }}/img/{{ site.data.main.works[4].cover }} size="1000 700" sizes="min 1400 1000;max 1399 700" draggable="false" class="img-responsive" alt="preview image" title="preview image" %}
                         <div class="cover caption absolute" style="background:  {{ site.data.main.works[4].mainColor }} !important;">
                             <h3>{{ site.data.main.works[4].title }}</h3>
                             <p>{{ site.data.main.works[4].description }}</p>
@@ -138,7 +134,7 @@ description: Freshcode is a software development outsourcing company with a team
                 <div class="col-xxs col-xs-6 col-sm-3 col-md-3 col-lg-3 no-padding cube preview-img description no-padding-m"
                      style="background: {{ site.data.main.works[5].mainColor }} !important;">
                     <a href="{{ site.data.main.works[5].link }}">
-                        <img class="img-responsive" src="{{ site.baseurl }}/img/{{ site.data.main.works[5].cover }}" alt="preview image">
+                        {% adaptive_image {{ site.baseurl }}/img/{{ site.data.main.works[5].cover }} size="500 350" sizes="min 1400 500;max 1399 350" draggable="false" class="img-responsive" alt="preview image" title="preview image" %}
                         <div class="cover caption absolute" style="background:  {{ site.data.main.works[5].mainColor }} !important;">
                             <h3>{{ site.data.main.works[5].title }}</h3>
                             <p>{{ site.data.main.works[5].description }}</p>
@@ -189,7 +185,7 @@ description: Freshcode is a software development outsourcing company with a team
                 <div class="col-xxs col-xs-6 col-sm-4 col-md-4 col-lg-4 preview-img no-padding {% if forloop.index == 1 %}hidden-xs{% endif %}">
                     <a href="{{ post.permalink }}">
                         <div class="description blog" style="background: {{ post.background-cover }} !important;">
-                            <img class="img-responsive" src="{{ site.baseurl }}/img/{{ post.cover }}" alt="preview image">
+                            {% adaptive_image {{ site.baseurl }}/img/{{ post.cover }} size="700 450 350" sizes="min 1500 700;max 1499 450;max 1000 350" draggable="false" class="img-responsive" alt="preview image" title="preview image" %}
                             <div class="bckg-cover" style="background: {{ post.background-cover }} !important;"></div>
                             <!--<div class="platform-tag platformtag">{{ post.tag }}</div>-->
                             <div class="cover">
@@ -211,7 +207,7 @@ description: Freshcode is a software development outsourcing company with a team
             <span class="team-desc">{{ site.data.main.team.description }}</span>
             <div class="flex-box">
                 <div class="work-block">
-                    <img class="img-responsive" src="{{ site.baseurl }}/img/{{ site.data.main.team.cover }}" alt="{{ site.data.main.team.title }} image">
+                    {% adaptive_image {{ site.baseurl }}/img/{{ site.data.main.team.cover }} size="580 350" sizes="min 1001 580;max 1000 350" draggable="false" class="img-responsive" alt="{{ site.data.main.team.title }} image" title="{{ site.data.main.team.title }} image" %}
                 </div>
                 <div class="team-statistics">
                     <div class="flex-box-row">

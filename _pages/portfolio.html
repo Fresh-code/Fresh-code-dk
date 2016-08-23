@@ -9,8 +9,7 @@ description: Look at Freshcode previous projects to have an idea about our exper
 
 <section class="section height-fixed height-100 padding-top padding-bottom row-single">
     <div class="image-background bleed">
-        <img draggable="false" src="{{ site.baseurl }}/img/{{ site.data.portfolio.background }}"
-             srcset="" class="" alt="" post-post-title="Portfolio background">
+        {% adaptive_image {{ site.baseurl }}/img/{{ site.data.portfolio.background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Portfolio background" title="Portfolio background" %}
     </div>
     <div class="container">
         <div class="row row-equal-columns">

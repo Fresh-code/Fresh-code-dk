@@ -66,6 +66,28 @@ module Jekyll
                     else
                       {}
                     end
+
+        if html_attr['size']
+          settings['srcset'] = html_attr['size'].split(/\s+/)
+          html_attr.delete('size')
+        end
+
+        if html_attr['sizes']
+          attrs = html_attr['sizes'].split(/[;]/)
+          sizes = attrs.map do |size|
+            attr = size.split(/[ ]/)
+            if attr[0] == 'min'
+              str = "(min-width: "
+            else
+              str = "(max-width: "
+            end
+            str << "#{attr[1]}px) #{attr[2]}px"
+          end
+          sizes << "100vw"
+          sizes = sizes.join(', ')
+          html_attr.delete('sizes')
+        end
+
         html_attr_string = html_attr.inject('') { |string, attrs|
           if attrs[1]
             string << "#{attrs[0]}=\"#{attrs[1]}\" "

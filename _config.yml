@@ -13,10 +13,11 @@ adaptive_image:
      cache: 2592000
      srcset:
        - 1920
+       - 1000
        - 600
        - 320
      sizes:
-       - "(min-width:60em) 42.5em"
+       - 1920px
        - 100vw
 include:
   - _pages

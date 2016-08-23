@@ -31,7 +31,7 @@ layout: products
 		</div>
 	</div>
 	<div class="proj-screenshot">
-		<img src="{{ site.baseurl }}/{{ site.data.center-layout.outdoor.images[0] }}" alt="Outdor main">
+		{% adaptive_image {{ site.baseurl }}/{{ site.data.center-layout.outdoor.images[0] }} size="1920 1600 1024" sizes="min 1500 1920;max 1499 1600;max 999 1024" draggable="false" alt="Outdoor main" title="Outdoor main" %}
 	</div>
 </section>
 <section class="proj-body proj-body-overflow proj-d-sample">
@@ -53,7 +53,7 @@ layout: products
 				<!-- Development -->
 				<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 macbook-c txt-big">
 					<div class="img-container">
-						<img class="img-wb-macbook" src="{{ site.baseurl }}/{{ site.data.center-layout.outdoor.images[2] }}" alt="TransAcumen screenshot">
+						{% adaptive_image {{ site.baseurl }}/{{ site.data.center-layout.outdoor.images[2] }} size="1085 400" sizes="min 1000 1085;max 999 400" class="img-wb-macbook" draggable="false" alt="Outdoor main" title="Outdoor main" %}
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 no-padding solutions">

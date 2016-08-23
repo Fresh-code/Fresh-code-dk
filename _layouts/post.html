@@ -9,8 +9,7 @@
     <article id="main-section" class="anim-in-out anim-slide-left" data-anim-speed="300" data-anim-sync="true">
       <section class="section height-fixed height-100 padding-top padding-bottom blog-post">
         <div class="image-background bleed">
-          <img draggable="false" src="{{ site.baseurl }}/img/{{ page.background }}"
-               srcset="" class="" alt="" title="Blog post background">
+          {% adaptive_image {{ site.baseurl }}/img/{{ page.background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Blog post background" title="Blog post background" %}
         </div>
         <div class="post-titling">
           <div class="fresh-sub-block">

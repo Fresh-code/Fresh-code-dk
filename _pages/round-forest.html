@@ -44,7 +44,7 @@ layout: products
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 flext-align-top no-padding">
                     <div class="img-container rsl-img proj-r-img">
-                        <img class="img-responsive" src="{{ site.baseurl }}/{{ site.data.right-side-layout.round-forest.images[1] }}" alt="RF screenshot">
+                        {% adaptive_image {{ site.baseurl }}/{{ site.data.right-side-layout.round-forest.images[1] }} size="800 400" sizes="min 1000 800;max 999 400" class="img-responsive" draggable="false" alt="RF main" title="RF main" %}
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@ layout: products
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
                     <div class="img-container no-padding">
-                        <img class="img-responsive" src="{{ site.baseurl }}/{{ site.data.right-side-layout.round-forest.images[2] }}" alt="RF screenshot">
+                        {% adaptive_image {{ site.baseurl }}/{{ site.data.right-side-layout.round-forest.images[2] }} size="1070 400" sizes="min 1000 1070;max 999 400" class="img-responsive" draggable="false" alt="RF main" title="RF main" %}
                     </div>
                 </div>
             </div>
