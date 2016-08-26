@@ -12,152 +12,140 @@ var $monitoring = $('.filter-monitoring'),
     $menu = false,
     $dd = $('#filter-dropdown');
 
-
 var works = [
-
-{
-    title: 'Play Attention',
+    
+    {
+        title: 'Play Attention',
         description: 'Play Attention is indisputably the best cognitive training system created to improve attention, behavior and cognitive function for children and adults suffering from ADHD.',
-    workcover: '/img/portfolio/work_1.jpg',
-    workcoverbckg: 'background-color: #5d738f !important',
-    workbckg: 'background-color: #5d738f !important',
-    type: 'education',
-    workurl: '/playattention'
-}
-,
-
-{
-    title: 'GommeHD',
+        workcover: '/img/portfolio/work_1p-350.jpg',
+        worksrcset: '/img/portfolio/work_1p-700.jpg 700w, /img/portfolio/work_1p-450.jpg 450w, /img/portfolio/work_1p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #5d738f !important',
+        workbckg: 'background-color: #5d738f !important',
+        type: 'education',
+        workurl: '/playattention'
+    },
+    
+    {
+        title: 'GommeHD',
         description: 'GommeHD is one of the leading Minecraft Servers with more than 1 million players throughout the world. The site delivers community news and statistics, as well as the latest updates and videos.',
-    workcover: '/img/portfolio/work_2.jpg',
-    workcoverbckg: 'background-color: #775441 !important',
-    workbckg: 'background-color: #775441 !important',
-    type: 'ecommerce',
-    workurl: '/gommehd'
-}
-,
-
-{
-    title: 'Wallbreaker Dynamics',
+        workcover: '/img/portfolio/work_2p-350.jpg',
+        worksrcset: '/img/portfolio/work_2p-700.jpg 700w, /img/portfolio/work_2p-450.jpg 450w, /img/portfolio/work_2p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #775441 !important',
+        workbckg: 'background-color: #775441 !important',
+        type: 'ecommerce',
+        workurl: '/gommehd'
+    },
+    
+    {
+        title: 'Wallbreaker Dynamics',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
-    workcover: '/img/portfolio/work_3.jpg',
-    workcoverbckg: 'background-color: #747474 !important',
-    workbckg: 'background-color: #747474 !important',
-    type: 'media',
-    workurl: '/wall-breaker'
-}
-,
-
-{
-    title: 'Nova Fabrica Ltd.',
+        workcover: '/img/portfolio/work_3p-350.jpg',
+        worksrcset: '/img/portfolio/work_3p-700.jpg 700w, /img/portfolio/work_3p-450.jpg 450w, /img/portfolio/work_3p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #747474 !important',
+        workbckg: 'background-color: #747474 !important',
+        type: 'media',
+        workurl: '/wall-breaker'
+    },
+    
+    {
+        title: 'Nova Fabrica Ltd.',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
-    workcover: '/img/portfolio/work_4.jpg',
-    workcoverbckg: 'background-color: #a5a5a5 !important',
-    workbckg: 'background-color: #a5a5a5 !important',
-    type: 'monitoring',
-    workurl: '/flotron'
-}
-,
-
-{
-    title: 'Educadio',
+        workcover: '/img/portfolio/work_4p-350.jpg',
+        worksrcset: '/img/portfolio/work_4p-700.jpg 700w, /img/portfolio/work_4p-450.jpg 450w, /img/portfolio/work_4p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #a5a5a5 !important',
+        workbckg: 'background-color: #a5a5a5 !important',
+        type: 'monitoring',
+        workurl: '/flotron'
+    },
+    
+    {
+        title: 'Educadio',
         description: 'Educadio is a Digital Learning Tool that provides a real-time synchronization for instant user collaboration and a wide variety of collaborative work means, including video and text chats.',
-    workcover: '/img/portfolio/work_5.jpg',
-    workcoverbckg: 'background-color: #354356 !important',
-    workbckg: 'background-color: #354356 !important',
-    type: 'education',
-    workurl: '/educadio'
-}
-,
-
-{
-    title: 'Twenty One Learning',
+        workcover: '/img/portfolio/work_5p-350.jpg',
+        worksrcset: '/img/portfolio/work_5p-700.jpg 700w, /img/portfolio/work_5p-450.jpg 450w, /img/portfolio/work_5p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #354356 !important',
+        workbckg: 'background-color: #354356 !important',
+        type: 'education',
+        workurl: '/educadio'
+    },
+    
+    {
+        title: 'Twenty One Learning',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
-    workcover: '/img/portfolio/work_6.jpg',
-    workcoverbckg: 'background-color: #576965 !important',
-    workbckg: 'background-color: #576965 !important',
-    type: 'education',
-    workurl: '/twenty-one-learning'
-}
-,
-
-{
-    title: 'Rhino Security Labs',
+        workcover: '/img/portfolio/work_6p-350.jpg',
+        worksrcset: '/img/portfolio/work_6p-700.jpg 700w, /img/portfolio/work_6p-450.jpg 450w, /img/portfolio/work_6p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #576965 !important',
+        workbckg: 'background-color: #576965 !important',
+        type: 'education',
+        workurl: '/twenty-one-learning'
+    },
+    
+    {
+        title: 'Rhino Security Labs',
         description: 'Rhino Security Labs is a company known for its insight into the needs of retail and healthcare, financial services and technology as well as other vertical markets. ',
-    workcover: '/img/portfolio/work_7.jpg',
-    workcoverbckg: 'background-color: #373d4d !important',
-    workbckg: 'background-color: #373d4d !important',
-    type: 'monitoring',
-    workurl: '/rhino'
-}
-,
-
-{
-    title: 'Tassta',
+        workcover: '/img/portfolio/work_7p-350.jpg',
+        worksrcset: '/img/portfolio/work_7p-700.jpg 700w, /img/portfolio/work_7p-450.jpg 450w, /img/portfolio/work_7p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #373d4d !important',
+        workbckg: 'background-color: #373d4d !important',
+        type: 'monitoring',
+        workurl: '/rhino'
+    },
+    
+    {
+        title: 'Tassta',
         description: 'Tassta is a hardware-software solutions platform providing more effective communication for a number of industries, including Public Transportation, Construction, Courier and Emergency Services, etc.',
-    workcover: '/img/portfolio/work_8.jpg',
-    workcoverbckg: 'background-color: #6e8a6d !important',
-    workbckg: 'background-color: #6e8a6d !important',
-    type: 'navigation',
-    workurl: '/tassta'
-}
-,
-
-{
-    title: 'PayProve TransAcumen',
+        workcover: '/img/portfolio/work_8p-350.jpg',
+        worksrcset: '/img/portfolio/work_8p-700.jpg 700w, /img/portfolio/work_8p-450.jpg 450w, /img/portfolio/work_8p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #6e8a6d !important',
+        workbckg: 'background-color: #6e8a6d !important',
+        type: 'navigation',
+        workurl: '/tassta'
+    },
+    
+    {
+        title: 'Outdoor.rocks',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
-    workcover: '/img/portfolio/work_9.jpg',
-    workcoverbckg: 'background-color: #35699c !important',
-    workbckg: 'background-color: #35699c !important',
-    type: 'payments',
-    workurl: '/transacumen'
-}
-,
-
-{
-    title: 'Outdoor.rocks',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
-    workcover: '/img/portfolio/work_10.jpg',
-    workcoverbckg: 'background-color: #65753b !important',
-    workbckg: 'background-color: #65753b !important',
-    type: 'navigation',
-    workurl: '/outdoor'
-}
-,
-
-{
-    title: 'Data Parser',
+        workcover: '/img/portfolio/work_10p-350.jpg',
+        worksrcset: '/img/portfolio/work_10p-700.jpg 700w, /img/portfolio/work_10p-450.jpg 450w, /img/portfolio/work_10p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #65753b !important',
+        workbckg: 'background-color: #65753b !important',
+        type: 'navigation',
+        workurl: '/outdoor'
+    },
+    
+    {
+        title: 'Data Parser',
         description: 'Data Parser is a cloud-based ETL application for unstructured data from any number of sources, including JSON files, with advanced search and data aggregation possibilities.',
-    workcover: '/img/portfolio/work_11.jpg',
-    workcoverbckg: 'background-color: #8e9bbb !important',
-    workbckg: 'background-color: #8e9bbb !important',
-    type: 'business',
-    workurl: '/data-parser'
-}
-,
-
-{
-    title: 'icCube',
+        workcover: '/img/portfolio/work_11p-350.jpg',
+        worksrcset: '/img/portfolio/work_11p-700.jpg 700w, /img/portfolio/work_11p-450.jpg 450w, /img/portfolio/work_11p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #8e9bbb !important',
+        workbckg: 'background-color: #8e9bbb !important',
+        type: 'business',
+        workurl: '/data-parser'
+    },
+    
+    {
+        title: 'RoundForest',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
-    workcover: '/img/portfolio/work_12.jpg',
-    workcoverbckg: 'background-color: #965793 !important',
-    workbckg: 'background-color: #965793 !important',
-    type: 'business',
-    workurl: '/iccube'
-}
-,
-
-{
-    title: 'RoundForest',
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
-    workcover: '/img/portfolio/work_13.jpg',
-    workcoverbckg: 'background-color: #729542 !important',
-    workbckg: 'background-color: #729542 !important',
-    type: 'data',
-    workurl: '/round-forest'
-}
-
-
+        workcover: '/img/portfolio/work_13p-350.jpg',
+        worksrcset: '/img/portfolio/work_13p-700.jpg 700w, /img/portfolio/work_13p-450.jpg 450w, /img/portfolio/work_13p-350.jpg 350w',
+        worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+        workcoverbckg: 'background-color: #729542 !important',
+        workbckg: 'background-color: #729542 !important',
+        type: 'data',
+        workurl: '/round-forest'
+    }
+    
 ];
 
 var options = {
@@ -165,15 +153,17 @@ var options = {
         'title',
         'description',
         'type',
-        {attr: 'src', name: 'workcover'},
-        {attr: 'style', name: 'workbckg'},
-        {attr: 'style', name: 'workcoverbckg'},
-        {attr: 'href', name: 'workurl'}
+        { attr: 'src', name: 'workcover' },
+        { attr: 'srcset', name: 'worksrcset' },
+        { attr: 'sizes', name: 'worksizes' },
+        { attr: 'style', name: 'workbckg' },
+        { attr: 'style', name: 'workcoverbckg' },
+        { attr: 'href', name: 'workurl' }
     ],
     item: '<div class="col-xxs col-xs-6 col-sm-6 col-md-4 col-lg-4 no-padding cube preview-img description no-padding-m">' +
     '<a href="" class="workurl">' +
     '<div class="workcoverbckg">' +
-    '<img class="img-responsive workcover" alt="preview image">' +
+    '<img class="img-responsive workcover worksrcset worksizes" alt="preview image" title="preview image">' +
     '<div class="cover caption absolute workbckg">' +
     '<h3 class="title"></h3>' +
     '<p class="description"></p>' +
