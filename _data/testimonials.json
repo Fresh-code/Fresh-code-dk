@@ -12,19 +12,19 @@
       "author": "Steve Jobs",
       "company": "Apple",
       "text": "Working with Freshcode provides many benefits, but their focus on writing solid maintainable code and a strong work ethic are what elevates them above their peers.",
-      "photo": "testimonials/photo_a1.png"
+      "photo": "/img/testimonials/photo_a1.png"
     },
     {
       "author": "Patrick Martel",
       "company": "Lg Electronics",
       "text": "I`ve worked with multiple development companies throughout my career, Freshcode is unquestionable the best. Between their tireless project managers and world class engineers, they delivered our product on time and on budget through rapidly shifting business requirements.",
-      "photo": "testimonials/photo_a2.png"
+      "photo": "/img/testimonials/photo_a2.png"
     },
     {
       "author": "David Mercier",
       "company": "Warner Bros.",
       "text": "Trust is most important factor in outsourcing. Freshcode has never let us down! They give 100% reability and complete commitment to uor work. With just the right blend of listening and advising, the Freshcode team makes problem solving quick and cost effective. It is a privilege to work with Freshcode.",
-      "photo": "testimonials/photo_a3.png"
+      "photo": "/img/testimonials/photo_a3.png"
     }
   ],
   "all": [
@@ -32,19 +32,19 @@
       "author": "Steve Jobs",
       "company": "Apple",
       "text": "Working with Freshcode provides many benefits, but their focus on writing solid maintainable code and a strong work ethic are what elevates them above their peers.",
-      "photo": "testimonials/photo_a1.png"
+      "photo": "/img/testimonials/photo_a1.png"
     },
     {
       "author": "Patrick Martel",
       "company": "Lg Electronics",
       "text": "I`ve worked with multiple development companies throughout my career, Freshcode is unquestionable the best. Between their tireless project managers and world class engineers, they delivered our product on time and on budget through rapidly shifting business requirements.",
-      "photo": "testimonials/photo_a2.png"
+      "photo": "/img/testimonials/photo_a2.png"
     },
     {
       "author": "David Mercier",
       "company": "Warner Bros.",
       "text": "Trust is most important factor in outsourcing. Freshcode has never let us down! They give 100% reability and complete commitment to uor work. With just the right blend of listening and advising, the Freshcode team makes problem solving quick and cost effective. It is a privilege to work with Freshcode.",
-      "photo": "testimonials/photo_a3.png"
+      "photo": "/img/testimonials/photo_a3.png"
     }
   ]
 }

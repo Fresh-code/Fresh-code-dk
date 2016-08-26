@@ -15,20 +15,20 @@ var $monitoring = $('.filter-monitoring'),
     $menu = false,
     $dd = $('#filter-dropdown');
 
-
 var works = [
-{% for work in site.data.portfolio.works %}
-{
-    title: '{{ work.title }}',
+    {% for work in site.data.portfolio.works %}
+    {
+        title: '{{ work.title }}',
         description: '{{ work.description }}',
-    workcover: '{{ site.baseurl }}/img/{{ work.cover }}',
-    workcoverbckg: 'background-color: {{ work.mainColor }} !important',
-    workbckg: 'background-color: {{ work.mainColor }} !important',
-    type: '{{ work.type }}',
-    workurl: '{{ work.link }}'
-}
-{% unless forloop.last %},{% endunless %}
-{% endfor %}
+        workcover: '{{ work.cover }}',
+        worksrcset: '{{ work.srcsetattr }}',
+        worksizes: '{{ work.sizesattr }}',
+        workcoverbckg: 'background-color: {{ work.mainColor }} !important',
+        workbckg: 'background-color: {{ work.mainColor }} !important',
+        type: '{{ work.type }}',
+        workurl: '{{ work.link }}'
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
 ];
 
 var options = {
@@ -36,15 +36,17 @@ var options = {
         'title',
         'description',
         'type',
-        {attr: 'src', name: 'workcover'},
-        {attr: 'style', name: 'workbckg'},
-        {attr: 'style', name: 'workcoverbckg'},
-        {attr: 'href', name: 'workurl'}
+        { attr: 'src', name: 'workcover' },
+        { attr: 'srcset', name: 'worksrcset' },
+        { attr: 'sizes', name: 'worksizes' },
+        { attr: 'style', name: 'workbckg' },
+        { attr: 'style', name: 'workcoverbckg' },
+        { attr: 'href', name: 'workurl' }
     ],
     item: '<div class="col-xxs col-xs-6 col-sm-6 col-md-4 col-lg-4 no-padding cube preview-img description no-padding-m">' +
     '<a href="" class="workurl">' +
     '<div class="workcoverbckg">' +
-    '<img class="img-responsive workcover" alt="preview image">' +
+    '<img class="img-responsive workcover worksrcset worksizes" alt="preview image" title="preview image">' +
     '<div class="cover caption absolute workbckg">' +
     '<h3 class="title"></h3>' +
     '<p class="description"></p>' +

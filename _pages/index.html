@@ -180,14 +180,13 @@ description: Freshcode is a software development outsourcing company with a team
     <div class="fresh-sub-block no-padding">
         <h2>FRESH BLOG POST</h2>
         <div class="row">
-
             {% for post in site.posts limit:3 %}
                 <div class="col-xxs col-xs-6 col-sm-4 col-md-4 col-lg-4 preview-img no-padding {% if forloop.index == 1 %}hidden-xs{% endif %}">
                     <a href="{{ post.permalink }}">
                         <div class="description blog" style="background: {{ post.background-cover }} !important;">
-                            {% adaptive_image {{ site.baseurl }}/img/{{ post.cover }} size="700 450 350" sizes="min 1500 700;max 1499 450;max 1000 350" draggable="false" class="img-responsive" alt="preview image" title="preview image" %}
+                            <img draggable="false" class="img-responsive" alt="preview image" title="preview image" src="{{ post.cover }}"
+                                 srcset="{{ post.srcsetattr }}" sizes="{{ post.sizeattr }}">
                             <div class="bckg-cover" style="background: {{ post.background-cover }} !important;"></div>
-                            <!--<div class="platform-tag platformtag">{{ post.tag }}</div>-->
                             <div class="cover">
                                 <h3>{{ post.post-title }}</h3>
                                 <span class="date">{{ post.categories-tag }}  |  {{ post.author }}</span>

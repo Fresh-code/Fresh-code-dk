@@ -1,45 +1,49 @@
-#
-# Author: Aaron Gustafson
-# Adaptive Images with the Google Image Resizer
-# For more, see https://carlo.zottmann.org/2013/04/14/google-image-resizer/
-#
-# An implementation of Adaptive Images with `srcset` and `sizes` using [Google’s open image resizing service](https://carlo.zottmann.org/2013/04/14/google-image-resizer/).
-# 
 # The tag is simple:
-# 
+#
 #   {% adaptive_image /path/to/image.jpg [attr="value"] %}
-# 
+#
 # You can add as many attributes as you want.
-# 
+#
 # ## Global Configuration
-# 
+#
 # To keep things simple and consistant, you can set up the standard sizes of your adaptive images in variables in `_config.yml`:
-# 
+#
 #   adaptive_image:
 #     cache: 2592000
-#     srcset: 
+#     srcset:
 #       - 1920
 #       - 600
 #       - 320
 #     sizes:
 #       - "(min-width:60em) 42.5em"
 #       - 100vw
-#   
+#
 # * `cache` is for the length of time you want to cache it (in seconds)
 # * `srcset` is a list of sizes (in unitless pixel widths) you want to offer
 # * `sizes` is the size configurations for layout purposes
-# 
-
+#
 module Jekyll
 
   class AdaptiveImageTag < Liquid::Tag
-    
-    @url = nil
 
     def initialize(tag_name, tag_text, tokens)
-      @url = 'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=%{url}&amp;resize_w=%{width}&amp;container=focus&amp;refresh=%{cache}'
       @tag_text = tag_text
       super
+    end
+
+    def resize_img(size, input)
+      path = (input.split('/')).drop(1).reverse.drop(1).reverse.join('/')
+      ext = input.split('.')[1]
+      name = (input.split('/')[3]).split('.')[0]
+      output = "#{path}/#{name}-#{size}.#{ext}"
+
+      cmd = "convert -strip -interlace Plane -quality 95 -depth 8 -resize #{size} #{input[1..-1]} #{output}"
+
+      # system( cmd )
+      pid = spawn(cmd)
+      Process.wait(pid)
+
+      output
     end
 
     def render(context)
@@ -50,7 +54,7 @@ module Jekyll
       settings = site.config['adaptive_image']
 
       markup = /^(?<image_src>[^\s]+\.[a-zA-Z0-9]{3,4})\s*(?<html_attr>[\s\S]+)$/.match(render_markup)
-      
+
       if markup
 
         # Assign defaults
@@ -105,7 +109,8 @@ module Jekyll
         # Add the src & srcset
         srcset = []
         settings['srcset'].each do |size|
-          the_src = @url % {url: original_source, width: size, cache: settings['cache']}
+          the_src = "/#{resize_img(size, markup[:image_src])}"
+          # the_src = "#{site.config['url']}/#{resize_img(size, markup[:image_src])}"
           the_src << " #{size}w"
           srcset << the_src
           if ! smallest_src or smalles_src > size

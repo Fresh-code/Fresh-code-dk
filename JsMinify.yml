@@ -1,0 +1,4 @@
+files: [
+  { name: 'site', path: '_site/js/scripts.js' },
+  { name: 'blog', path: '_site/js/blog.js' }
+]
