@@ -1,4 +1,5 @@
 files: [
   { name: 'site', path: '_site/js/scripts.js' },
-  { name: 'blog', path: '_site/js/blog.js' }
+  { name: 'blog', path: '_site/js/blog.js' },
+  { name: 'portfolio', path: '_site/js/portfolio.js' }
 ]
