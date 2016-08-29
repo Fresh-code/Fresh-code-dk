@@ -3,6 +3,7 @@
  * @depends bootstrap.min.js
  * @depends libraries/lodash.js
  * @depends libraries/parsley.min.js
+ * @depends libraries/prism.js
  */
 (function(global) {
 

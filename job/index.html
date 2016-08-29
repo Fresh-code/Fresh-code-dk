@@ -16,13 +16,6 @@
     <title>Freshcode Vacancies</title>
 
     <link rel="stylesheet" href="/css/201608261746.min.css">
-    <!--<link rel="stylesheet" href="/css/site.min.css">-->
-
-    <!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="/css/main.css">-->
-    <!--<link rel="stylesheet" href="/css/font-awesome-4.6.3/css/font-awesome.min.css">-->
-    <!--<link rel="stylesheet" href="/css/prism.css">-->
-
 </head>
 
 
@@ -363,42 +356,6 @@
         </div>
     </div>
 </section>
-
-<script>
-    $('textarea.material-input').autogrow({ horizontal: false, flickering: false});
-
-    $(document).ready(function(){
-        $('.collapsible').collapsible({
-            accordion : false
-        });
-    });
-
-    var $form = $('form.job-form');
-
-    $form.parsley();
-    $form.submit(function (e) {
-        e.preventDefault();
-
-        var data = new FormData();
-        data.append('text', $form.find("textarea").val());
-        data.append('file', $('#file')[0].files[0]);
-
-        $.ajax({
-            method: "POST",
-            url: "https://getform.org/u/4da9ee75-96ba-4984-ace2-96c647f11cef",
-            data: data,
-            processData: false,
-            contentType: false,
-            crossDomain: true
-        }).done(function(res) {
-            console.log(res);
-        });
-        $form[0].reset();
-
-//        setTimeout(window.location = '/', 5000);
-    });
-</script>
-
         </article>
         <footer class="fresh-footer dynamic">
     <div class="row shorted footer-width-fixed">
@@ -545,6 +502,10 @@
 
 
 
+
+
+
+<script type="text/javascript" src="/js/job.min.js"></script>
 
 
     </body>
