@@ -25,18 +25,11 @@
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <link rel="stylesheet" href="{% minified_css_file %}">
-    <!--<link rel="stylesheet" href="{{ site.baseurl }}/css/site.min.css">-->
-
-    <!--<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">-->
-    <!--<link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome-4.6.3/css/font-awesome.min.css">-->
-    <!--<link rel="stylesheet" href="{{ site.baseurl }}/css/prism.css">-->
-
 </head>
 
 

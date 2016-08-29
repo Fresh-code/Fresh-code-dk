@@ -9,7 +9,7 @@ description: Freshcode developers abide Agile methods to make the process of web
 
 <section class="section height-fixed height-100 padding-top padding-bottom row-single">
     <div class="image-background bleed">
-        {% adaptive_image {{ site.baseurl }}/img/{{ site.data.approach.background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Approach background" title="Approach background" %}
+        {% adaptive_image /img/{{ site.data.approach.background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Approach background" title="Approach background" %}
     </div>
     <div class="container">
         <div class="row row-equal-columns">
@@ -37,7 +37,7 @@ description: Freshcode developers abide Agile methods to make the process of web
                     <div class="row">
                         <div class="media fresh-container no-padding">
                             <div class="media-left preview-block services-icon">
-                                <img class="img-responsive" src="{{ site.baseurl }}/img/{{ approach.icon }}" alt="{{ approach.name }} icon">
+                                <img class="img-responsive" src="/img/{{ approach.icon }}" alt="{{ approach.name }} icon">
                             </div>
                             <div class="description media-body">
                                 <h3>{{ approach.name }}</h3>
@@ -47,7 +47,7 @@ description: Freshcode developers abide Agile methods to make the process of web
                     {% else %}
                         <div class="media fresh-container no-padding">
                             <div class="media-left preview-block services-icon">
-                                <img class="img-responsive" src="{{ site.baseurl }}/img/{{ approach.icon }}" alt="{{ approach.name }} icon">
+                                <img class="img-responsive" src="/img/{{ approach.icon }}" alt="{{ approach.name }} icon">
                             </div>
                             <div class="description media-body">
                                 <h3>{{ approach.name }}</h3>

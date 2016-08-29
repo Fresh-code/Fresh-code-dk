@@ -9,7 +9,7 @@ description: Want to start your career in web development? Send us your CV and w
 
 <section class="section height-fixed height-100 padding-top padding-bottom">
     <div class="image-background bleed">
-        {% adaptive_image {{ site.baseurl }}/img/{{ site.data.job.background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Career background" title="Career background" %}
+        {% adaptive_image /img/{{ site.data.job.background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Career background" title="Career background" %}
     </div>
     <div class="container ">
         <div class="row row-equal-columns">
@@ -71,7 +71,7 @@ description: Want to start your career in web development? Send us your CV and w
                         <div class="row material-box">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
                                 <label class="attach-link" onclick="$('#file').trigger('click')">
-                                    <img class="clip-img" src="{{ site.baseurl }}/img/icon_attach.png">
+                                    <img class="clip-img" src="/img/icon_attach.png">
                                     <span>Attach file</span>
                                 </label>
                             </div>
@@ -97,38 +97,3 @@ description: Want to start your career in web development? Send us your CV and w
         </div>
     </div>
 </section>
-
-<script>
-    $('textarea.material-input').autogrow({ horizontal: false, flickering: false});
-
-    $(document).ready(function(){
-        $('.collapsible').collapsible({
-            accordion : false
-        });
-    });
-
-    var $form = $('form.job-form');
-
-    $form.parsley();
-    $form.submit(function (e) {
-        e.preventDefault();
-
-        var data = new FormData();
-        data.append('text', $form.find("textarea").val());
-        data.append('file', $('#file')[0].files[0]);
-
-        $.ajax({
-            method: "POST",
-            url: "https://getform.org/u/4da9ee75-96ba-4984-ace2-96c647f11cef",
-            data: data,
-            processData: false,
-            contentType: false,
-            crossDomain: true
-        }).done(function(res) {
-            console.log(res);
-        });
-        $form[0].reset();
-
-//        setTimeout(window.location = '/', 5000);
-    });
-</script>

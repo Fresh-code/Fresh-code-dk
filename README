@@ -1,7 +1,7 @@
 
 Install Jekyll:
 
-    apt-get install ruby-dev
+    Install ruby by rvm!!!
 
     gem install jekyll
     gem install juicer
@@ -14,11 +14,18 @@ Install Jekyll:
         uglifier (3.0.1)
         yui-compressor (0.12.0)
 
+    For css/js minification you must install
+        juicer install yui-compressor
+        juicer install jslint
+
+
+    For adaptive image you must install imagemagick on your PC!
+        http://imagemagick.org/script/binary-releases.php - for more information
 
 START Jekyll:
 
     jekyll serve       - run jekyll server, serving site on localhost:4000
-    jekyll serve -w    - run jekyll server in wach mode, checking changes in your files and rebuild site in _site folder.
+    jekyll serve -w    - run jekyll server in watch mode, checking changes in your files and rebuild site in _site folder.
     jekyll build       - generate site in _site folder without serving site
     jekyll build -w    - generate site in _site folder without serving site, checking changes in your files and rebuild site in _site folder.
 
@@ -51,7 +58,6 @@ Layouts:
 
 
 Variables:
-
     https://jekyllrb.com/docs/variables/ - for more information
 
 Pages:

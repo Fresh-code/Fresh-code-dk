@@ -1,48 +1,48 @@
 {
   "title": "WHAT WE DO",
   "text": "Below are our areas of expertise. These are the business dimensions where we collaborate with our clients and help them build great products. Choose those that fit your needs most to learn more.",
-  "background": "services/banner_services.jpg",
+  "background": "/img/services/banner_services.jpg",
   "short": [
     {
       "name": "Web development",
       "text": "We create responsive, fast and elegant solutions expertly crafted to suit your business needs using the most efficient technologies like Ruby on Rails, Angular.js, Node.js.",
       "btntext": "more web",
-      "icon": "services/web_dev_icon.svg",
+      "icon": "/img/services/web_dev_icon.svg",
       "link": "/web-development"
     },
     {
       "name": "Mobile development",
       "text": "We implement workable solutions for both iOS and Android operation systems and help you build a balanced app with a streamlined design, intuitive interface, and top-notch performance.",
       "btntext": "more mobile",
-      "icon": "services/mobile_dev_icon.svg",
+      "icon": "/img/services/mobile_dev_icon.svg",
       "link": "/mobile-development"
     },
     {
       "name": "Desktop development",
       "text": "We provide a stable architecture to fulfill your business needs. We ensure application's rich functionality, user-friendliness, high productivity and guarantee seamless synchronization and integration.",
       "btntext": "more Desktop",
-      "icon": "services/desktop_dev_icon.svg",
+      "icon": "/img/services/desktop_dev_icon.svg",
       "link": "/desktop-development"
     },
     {
       "name": "Maintenance",
       "text": "We perform regular maintenance to prevent system's instability. Our fool-proof backup and recovery options minimize risks of unexpected failures and maximize project's uptime.",
       "btntext": "more Maintenance",
-      "icon": "services/maintance_icon.svg",
+      "icon": "/img/services/maintance_icon.svg",
       "link": "/maintenance"
     },
     {
       "name": "Consulting",
       "text": "We estimate the time and resources needed, plan the work and choose the best technologies and solutions for your needs. We provide usability analysis, architecture stability, code and UX audits.",
       "btntext": "more Consulting",
-      "icon": "services/consulting_icon.svg",
+      "icon": "/img/services/consulting_icon.svg",
       "link": "/consulting"
     },
     {
       "name": "Dedicated team",
       "text": "We create a dedicated team for your high priority projects. Each team member boasts specialization and skill set best fitted for your needs to ensure successful and timely development.",
       "btntext": "more web",
-      "icon": "services/dedicated_icon.svg",
+      "icon": "/img/services/dedicated_icon.svg",
       "link": "/dedicated-team"
     }
   ],
