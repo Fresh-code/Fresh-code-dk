@@ -106,7 +106,7 @@
     "cover": "main/people.jpg",
     "info": [
       { "desc": "Core <br> clients",          "val": 12, "ico": "/img/main/01_icon.png" },
-      { "desc": "In-house <br> developers",   "val": 26, "ico": "/img/main/02_icon.png" },
+      { "desc": "In-house <br> developers",   "val": 42, "ico": "/img/main/02_icon.png" },
       { "desc": "Programming <br> languages", "val": 7,  "ico": "/img/main/03_icon.png" },
       { "desc": "Completed <br> projects",    "val": 41, "ico": "/img/main/04_icon.png" }
     ]
