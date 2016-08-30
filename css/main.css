@@ -563,24 +563,9 @@ body.locked {
 	text-align: center;
 }
 .testi-head-icons img {
-	height: 63px;
-    margin: 0 24px;
-    width: 62px;
+    margin: 0 24px 20px 0;
 }
-#apple-icon {
-	position: relative;
-    bottom: 6px;
-}
-#wb-icon {
-	height: 73px;
-    margin: 0 24px;
-    width: 62px;
-}
-#lg-icon {
-	height: 76px;
-    margin: 0px 18px;
-    width: 107px;
-}
+
 .fresh-main.testimonial-block { margin-bottom: 5em; }
 .testimonial img {
 	position: relative;
@@ -2761,18 +2746,6 @@ span.path {
 		margin-top: 6rem !important;
 		padding: 0; }
 	.fresh-sub-block.no-padding .row .testi-head-icons { margin: 35px 0 !important; }
-	#apple-icon {
-		position: relative;
-		bottom: 6px;
-		width: 40px; }
-	#wb-icon {
-		height: 53px;
-		margin: 0 1px;
-		width: 32px; }
-	#lg-icon {
-		height: 56px;
-		margin: 0 18px;
-		width: 77px; }
 	.collapsible li .collapsible-header + .collapsible-body > ul { padding-left: 4rem; }
 	.collapsible li .collapsible-header + .collapsible-body > ul li:before { left: -2.6rem; }
 	.collapsible li .collapsible-header + .collapsible-body > ul li {

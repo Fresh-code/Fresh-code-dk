@@ -3,31 +3,49 @@
   "text": "<span class='inline-text'>Nothing speaks about our expertise better than the words of our favorite customers. </span><span class='inline-text'> These words make us happy and proud, willing to get better at what we do. </span><span class='inline-text'> Clients help us grow and evolve, that’s why we value every opinion. </span><span class='inline-text'> Check out what our clients have to say about our work! </span>",
   "background": "/img/testimonials/banner_testimonials.jpg",
   "icons": [
-    "testimonials/apple_icon.svg",
-    "testimonials/wb_icon.svg",
-    "testimonials/lg_icon.svg"
+    "/img/testimonials/logo_1.png",
+    "/img/testimonials/logo_2.png",
+    "/img/testimonials/logo_3.png"
   ],
   "short": [
     {
-      "author": "Steve Jobs",
-      "company": "Apple",
-      "text": "Working with Freshcode provides many benefits, but their focus on writing solid maintainable code and a strong work ethic are what elevates them above their peers.",
-      "photo": "/img/testimonials/photo_a1.png"
+      "author": "Ulrik With Andersen",
+      "company": "Founder, CEO, Educadio",
+      "text": "We have been working with Freshcode and their programmers for almost 2 years and we highly recommend them as development partners. We highly value their abilities to deliver on time, their hard competences at writing solid, scalable code, etc., but mostly we value their ability to think up and design innovative yet solid solutions. Educadio trust them with all our software developments.",
+      "photo": "/img/testimonials/client_1.png"
     },
     {
-      "author": "Patrick Martel",
-      "company": "Lg Electronics",
-      "text": "I`ve worked with multiple development companies throughout my career, Freshcode is unquestionable the best. Between their tireless project managers and world class engineers, they delivered our product on time and on budget through rapidly shifting business requirements.",
+      "author": "Ivan Ishchenko",
+      "company": "Founder, OutDoor",
+      "text": "While working with Feshcode I encountered transparent, accurate and well organized development process. Freshcode employes are open to feedback and flexible to incorporate new practises in their daily works. I'm pretty satisfied with the quality of delivery and will be happy to continue our fruitful cooperation.",
       "photo": "/img/testimonials/photo_a2.png"
     },
     {
-      "author": "David Mercier",
-      "company": "Warner Bros.",
-      "text": "Trust is most important factor in outsourcing. Freshcode has never let us down! They give 100% reability and complete commitment to uor work. With just the right blend of listening and advising, the Freshcode team makes problem solving quick and cost effective. It is a privilege to work with Freshcode.",
+      "author": "Brian McCauley",
+      "company": "Co-Founder, Cytrine LLC, PlayAttention",
+      "text": "FreshCode is a company that has earned my absolute trust and confidence by consistently proving their abilities over the past year. They have repeatedly gone above and beyond my expectations in a professional and courteous manner in their development and management efforts. They have met all their deadlines and accomplished all their work during every sprint without failure. It's very easy for me to recommend FreshCode to absolutely anyone without hesitation. Our business will remain with FreshCode for all future projects.",
       "photo": "/img/testimonials/photo_a3.png"
     }
   ],
   "all": [
+    {
+      "author": "Ulrik With Andersen",
+      "company": "Founder, CEO, Educadio",
+      "text": "We have been working with Freshcode and their programmers for almost 2 years and we highly recommend them as development partners. We highly value their abilities to deliver on time, their hard competences at writing solid, scalable code, etc., but mostly we value their ability to think up and design innovative yet solid solutions. Educadio trust them with all our software developments.",
+      "photo": "/img/testimonials/client_1.png"
+    },
+    {
+      "author": "Ivan Ishchenko",
+      "company": "Founder, OutDoor",
+      "text": "While working with Feshcode I encountered transparent, accurate and well organized development process. Freshcode employes are open to feedback and flexible to incorporate new practises in their daily works. I'm pretty satisfied with the quality of delivery and will be happy to continue our fruitful cooperation.",
+      "photo": "/img/testimonials/photo_a2.png"
+    },
+    {
+      "author": "Brian McCauley",
+      "company": "Co-Founder, Cytrine LLC, PlayAttention",
+      "text": "FreshCode is a company that has earned my absolute trust and confidence by consistently proving their abilities over the past year. They have repeatedly gone above and beyond my expectations in a professional and courteous manner in their development and management efforts. They have met all their deadlines and accomplished all their work during every sprint without failure. It's very easy for me to recommend FreshCode to absolutely anyone without hesitation. Our business will remain with FreshCode for all future projects.",
+      "photo": "/img/testimonials/photo_a3.png"
+    },
     {
       "author": "Steve Jobs",
       "company": "Apple",
