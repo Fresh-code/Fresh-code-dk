@@ -522,8 +522,12 @@ body.locked {
 }
 
 .team-section .flex-box,
-.team-section .flex-box-row { justify-content: center; }
-.team-section .flex-box { padding: 0 8%; }
+.team-section .flex-box-row {
+	justify-content: space-around;
+	align-items: center;
+	flex-shrink: 1;
+	width: 100%; }
+/*.team-section .flex-box { padding: 0 8%; }*/
 
 .flex-box.stretch { align-items: stretch; }
 .black { background: black; }
@@ -563,24 +567,9 @@ body.locked {
 	text-align: center;
 }
 .testi-head-icons img {
-	height: 63px;
-    margin: 0 24px;
-    width: 62px;
+    margin: 0 24px 20px 0;
 }
-#apple-icon {
-	position: relative;
-    bottom: 6px;
-}
-#wb-icon {
-	height: 73px;
-    margin: 0 24px;
-    width: 62px;
-}
-#lg-icon {
-	height: 76px;
-    margin: 0px 18px;
-    width: 107px;
-}
+
 .fresh-main.testimonial-block { margin-bottom: 5em; }
 .testimonial img {
 	position: relative;
@@ -720,9 +709,9 @@ body.locked {
 	font-family: 'Open Middle', sans-serif;
 }
 .the-team img {
-	width: 37vw;
+	/*width: 37vw;*/
     margin: 0 auto;
-	max-width: 574px; }
+	max-width: 120px; }
 .team-desc {
 	display: inline-block;
 	width: 100%;
@@ -730,30 +719,27 @@ body.locked {
 	color:#1a1a1a;
 	font-size: 22px;
 	padding: 0 13%;
-	margin-bottom: 5%;
+	margin-bottom: 6rem;
 }
 .count,
 .count-lable { display: inline-block; }
-.team-container.row {
-	padding-top: 5%;
-}
+.team-container.row { padding-top: 5%; }
 
 .team-statistics {
+	width: 100%;
 	display: flex;
-	flex-direction: column;
-	align-items: baseline;
-	margin-left: 5em;
-	margin-top: 2em;
-	min-width: 210px; }
+	flex-direction: row; }
+.team-statistics .flex-item { text-align: center; }
+.team-statistics .achiev-icon { margin-bottom: 4rem; }
 .count {
-	font-size: 4.2vw;
+	font-size: 72px;
 	min-width: 1em;
-	color: #1D8DF1;
-	margin-right: 2rem;
-	text-align: center;
-	line-height: 69px;
+	color: black;
+	margin-right: 1rem;
+	text-align: right;
+	line-height: 72px;
 	font-family: "Josefin", sans-serif; }
-.team-statistics .count { font-family: "Josefin Thin", sans-serif; }
+/*.team-statistics .count { font-family: "Josefin Thin", sans-serif; }*/
 .serv-row .count {
 	margin-right: 33px;
 	padding-right: 0;
@@ -762,7 +748,8 @@ body.locked {
 	font-size: 71px; }
 .serv-row .description-text { font-size: 22px; }
 .count-lable {
-	font-size: 1.27vw;
+	text-align: left;
+	font-size: 22px;
 	text-transform: uppercase; }
 .link.team {
 	margin-top: 11px;
@@ -2665,8 +2652,13 @@ span.path {
 	.team-desc {
 		font-size: 17px;
 		text-align: justify; }
-	.team-statistics .flex-box-row { flex-direction: row; }
-	.team-statistics { margin-left: 0; }
+	.team-statistics .flex-box-row { flex-direction: column; }
+	.team-statistics {
+		margin-left: 0;
+		flex-direction: column; }
+	.the-team img { max-width: 62px; }
+	.team-statistics .achiev-icon { margin-bottom: 1rem; }
+	.team-statistics .flex-item { margin-bottom: 3rem; }
 	.count {
 		font-size: 4.4em;
 		min-width: 70px;
@@ -2761,18 +2753,6 @@ span.path {
 		margin-top: 6rem !important;
 		padding: 0; }
 	.fresh-sub-block.no-padding .row .testi-head-icons { margin: 35px 0 !important; }
-	#apple-icon {
-		position: relative;
-		bottom: 6px;
-		width: 40px; }
-	#wb-icon {
-		height: 53px;
-		margin: 0 1px;
-		width: 32px; }
-	#lg-icon {
-		height: 56px;
-		margin: 0 18px;
-		width: 77px; }
 	.collapsible li .collapsible-header + .collapsible-body > ul { padding-left: 4rem; }
 	.collapsible li .collapsible-header + .collapsible-body > ul li:before { left: -2.6rem; }
 	.collapsible li .collapsible-header + .collapsible-body > ul li {
