@@ -154,7 +154,7 @@ description: Freshcode is a software development outsourcing company with a team
                 <div class="col-xxs col-xs-12 col-sm-12 col-md-6">
                     <div class="testi-main">
                         <div class="testimonial-img">
-                            <img class="img-responsive img-circle" src="/img/{{ testimonial.photo }}" alt="{{ site.data.main.testimonial.author }} photo">
+                            <img class="img-responsive img-circle" src="{{ testimonial.photo }}" alt="{{ site.data.main.testimonial.author }} photo">
                         </div>
                         <div class="col-xs-12 col-md-12 col-lg-12 testimonial-writings">
                             <div class="testi-credit">
@@ -205,26 +205,33 @@ description: Freshcode is a software development outsourcing company with a team
             <h2 class="block-header">{{ site.data.main.team.title }}</h2>
             <span class="team-desc">{{ site.data.main.team.description }}</span>
             <div class="flex-box">
-                <div class="work-block">
-                    {% adaptive_image /img/{{ site.data.main.team.cover }} size="580 350" sizes="min 1001 580;max 1000 350" draggable="false" class="img-responsive" alt="{{ site.data.main.team.title }} image" title="{{ site.data.main.team.title }} image" %}
-                </div>
                 <div class="team-statistics">
+                    {% for item in site.data.main.team.info %}
+                    {% assign loopindex = forloop.index | modulo: 2 %}
+                    {% if loopindex == 1 %}
                     <div class="flex-box-row">
-                        <span class="count">{{ site.data.main.team.clients }}</span>
-                        <span class="count-lable ">Core <br> clients</span>
+                        <div class="flex-item">
+                            <div class="achiev-icon">
+                                <img src="{{ item.ico }}">
+                            </div>
+                            <div class="achiev-data">
+                                <span class="count">{{ item.val }}</span>
+                                <span class="count-lable ">{{ item.desc }}</span>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="flex-item">
+                            <div class="achiev-icon">
+                                <img src="{{ item.ico }}">
+                            </div>
+                            <div class="achiev-data">
+                                <span class="count">{{ item.val }}</span>
+                                <span class="count-lable ">{{ item.desc }}</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-box-row">
-                        <span class="count">{{ site.data.main.team.developers }}</span>
-                        <span class="count-lable">In-house <br> developers</span>
-                    </div>
-                    <div class="flex-box-row">
-                        <span class="count">{{ site.data.main.team.languages }}</span>
-                        <span class="count-lable">Programming <br> languages</span>
-                    </div>
-                    <div class="flex-box-row">
-                        <span class="count">{{ site.data.main.team.projects }}</span>
-                        <span class="count-lable">Completed <br> projects</span>
-                    </div>
+                    {% endif %}
+                    {% endfor %}
                     <div class="description team-container row" style="display: none">
                         <div class="all-team">
                             <a class="link team" href="/team">

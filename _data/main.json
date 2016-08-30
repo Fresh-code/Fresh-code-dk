@@ -78,17 +78,17 @@
   ],
   "testimonial": [
     {
-      "author": "Steve Jobs",
-      "company": "Apple",
-      "text": "Working with Freshcode provides many benefits, but their focus on writing solid maintainable code and a strong work ethic are what elevates them above their peers.",
-      "photo": "main/steve.png",
-      "link": "/data-parser"
+      "author": "Ulrik With Andersen",
+      "company": "Founder, CEO, Educadio",
+      "text": "We have been working with Freshcode and their programmers for almost 2 years and we highly recommend them as development partners. We highly value their abilities to deliver on time, their hard competences at writing solid, scalable code, etc., but mostly we value their ability to think up and design innovative yet solid solutions. Educadio trust them with all our software developments.",
+      "photo": "/img/main/client_1.png",
+      "link": "/educadio"
     },
     {
       "author": "Bill Geyts",
       "company": "Microsoft",
       "text": "Working with Freshcode provides many benefits, but their focus on writing solid maintainable code and a strong work ethic are what elevates them above their peers.",
-      "photo": "main/bill.png",
+      "photo": "/img/main/bill.png",
       "link": "/gommehd"
     }
   ],
@@ -101,12 +101,14 @@
     "google": "https://plus.google.com/109449845191701968335"
   },
   "team": {
-    "title": "The team",
+    "title": "About us",
     "description": "<span class='inline-text'>Freshcode is not just another reliable and detail-oriented team. We are a group of audacious purpose-driven individuals with unbeatable IT expertise and an open-minded attitude to provide you with truly ingenious solutions and daring products.</span> We don’t do average, only the best!",
     "cover": "main/people.jpg",
-    "clients": 12,
-    "developers": 26,
-    "languages": 7,
-    "projects": 41
+    "info": [
+      { "desc": "Core <br> clients",          "val": 12, "ico": "/img/main/01_icon.png" },
+      { "desc": "In-house <br> developers",   "val": 26, "ico": "/img/main/02_icon.png" },
+      { "desc": "Programming <br> languages", "val": 7,  "ico": "/img/main/03_icon.png" },
+      { "desc": "Completed <br> projects",    "val": 41, "ico": "/img/main/04_icon.png" }
+    ]
   }
 }
