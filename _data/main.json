@@ -78,15 +78,15 @@
   ],
   "testimonial": [
     {
-      "author": "Ulrik With Andersen",
-      "company": "Founder, CEO, Educadio",
+      "author": "Ulrik With Andersen | Educadio",
+      "company": "Founder, CEO",
       "text": "We have been working with Freshcode and their programmers for almost 2 years and we highly recommend them as development partners. We highly value their abilities to deliver on time, their hard competences at writing solid, scalable code, etc., but mostly we value their ability to think up and design innovative yet solid solutions. Educadio trust them with all our software developments.",
       "photo": "/img/main/client_1.png",
       "link": "/educadio"
     },
     {
-      "author": "Bill Geyts",
-      "company": "Microsoft",
+      "author": "Bill Geyts | Microsoft",
+      "company": "FOUNDER, CEO",
       "text": "Working with Freshcode provides many benefits, but their focus on writing solid maintainable code and a strong work ethic are what elevates them above their peers.",
       "photo": "/img/main/bill.png",
       "link": "/gommehd"
