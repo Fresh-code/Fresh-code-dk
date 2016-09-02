@@ -573,8 +573,6 @@ body.locked {
 .fresh-main.testimonial-block { margin-bottom: 5em; }
 .testimonial img {
 	position: relative;
-	/*height: 35vw;*/
-	height: 25vw;
     margin: 0 auto;
     position: relative; }
 .testimonial-text {
@@ -637,7 +635,10 @@ body.locked {
 .testimonial-writtings .testi-name,
 .testi-main .testi-name { color: black; }
 .testimonial-writtings .testi-company,
-.testi-main .testi-company { color: #94A7AE; }
+.testi-main .testi-company {
+	margin-top: 1rem !important;
+	display: block;
+	color: #94A7AE; }
 .testimonial-writtings .testi-name,
 .testimonial-writtings .testi-company,
 .testi-main .testi-name,
