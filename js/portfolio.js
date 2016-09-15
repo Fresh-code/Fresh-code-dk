@@ -44,7 +44,7 @@
         
         {
             title: 'Wallbreaker Dynamics',
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
+            description: 'Wallbreaker is a start-up that provides unique services for mass-media including instant content creation and visualization of analytic results in real time.',
             workcover: '/img/portfolio/work_3p-350.jpg',
             worksrcset: '/img/portfolio/work_3p-700.jpg 700w, /img/portfolio/work_3p-450.jpg 450w, /img/portfolio/work_3p-350.jpg 350w',
             worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
@@ -56,7 +56,7 @@
         
         {
             title: 'Nova Fabrica Ltd.',
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
+            description: 'FloTron is a multichannel control and monitoring system for manufacturing processes that uses a hardware device connected to a series of peripheral units.',
             workcover: '/img/portfolio/work_4p-350.jpg',
             worksrcset: '/img/portfolio/work_4p-700.jpg 700w, /img/portfolio/work_4p-450.jpg 450w, /img/portfolio/work_4p-350.jpg 350w',
             worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
@@ -80,7 +80,7 @@
         
         {
             title: 'Twenty One Learning',
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
+            description: 'Twenty One Learning is an interactive platform which main objective was to allow collaborative creation of lectures, presentations, slides and text with open access to all materials.',
             workcover: '/img/portfolio/work_6p-350.jpg',
             worksrcset: '/img/portfolio/work_6p-700.jpg 700w, /img/portfolio/work_6p-450.jpg 450w, /img/portfolio/work_6p-350.jpg 350w',
             worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
@@ -92,7 +92,7 @@
         
         {
             title: 'Rhino Security Labs',
-            description: 'Rhino Security Labs is a company known for its insight into the needs of retail and healthcare, financial services and technology as well as other vertical markets. ',
+            description: 'Rhino Security Labs is a company known for its insight into the needs of retail and healthcare, financial services and technology as well as other vertical markets.',
             workcover: '/img/portfolio/work_7p-350.jpg',
             worksrcset: '/img/portfolio/work_7p-700.jpg 700w, /img/portfolio/work_7p-450.jpg 450w, /img/portfolio/work_7p-350.jpg 350w',
             worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
@@ -116,7 +116,7 @@
         
         {
             title: 'Outdoor.rocks',
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
+            description: 'Outdoor.rocks is a young, but rapidly developing project, designed for outdoor activity lovers around the world.',
             workcover: '/img/portfolio/work_10p-350.jpg',
             worksrcset: '/img/portfolio/work_10p-700.jpg 700w, /img/portfolio/work_10p-450.jpg 450w, /img/portfolio/work_10p-350.jpg 350w',
             worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
@@ -140,7 +140,7 @@
         
         {
             title: 'RoundForest',
-            description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
+            description: 'RoundForest is an application created for setting up advertising campaigns in real time',
             workcover: '/img/portfolio/work_13p-350.jpg',
             worksrcset: '/img/portfolio/work_13p-700.jpg 700w, /img/portfolio/work_13p-450.jpg 450w, /img/portfolio/work_13p-350.jpg 350w',
             worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
