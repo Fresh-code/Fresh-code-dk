@@ -2,7 +2,6 @@ module Jekyll
   $minified_filename = ''
   $cdn = "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
 
-
   # use this as a workaround for getting cleaned up
   # reference: https://gist.github.com/920651
   class CssMinifyFile < StaticFile
