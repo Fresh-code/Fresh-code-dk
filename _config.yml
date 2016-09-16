@@ -8,6 +8,7 @@ url: "http://freshcodeit.com"
 twitter_username: "@FreshCode1"
 github_username: "Fresh-code"
 cdn: "http://freshcode-test.s3.eu-central-1.amazonaws.com/"
+ghcdn: "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
 
 # Build settings
 adaptive_image:
@@ -22,6 +23,7 @@ adaptive_image:
        - 100vw
 include:
   - _pages
+exclude: ["_site/"]
 markdown: kramdown
 permalink: pretty
 

@@ -1,5 +1,7 @@
 module Jekyll
   $minified_filename = ''
+  $cdn = "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
+
 
   # use this as a workaround for getting cleaned up
   # reference: https://gist.github.com/920651
@@ -49,7 +51,7 @@ module Jekyll
     def minify_css(css_files, output_file)
       css_files = css_files.join(' ')
       juice_cmd = "juicer merge -f #{css_files} -o #{output_file}"
-      puts juice_cmd
+      # puts juice_cmd
       system(juice_cmd)
     end
 
@@ -58,7 +60,7 @@ module Jekyll
       if @config == nil
         @config = {
             'css_source' => 'css', # relative to the route
-            'css_destination' => '/css' # relative to site.config['destination']
+            'css_destination' => 'css' # relative to site.config['destination']
         }
         config = YAML.load_file('CssMinify.yml') rescue nil
         if config.is_a?(Hash)

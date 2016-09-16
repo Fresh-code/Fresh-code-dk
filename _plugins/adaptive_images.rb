@@ -25,7 +25,8 @@ module Jekyll
     def render(context)
       render_markup = Liquid::Template.parse(@tag_text).render(context).gsub(/\\\{\\\{|\\\{\\%/, '\{\{' => '{{', '\{\%' => '{%')
 
-        # Gather settings
+      # Gather settings
+      cdn = "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
       site = context.registers[:site]
       settings = site.config['adaptive_image']
 
@@ -85,7 +86,7 @@ module Jekyll
         # Add the src & srcset
         srcset = []
         settings['srcset'].each do |size|
-          the_src = "/#{resize_img(size, markup[:image_src])}"
+          the_src = "#{cdn}#{resize_img(size, markup[:image_src])}"
           # the_src = "#{site.config['url']}/#{resize_img(size, markup[:image_src])}"
           the_src << " #{size}w"
           srcset << the_src
