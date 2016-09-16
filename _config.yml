@@ -23,7 +23,6 @@ adaptive_image:
        - 100vw
 include:
   - _pages
-exclude: ["_site/"]
 markdown: kramdown
 permalink: pretty
 
