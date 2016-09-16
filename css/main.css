@@ -62,8 +62,7 @@ section { position: relative; }
 	height: 100% !important;
 	top: 0 !important;
 	left: 0 !important;
-	background: no-repeat center !important;
-}
+	background: no-repeat center !important; }
 
 .image-container.image {
 	display: block;
@@ -73,8 +72,7 @@ section { position: relative; }
 	-webkit-transform: translate(50%);
 	-ms-transform: translate(50%);
 	/* transform: translate(50%); */
-	max-width: none;
-}
+	max-width: none; }
 
 .mail-ico.w.onScroll { display: none; }
 
