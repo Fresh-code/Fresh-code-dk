@@ -1,21 +1,21 @@
 /* ------------------------------- start FONTS ----------------------------------------  */
 @font-face {
 	font-family: 'Open Light';
-	src: url('open-font/OpenSans-Light.ttf'); }
+	src: url('https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/css/open-font/OpenSans-Light.ttf?jcb=1465291067'); }
 @font-face {
 	font-family: 'Open Middle';
-	src: url('open-font/OpenSans-Regular.ttf'); }
+	src: url('https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/css/open-font/OpenSans-Regular.ttf?jcb=1465291067'); }
 @font-face {
 	font-family: 'Open Light Italic';
-	src: url('open-font/OpenSans-LightItalic.ttf'); }
+	src: url('https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/css/open-font/OpenSans-LightItalic.ttf?jcb=1465291067'); }
 
 /*Nums*/
 @font-face {
 	font-family: 'Josefin';
-	src: url('josefine/JosefinSlab-Regular.ttf'); }
+	src: url('https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/css/josefine/JosefinSlab-Regular.ttf?jcb=1465291067'); }
 @font-face {
 	font-family: 'Josefin Thin';
-	src: url('josefine/JosefinSlab-Thin.ttf'); }
+	src: url('https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/css/josefine/JosefinSlab-Thin.ttf?jcb=1465291067'); }
 /* ------------------------------- end FONTS ----------------------------------------  */
 
 /* ------------------------------- start SHARED STYLE ----------------------------------------  */
