@@ -1,6 +1,7 @@
 module Jekyll
   $minified_filename = ''
-  $cdn = "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
+  $cdn = "https://gitcdn.xyz/cdn/Fresh-code/Fresh-code.github.io/"
+  $hash = ''
 
   # use this as a workaround for getting cleaned up
   # reference: https://gist.github.com/920651
@@ -47,6 +48,8 @@ module Jekyll
       return css_files
     end
 
+
+
     def minify_css(css_files, output_file)
       css_files = css_files.join(' ')
       juice_cmd = "juicer merge -f #{css_files} -o #{output_file}"
@@ -54,12 +57,14 @@ module Jekyll
       system(juice_cmd)
     end
 
+
+
     # Load configuration from CssMinify.yml
     def self.get_config
       if @config == nil
         @config = {
             'css_source' => 'css', # relative to the route
-            'css_destination' => 'css' # relative to site.config['destination']
+            'css_destination' => '/css' # relative to site.config['destination']
         }
         config = YAML.load_file('CssMinify.yml') rescue nil
         if config.is_a?(Hash)
@@ -76,9 +81,21 @@ module Jekyll
       super
     end
 
+    # Get last commit hash from master branch
+    def get_last_commit_hash()
+      if $hash.to_s.strip.length == 0
+        pwd = Dir.pwd
+        Dir.chdir("#{pwd}/_site")
+        cmd = "git rev-parse HEAD"
+        $hash = %x[ #{cmd} ]
+      end
+    end
+
     def render(context)
       config = Jekyll::CssMinifyGenerator.get_config
-      File.join(config['css_destination'], $minified_filename)
+      get_last_commit_hash
+      $hash
+      File.join($cdn, $hash, config['css_destination'], $minified_filename)
     end
   end
 end
