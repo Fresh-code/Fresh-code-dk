@@ -1,15 +1,11 @@
 ---
 permalink: /services/
 layout: default
-
-title: Software Development Services | Freshcode
-keywords: web development services, mobile development services, technology consulting, web design and development services
-description: 'Software, web and mobile development services provided by Frescode: mobile, web and desktop development and technology consulting.'
 ---
 
 <section class="section height-fixed height-100 padding-top padding-bottom row-single">
     <div class="image-background bleed">
-        {% adaptive_image {{ site.data.services.background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Services background" title="Services background" %}
+        {% adaptive_image {{ site.data.services.page-background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Services background" title="Services background" %}
     </div>
     <div class="container">
         <div class="row row-equal-columns">
@@ -18,8 +14,8 @@ description: 'Software, web and mobile development services provided by Frescode
                     <div class="flex-inner">
                         <div class="block block-text width-fixed">
                             <header>
-                                <h1 class="fresh-h1 h1">{{ site.data.services.title }}</h1>
-                                <h3 class="fresh-h3 centered">{{ site.data.services.text }}</h3>
+                                <h1 class="fresh-h1 h1">{{ site.data.services.page-title }}</h1>
+                                <h3 class="fresh-h3 centered">{{ site.data.services.page-text }}</h3>
                             </header>
                         </div>
                     </div> <!-- flex-inner -->

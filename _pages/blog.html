@@ -1,15 +1,11 @@
 ---
 permalink: /blog/
 layout: default
-
-title: 'Freshcode Blog: Software Development, Web Design, Web Development Methods'
-keywords: Freshcode, blog, software development, web development methods, outsourcing, technologies, news
-description: Read the latest Freshcode news and updates in software development, web development methods, outsourcing principles, etc.
 ---
 
 <section class="section height-fixed height-100 padding-top padding-bottom row-single">
     <div class="image-background bleed">
-        {% adaptive_image /img/{{ site.data.blog.background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Blog background" title="Blog background" %}
+        {% adaptive_image /img/{{ site.data.blog.page-background }} size="2048 1024 768" sizes="min 1000 2048;min 600 1024;max 599 768" draggable="false" class="image" alt="Blog background" title="Blog background" %}
     </div>
     <div class="container">
         <div class="row row-equal-columns">
@@ -18,8 +14,8 @@ description: Read the latest Freshcode news and updates in software development,
                     <div class="flex-inner">
                         <div class="block block-text blog width-fixed">
                             <header>
-                                <h1 class="fresh-h1 h1">{{ site.data.blog.title }}</h1>
-                                <h3 class="fresh-h3 centered">{{ site.data.blog.text }}</h3>
+                                <h1 class="fresh-h1 h1">{{ site.data.blog.page-title }}</h1>
+                                <h3 class="fresh-h3 centered">{{ site.data.blog.page-text }}</h3>
                             </header>
                         </div>
                     </div> <!-- flex-inner -->

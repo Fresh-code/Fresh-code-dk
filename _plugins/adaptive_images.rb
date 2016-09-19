@@ -27,7 +27,6 @@ module Jekyll
 
       # Gather settings
       # cdn = "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
-      cdn = "https://gitcdn.xyz/cdn/xAFXx/freshcode-assets/e5402324bde16976f03050f405942ae141cfb87e/"
       site = context.registers[:site]
       settings = site.config['adaptive_image']
 
@@ -87,8 +86,7 @@ module Jekyll
         # Add the src & srcset
         srcset = []
         settings['srcset'].each do |size|
-          the_src = "#{cdn}#{resize_img(size, markup[:image_src])}"
-          # the_src = "#{site.config['url']}/#{resize_img(size, markup[:image_src])}"
+          the_src = "#{site.config['url']}/#{resize_img(size, markup[:image_src])}"
           the_src << " #{size}w"
           srcset << the_src
           if ! smallest_src or smalles_src > size
