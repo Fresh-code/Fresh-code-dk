@@ -26,7 +26,8 @@ module Jekyll
       render_markup = Liquid::Template.parse(@tag_text).render(context).gsub(/\\\{\\\{|\\\{\\%/, '\{\{' => '{{', '\{\%' => '{%')
 
       # Gather settings
-      cdn = "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
+      # cdn = "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
+      cdn = "https://gitcdn.xyz/cdn/xAFXx/freshcode-assets/e5402324bde16976f03050f405942ae141cfb87e/"
       site = context.registers[:site]
       settings = site.config['adaptive_image']
 

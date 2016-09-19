@@ -1,7 +1,7 @@
 module Jekyll
   $minified_filename = ''
-  $cdn = "https://gitcdn.xyz/cdn/Fresh-code/Fresh-code.github.io/"
-  $hash = ''
+  $cdn = "https://gitcdn.xyz/cdn/xAFXx/freshcode-assets/"
+  $hash = "e5402324bde16976f03050f405942ae141cfb87e"
 
   # use this as a workaround for getting cleaned up
   # reference: https://gist.github.com/920651
@@ -93,8 +93,7 @@ module Jekyll
 
     def render(context)
       config = Jekyll::CssMinifyGenerator.get_config
-      get_last_commit_hash
-      $hash
+      # get_last_commit_hash
       File.join($cdn, $hash, config['css_destination'], $minified_filename)
     end
   end

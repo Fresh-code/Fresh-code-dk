@@ -8,7 +8,8 @@ url: "http://freshcodeit.com"
 twitter_username: "@FreshCode1"
 github_username: "Fresh-code"
 cdn: "http://freshcode-test.s3.eu-central-1.amazonaws.com/"
-ghcdn: "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
+#ghcdn: "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
+ghcdn: 'https://gitcdn.xyz/cdn/xAFXx/freshcode-assets/e5402324bde16976f03050f405942ae141cfb87e/'
 
 # Build settings
 adaptive_image:
