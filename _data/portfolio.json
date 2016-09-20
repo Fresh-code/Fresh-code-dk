@@ -1,8 +1,11 @@
 {
-  "title": "CASE STUDIES",
-  "text": "<span class='inline-text'>We've hand-picked <span id='allWorks' class='service-d-blue-num'></span> most exciting case studies for you to appreciate.</span> <span class='inline-text'> We are proud to have a hand in numerous successful projects.</span>",
-  "textbot": "<span class='inline-text'>These projects have long since paid for themselves and are well on their way to success.</span> <span class='inline-text'>It’s time for your idea to shine.</span> <span class='inline-text'>Let’s build the Next Best Thing together!</span>",
-  "background": "/img/portfolio/banner_portfolio.jpg",
+  "title": "Case Studies | Freshcode",
+  "keywords": "Freshcode portfolio, web application development , desktop application development, mobile app development, JavaScript project, Clojure, Java, case studies",
+  "description": "Look at Freshcode previous projects to have an idea about our expertise in software development, web design.",
+  "page-title": "CASE STUDIES",
+  "page-text": "<span class='inline-text'>We've hand-picked <span id='allWorks' class='service-d-blue-num'></span> most exciting case studies for you to appreciate.</span> <span class='inline-text'> We are proud to have a hand in numerous successful projects.</span>",
+  "page-textbot": "<span class='inline-text'>These projects have long since paid for themselves and are well on their way to success.</span> <span class='inline-text'>It’s time for your idea to shine.</span> <span class='inline-text'>Let’s build the Next Best Thing together!</span>",
+  "page-background": "/img/portfolio/banner_portfolio.jpg",
   "works_excluded": [
     {
       "title": "PayProve TransAcumen",

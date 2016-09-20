@@ -1,6 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     {% if page.layout == 'post' %}
     <meta property="og:url"           content="{{ site.url }}{{ page.url }}">
@@ -20,18 +21,15 @@
     <meta name="twitter:image"        content="{{ site.url }}{{ page.share-image }}">
     {% endif %}
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+    {% assign url = page.url | replace:'/','' %}
+    <meta name="description" content="{% if site.data[url].description%}{{ site.data[url].description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="{% if site.data[url].keywords %}{{ site.data[url].keywords }}{% else %}{{ site.keywords }}{% endif %}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if site.data[url].title %}{{ site.data[url].title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <link rel="stylesheet" href="{% minified_css_file %}">
-
 </head>
 
 

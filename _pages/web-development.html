@@ -1,19 +1,15 @@
 ---
 permalink: /web-development/
 layout: service
-
-title: Web Development | Freshcode
-keywords: web development services, website and app development, ecommerce, educational solutions, JavaScript, Clojure, MEAN stack
-description: Freshcode provides a wide range of web development services using cutting-edge technologies. We build web applications and websites with the help of JavaScript, Clojure, MEAN stack, etc.
 ---
 
 <section class="serv-container height-fixed height-100 shorted width-fixed">
 	<div class="main-icon-container">
 		<img class="serv-icon" src="/img/web_dev/web_dev_icon.svg" alt="wev-dev icon">
 	</div>
-	<h1 class="serv-h1 h1">{{ site.data.services.web.name }}</h1>
+	<h1 class="serv-h1 h1">{{ site.data.web.name }}</h1>
 	<div class="serv-list container-fluid">
-		{% for row in site.data.services.web.text %}
+		{% for row in site.data.web.text %}
 			<div class="row serv-row">
 				<div class="count col-xs-1 col-sm-1 col-md-1 col-lg-1">{{ forloop.index }}</div>
 				<div class="description-text col-xs-10 col-sm-10 col-md-10 col-lg-10">{{ row }}</div>

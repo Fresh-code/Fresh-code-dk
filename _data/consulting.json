@@ -1,0 +1,12 @@
+{
+  "title": "Freshcode Consulting",
+  "keywords": "Freshcode consulting, best solutions, time and cost estimation, project quotation",
+  "description": "Get in touch with Freshcode for a thorough consultation to plan the development of the project and get time and cost estimation.",
+  "name": "Consulting",
+  "text": [
+    "<span class='bold'>Unwilling to invest in the project without knowing its scope?</span>  We estimate the time and resources needed for the project, help you plan the work and choose the best technologies and solutions for your particular needs.",
+    "<span class='bold'>Have any questions or doubts about your project?</span>  At any time, you can easily access our developers for a thorough consultation involving any occurring issues or new requirements.",
+    "<span class='bold'>Want to learn more about your project from inside out?</span>  We provide you with an accurate report on usability analysis along with architecture stability, code and user experience audit."
+  ],
+  "bottext": "We know how important is to plan the work on the project and we will be glad to help you. At any project stage you can get usability analysis, code audit, consultation about design and optimization of project's architecture."
+}

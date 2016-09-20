@@ -7,7 +7,6 @@ baseurl: ""
 url: "http://freshcodeit.com"
 twitter_username: "@FreshCode1"
 github_username: "Fresh-code"
-cdn: "http://freshcode-test.s3.eu-central-1.amazonaws.com/"
 
 # Build settings
 adaptive_image:
