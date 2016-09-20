@@ -2460,6 +2460,10 @@ span.path {
 	.gradient-body .height-100 { height: auto; }
 }
 
+@media screen and (max-width: 1015px) {
+	.hide-on-tablet { display: none; }
+	.show-on-tablet { display: block; }
+}
 @media screen and (max-width: 1000px) {
 
 	.gradient-body.padding-bottom { padding-bottom: 363px; }
