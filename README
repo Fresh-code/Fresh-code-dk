@@ -24,10 +24,9 @@ Install Jekyll:
 
 START Jekyll:
 
-    jekyll serve       - run jekyll server, serving site on localhost:4000
-    jekyll serve -w    - run jekyll server in watch mode, checking changes in your files and rebuild site in _site folder.
-    jekyll build       - generate site in _site folder without serving site
-    jekyll build -w    - generate site in _site folder without serving site, checking changes in your files and rebuild site in _site folder.
+    jekyll serve             - run jekyll server in watch mode, checking changes in your files and rebuild site in _site folder, serving site on localhost:4000
+    jekyll serve --no-watch  - run jekyll server dont make any changes if someone changes, serving site on localhost:4000
+    jekyll build             - generate site in _site folder without serving site
 
     https://jekyllrb.com/docs/usage/ - for more information
 
