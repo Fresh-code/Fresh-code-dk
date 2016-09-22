@@ -1,9 +1,9 @@
 /**
- * @depends jquery-2.2.1.min.js
- * @depends bootstrap.min.js
+ * @depends libraries/jquery-2.2.1.min.js
+ * @depends libraries/bootstrap.min.js
  * @depends libraries/lodash.js
  * @depends libraries/parsley.min.js
- * @depends libraries/prism.js
+ * @depends libraries/prism.min.js
  */
 (function(global) {
 
@@ -108,7 +108,6 @@
     }); //$(window).on("load", function()...
 
     var lastScrollTop = 0;
-    var count = 0;
     $(window).scroll(function() {
         menuOnScroll();
     });

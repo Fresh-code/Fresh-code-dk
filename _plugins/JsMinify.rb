@@ -1,5 +1,7 @@
 module Jekyll
   $minified_js_filename = ''
+  $fileHashes = Hash.new
+  $Hashes = YAML::load_file '_assets-cache/cache.yml'
 
   # use this as a workaround for getting cleaned up
   # reference: https://gist.github.com/920651
@@ -19,16 +21,30 @@ module Jekyll
       files_to_minify = config['files'] || get_js_files(site, config['js_source'])
 
       files_to_minify.map do |filepath|
-        $minified_js_filename = filepath['name'] + '.min.js'
+        $minified_js_filename = filepath['output']
 
         output_dir = File.join(site.config['destination'], config['js_destination'])
+        input_file = File.join(config['js_source'], filepath['input'])
         output_file = File.join(output_dir, $minified_js_filename)
 
         # need to create destination dir if it doesn't exist
         FileUtils.mkdir_p(output_dir)
-        minify_js(filepath['path'], output_file)
-        site.static_files << JsMinifyFile.new(site, site.source, config['js_destination'], $minified_js_filename)
+
+        if File.exists? input_file
+          md5_hash = Digest::MD5.hexdigest File.read input_file
+          flag = $Hashes[input_file] != md5_hash
+          minify_js(filepath['path'], output_file, flag)
+          $Hashes[input_file] = md5_hash
+          write_hash
+
+          site.static_files << JsMinifyFile.new(site, site.source, config['js_destination'], $minified_js_filename)
+        end
+
       end
+    end
+
+    def write_hash
+      File.open('_assets-cache/cache.yml', 'w') { |f| f.write $Hashes.to_yaml }
     end
 
     # read the js dir for the js files to compile
@@ -43,12 +59,14 @@ module Jekyll
       return js_files
     end
 
-    def minify_js(js_files, output_file)
-      # js_files = js_files.join(' ')
+    def minify_js(js_files, output_file, flag)
+      if flag
         juice_cmd = "juicer merge -s -f #{js_files} -o #{output_file}"
         # puts juice_cmd
-        pid = spawn(juice_cmd)
-        Process.wait(pid)
+        system(juice_cmd)
+        # pid = spawn(juice_cmd)
+        # Process.wait(pid)
+      end
     end
 
     # Load configuration from JsMinify.yml

@@ -1,5 +1,6 @@
 module Jekyll
   $minified_filename = ''
+  $flags = Array.new
 
   # use this as a workaround for getting cleaned up
   # reference: https://gist.github.com/920651
@@ -13,10 +14,30 @@ module Jekyll
   class CssMinifyGenerator < Generator
     safe true
 
+    def write_hash
+      File.open('_assets-cache/cache.yml', 'w') { |f| f.write $Hashes.to_yaml }
+    end
+
     def generate(site)
       config = Jekyll::CssMinifyGenerator.get_config
 
       files_to_minify = config['files'] || get_css_files(site, config['css_source'])
+
+      files_to_minify.map do | filepath |
+        md5_hash = Digest::MD5.hexdigest File.read filepath
+
+        flag = $Hashes[filepath] != md5_hash
+        $flags << flag
+
+        if flag
+          $Hashes[filepath] = md5_hash
+        end
+      end
+
+      $flags.map do |flag|
+        @flag = flag ? true : false
+        break if @flag
+      end
 
       last_modified = files_to_minify.reduce( Time.at(0) ) do |latest,filepath|
         modified = File.mtime(filepath)
@@ -30,8 +51,10 @@ module Jekyll
 
       # need to create destination dir if it doesn't exist
       FileUtils.mkdir_p(output_dir)
-      minify_css(files_to_minify, output_file)
+      minify_css(files_to_minify, output_file, @flag)
       site.static_files << CssMinifyFile.new(site, site.source, config['css_destination'], $minified_filename)
+      # minify_css(files_to_minify, output_file)
+      # site.static_files << CssMinifyFile.new(site, site.source, config['css_destination'], $minified_filename)
     end
 
     # read the css dir for the css files to compile
@@ -46,16 +69,16 @@ module Jekyll
       return css_files
     end
 
+    def minify_css(css_files, output_file, flag)
+      if flag
+        css_files = css_files.join(' ')
+        juice_cmd = "juicer merge -f #{css_files} -o #{output_file}"
+        # puts juice_cmd
+        system(juice_cmd)
 
-
-    def minify_css(css_files, output_file)
-      css_files = css_files.join(' ')
-      juice_cmd = "juicer merge -f #{css_files} -o #{output_file}"
-      # puts juice_cmd
-      system(juice_cmd)
+        write_hash
+      end
     end
-
-
 
     # Load configuration from CssMinify.yml
     def self.get_config
@@ -77,16 +100,6 @@ module Jekyll
   class CssMinifyLinkTag < Liquid::Tag
     def initialize(tag_name, text, tokens)
       super
-    end
-
-    # Get last commit hash from master branch
-    def get_last_commit_hash()
-      if $hash.to_s.strip.length == 0
-        pwd = Dir.pwd
-        Dir.chdir("#{pwd}/_site")
-        cmd = "git rev-parse HEAD"
-        $hash = %x[ #{cmd} ]
-      end
     end
 
     def render(context)

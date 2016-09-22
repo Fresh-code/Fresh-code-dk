@@ -7,17 +7,22 @@ module Jekyll
       super
     end
 
-    def resize_img(size, input)
+    def write_hash
+      File.open('_assets-cache/cache.yml', 'w') { |f| f.write $Hashes.to_yaml }
+    end
+
+    def resize_img(size, input, flag)
       path = (input.split('/')).drop(1).reverse.drop(1).reverse.join('/')
       ext = input.split('.')[1]
       name = (input.split('/')[3]).split('.')[0]
       output = "#{path}/#{name}-#{size}.#{ext}"
 
-      cmd = "convert -strip -interlace Plane -quality 95 -depth 8 -resize #{size} #{input[1..-1]} #{output}"
-
-      # system( cmd )
-      pid = spawn(cmd)
-      Process.wait(pid)
+      if flag
+        cmd = "convert -strip -interlace Plane -quality 95 -depth 8 -resize #{size} #{input[1..-1]} #{output}"
+        system(cmd)
+        # pid = spawn(cmd)
+        # Process.wait(pid)
+      end
 
       output
     end
@@ -26,7 +31,6 @@ module Jekyll
       render_markup = Liquid::Template.parse(@tag_text).render(context).gsub(/\\\{\\\{|\\\{\\%/, '\{\{' => '{{', '\{\%' => '{%')
 
       # Gather settings
-      # cdn = "https://gitcdn.xyz/repo/Fresh-code/Fresh-code.github.io/master/"
       site = context.registers[:site]
       settings = site.config['adaptive_image']
 
@@ -85,8 +89,11 @@ module Jekyll
 
         # Add the src & srcset
         srcset = []
+        input = markup[:image_src]
+        md5_hash = Digest::MD5.hexdigest File.read input[1..-1]
+
         settings['srcset'].each do |size|
-          the_src = "#{site.config['url']}/#{resize_img(size, markup[:image_src])}"
+          the_src = "#{site.config['url']}/#{resize_img(size, input, $Hashes[input] != md5_hash)}"
           the_src << " #{size}w"
           srcset << the_src
           if ! smallest_src or smalles_src > size
@@ -94,6 +101,10 @@ module Jekyll
             src = the_src
           end
         end
+
+        $Hashes[input] = md5_hash
+        write_hash
+
         srcset = srcset.join(',')
         html_attr_string << " src=\"#{src}\" srcset=\"#{srcset}\""
 
