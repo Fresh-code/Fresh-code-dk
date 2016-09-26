@@ -95,17 +95,28 @@
             });
 
             $form[0].reset();
-            $('.form-header').css('display', 'none');
-            $('.hire-us-form').css('display', 'none');
-            $('.form-thx').css('display', 'block');
+            // $('.form-header').css('display', 'none');
+            // $('.hire-us-form').css('display', 'none');
+            // $('.form-thx').css('display', 'block');
+            thx();
 
-            setTimeout(function () {
-                closeForm();
-            }, 3000);
+            // setTimeout(function () {
+            //     closeForm();
+            // }, 3000);
         });
 
         menuOnScroll();
     }); //$(window).on("load", function()...
+
+    $('#wtf').on('click', function(){
+        thx();
+    });
+
+    function thx() {
+        $('#one').css('display', 'none');
+        $('#two').css('display', 'block');
+    }
+    
 
     var lastScrollTop = 0;
     $(window).scroll(function() {

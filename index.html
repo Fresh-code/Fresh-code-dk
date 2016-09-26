@@ -15,7 +15,7 @@
 
     <title>Software development company | Freshcode</title>
 
-    <link rel="stylesheet" href="/css/201609221444.min.css">
+    <link rel="stylesheet" href="/css/201609231807.min.css">
 </head>
 
 
@@ -23,7 +23,6 @@
     <body>
         <div class="site-header-slice__fixer">
     <div class="site-header-slice__background-2"></div>
-
     <div class="main-nav-block">
         <nav>
             <ul class="main-nav-menu">
@@ -42,71 +41,132 @@
             </ul>
         </nav>
     </div>
+
     <div class="mail-popup-block">
 
-        <div class="form-thx" style="display: none">
-            <h3 class="fresh-h1 h1">Got It</h3>
+        <div id="one">
+            <div class="form-header">
+                <h3 class="fresh-h1 h1">WE OFFER A FREE CONSULTATION</h3>
+                <div id="wtf" style="background-color: red; width: 150px; height: 50px;">Жмакни</div>
+            </div>
+
+            <form class="material-form hire-us-form" data-parsley-validate>
+                <div class="row material-box">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <input class="material-input"
+                               name="name"
+                               type="text"
+                               placeholder="Your Name*"
+                               autocomplete="off"
+                               data-parsley-trigger="change"
+                               data-parsley-required-message="Enter your name"
+                               required>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <input class="material-input"
+                               name="email"
+                               type="email"
+                               placeholder="Your Email*"
+                               pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+                               autocomplete="off"
+                               data-parsley-trigger="change"
+                               data-parsley-required-message="Enter your email"
+                               required>
+                    </div>
+                </div>
+                <div class="row material-box">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <input class="material-input"
+                               name="subject"
+                               type="text"
+                               placeholder="Subject"
+                               autocomplete="off"
+                               data-parsley-trigger="change"
+                               data-parsley-required-message="Enter subject"
+                               required>
+                    </div>
+                </div>
+                <div class="row material-box">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <input class="material-input"
+                               name="message"
+                               type="text"
+                               autocomplete="off"
+                               placeholder="Your Message*"
+                               data-parsley-required-message="Enter your message"
+                               data-parsley-trigger="change"
+                               required>
+                    </div>
+                </div>
+                <div class="description submit-block">
+                    <button type="submit" class="hire-btn button">
+                        <div class="color-fill"></div>
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </form>
         </div>
 
-        <div class="form-header">
-            <h3 class="fresh-h1 h1">WE OFFER A FREE CONSULTATION</h3>
+        <div id="two" style="display: none">
+            <div class="thx-header">
+                <h1 class="fresh-h1 h1">Thank you for your message!</h1>
+            </div>
+            <div class="thx-block">
+                <div class="row material-box">
+                    <h3 class="fresh-h3 h3">We will contact you via email within 24 hours to schedule time for the discussion.</h3>
+                </div>
+            </div>
+            <div class="thx-block">
+                <div class="row">
+                    <div class="thx-l-b">
+                        <div class="thx-a-s-c">
+                            <div class="thx-box">
+                                <img src="/img/thank_you/icon_portfolio.png">
+                                <p>please visit our portfolio</p>
+                                <div class="description">
+                                    <a class="link" href="/portfolio">
+                                        <div class="color-fill"></div>
+                                        <span>portfolio page</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thx-a-s-c">
+                            <div class="thx-box">
+                                <img src="/img/thank_you/icon_blog.png">
+                                <p>please visit our blog</p>
+                                <div class="description">
+                                    <a class="link" href="/blog">
+                                        <div class="color-fill"></div>
+                                        <span>blog page</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="v-line"></div>
+                        <div>
+                            <div class="thx-box social">
+                                <p>follow us on social networks</p>
+                                <div class="row">
+                                    <div class="s-i-top">
+                                        <a href="https://www.linkedin.com/company/freshcode-it?trk=biz-companies-cym"><img src="/img/thank_you/icon_linkedin.png"></a>
+                                        <a href="https://www.facebook.com/FreshCode-1569539716705171/"><img src="/img/thank_you/icon_facebook.png"></a>
+                                        <a href="https://twitter.com/FreshCode1"><img src="/img/thank_you/icon_twitter.png"></a>
+                                    </div>
+                                    <div class="s-i-bot">
+                                        <a href="https://plus.google.com/109449845191701968335"><img src="/img/thank_you/icon_g_pus.png"></a>
+                                        <a href="https://github.com/fresh-code"><img src="/img/thank_you/icon_github.png"></a>
+                                        <a href="https://bitbucket.org/fresh_code/"><img src="/img/thank_you/icon_bit_bucket.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <form class="material-form hire-us-form" data-parsley-validate>
-            <div class="row material-box">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <input class="material-input"
-                           name="name"
-                           type="text"
-                           placeholder="Your Name*"
-                           autocomplete="off"
-                           data-parsley-trigger="change"
-                           data-parsley-required-message="Enter your name"
-                           required>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <input class="material-input"
-                           name="email"
-                           type="email"
-                           placeholder="Your Email*"
-                           pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
-                           autocomplete="off"
-                           data-parsley-trigger="change"
-                           data-parsley-required-message="Enter your email"
-                           required>
-                </div>
-            </div>
-            <div class="row material-box">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input class="material-input"
-                           name="subject"
-                           type="text"
-                           placeholder="Subject"
-                           autocomplete="off"
-                           data-parsley-trigger="change"
-                           data-parsley-required-message="Enter subject"
-                           required>
-                </div>
-            </div>
-            <div class="row material-box">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input class="material-input"
-                           name="message"
-                           type="text"
-                           autocomplete="off"
-                           placeholder="Your Message*"
-                           data-parsley-required-message="Enter your message"
-                           data-parsley-trigger="change"
-                           required>
-                </div>
-            </div>
-            <div class="description submit-block">
-                <button type="submit" class="hire-btn button">
-                    <div class="color-fill"></div>
-                    <span>Submit</span>
-                </button>
-            </div>
-        </form>
     </div>
+    <div style="display: none" class="thanks-popup-block"> </div>
 </div>
 
 
@@ -152,7 +212,7 @@
         <article id="main-section">
             <section class="height-fixed height-100 padding-top padding-bottom">
     <div class="image-background bleed image-container parallax-section">
-        <img draggable="false" class="image" alt="Freshcode background" title="Freshcode background"  src="http://freshcodeit.com/img/main/banner_main-768.jpg 768w" srcset="http://freshcodeit.com/img/main/banner_main-2048.jpg 2048w,http://freshcodeit.com/img/main/banner_main-1024.jpg 1024w,http://freshcodeit.com/img/main/banner_main-768.jpg 768w" sizes="(min-width: 1000px) 2048px, (min-width: 600px) 1024px, (max-width: 599px) 768px, 100vw">
+        <img draggable="false" class="image" alt="Freshcode background" title="Freshcode background"  src="http://freshcodeit.com/img/main/banner_main-768.jpg" srcset="http://freshcodeit.com/img/main/banner_main-2048.jpg 2048w,http://freshcodeit.com/img/main/banner_main-1024.jpg 1024w,http://freshcodeit.com/img/main/banner_main-768.jpg 768w" sizes="(min-width: 1000px) 2048px, (min-width: 600px) 1024px, (max-width: 599px) 768px, 100vw">
     </div>
     <div class="container main parallax-text">
         <div class="row row-equal-columns">
@@ -264,7 +324,7 @@
                 <div class="col-xxs col-xs-6 col-sm-3 col-md-3 col-lg-3 no-padding cube preview-img description no-padding-m"
                      style="background: #2b303c !important;">
                     <a href="/rhino">
-                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_1-350.jpg 350w" srcset="http://freshcodeit.com/img/main/work_1-500.jpg 500w,http://freshcodeit.com/img/main/work_1-350.jpg 350w" sizes="(min-width: 1400px) 500px, (max-width: 1399px) 350px, 100vw">
+                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_1-350.jpg" srcset="http://freshcodeit.com/img/main/work_1-500.jpg 500w,http://freshcodeit.com/img/main/work_1-350.jpg 350w" sizes="(min-width: 1400px) 500px, (max-width: 1399px) 350px, 100vw">
                         <div class="cover caption absolute" style="background: #2b303c !important;">
                             <h3>RHINO SECURITY LABS</h3>
                             <p>Rhino Security Labs is a company known for its insight into the needs of retail and healthcare, financial services and technology as well as other vertical markets. </p>
@@ -274,7 +334,7 @@
                 <div class="col-xxs col-xs-6 col-sm-3 col-md-3 col-lg-3 no-padding cube preview-img description no-padding-m"
                      style="background: #775441 !important;">
                     <a href="/gommehd">
-                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_2-350.jpg 350w" srcset="http://freshcodeit.com/img/main/work_2-500.jpg 500w,http://freshcodeit.com/img/main/work_2-350.jpg 350w" sizes="(min-width: 1400px) 500px, (max-width: 1399px) 350px, 100vw">
+                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_2-350.jpg" srcset="http://freshcodeit.com/img/main/work_2-500.jpg 500w,http://freshcodeit.com/img/main/work_2-350.jpg 350w" sizes="(min-width: 1400px) 500px, (max-width: 1399px) 350px, 100vw">
                         <div class="cover caption absolute" style="background:  #775441 !important;">
                             <h3>GOMMEHD</h3>
                             <p>GommeHD is one of the leading Minecraft Servers with more than 1 million players throughout the world. The site delivers community news and statistics, as well as the latest updates and videos.</p>
@@ -284,7 +344,7 @@
                 <div class="col-xxs col-xs-6 col-sm-6 col-md-6 col-lg-6 hidden-xs no-padding cube preview-img description no-padding-m"
                      style="background: #253a57 !important;">
                     <a href="/playattention">
-                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_3-700.jpg 700w" srcset="http://freshcodeit.com/img/main/work_3-1000.jpg 1000w,http://freshcodeit.com/img/main/work_3-700.jpg 700w" sizes="(min-width: 1400px) 1000px, (max-width: 1399px) 700px, 100vw">
+                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_3-700.jpg" srcset="http://freshcodeit.com/img/main/work_3-1000.jpg 1000w,http://freshcodeit.com/img/main/work_3-700.jpg 700w" sizes="(min-width: 1400px) 1000px, (max-width: 1399px) 700px, 100vw">
                         <div class="cover caption absolute" style="background:  #253a57 !important;">
                             <h3>Play Attention</h3>
                             <p>Play Attention is indisputably the best cognitive training system created to improve attention, behavior and cognitive function for children and adults suffering from ADHD.</p>
@@ -296,7 +356,7 @@
                 <div class="col-xxs col-xs-6 col-sm-3 col-md-3 col-lg-3 no-padding cube preview-img description no-padding-m"
                      style="background: #6e8a6d !important;">
                     <a href="/tassta">
-                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_4-350.jpg 350w" srcset="http://freshcodeit.com/img/main/work_4-500.jpg 500w,http://freshcodeit.com/img/main/work_4-350.jpg 350w" sizes="(min-width: 1400px) 500px, (max-width: 1399px) 350px, 100vw">
+                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_4-350.jpg" srcset="http://freshcodeit.com/img/main/work_4-500.jpg 500w,http://freshcodeit.com/img/main/work_4-350.jpg 350w" sizes="(min-width: 1400px) 500px, (max-width: 1399px) 350px, 100vw">
                         <div class="cover caption absolute" style="background: #6e8a6d !important;">
                             <h3>Tassta</h3>
                             <p>Tassta is a hardware-software solutions platform providing more effective communication for a number of industries, including Public Transportation, Construction, Courier and Emergency Services, etc.</p>
@@ -306,7 +366,7 @@
                 <div class="col-xxs col-xs-6 col-sm-6 col-md-6 col-lg-6 hidden-xs no-padding cube preview-img description no-padding-m"
                      style="background: #8594b9 !important;">
                     <a href="/data-parser">
-                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_5-700.jpg 700w" srcset="http://freshcodeit.com/img/main/work_5-1000.jpg 1000w,http://freshcodeit.com/img/main/work_5-700.jpg 700w" sizes="(min-width: 1400px) 1000px, (max-width: 1399px) 700px, 100vw">
+                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_5-700.jpg" srcset="http://freshcodeit.com/img/main/work_5-1000.jpg 1000w,http://freshcodeit.com/img/main/work_5-700.jpg 700w" sizes="(min-width: 1400px) 1000px, (max-width: 1399px) 700px, 100vw">
                         <div class="cover caption absolute" style="background:  #8594b9 !important;">
                             <h3>Data Parser</h3>
                             <p>Data Parser is a cloud-based ETL application for unstructured data from any number of sources, including JSON files, with advanced search and data aggregation possibilities.</p>
@@ -316,7 +376,7 @@
                 <div class="col-xxs col-xs-6 col-sm-3 col-md-3 col-lg-3 no-padding cube preview-img description no-padding-m"
                      style="background: #364456 !important;">
                     <a href="/educadio">
-                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_6-350.jpg 350w" srcset="http://freshcodeit.com/img/main/work_6-500.jpg 500w,http://freshcodeit.com/img/main/work_6-350.jpg 350w" sizes="(min-width: 1400px) 500px, (max-width: 1399px) 350px, 100vw">
+                        <img draggable="false" class="img-responsive" alt="preview image" title="preview image"  src="http://freshcodeit.com/img/main/work_6-350.jpg" srcset="http://freshcodeit.com/img/main/work_6-500.jpg 500w,http://freshcodeit.com/img/main/work_6-350.jpg 350w" sizes="(min-width: 1400px) 500px, (max-width: 1399px) 350px, 100vw">
                         <div class="cover caption absolute" style="background:  #364456 !important;">
                             <h3>Educadio</h3>
                             <p>Educadio is a Digital Learning Tool that provides a real-time synchronization for instant user collaboration and a wide variety of collaborative work means, including video and text chats.</p>
@@ -443,7 +503,7 @@
                     <div class="flex-box-row">
                         <div class="flex-item">
                             <div class="achiev-icon">
-                                <img draggable="false" alt="Core <br> clients" title="Core <br> clients"  src="http://freshcodeit.com/img/main/client_icon-63.png 63w" srcset="http://freshcodeit.com/img/main/client_icon-121.png 121w,http://freshcodeit.com/img/main/client_icon-63.png 63w" sizes="(min-width: 1000px) 121px, (max-width: 999px) 63px, 100vw">
+                                <img draggable="false" alt="Core <br> clients" title="Core <br> clients"  src="http://freshcodeit.com/img/main/client_icon-63.png" srcset="http://freshcodeit.com/img/main/client_icon-121.png 121w,http://freshcodeit.com/img/main/client_icon-63.png 63w" sizes="(min-width: 1000px) 121px, (max-width: 999px) 63px, 100vw">
                             </div>
                             <div class="achiev-data">
                                 <span class="count">12</span>
@@ -456,7 +516,7 @@
                     
                         <div class="flex-item">
                             <div class="achiev-icon">
-                                <img draggable="false" alt="In-house <br> developers" title="In-house <br> developers"  src="http://freshcodeit.com/img/main/developer_icon-63.png 63w" srcset="http://freshcodeit.com/img/main/developer_icon-121.png 121w,http://freshcodeit.com/img/main/developer_icon-63.png 63w" sizes="(min-width: 1000px) 121px, (max-width: 999px) 63px, 100vw">
+                                <img draggable="false" alt="In-house <br> developers" title="In-house <br> developers"  src="http://freshcodeit.com/img/main/developer_icon-63.png" srcset="http://freshcodeit.com/img/main/developer_icon-121.png 121w,http://freshcodeit.com/img/main/developer_icon-63.png 63w" sizes="(min-width: 1000px) 121px, (max-width: 999px) 63px, 100vw">
                             </div>
                             <div class="achiev-data">
                                 <span class="count">42</span>
@@ -471,7 +531,7 @@
                     <div class="flex-box-row">
                         <div class="flex-item">
                             <div class="achiev-icon">
-                                <img draggable="false" alt="Programming <br> languages" title="Programming <br> languages"  src="http://freshcodeit.com/img/main/language_icon-63.png 63w" srcset="http://freshcodeit.com/img/main/language_icon-121.png 121w,http://freshcodeit.com/img/main/language_icon-63.png 63w" sizes="(min-width: 1000px) 121px, (max-width: 999px) 63px, 100vw">
+                                <img draggable="false" alt="Programming <br> languages" title="Programming <br> languages"  src="http://freshcodeit.com/img/main/language_icon-63.png" srcset="http://freshcodeit.com/img/main/language_icon-121.png 121w,http://freshcodeit.com/img/main/language_icon-63.png 63w" sizes="(min-width: 1000px) 121px, (max-width: 999px) 63px, 100vw">
                             </div>
                             <div class="achiev-data">
                                 <span class="count">7</span>
@@ -484,7 +544,7 @@
                     
                         <div class="flex-item">
                             <div class="achiev-icon">
-                                <img draggable="false" alt="Completed <br> projects" title="Completed <br> projects"  src="http://freshcodeit.com/img/main/project_icon-63.png 63w" srcset="http://freshcodeit.com/img/main/project_icon-121.png 121w,http://freshcodeit.com/img/main/project_icon-63.png 63w" sizes="(min-width: 1000px) 121px, (max-width: 999px) 63px, 100vw">
+                                <img draggable="false" alt="Completed <br> projects" title="Completed <br> projects"  src="http://freshcodeit.com/img/main/project_icon-63.png" srcset="http://freshcodeit.com/img/main/project_icon-121.png 121w,http://freshcodeit.com/img/main/project_icon-63.png 63w" sizes="(min-width: 1000px) 121px, (max-width: 999px) 63px, 100vw">
                             </div>
                             <div class="achiev-data">
                                 <span class="count">41</span>
@@ -508,6 +568,8 @@
     </div>
 </section>
         </article>
+        
+
         <footer class="fresh-footer dynamic">
     <div class="row shorted footer-width-fixed">
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 no-padding text-center copyright-block hide-on-mobile">

@@ -15,7 +15,7 @@
 
     <title>Freshcode Testimonials</title>
 
-    <link rel="stylesheet" href="/css/201609221444.min.css">
+    <link rel="stylesheet" href="/css/201609231807.min.css">
 </head>
 
 
@@ -23,7 +23,6 @@
     <body>
         <div class="site-header-slice__fixer">
     <div class="site-header-slice__background-2"></div>
-
     <div class="main-nav-block">
         <nav>
             <ul class="main-nav-menu">
@@ -42,71 +41,132 @@
             </ul>
         </nav>
     </div>
+
     <div class="mail-popup-block">
 
-        <div class="form-thx" style="display: none">
-            <h3 class="fresh-h1 h1">Got It</h3>
+        <div id="one">
+            <div class="form-header">
+                <h3 class="fresh-h1 h1">WE OFFER A FREE CONSULTATION</h3>
+                <div id="wtf" style="background-color: red; width: 150px; height: 50px;">Жмакни</div>
+            </div>
+
+            <form class="material-form hire-us-form" data-parsley-validate>
+                <div class="row material-box">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <input class="material-input"
+                               name="name"
+                               type="text"
+                               placeholder="Your Name*"
+                               autocomplete="off"
+                               data-parsley-trigger="change"
+                               data-parsley-required-message="Enter your name"
+                               required>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <input class="material-input"
+                               name="email"
+                               type="email"
+                               placeholder="Your Email*"
+                               pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+                               autocomplete="off"
+                               data-parsley-trigger="change"
+                               data-parsley-required-message="Enter your email"
+                               required>
+                    </div>
+                </div>
+                <div class="row material-box">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <input class="material-input"
+                               name="subject"
+                               type="text"
+                               placeholder="Subject"
+                               autocomplete="off"
+                               data-parsley-trigger="change"
+                               data-parsley-required-message="Enter subject"
+                               required>
+                    </div>
+                </div>
+                <div class="row material-box">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <input class="material-input"
+                               name="message"
+                               type="text"
+                               autocomplete="off"
+                               placeholder="Your Message*"
+                               data-parsley-required-message="Enter your message"
+                               data-parsley-trigger="change"
+                               required>
+                    </div>
+                </div>
+                <div class="description submit-block">
+                    <button type="submit" class="hire-btn button">
+                        <div class="color-fill"></div>
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </form>
         </div>
 
-        <div class="form-header">
-            <h3 class="fresh-h1 h1">WE OFFER A FREE CONSULTATION</h3>
+        <div id="two" style="display: none">
+            <div class="thx-header">
+                <h1 class="fresh-h1 h1">Thank you for your message!</h1>
+            </div>
+            <div class="thx-block">
+                <div class="row material-box">
+                    <h3 class="fresh-h3 h3">We will contact you via email within 24 hours to schedule time for the discussion.</h3>
+                </div>
+            </div>
+            <div class="thx-block">
+                <div class="row">
+                    <div class="thx-l-b">
+                        <div class="thx-a-s-c">
+                            <div class="thx-box">
+                                <img src="/img/thank_you/icon_portfolio.png">
+                                <p>please visit our portfolio</p>
+                                <div class="description">
+                                    <a class="link" href="/portfolio">
+                                        <div class="color-fill"></div>
+                                        <span>portfolio page</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thx-a-s-c">
+                            <div class="thx-box">
+                                <img src="/img/thank_you/icon_blog.png">
+                                <p>please visit our blog</p>
+                                <div class="description">
+                                    <a class="link" href="/blog">
+                                        <div class="color-fill"></div>
+                                        <span>blog page</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="v-line"></div>
+                        <div>
+                            <div class="thx-box social">
+                                <p>follow us on social networks</p>
+                                <div class="row">
+                                    <div class="s-i-top">
+                                        <a href="https://www.linkedin.com/company/freshcode-it?trk=biz-companies-cym"><img src="/img/thank_you/icon_linkedin.png"></a>
+                                        <a href="https://www.facebook.com/FreshCode-1569539716705171/"><img src="/img/thank_you/icon_facebook.png"></a>
+                                        <a href="https://twitter.com/FreshCode1"><img src="/img/thank_you/icon_twitter.png"></a>
+                                    </div>
+                                    <div class="s-i-bot">
+                                        <a href="https://plus.google.com/109449845191701968335"><img src="/img/thank_you/icon_g_pus.png"></a>
+                                        <a href="https://github.com/fresh-code"><img src="/img/thank_you/icon_github.png"></a>
+                                        <a href="https://bitbucket.org/fresh_code/"><img src="/img/thank_you/icon_bit_bucket.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <form class="material-form hire-us-form" data-parsley-validate>
-            <div class="row material-box">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <input class="material-input"
-                           name="name"
-                           type="text"
-                           placeholder="Your Name*"
-                           autocomplete="off"
-                           data-parsley-trigger="change"
-                           data-parsley-required-message="Enter your name"
-                           required>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <input class="material-input"
-                           name="email"
-                           type="email"
-                           placeholder="Your Email*"
-                           pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
-                           autocomplete="off"
-                           data-parsley-trigger="change"
-                           data-parsley-required-message="Enter your email"
-                           required>
-                </div>
-            </div>
-            <div class="row material-box">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input class="material-input"
-                           name="subject"
-                           type="text"
-                           placeholder="Subject"
-                           autocomplete="off"
-                           data-parsley-trigger="change"
-                           data-parsley-required-message="Enter subject"
-                           required>
-                </div>
-            </div>
-            <div class="row material-box">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input class="material-input"
-                           name="message"
-                           type="text"
-                           autocomplete="off"
-                           placeholder="Your Message*"
-                           data-parsley-required-message="Enter your message"
-                           data-parsley-trigger="change"
-                           required>
-                </div>
-            </div>
-            <div class="description submit-block">
-                <button type="submit" class="hire-btn button">
-                    <div class="color-fill"></div>
-                    <span>Submit</span>
-                </button>
-            </div>
-        </form>
     </div>
+    <div style="display: none" class="thanks-popup-block"> </div>
 </div>
 
 
@@ -152,7 +212,7 @@
         <article id="main-section">
             <section class="section height-fixed height-100 padding-top padding-bottom">
     <div class="image-background bleed">
-        <img draggable="false" class="image" alt="Testimonials background" title="Testimonials background"  src="http://freshcodeit.com/img/testimonials/banner_testimonials-768.jpg 768w" srcset="http://freshcodeit.com/img/testimonials/banner_testimonials-2048.jpg 2048w,http://freshcodeit.com/img/testimonials/banner_testimonials-1024.jpg 1024w,http://freshcodeit.com/img/testimonials/banner_testimonials-768.jpg 768w" sizes="(min-width: 1000px) 2048px, (min-width: 600px) 1024px, (max-width: 599px) 768px, 100vw">
+        <img draggable="false" class="image" alt="Testimonials background" title="Testimonials background"  src="http://freshcodeit.com/img/testimonials/banner_testimonials-768.jpg" srcset="http://freshcodeit.com/img/testimonials/banner_testimonials-2048.jpg 2048w,http://freshcodeit.com/img/testimonials/banner_testimonials-1024.jpg 1024w,http://freshcodeit.com/img/testimonials/banner_testimonials-768.jpg 768w" sizes="(min-width: 1000px) 2048px, (min-width: 600px) 1024px, (max-width: 599px) 768px, 100vw">
     </div>
     <div class="container">
         <div class="row row-equal-columns">
@@ -186,7 +246,7 @@
                     <div class="fresh-sub-block no-padding">
                         <div class="row testimonial flex-box shorted">
                             <div class="col-xs-12 col-md-6 col-lg-6 testimonial-img flex-item">
-                                <img draggable="false" class="img-responsive img-circle" alt="Ulrik With Andersen | Educadio photo" title="Ulrik With Andersen | Educadio photo"  src="http://freshcodeit.com/img/testimonials/client_1-250.png 250w" srcset="http://freshcodeit.com/img/testimonials/client_1-350.png 350w,http://freshcodeit.com/img/testimonials/client_1-250.png 250w" sizes="(min-width: 1000px) 350,px, 100vw">
+                                <img draggable="false" class="img-responsive img-circle" alt="Ulrik With Andersen | Educadio photo" title="Ulrik With Andersen | Educadio photo"  src="http://freshcodeit.com/img/testimonials/client_1-250.png" srcset="http://freshcodeit.com/img/testimonials/client_1-350.png 350w,http://freshcodeit.com/img/testimonials/client_1-250.png 250w" sizes="(min-width: 1000px) 350,px, 100vw">
                             </div>
                             <div class="col-xs-12 col-md-6 col-lg-6 testimonial-writtings flex-item">
                                 <p class="testimonial-text">We have been working with Freshcode and their programmers for almost 2 years and we highly recommend them as development partners. We highly value their abilities to deliver on time, their hard competences at writing solid, scalable code, etc., but mostly we value their ability to think up and design innovative yet solid solutions. Educadio trust them with all our software developments.</p>
@@ -225,7 +285,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-6 col-lg-6 testimonial-img flex-item">
-                                <img draggable="false" class="img-responsive img-circle" alt="Ivan Ishchenko | OutDoor photo" title="Ivan Ishchenko | OutDoor photo"  src="http://freshcodeit.com/img/testimonials/client_2-250.png 250w" srcset="http://freshcodeit.com/img/testimonials/client_2-350.png 350w,http://freshcodeit.com/img/testimonials/client_2-250.png 250w" sizes="(min-width: 1000px) 350,px, 100vw">
+                                <img draggable="false" class="img-responsive img-circle" alt="Ivan Ishchenko | OutDoor photo" title="Ivan Ishchenko | OutDoor photo"  src="http://freshcodeit.com/img/testimonials/client_2-250.png" srcset="http://freshcodeit.com/img/testimonials/client_2-350.png 350w,http://freshcodeit.com/img/testimonials/client_2-250.png 250w" sizes="(min-width: 1000px) 350,px, 100vw">
                             </div>
                         </div>
                     </div>
@@ -238,7 +298,7 @@
                     <div class="fresh-sub-block no-padding">
                         <div class="row testimonial flex-box shorted">
                             <div class="col-xs-12 col-md-6 col-lg-6 testimonial-img flex-item">
-                                <img draggable="false" class="img-responsive img-circle" alt="Brian McCauley | Cytrine LLC, PlayAttention photo" title="Brian McCauley | Cytrine LLC, PlayAttention photo"  src="http://freshcodeit.com/img/testimonials/photo_a3-250.png 250w" srcset="http://freshcodeit.com/img/testimonials/photo_a3-350.png 350w,http://freshcodeit.com/img/testimonials/photo_a3-250.png 250w" sizes="(min-width: 1000px) 350,px, 100vw">
+                                <img draggable="false" class="img-responsive img-circle" alt="Brian McCauley | Cytrine LLC, PlayAttention photo" title="Brian McCauley | Cytrine LLC, PlayAttention photo"  src="http://freshcodeit.com/img/testimonials/photo_a3-250.png" srcset="http://freshcodeit.com/img/testimonials/photo_a3-350.png 350w,http://freshcodeit.com/img/testimonials/photo_a3-250.png 250w" sizes="(min-width: 1000px) 350,px, 100vw">
                             </div>
                             <div class="col-xs-12 col-md-6 col-lg-6 testimonial-writtings flex-item">
                                 <p class="testimonial-text">FreshCode is a company that has earned my absolute trust and confidence by consistently proving their abilities over the past year. They have repeatedly gone above and beyond my expectations in a professional and courteous manner in their development and management efforts. They have met all their deadlines and accomplished all their work during every sprint without failure. It's very easy for me to recommend FreshCode to absolutely anyone without hesitation. Our business will remain with FreshCode for all future projects.</p>
@@ -263,6 +323,8 @@
 
 
         </article>
+        
+
         <footer class="fresh-footer dynamic">
     <div class="row shorted footer-width-fixed">
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 no-padding text-center copyright-block hide-on-mobile">
