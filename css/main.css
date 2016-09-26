@@ -1085,11 +1085,55 @@ a.attach-link:hover { text-decoration: none; }
 .proj-d-sub-block { margin: 9% 0; }
 .img-container img { margin: 0 auto 7% auto }
 .proj-details-body.wallbreaker .scroll-activate { color: #000; }
+
+/*------------------------Thx page Styles------------------------------------*/
+.thx-header .fresh-h1 { margin-bottom: 4.5rem; }
+.thx-header, .thx-block {
+	/*width: 75%;*/
+	display: block; }
+.thx-block .material-box {
+	font-size: 18px;
+	margin-bottom: 15rem; }
+.thx-a-s-c { align-self: center; }
+.thx-block .thx-l-b {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around; }
+.thx-block .v-line {
+	border-left: 1px solid #cccccc;
+	height: 235px; }
+.thx-box {
+	display: flex;
+	flex-direction: column;
+	align-content: center; }
+.thx-box img {
+	max-width: 120px;
+	align-self: center;
+	margin-bottom: 3rem; }
+.thx-box.social img { max-width: 55px; }
+.s-i-top, .s-i-bot {
+	display: flex;
+	justify-content: space-around; }
+.s-i-top img { margin-bottom: 2rem; }
+.s-i-bot img {
+	margin-bottom: 0;
+	margin-top: 2rem; }
+.thx-box.social p { margin-bottom: 6rem; }
+.thx-box.social a:hover {
+	opacity: .9;
+}
+.thx-box p {
+	margin: 0;
+	font-size: 18px;
+	font-family: "Open Middle",sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 1.7rem; }
+#one, #two { width: 75%; }
+
 /*------------------------Form Styles------------------------------------*/
 .form-header .fresh-h1 { margin-bottom: 9%; }
-.form-header,
-.material-form {
-	width: 75%;
+.form-header, .material-form {
+	/*width: 75%;*/
 	display: block; }
 textarea.material-input { resize: none; }
 .material-input,

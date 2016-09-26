@@ -94,11 +94,12 @@ module Jekyll
 
         settings['srcset'].each do |size|
           the_src = "#{site.config['url']}/#{resize_img(size, input, $Hashes[input] != md5_hash)}"
-          the_src << " #{size}w"
+          tail = " #{size}w"
+          the_src << tail
           srcset << the_src
           if ! smallest_src or smalles_src > size
             smalles_src = size
-            src = the_src
+            src = the_src.split(tail)[0]
           end
         end
 

@@ -7,6 +7,8 @@
         <article id="main-section">
             {{ content }}
         </article>
+        {% assign url = page.url | replace:'/','' %}
+
         {% include footer.html %}
     </body>
 </html>
