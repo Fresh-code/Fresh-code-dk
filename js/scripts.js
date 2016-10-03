@@ -10,25 +10,30 @@
     $(window).on("load", function() {
         var byMenuBtn = false,
             byMailBtn = false,
+            byThx = false,
             closeMailForm = false;
 
         $('#hire').on('click', function(e) {
             e.preventDefault();
 
+            byMailBtn = true;
             $('.icon-sign').trigger('click');
         });
 
         $('.hamburger').on('click', function(e) {
             if (!byMailBtn) {
                 if (byMenuBtn) {
-                    $('.hamburger').removeClass('close-nav');
-                    setTimeout(function() {
-                        $('body').removeClass('menu-opened');
-                        $('body').removeClass('form-opened');
-                        $('body').removeClass('locked');
-                    }, 150);
-                    byMenuBtn = false;
+                        $('.hamburger').removeClass('close-nav');
+                        $('.icon-sign').removeClass('hidden');
+                        setTimeout(function() {
+                            $('body').removeClass('menu-opened');
+                            $('body').removeClass('form-opened');
+                            $('body').removeClass('locked');
+                        }, 150);
+                        byMenuBtn = false;
                 } else {
+                    if(byThx) thxClose(true);
+
                     $('.hamburger').addClass('close-nav');
                     setTimeout(function() {
                         $('body').addClass('menu-opened');
@@ -40,17 +45,24 @@
             } else {
                 closeMailForm = false;
                 byMailBtn = false;
+                if(byThx) thxClose(false);
+
                 $('.hamburger').removeClass('close-nav');
                 $('.icon-sign').removeClass('hidden');
                 setTimeout(function() {
                     $('body').removeClass('locked');
                 }, 150);
-                $('body').removeClass('form-opened');
+                $('body')
+                    .removeClass('form-opened')
+                    .removeClass('thx-opened');
             }
         }); // Click on menu icon
 
         $('.icon-sign').on('click', function() {
             if(!byMailBtn) {
+
+                if(byThx) thxClose(false);
+
                 byMailBtn = true;
                 setTimeout(function() {
                     $('body').addClass('form-opened');
@@ -58,19 +70,41 @@
                 $('.hamburger').addClass('close-nav');
                 $(this).addClass('hidden');
                 $('body').addClass('locked');
+            } else {
+                byMailBtn = false;
+                thxClose(false);
             }
         });// mail-popup-block
 
-        function closeForm() {
-            $('.hamburger').removeClass('close-nav');
-            $('body').removeClass('menu-opened');
-            $('body').removeClass('form-opened');
-            $('.icon-sign').removeClass('hidden');
-            setTimeout(function() {
-                $('body').removeClass('locked');
-            }, 150);
-            byMailBtn = false;
+        function thxClose(flag) {
+            byThx = false;
+
+            $('body')
+                .removeClass('thx-opened')
+                .removeClass( flag ? 'form-opened' : 'menu-opened');
+
+            $('#one').css('display', 'flex');
+            $('#two').css('display', 'none');
+
+            $('.hamburger').addClass('close-nav');
+            $('.icon-sign').addClass('hidden');
         }
+
+        function thx() {
+            byThx = true;
+            $('body').addClass('thx-opened');
+            $('body').removeClass('menu-opened');
+
+            $('#one').css('display', 'none');
+            $('#two').css('display', 'flex');
+
+            $('.hamburger').removeClass('close-nav');
+            byMailBtn = false;
+
+            resetForm();
+        }
+
+        function resetForm() { $form[0].reset(); }
 
         var $form = $('form.hire-us-form'),
             $name = $form.find("input[name='name']"),
@@ -94,29 +128,14 @@
                 crossDomain: true
             });
 
-            $form[0].reset();
-            // $('.form-header').css('display', 'none');
-            // $('.hire-us-form').css('display', 'none');
-            // $('.form-thx').css('display', 'block');
             thx();
-
-            // setTimeout(function () {
-            //     closeForm();
-            // }, 3000);
+            $form[0].reset();
         });
 
         menuOnScroll();
     }); //$(window).on("load", function()...
 
-    $('#wtf').on('click', function(){
-        thx();
-    });
 
-    function thx() {
-        $('#one').css('display', 'none');
-        $('#two').css('display', 'block');
-    }
-    
 
     var lastScrollTop = 0;
     $(window).scroll(function() {
