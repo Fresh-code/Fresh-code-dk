@@ -1,6 +1,5 @@
 module Jekyll
   $minified_js_filename = ''
-  $fileHashes = Hash.new
   $Hashes = YAML::load_file '_assets-cache/cache.yml'
 
   # use this as a workaround for getting cleaned up
@@ -32,6 +31,7 @@ module Jekyll
 
         if File.exists? input_file
           md5_hash = Digest::MD5.hexdigest File.read input_file
+
           flag = $Hashes[input_file] != md5_hash
           minify_js(filepath['path'], output_file, flag)
           $Hashes[input_file] = md5_hash

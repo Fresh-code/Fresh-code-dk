@@ -618,7 +618,7 @@ body.locked {
 .testi-main .testimonial-text { margin: 0 7%; }
 .testi-main .img-circle {
 	margin: 0 auto;
-	max-height: 250px; }
+	max-height: 350px; }
 .testi-main .testimonial-text:before { top: 0; }
 .testi-main .testimonial-text:after { bottom: 0; }
 
@@ -627,9 +627,7 @@ body.locked {
 .testi-credit {
 	text-align: center;
 	margin: 5rem 0 4rem; }
-.testimonial .testi-credit {
-	text-align: left;
-	margin: 3rem 0 1rem 11%; }
+.testimonial .testi-credit { text-align: center; }
 .testimonial-writtings .testi-name,
 .testi-main .testi-name { color: black; }
 .testimonial-writtings .testi-company,
@@ -974,6 +972,10 @@ a.attach-link:hover { text-decoration: none; }
 	margin: 10px 0;
 	font-size: 18px;
 	text-transform: uppercase; }
+.thx-opened .main-nav-menu li a:not(.link) { color: black; }
+.locked .fresh-menu nav .main-nav-menu li.mail-icon .icon-sign,
+.locked.thx-opened .fresh-menu nav .main-nav-menu li:not(.mail-icon) { display: block !important; }
+
 .main-nav-menu li a {
 	letter-spacing: 1px;
 	line-height: 30px;
@@ -1094,6 +1096,12 @@ a.attach-link:hover { text-decoration: none; }
 .thx-block .material-box {
 	font-size: 18px;
 	margin-bottom: 15rem; }
+.w-50 { width: 50%; }
+.thx-a-s, .thx-a-c {
+	display: flex;
+	justify-content: space-around; }
+.thx-a-s { flex-direction: row; }
+.thx-a-c { flex-direction: column; }
 .thx-a-s-c { align-self: center; }
 .thx-block .thx-l-b {
 	display: flex;
@@ -1128,7 +1136,10 @@ a.attach-link:hover { text-decoration: none; }
 	font-family: "Open Middle",sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 1.7rem; }
-#one, #two { width: 75%; }
+#one, #two {
+	display: flex;
+	flex-direction: column;
+	width: 75%; }
 
 /*------------------------Form Styles------------------------------------*/
 .form-header .fresh-h1 { margin-bottom: 9%; }
@@ -1584,7 +1595,7 @@ textarea.material-input { resize: none; }
 	.main-team { margin-top: -26.2em; }
 }
 @media screen and (min-width: 1200px) {
-	.testimonial img { height: 20vw; }
+	.testimonial img { max-width: 350px; }
 }
 @media screen and (min-width: 1201px) {
 }
@@ -1926,9 +1937,12 @@ section.section {
 
 @media (max-width: 1000px), (orientation: portrait) {
 	.height-fixed:not(.height-fixed-xs) { height: auto !important; }
+
+}
+@media (max-width: 1000px) and (orientation: landscape) {
+	#one, #two { width: 100% !important; }
 }
 @media (max-width: 768px) and (orientation: landscape) {
-
 	.cover-bg,
 	.overflow-color,
 	.height-fixed:not(.height-fixed-xs) {
@@ -2107,11 +2121,17 @@ section.section {
 	padding: 0 !important;
 	display: none; }
 
-.locked.form-opened .mail-icon .hamburger { display: block !important;  }
+/*.locked.form-opened .mail-icon .hamburger { display: block !important;  }*/
+.locked.form-opened .mail-icon .hamburger { display: block;  }
+.locked.form-opened.thx-opened .mail-icon .hamburger { display: none;  }
+
 
 .locked .icon-wrapper .icon-sign,
 .locked .fresh-menu nav .main-nav-menu li.mail-icon .icon-sign,
 .locked .fresh-menu nav .main-nav-menu li:not(.mail-icon) { display: none; }
+
+.locked.thx-opened .icon-wrapper .icon-sign { display: block !important; }
+
 
 .fresh-header .icon-sign,
 .fresh-header .hamburger {
@@ -2125,9 +2145,12 @@ section.section {
 	z-index: 10;
 	position: relative; }
 
+.thx-opened .fresh-header .icon-sign .mail-icon-w,
 .fresh-header .icon-sign .mail-icon-w,
+.thx-opened .fresh-header:not(.scrolled-by) .icon-sign .mail-icon-w,
 .fresh-header:not(.scrolled-by) .icon-sign .mail-icon-b { display: none; }
 
+.thx-opened .fresh-header .icon-sign .mail-icon-b,
 .fresh-header .icon-sign .mail-icon-b,
 .fresh-header:not(.scrolled-by) .icon-sign .mail-icon-w { display: block; }
 
@@ -2175,6 +2198,10 @@ section.section {
 	/*background-color: black;*/
 	background-color: white;
 	transition: transform .3s; }
+
+.thx-opened .hamburger .stripes::after,
+.thx-opened .hamburger .stripes,
+.thx-opened .hamburger .stripes::before { background-color: black; }
 
 .hamburger .stripes::before { transform: translateY(-6px) rotate(0deg); }
 .hamburger .stripes::after { transform: translateY(6px) rotate(0deg); }
@@ -2510,6 +2537,44 @@ span.path {
 }
 @media screen and (max-width: 1000px) {
 
+	/** thx **/
+	.thx-header, .thx-block {
+		display: block;
+		max-width: 450px;
+		width: 100%; }
+
+	.thx-opened .site-header-slice__fixer {
+		overflow-y: auto;
+		padding: 5rem 0 3rem; }
+
+	.thx-header .fresh-h1 { margin-bottom: 2.5rem; }
+	.thx-block .material-box { margin-bottom: 3rem; }
+	.thx-block .fresh-h3 {
+		font-size: 17px;
+		line-height: 24px; }
+	#one, #two { width: 85%; }
+	#two {
+		flex-direction: column;
+		align-self: center;
+		align-items: center;
+		justify-content: center; }
+	.thx-box img {
+		max-width: 100px;
+		margin-bottom: 1.5rem; }
+	.thx-box p { margin-bottom: 0; }
+	.thx-box.social img { max-width: 45px; }
+	.thx-block .v-line { display: none; }
+	.thx-block .thx-l-b { flex-direction: column; }
+	.thx-a-c { flex-direction: row; }
+	.thx-a-s:first-child { margin-bottom: 3rem; }
+	.thx-a-s.w-50 { width: 100%; }
+	.s-i-top, .s-i-bot,
+	.thx-a-s > .row, .thx-a-c { width: 100%; }
+	.thx-box.social p { margin-bottom: 2rem; }
+	.s-i-top img { margin-bottom: 0; }
+	.s-i-bot img { margin-top: 0; }
+
+
 	.gradient-body.padding-bottom { padding-bottom: 363px; }
 	.padding-bottom { padding-bottom: 121px; }
 	.padding-top { padding-top: 121px; }
@@ -2531,7 +2596,9 @@ span.path {
 
 	.form-header .fresh-h1 { margin: 0; }
 
-	.locked .fresh-header { background-color: white; }
+	.locked .fresh-header {
+		position: fixed;
+		background-color: white; }
 
 	.hide-on-tablet { display: none; }
 	.show-on-tablet { display: block; }
@@ -2634,9 +2701,7 @@ span.path {
 	.testi-credit {
 		text-align: center;
 		margin: 0 0 2rem; }
-	.testimonial .testi-credit {
-		text-align: center;
-		margin: 3rem 0 1rem; }
+	.testimonial .testi-credit { text-align: center; }
 	.testi-main .description {
 		margin-top: 2rem;
 		margin-bottom: 7rem; }
@@ -3056,6 +3121,17 @@ span.path {
 @media screen and (max-width: 350px) {
 	.padding-bottom { padding-bottom: 90px; }
 	.padding-top { padding-top: 90px; }
+
+	/** thx **/
+	.thx-header .fresh-h1 {
+		font-size: 22px;
+		line-height: 30px; }
+	.thx-block .fresh-h3 {
+		font-size: 16px;
+		line-height: 23px; }
+	.thx-box img { 	max-width: 80px; }
+	.thx-box p { font-size: 16px; }
+	.thx-box.social img { max-width: 38px; }
 }
 
 @media screen and (max-width: 310px) {

@@ -65,7 +65,7 @@ img/portfolio/work_9p.jpg: 219ce5c84aa7da6ed6fa665489bee2b6
 "/img/testimonials/banner_testimonials.jpg": 75493b6a93d4c254e247f57d5400987e
 "/img/testimonials/client_1.png": 0b8a39543c372ca4b2b77972e66ccea2
 "/img/testimonials/client_2.png": a6f7b62a25af24e0470825db55db3e8e
-"/img/testimonials/photo_a3.png": cd5264f710613eb1ff0eb0e6df527410
+"/img/testimonials/client_3.png": 904054e4db57f42decfa51736e3f9508
 "/img/transacumen/iMac.png": 7ae380e638aed9b475798d3f97dfe4ca
 "/img/transacumen/iMac_view_left.png": c2aa2511fa80b9c080c0e452ceee6b3e
 "/img/transacumen/iMac_view_right.png": ae2a00b09ee50c5fa4749a98b122e9de
@@ -74,10 +74,10 @@ img/portfolio/work_9p.jpg: 219ce5c84aa7da6ed6fa665489bee2b6
 "/img/wallbreaker/Curves.jpg": 09fdeeac5590b3d02a7218dbd253ae64
 "/img/wallbreaker/macbook_left.png": db7d32cb0a5cf4b33d8e301a34602333
 js/portfolio.js: af7c0321fb8aed08738f38c1a3e208c8
-js/scripts.js: b51fe974c9175b66a313d1ad4bf69dab
+js/scripts.js: dcf28d22bd4e15cee4783a2e23b3ef92
 js/blog.js: 4d7f5f220c53d7bad55f6c1ece18e60f
 js/job.js: 17dcdf87be39568e806c7eb7a44d7fae
 css/bootstrap/bootstrap.min.css: 7027334fa6dd5f695f1b832cb3cd9319
-css/main.css: 9fa0c0fdfede5afd20ab39dfc923b6c7
+css/main.css: e670ad8b967e8ac4e978fbe5563fe34d
 css/font-awesome-4.6.3/css/font-awesome.min.css: 4083f5d376eb849a458cc790b53ba080
 css/prism.css: fc8dca674b79b3997a46ddcd3877e2ad
