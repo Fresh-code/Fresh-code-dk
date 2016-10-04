@@ -11,145 +11,55 @@
         $current = $all,
         $menu = false,
         $dd = $('#filter-dropdown');
+
     var posts = [
         
         {
-            posttitle: '10 BEST PRACTICES FOR MOBILE UX DESIGN',
-            platformtag: 'Ux',
-            avatar: 'blog-post/author.png',
-            catauthor: 'Business | Richard Guay',
-            position: 'Project manager',
-            postcover: '/img/blog-post/post_7c-350.jpg',
-            postsrcset: '/img/blog-post/post_7c-700.jpg 700w, /img/blog-post/post_7c-450.jpg 450w, /img/blog-post/post_7c-350.jpg 350w',
-            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #765145 !important',
-            postbckg: 'background-color: #765145 !important',
-            type: 'business',
-            posturl: '/blog/2016/06/29/post-7/'
-        },
-        
-        {
-            posttitle: 'The Hourly Model of Hiring Resources. All That You Need...',
-            platformtag: 'Apple',
-            avatar: 'blog-post/author.png',
-            catauthor: 'Business | Richard Guay',
-            position: 'Project manager',
-            postcover: '/img/blog-post/post_6c-350.jpg',
-            postsrcset: '/img/blog-post/post_6c-700.jpg 700w, /img/blog-post/post_6c-450.jpg 450w, /img/blog-post/post_6c-350.jpg 350w',
-            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #836551 !important',
-            postbckg: 'background-color: #836551 !important',
-            type: 'front',
-            posturl: '/blog/2016/06/29/post-6/'
-        },
-        
-        {
-            posttitle: 'Tips For Building Brand Trust With UX Design',
-            platformtag: 'Design',
-            avatar: 'blog-post/author.png',
-            catauthor: 'Management | Ivan Levin',
-            position: 'Project manager',
-            postcover: '/img/blog-post/post_5c-350.jpg',
-            postsrcset: '/img/blog-post/post_5c-700.jpg 700w, /img/blog-post/post_5c-450.jpg 450w, /img/blog-post/post_5c-350.jpg 350w',
-            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #3d7c84 !important',
-            postbckg: 'background-color: #3d7c84 !important',
-            type: 'front',
-            posturl: '/blog/2016/06/29/post-5/'
-        },
-        
-        {
-            posttitle: 'What Is the Best Platform For the First Launch - iOS or Android?',
-            platformtag: 'Android',
-            avatar: 'blog-post/author.png',
-            catauthor: 'Development | Boris Okolov',
-            position: 'Project manager',
-            postcover: '/img/blog-post/post_4c-350.jpg',
-            postsrcset: '/img/blog-post/post_4c-700.jpg 700w, /img/blog-post/post_4c-450.jpg 450w, /img/blog-post/post_4c-350.jpg 350w',
-            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #3d5a80 !important',
-            postbckg: 'background-color: #3d5a80 !important',
-            type: 'development',
-            posturl: '/blog/2016/06/29/post-4/'
-        },
-        
-        {
-            posttitle: 'Shawn James & The Shapeshifters – John The Revelator (Son House)',
-            platformtag: 'Apple',
-            avatar: 'blog-post/author.png',
-            catauthor: 'Front end | Andrey Petrov',
+            posttitle: 'Do You Really Need Mobile App Post-Release Support or Is It an Exercise in Futility?',
+            platformtag: 'Java',
+            avatar: '/img/blog-post/author_1.png',
+            catauthor: 'Business | Alex Slobozhan',
             position: 'Project manager',
             postcover: '/img/blog-post/post_3c-350.jpg',
             postsrcset: '/img/blog-post/post_3c-700.jpg 700w, /img/blog-post/post_3c-450.jpg 450w, /img/blog-post/post_3c-350.jpg 350w',
             postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #ca6001 !important',
-            postbckg: 'background-color: #ca6001 !important',
-            type: 'front',
-            posturl: '/blog/2016/06/27/post-3/'
+            postcoverbckg: 'background-color: #666973 !important',
+            postbckg: 'background-color: #666973 !important',
+            type: 'business',
+            posturl: '/blog/2016/09/21/do-you-really-need-mobile-app/'
         },
         
         {
-            posttitle: 'Are You Aware of these Hot Mobile Commerce Trends?',
+            posttitle: '7 Improvements to UX Design That Ensure Brand Trust',
             platformtag: 'Java',
-            avatar: 'blog-post/author.png',
+            avatar: '/img/blog-post/author_3.png',
             catauthor: 'Front end | Andrey Petrov',
-            position: 'Project manager',
+            position: 'Designer',
             postcover: '/img/blog-post/post_2c-350.jpg',
             postsrcset: '/img/blog-post/post_2c-700.jpg 700w, /img/blog-post/post_2c-450.jpg 450w, /img/blog-post/post_2c-350.jpg 350w',
             postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #293448 !important',
-            postbckg: 'background-color: #293448 !important',
+            postcoverbckg: 'background-color: #164a77 !important',
+            postbckg: 'background-color: #164a77 !important',
             type: 'front',
-            posturl: '/blog/2016/06/28/post-2/'
+            posturl: '/blog/2016/09/14/7-improvements-to-ux-design-that-ensure-brand-trust/'
         },
         
         {
-            posttitle: 'The Hourly Model of Hiring Resources: All That You Need to Know',
+            posttitle: 'What Is Freshcode?',
             platformtag: 'Apple',
-            avatar: 'blog-post/author.png',
-            catauthor: 'Development | Ivan Ivanov',
+            avatar: '/img/blog-post/author_1.png',
+            catauthor: 'Business | Ivan Ivanov',
             position: 'Project manager',
             postcover: '/img/blog-post/post_1c-350.jpg',
             postsrcset: '/img/blog-post/post_1c-700.jpg 700w, /img/blog-post/post_1c-450.jpg 450w, /img/blog-post/post_1c-350.jpg 350w',
             postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #97a8aa !important',
-            postbckg: 'background-color: #97a8aa !important',
-            type: 'development',
-            posturl: '/blog/2016/06/27/post-1/'
-        },
-        
-        {
-            posttitle: 'Are You Aware of these Hot Mobile Commerce Trends?',
-            platformtag: 'Apache',
-            avatar: 'blog-post/author.png',
-            catauthor: 'Front end | Andrey Petrov',
-            position: 'Project manager',
-            postcover: '/img/blog-post/post_9c-350.jpg',
-            postsrcset: '/img/blog-post/post_9c-700.jpg 700w, /img/blog-post/post_9c-450.jpg 450w, /img/blog-post/post_9c-350.jpg 350w',
-            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #56705c !important',
-            postbckg: 'background-color: #56705c !important',
-            type: 'front',
-            posturl: '/blog/2016/06/29/post-9/'
-        },
-        
-        {
-            posttitle: 'The Do’s and Don’ts of a Successful App Launch',
-            platformtag: 'Teamcity',
-            avatar: 'blog-post/author.png',
-            catauthor: 'Business | Richard Guay',
-            position: 'Project manager',
-            postcover: '/img/blog-post/post_8c-350.jpg',
-            postsrcset: '/img/blog-post/post_8c-700.jpg 700w, /img/blog-post/post_8c-450.jpg 450w, /img/blog-post/post_8c-350.jpg 350w',
-            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #5d5854 !important',
-            postbckg: 'background-color: #5d5854 !important',
+            postcoverbckg: 'background-color: #0582bb !important',
+            postbckg: 'background-color: #0582bb !important',
             type: 'business',
-            posturl: '/blog/2016/05/02/post-8/'
+            posturl: '/blog/2016/09/07/what-is-freshcode/'
         }
         
     ];
-
     var options = {
         valueNames: [
             'posttitle',
