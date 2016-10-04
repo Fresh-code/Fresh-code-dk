@@ -85,6 +85,11 @@ section { position: relative; }
 .rised-t-15em { margin-top: -15em; }
 .rised-t-9em { margin-top: -9em !important; }
 
+
+.post-body h4 {
+    font-size: 22px;
+    font-weight: 600; }
+
 .main .fresh-h3.centered {
 	text-align: center;
 	line-height: 38px; }
@@ -385,6 +390,16 @@ body.locked {
 	height: 100%;
 	transition: all 0.2s 0.2s;
 }
+
+.c-h2-link {
+	display: flex;
+	justify-content: center; }
+.main-link {
+	align-self: center;
+	display: flex;
+	margin-left: 20px; }
+.main-link img { max-height: 25px; }
+
 /*Our works*/
 .no-margin {
 	margin: 0 0;
@@ -686,9 +701,10 @@ body.locked {
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	height: 130px;
+	max-height: 170px;
 	text-overflow: ellipsis;
 }
+.post-body li { font-size: 22px; }
 
 .description.blog .cover span {
 	font-size: 17px;
@@ -2421,7 +2437,7 @@ section.section {
 	font-size: 22px; /* Approximation due to font substitution */
 	font-weight: 300;
 	line-height: 30px; /* Approximation due to font substitution */ }
-.post-body p {
+.post-body li, .post-body p {
 	color: #000000;
 	font-size: 22px; /* Approximation due to font substitution */
 	font-weight: 300;
@@ -2650,6 +2666,9 @@ span.path {
 	.description.media-body h3 {
 		font-family: "Open Middle", sans-serif;
 		text-align: center; }
+
+	.main-link { margin-left: 15px; }
+	.main-link img { max-height: 20px; }
 
 	.services-icon {
 		display: table;
@@ -2929,7 +2948,7 @@ span.path {
 		min-height: 500px;
 		padding-bottom: 40px; }
 	.post-body h3 { margin-bottom: 2rem; }
-	.post-body p {
+	.post-body li, .post-body p {
 		font-size: 17px;
 		line-height: 24px; }
 	.post-body pre.language-php {

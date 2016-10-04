@@ -14,6 +14,7 @@
         $current = $all,
         $menu = false,
         $dd = $('#filter-dropdown');
+
     var posts = [
         {% for post in site.posts %}
         {
@@ -32,7 +33,6 @@
         }{% unless forloop.last %},{% endunless %}
         {% endfor %}
     ];
-
     var options = {
         valueNames: [
             'posttitle',

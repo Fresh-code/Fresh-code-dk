@@ -1,13 +1,4 @@
 ---
-img/blog-post/post_1c.jpg: e94779a3775fff9f124805a324c02a6d
-img/blog-post/post_8c.jpg: af6adb3a4cc30dde5e7fe9a714a1ecd0
-img/blog-post/post_3c.jpg: 42b991d8c46373c62651295ae61d9895
-img/blog-post/post_9c.jpg: 94e9d5194b63d0167d4255952e5644bc
-img/blog-post/post_5c.jpg: f8c77e3c1761415c1784b68a42a85215
-img/blog-post/post_4c.jpg: 8ef951b537941f40607aee7ab42419d9
-img/blog-post/post_2c.jpg: ce3cb382f67de4486d4b1a4b49701d16
-img/blog-post/post_6c.jpg: e1d7f6d457d3ab81f98485beeb91fc3f
-img/blog-post/post_7c.jpg: 95f45a88739462da2c0696213fb1e80f
 img/portfolio/work_2p.jpg: a1ec78c0e1691a1dfeeca0d158b09372
 img/portfolio/work_12p.jpg: 6ca12bd35542b43139c5078fccb538cc
 img/portfolio/work_13p.jpg: 5048a09bd6839292343667d0ae8e16a5
@@ -21,7 +12,6 @@ img/portfolio/work_8p.jpg: 94414a56db5909c158cf327a2fde4bc4
 img/portfolio/work_6p.jpg: 04b86771fa087b8bf72fb75bcf7ddaf2
 img/portfolio/work_1p.jpg: 1874452991e785698019d668d1393483
 img/portfolio/work_9p.jpg: 219ce5c84aa7da6ed6fa665489bee2b6
-"/img/blog-post/banner_post.jpg": 83e844d8b1cda0c2349c511410342208
 "/img/blog/banner_blog.jpg": 2e5899d89284326311c7f82dbc9a1068
 "/img/data-parser/iMac.png": 9d085f50707e161d0b927138acdc4820
 "/img/data-parser/application.png": 7e8fd20aae40d571af5e51d651bb1ca6
@@ -75,9 +65,22 @@ img/portfolio/work_9p.jpg: 219ce5c84aa7da6ed6fa665489bee2b6
 "/img/wallbreaker/macbook_left.png": db7d32cb0a5cf4b33d8e301a34602333
 js/portfolio.js: af7c0321fb8aed08738f38c1a3e208c8
 js/scripts.js: dcf28d22bd4e15cee4783a2e23b3ef92
-js/blog.js: 4d7f5f220c53d7bad55f6c1ece18e60f
+js/blog.js: fbff2b09dd56c873b3ecf3aeac06b69c
 js/job.js: 17dcdf87be39568e806c7eb7a44d7fae
 css/bootstrap/bootstrap.min.css: 7027334fa6dd5f695f1b832cb3cd9319
-css/main.css: e670ad8b967e8ac4e978fbe5563fe34d
+css/main.css: 13fa55c759339ae5ac626679fa47bbb2
 css/font-awesome-4.6.3/css/font-awesome.min.css: 4083f5d376eb849a458cc790b53ba080
 css/prism.css: fc8dca674b79b3997a46ddcd3877e2ad
+"/img/blog-post/banner_post_1.jpg": cca1b842f65117c99832b50e57bac80b
+"/img/blog-post/banner_post_2.jpg": ba289c8a42533a89aad949672b68302b
+"/img/blog-post/banner_post_3.jpg": 5427d2c9686cffea3d4626bf112965f1
+img/blog-post/post_1c.jpg: b4e20b83ca08a825ebfc065e899a7309
+img/blog-post/post_3c.jpg: e6f14f3bbbbe67692acc827009b03ba5
+img/blog-post/post_2c.jpg: 55d571790a1df9dc03944e390d8475fd
+"/img/blog-post/banner_post_4.jpg": d34dd2452bf13dae35c0d22427c2134d
+img/blog-post/post_4c.jpg: 57e872f6e7802f5a4f996c37d763e42f
+img/blog-post/post_6c.jpg: 2ba040b18e633eca05fd83b114a1d146
+img/blog-post/post_5c.jpg: bcc44aa4d7273cbcc4977a93bac70f2c
+"/img/blog-post/banner_post_5.jpg": 6eabb4a1eba42aab3f3e2d06947785d4
+"/img/blog-post/banner_post_6.jpg": b8105abb82e72872dffce6d91569841b
+img/blog-post/post_7c.jpg: 57e872f6e7802f5a4f996c37d763e42f

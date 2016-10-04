@@ -93,7 +93,8 @@ module Jekyll
         md5_hash = Digest::MD5.hexdigest File.read input[1..-1]
 
         settings['srcset'].each do |size|
-          the_src = "#{site.config['url']}/#{resize_img(size, input, $Hashes[input] != md5_hash)}"
+          the_src = "/#{resize_img(size, input, $Hashes[input] != md5_hash)}"
+          # the_src = "#{site.config['url']}/#{resize_img(size, input, $Hashes[input] != md5_hash)}"
           tail = " #{size}w"
           the_src << tail
           srcset << the_src

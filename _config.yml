@@ -9,6 +9,7 @@ twitter_username: "@FreshCode1"
 github_username: "Fresh-code"
 
 # Build settings
+show_drafts: false
 adaptive_image:
      cache: 2592000
      srcset:
