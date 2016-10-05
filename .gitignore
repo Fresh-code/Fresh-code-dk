@@ -1,3 +1,4 @@
 .idea
 .gitignore
+build.sh
 README
