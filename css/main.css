@@ -2504,13 +2504,13 @@ span.path {
 	margin-top: 0;
 	color: #ffffff;
 	font-size: 32px;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 45px;
 	text-transform: uppercase; }
 .post-titling .meta {
 	color:  #94a7ae;
 	font-size: 22px;/* Approximation due to font substitution */
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 30px;/* Approximation due to font substitution */ }
 .post-titling .fresh-sub-block { width: 65%; }
 

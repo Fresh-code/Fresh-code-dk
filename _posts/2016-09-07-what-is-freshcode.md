@@ -16,9 +16,9 @@ cover: /img/blog-post/post_1c-350.jpg
 srcsetattr: /img/blog-post/post_1c-700.jpg 700w, /img/blog-post/post_1c-450.jpg 450w, /img/blog-post/post_1c-350.jpg 350w
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'
 background-cover: '#0582bb'
-avatar: /img/blog-post/author_1.png
-author: Ivan Ivanov
-position: Project manager
+avatar: /img/blog-post/author_2.png
+author: Marina Danilova
+position: Sales manager
 
 share-image: '/img/blog-post/banner_post_1.jpg'
 share-description: 'Freshcode is not just another faceless software development company. Nothing we do is even remotely ordinary or mediocre. We strive to provide the best services on the huge market, and our high-paced evolution proves that we chose the right path.'

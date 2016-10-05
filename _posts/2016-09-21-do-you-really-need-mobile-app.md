@@ -18,7 +18,7 @@ sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 100
 background-cover: '#666973'
 avatar: /img/blog-post/author_1.png
 author: Alex Slobozhan
-position: Project manager
+position: Sales manager
 
 share-image: /img/blog-post/banner_post_3.jpg
 share-description: When you start working on your application with a project manager, he or she will always ask you if you want post-release support. And while at the beginning of the journey it may seem like a long shot, DO NOT brush the suggestion off unthinkingly. You will remember the moment you declined this offer clearly when your app crashes for the first time.

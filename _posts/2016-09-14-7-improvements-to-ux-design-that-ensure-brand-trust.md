@@ -17,8 +17,8 @@ srcsetattr: /img/blog-post/post_2c-700.jpg 700w, /img/blog-post/post_2c-450.jpg 
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'
 background-cover: '#164a77'
 avatar: /img/blog-post/author_3.png
-author: Andrey Petrov
-position: Designer
+author: Stanislav Tsalpinskiy
+position: UX/UI Designer
 
 share-image: /img/blog-post/banner_post_2.jpg
 share-description: If you wish to uphold the good reputation and turn every client into a regular, trust is exactly what you need. Trust means that your clients believe you won't trick them or lie in the product description while knowing your company is a reliable partner.
