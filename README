@@ -7,6 +7,8 @@ Install Jekyll:
     gem install juicer
     gem install uglifier
     gem install yui-compressor
+    gem install jekyll-sitemap
+
 
     Your gem list must contain at least:
         jekyll (3.2.1, 3.1.6, 2.2.0)
@@ -24,6 +26,7 @@ Install Jekyll:
 
 PUBLISHING SITE:
 
+    You must setup github permission, add pub/private key.
     Run from terminal build.sh script to publish site to github pages and update whole project.
 
     ./sh build.sh
