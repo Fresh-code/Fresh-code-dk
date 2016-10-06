@@ -14,6 +14,7 @@
         $current = $all,
         $menu = false,
         $dd = $('#filter-dropdown');
+
     var posts = [
         {% for post in site.posts %}
         {
