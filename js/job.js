@@ -25,7 +25,7 @@
 
         $.ajax({
             method: "POST",
-            url: "https://getform.org/u/4da9ee75-96ba-4984-ace2-96c647f11cef",
+            url: "https://getform.org/u/470a1fb1-94b3-4094-a7d7-565f28f0c877",
             data: data,
             processData: false,
             contentType: false,
