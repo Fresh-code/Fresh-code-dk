@@ -118,7 +118,7 @@
 
             $.ajax({
                 method: "POST",
-                url: "https://getform.org/f/2470bd55-f6d2-4752-820e-ec23eccd8202",
+                url: "https://getform.org/f/07683c3f-c72c-47bc-98d7-2f0e866fab3f",
                 data: {
                     name: $name.val(),
                     email: $email.val(),
