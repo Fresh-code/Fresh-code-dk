@@ -141,7 +141,6 @@ Data files:
     https://jekyllrb.com/docs/datafiles/ - for more information
 
 
-
 Cache:
     For optimisation build/re-build process we store information about changing all pic/js/css file in _assets-cache/cache.yml.
     All this process add to jekyll plugin.
