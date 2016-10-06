@@ -24,12 +24,15 @@ Install Jekyll:
     For adaptive image you must install imagemagick on your PC!
         http://imagemagick.org/script/binary-releases.php - for more information
 
+
+                                !!!!!!! Important !!!!!!!
 PUBLISHING SITE:
 
     You must setup github permission, add pub/private key.
     Run from terminal build.sh script to publish site to github pages and update whole project.
 
     ./sh build.sh
+                                !!!!!!! Important !!!!!!!
 
 
 START Jekyll:
