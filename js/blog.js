@@ -32,7 +32,7 @@
             posttitle: '7 Improvements to UX Design That Ensure Brand Trust',
             platformtag: 'Java',
             avatar: '/img/blog-post/author_3.png',
-            catauthor: 'Front end | Stanislav Tsalpinskiy',
+            catauthor: 'Front end | Stanislav Tsaplinskiy',
             position: 'UX/UI Designer',
             postcover: '/img/blog-post/post_2c-350.jpg',
             postsrcset: '/img/blog-post/post_2c-700.jpg 700w, /img/blog-post/post_2c-450.jpg 450w, /img/blog-post/post_2c-350.jpg 350w',
