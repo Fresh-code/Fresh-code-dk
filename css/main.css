@@ -1566,7 +1566,8 @@ textarea.material-input { resize: none; }
 .proj-body.proj-body-overflow .fresh-sub-block.no-min-height { margin: 5em 0; }
 .proj-body.proj-body-overflow .proj-logo {
 	padding: 0;
-	flex: 1 1; }
+	flex: 1 1;
+}
 
 .proj-details-body .fresh-sub-block h2 {
 	padding: 0;
