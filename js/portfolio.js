@@ -34,6 +34,7 @@
         }{% unless forloop.last %},{% endunless %}
         {% endfor %}
     ];
+    
     var options = {
         valueNames: [
             'title',
