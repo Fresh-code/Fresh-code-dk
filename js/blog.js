@@ -11,22 +11,8 @@
         $current = $all,
         $menu = false,
         $dd = $('#filter-dropdown');
+    
     var posts = [
-        
-        {
-            posttitle: 'Engagement Models. Is Dedicated Team the Perfect One for You?',
-            platformtag: 'Apple',
-            avatar: '/img/blog-post/author_2.png',
-            catauthor: 'Business | Marina Danilova',
-            position: 'Project manager',
-            postcover: '/img/blog-post/post_4c-350.jpg',
-            postsrcset: '/img/blog-post/post_4c-700.jpg 700w, /img/blog-post/post_4c-450.jpg 450w, /img/blog-post/post_4c-350.jpg 350w',
-            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #32576c !important',
-            postbckg: 'background-color: #32576c !important',
-            type: 'business',
-            posturl: '/blog/2016/09/28/is-dedicated-team-the-perfect-one-for-you/'
-        },
         
         {
             posttitle: 'Do You Really Need Mobile App Post-Release Support or Is It an Exercise in Futility?',
