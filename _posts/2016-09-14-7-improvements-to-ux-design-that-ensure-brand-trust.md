@@ -17,7 +17,7 @@ srcsetattr: /img/blog-post/post_2c-700.jpg 700w, /img/blog-post/post_2c-450.jpg 
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'
 background-cover: '#164a77'
 avatar: /img/blog-post/author_3.png
-author: Stanislav Tsalpinskiy
+author: Stanislav Tsaplinskiy
 position: UX/UI Designer
 
 share-image: /img/blog-post/banner_post_2.jpg
