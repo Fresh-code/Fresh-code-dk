@@ -7,63 +7,52 @@
   "page-background": "/img/job/banner_job.jpg",
   "jobs": [
     {
-      "title": "Senior QA automation engineer",
+      "title": "Front-end developer",
       "skills": [
-        "Multi-platforms and multi-browser testing",
-        "Backend testing and automating testing experience (Java, C#)",
-        "Strong knowledge about test framework structure and developing",
-        "Deep knowledge HTTP-based web services",
-        "Experience with test documentation: test cases, test plans, etc.",
-        "Well-developed communicative and team-working skills",
-        "Intermediate level of English"
+        "At least 1 year programming experience",
+        "Strong knowledge of HTML, CSS, JavaScript, AngularJS, React.js",
+        "Familiarity with Node.js",
+        "Experience in using REST API",
+        "Experience with Photoshop is a plus",
+        "Good verbal and written English skills",
+        "Knowledge of Git for code versioning handling will be a plus",
+        "Desire to improve your skills",
+        "To be familiar with Agile/Scrum methodology"
       ]
     },
     {
-      "title": "ASP.NET Software Developer",
+      "title": "Back-end developer",
       "skills": [
-        "Multi-platforms and multi-browser testing",
-        "Backend testing and automating testing experience (Java, C#)",
-        "Strong knowledge about test framework structure and developing",
-        "Deep knowledge HTTP-based web services",
-        "Experience with test documentation: test cases, test plans, etc.",
-        "Well-developed communicative and team-working skills",
-        "Intermediate level of English"
+        "Strong knowledge of Node.js",
+        "Experience with NoSQL, PostgreSQL databases",
+        "Familiarity with Docker, Vagrant",
+        "Knowledge of Agile methodologies",
+        "Familiarity with Continuous Integration (CI)",
+        "Good command of English (written ans verbal)",
+        "Knowledge of Git for code versioning handling",
+        "Desire to improve your skills"
       ]
     },
     {
-      "title": "IOS Developer",
+      "title": ".NET, C# back-end developer",
       "skills": [
-        "Multi-platforms and multi-browser testing",
-        "Backend testing and automating testing experience (Java, C#)",
-        "Strong knowledge about test framework structure and developing",
-        "Deep knowledge HTTP-based web services",
-        "Experience with test documentation: test cases, test plans, etc.",
-        "Well-developed communicative and team-working skills",
-        "Intermediate level of English"
+        "At least 1 year of experience working on the web and multilayer applications",
+        "Solid experience in C# asp.net, MVC, Web API, WCF, Entity Framework, T-SQL",
+        "Knowledge of HTML5, CSS/CSS3, JavaScript",
+        "Knowledge of Git for code versioning handling",
+        "Good verbal and written English skills",
+        "Experience in working in Agile environment"
       ]
     },
     {
-      "title": "Middle Java Engineer",
+      "title": "Android/iOS developer",
       "skills": [
-        "Multi-platforms and multi-browser testing",
-        "Backend testing and automating testing experience (Java, C#)",
-        "Strong knowledge about test framework structure and developing",
-        "Deep knowledge HTTP-based web services",
-        "Experience with test documentation: test cases, test plans, etc.",
-        "Well-developed communicative and team-working skills",
-        "Intermediate level of English"
-      ]
-    },
-    {
-      "title": "Team Lead Ruby on Rails",
-      "skills": [
-        "Multi-platforms and multi-browser testing",
-        "Backend testing and automating testing experience (Java, C#)",
-        "Strong knowledge about test framework structure and developing",
-        "Deep knowledge HTTP-based web services",
-        "Experience with test documentation: test cases, test plans, etc.",
-        "Well-developed communicative and team-working skills",
-        "Intermediate level of English"
+        "Strong programming skills in Objective-C, SWIFT, React Native",
+        "Experience in the development of hybrid mobile applications for the Android/iOS",
+        "Experience in JavaScript",
+        "Ability to learn things fast",
+        "Awareness of cross-platform compatibility issues",
+        "Good verbal and written English skills"
       ]
     }
   ]
