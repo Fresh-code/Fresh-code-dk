@@ -1158,7 +1158,7 @@ a.attach-link:hover { text-decoration: none; }
 #one, #two {
 	display: flex;
 	flex-direction: column;
-	width: 75%; }
+	width: 75%;  }
 
 /*------------------------Form Styles------------------------------------*/
 .form-header .fresh-h1 { margin-bottom: 9%; }
