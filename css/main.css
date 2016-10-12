@@ -889,7 +889,10 @@ a.attach-link:hover { text-decoration: none; }
 	border-bottom: solid 1px white;
 	text-decoration: none; }
 
-.footer-list.contacts { text-align: left; }
+.footer-list.contacts {
+	text-align: left;
+	line-height: 43px;
+}
 .list-footer div a,
 .footer-list li a {
 	color: white;
@@ -1171,7 +1174,9 @@ textarea.material-input { resize: none; }
 	border-bottom: solid 1px #cacaca;
 	outline: none;
 	font-size: 22px;
-    padding: 15px 0; }
+    padding: 15px 0;
+	color: black!important;
+}
 .material-box { margin-bottom: 2%; }
 .material-input:focus { border-bottom: solid 1px #cacaca; }
 
@@ -1200,7 +1205,7 @@ textarea.material-input { resize: none; }
 	outline: none;
 	border-color: #00e1a4!important; }
 .hire-btn.button:hover { border-color: #00e1a4!important; }
-.contacts.info li:first-child { margin-bottom: 7px; }
+/*.contacts.info li:first-child { margin-bottom: 7px; }*/
 /*Play Attention*/
 .proj-d-thin:link { color: white; }
 .proj-d-thin:link:hover {
@@ -1340,12 +1345,13 @@ textarea.material-input { resize: none; }
 	.footer-list {
 		display: block;
 		margin: 46px 0 46px 39px; }
+
 	.list-footer div a,
 	.list-footer div,
 	.footer-list li a,
 	.footer-list li {
 		color: white;
-		text-align: left;
+		text-align: center;
 		line-height: 41px;
 		font-size: 28px;
 		margin-bottom: .5em; }

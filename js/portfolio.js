@@ -18,7 +18,6 @@
         $current = $all,
         $menu = false,
         $dd = $('#filter-dropdown');
-
     var works = [
         {% for work in site.data.portfolio.works %}
         {
