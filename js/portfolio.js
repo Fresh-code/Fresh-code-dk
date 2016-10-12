@@ -15,7 +15,6 @@
         $current = $all,
         $menu = false,
         $dd = $('#filter-dropdown');
-
     var works = [
         
         {
