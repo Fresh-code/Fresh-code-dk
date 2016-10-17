@@ -48,5 +48,23 @@
       "icon": "/img/services/dedicated_icon.svg",
       "link": "/dedicated-team"
     }
+  ],
+  "serv-textes":[
+    {
+      "text":"Whatever your IT needs are, look no further. You’ve found the one company that will provide you with a full range of software development services. Whether you need to outpace the competition, set a hot trend or give your business a long overdue overhaul, FreshCode is here to make your ideas happen.",
+      "icon": "/img/services/Services-tor.png"
+    },
+    {
+      "text":"We start by getting to know you, your business goals and needs. We help develop a comprehensive list of requirements, set a defined outline of the project and design a thorough plan that will culminate with your success. We utilize the best modern technologies and methods to make our work as efficient and quick as is humanly possible so that you get measurable results here and now.",
+      "icon": "/img/services/Services-chart.png"
+    },
+    {
+      "text":"Pick and choose the services you need or spring for a full-cycle treatment. Select the most suitable engagement model for your budget and kick back to enjoy the deliverables as they come. All your needs will be met thanks to our hands-on customer-oriented approach and flexible project management.",
+      "icon": "/img/services/Services-list.png"
+    },
+    {
+      "text":"We combine a passion for creating quality products with deep expertise and years of experience in a wide range of business fields. Feel free to browse the variety of services we provide and contact us for a quote when you are ready to succeed.",
+      "icon": "/img/services/Services-question.png"
+    }
   ]
 }

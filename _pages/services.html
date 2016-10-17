@@ -2,64 +2,101 @@
 permalink: /services/
 layout: default
 ---
-
-<section class="section height-fixed height-100 padding-top padding-bottom row-single">
-    <div class="image-background bleed">
-        {% adaptive_image {{ site.data.services.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="Services background" title="Services background" %}
-    </div>
-    <div class="container">
-        <div class="row row-equal-columns">
-            <div class="column a-center">
-                <div class="flex flex-middle">
-                    <div class="flex-inner">
-                        <div class="block block-text width-fixed">
-                            <header>
-                                <h1 class="fresh-h1 h1">{{ site.data.services.page-title }}</h1>
-                                <h3 class="fresh-h3 centered">{{ site.data.services.page-text }}</h3>
-                            </header>
-                        </div>
-                    </div> <!-- flex-inner -->
+    <section class="section height-fixed height-100 padding-top padding-bottom row-single">
+        <div class="image-background bleed">
+            {% adaptive_image {{ site.data.services.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="Services background" title="Services background" %}
+        </div>
+        <div class="container">
+            <div class="row row-equal-columns">
+                <div class="column a-center">
+                    <div class="flex flex-middle">
+                        <div class="flex-inner">
+                            <div class="block block-text width-fixed">
+                                <header>
+                                    <h1 class="fresh-h1 h1">{{ site.data.services.page-title }}</h1>
+                                    <h3 class="fresh-h3 centered">{{ site.data.services.page-text }}</h3>
+                                </header>
+                            </div>
+                        </div> <!-- flex-inner -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="fresh-services">
+    </section>
+    <section class="fresh-services" >
+        <div class="fresh-sub-block"
+             style="margin-top: 6%">
+            {% for service in site.data.services.serv-textes %}
+            <dl style=" margin-bottom: 30px">
+                <dt style="float: left">
+                    <span>
+                        <img class="img-responsive"
+                             style="width: 130px; height: 130px; margin-top: 8px; margin-right: 50px;"
+                             src="{{ service.icon }}"
+                             alt="{{ service.name }} icon">
+                    </span>
+                </dt>
+                <dd class="description" >
+                    <p>{{ service.text }}</p>
+                </dd>
+            </dl>
+            {% endfor %}
+        </div>
+    </section>
+    <section class="fresh-services" style="margin: 6% 0 6% 0">
+        <div class="fresh-sub-block">
+            <div class="container-fluid" style="margin: 0; padding: 0; width: 100%">
+                <div class="row">
+                    {% for service in site.data.services.short %}
+                    <div class="col-lg-4 col-sm-4 col-xs-6  services-table-cell" >
+                        <img class="img-responsive"
+                             style="width: 100px; height: 100px; margin: auto; margin-top: 50px"
+                             src="{{ service.icon }}"
+                             alt="{{ service.name }} icon">
+                        <h4>{{ service.name }}</h4>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--<section class="fresh-services">
     <div class="fresh-sub-block">
         <div class="row shorted width-fixed">
             {% for service in site.data.services.short %}
-                {% assign loopindex = forloop.index | modulo: 2 %}
-                {% if loopindex == 1 %}
-                    <div class="row">
-                        <div class="media fresh-container no-padding">
-                            <div class="media-left preview-block services-icon">
-                                <img class="img-responsive" src="{{ service.icon }}" alt="{{ service.name }} icon">
-                            </div>
-                            <div class="description media-body">
-                                <h3>{{ service.name }}</h3>
-                                <p>{{ service.text }}</p>
-                                <a class="link" href="{{ service.link }}">
-                                    <div class="color-fill"></div>
-                                    <span>{{ service.btntext }}</span>
-                                </a>
-                            </div>
-                        </div>
-                    {% else %}
-                        <div class="media fresh-container no-padding">
-                            <div class="media-left preview-block services-icon">
-                                <img class="img-responsive" src="{{ service.icon }}" alt="{{ service.name }} icon">
-                            </div>
-                            <div class="description media-body">
-                                <h3>{{ service.name }}</h3>
-                                <p>{{ service.text }}</p>
-                                <a class="link" href="{{ service.link }}">
-                                    <div class="color-fill"></div>
-                                    <span>{{ service.btntext }}</span>
-                                </a>
-                            </div>
-                        </div>
+            {% assign loopindex = forloop.index | modulo: 2 %}
+            {% if loopindex == 1 %}
+            <div class="row">
+                <div class="media fresh-container no-padding">
+                    <div class="media-left preview-block services-icon">
+                        <img class="img-responsive" src="{{ service.icon }}" alt="{{ service.name }} icon">
                     </div>
-                {% endif %}
+                    <div class="description media-body">
+                        <h3>{{ service.name }}</h3>
+                        <p>{{ service.text }}</p>
+                        <a class="link" href="{{ service.link }}">
+                            <div class="color-fill"></div>
+                            <span>{{ service.btntext }}</span>
+                        </a>
+                    </div>
+                </div>
+                {% else %}
+                <div class="media fresh-container no-padding">
+                    <div class="media-left preview-block services-icon">
+                        <img class="img-responsive" src="{{ service.icon }}" alt="{{ service.name }} icon">
+                    </div>
+                    <div class="description media-body">
+                        <h3>{{ service.name }}</h3>
+                        <p>{{ service.text }}</p>
+                        <a class="link" href="{{ service.link }}">
+                            <div class="color-fill"></div>
+                            <span>{{ service.btntext }}</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
             {% endfor %}
             <div class="serv serv-button-zone">
                 <a id="hire" class="hire-btn serv-request-btn" href="">
@@ -69,4 +106,5 @@ layout: default
             </div>
         </div>
     </div>
-</section><!--Services-->
+</section>-->
+<!--Services-->

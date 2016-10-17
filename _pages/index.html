@@ -35,7 +35,7 @@ description: Freshcode is a software development outsourcing company with a team
 
 <section class="fresh-main main section-outer">
     <div class="fresh-sub-block">
-        <h2 class="h2-outer c-h2-link">Services <a href="/services" class="main-link"><img src="img/main/more.png"></a></h2>
+        <h2 class="h2-outer c-h2-link">Services <a href="/services" class="main-link"><span class="service-icon"></span></a></h2>
         <div class="row shorted width-fixed">
             {% for service in site.data.main.services %}
                 {% assign loopindex = forloop.index | modulo: 2 %}
@@ -76,7 +76,7 @@ description: Freshcode is a software development outsourcing company with a team
 </section><!--Services-->
 <section class="fresh-main works-section"><!-- Our works  -->
     <div class="fresh-sub-block no-padding">
-        <h2 class="c-h2-link">Our works <a href="/portfolio" class="main-link"><img src="img/main/more.png"></a></h2>
+        <h2 class="c-h2-link">Our works <a href="/portfolio" class="main-link"><span class="service-icon"></span></a></a></h2>
         <div class="row flex-box stretch">
             <div class="flex-item">
                 <div class="col-xxs col-xs-6 col-sm-3 col-md-3 col-lg-3 no-padding cube preview-img description no-padding-m"
@@ -148,7 +148,7 @@ description: Freshcode is a software development outsourcing company with a team
 <!-- Testimonial -->
 <section class="fresh-main testimonial-block section-outer">
     <div class="fresh-sub-block no-padding width-fixed">
-        <h2 class="h2-outer c-h2-link">Testimonials <a href="/testimonials" class="main-link"><img src="img/main/more.png"></a></h2>
+        <h2 class="h2-outer c-h2-link">Testimonials <a href="/testimonials" class="main-link"><span class="service-icon"></span></a></h2>
         <div class="row shorted">
             {% for testimonial in site.data.main.testimonial %}
                 <div class="col-xxs col-xs-12 col-sm-12 col-md-6">
@@ -178,7 +178,7 @@ description: Freshcode is a software development outsourcing company with a team
 <!-- Fresh blog post -->
 <section class="fresh-main blog section-outer m--t-7rem">
     <div class="fresh-sub-block no-padding">
-        <h2 class="h2-outer c-h2-link">FRESH BLOG POST <a href="/blog" class="main-link"><img src="img/main/more.png"></a></h2>
+        <h2 class="h2-outer c-h2-link">FRESH BLOG POST <a href="/blog" class="main-link"><span class="service-icon"></span></a></h2>
         <div class="row">
             {% for post in site.posts limit:3 %}
                 <div class="col-xxs col-xs-6 col-sm-4 col-md-4 col-lg-4 preview-img no-padding {% if forloop.index == 1 %}hidden-xs{% endif %}">
