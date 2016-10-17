@@ -1,0 +1,8 @@
+before_script:
+  - apt-get update -qq && apt-get install -y -qq jekyll
+  - jekyll -v
+
+main:
+  script:
+    - jekyll build
+
