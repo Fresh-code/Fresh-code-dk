@@ -16,6 +16,7 @@
         $dd = $('#filter-dropdown');
     
     var posts = [
+
         {% for post in site.posts %}
         {
             posttitle: '{{ post.post-title }}',
