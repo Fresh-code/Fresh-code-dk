@@ -192,7 +192,6 @@
     };
 
     var navigationResize = function() {
-
         if($(window).width() > 779) {
             $('#nav li.more').before($('#overflow > li'));
 

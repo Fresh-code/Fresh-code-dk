@@ -29,7 +29,7 @@ share-title: Do You Really Need Mobile App Post-Release Support or Is It an Exer
     <p>When you start working on your application with a project manager, he or she will always ask you if you want post-release support. And while at the beginning of the journey it may seem like a long shot, DO NOT brush the suggestion off unthinkingly. You will remember the moment you declined this offer clearly when your app crashes for the first time.</p>
     <p>So what is post-release support exactly? Is there a way to get by without it?</p>
     <br>
-    <h3>The 3 Advantages of Post-Release Support</h3><br>
+    <h3>3 Advantages of Post-Release Support</h3><br>
     <p>There are, in fact, dozens of reasons for you to splurge on post-release support. But we will only cover a few for you to get a general idea of why support expenses will earn you more money in the long run.</p>
     <h4>Keep Regular Customers</h4>
     <p>Customers are everything for any business and having your own app allows you to get direct feedback from them. Pay attention to their wishes and update regularly to let your clients know that you value their input. It will prove that their opinion is important to you and therefore will build brand loyalty and trust which are paramount for profit increase.</p>
