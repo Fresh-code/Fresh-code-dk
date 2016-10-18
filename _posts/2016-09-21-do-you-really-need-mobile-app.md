@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  Do You Really Need Mobile App Post-Release Support or Is It an Exercise in Futility?
+title:  Do you really need mobile app post-release support?
+description: Find out what post-release support means and how to define whether you need it or not. Main advantages of mobile app post-release support.
 date:   2016-09-21 10:59:19
 
 permalink: /blog/2016/09/21/do-you-really-need-mobile-app/

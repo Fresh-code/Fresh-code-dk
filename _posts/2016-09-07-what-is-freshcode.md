@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "What Is Freshcode?"
+title:  What is Freshcode
+description: "Learn more about Freshcode company, what industries we’ve developed solution for, and why you should choose us for your project."
 date:   2016-09-07 10:59:19
 
 permalink: /blog/2016/09/07/what-is-freshcode/

@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  'Everything You Wanted to Know about the Time and Material Model'
+title: Everything You Wanted to Know about the Time and Material Model
+description: What kind of projects Time and Material Model is suitable for. What you need to know about this engagement model before going for it.
 date:   2016-10-12 10:59:19
 
 permalink: /blog/2016/10/12/everything-you-wanted-to-know/

@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  7 Improvements to UX Design That Ensure Brand Trust
+title:  7 Improvements to UX design that ensure brand trust
+description: Get to know how to generate regular customers and build brand trust by making seven improvements in your website or application UX design.
 date:   2016-09-14 10:59:19
 
 permalink: /blog/2016/09/14/7-improvements-to-ux-design-that-ensure-brand-trust/
