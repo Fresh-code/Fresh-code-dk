@@ -5,6 +5,7 @@
  * @depends libraries/materialize.min.js
  */
 (function(global) {
+
     $('textarea.material-input').autogrow({ horizontal: false, flickering: false});
 
     $(document).ready(function(){
