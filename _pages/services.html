@@ -49,11 +49,16 @@ layout: default
                 <div class="row">
                     {% for service in site.data.services.short %}
                     <div class="col-lg-4 col-sm-4 col-xs-6  services-table-cell" >
-                        <img class="img-responsive"
-                             style="width: 100px; height: 100px; margin: auto; margin-top: 50px"
-                             src="{{ service.icon }}"
-                             alt="{{ service.name }} icon">
-                        <h4>{{ service.name }}</h4>
+                        <div class="cell-prev">
+                            <img class="img-responsive"
+                                 style="width: 100px; height: 100px; margin: auto; margin-top: 50px"
+                                 src="{{ service.icon }}"
+                                 alt="{{ service.name }} icon">
+                            <h4>{{ service.name }}</h4>
+                        </div>
+                        <div class="cell-text">
+                            {{ service.text }}
+                        </div>
                     </div>
                     {% endfor %}
                 </div>
