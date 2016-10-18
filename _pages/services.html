@@ -26,7 +26,39 @@ layout: default
     <section class="fresh-services" >
         <div class="fresh-sub-block"
              style="margin-top: 6%">
+            <!--<div class="container" style="margin: 0; padding: 0; width: 100%">
+                {% for service in site.data.services.serv-textes %}
+                <div class="row">
+                    <div class="col-lg-2" style="padding: 0">
+                        <span>
+                            <img class="img-responsive"
+                                 style="width: 130px; height: 130px"
+                                 src="{{ service.icon }}"
+                                 alt="{{ service.name }} icon">
+                        </span>
+                    </div>
+                    <div class="col-lg-10 some_class">
+                        <p>{{ service.text }}</p>
+                    </div>
+                </div>
+                   {% endfor %}
+            </div>-->
+            <div style="margin: 0; padding: 0; width: 100%">
             {% for service in site.data.services.serv-textes %}
+
+                <div>
+                    <img class="img-responsive"
+                         style="width: 130px; height: 130px"
+                         src="{{ service.icon }}"
+                         alt="{{ service.name }} icon">
+                </div>
+                <div class="some_class">
+                    <p>{{ service.text }}</p>
+                </div>
+            {% endfor %}
+            </div>
+
+            <!--{% for service in site.data.services.serv-textes %}
             <dl style=" margin-bottom: 30px">
                 <dt style="float: left">
                     <span>
@@ -40,7 +72,7 @@ layout: default
                     <p>{{ service.text }}</p>
                 </dd>
             </dl>
-            {% endfor %}
+            {% endfor %}-->
         </div>
     </section>
     <section class="fresh-services" style="margin: 6% 0 6% 0">
@@ -48,18 +80,20 @@ layout: default
             <div class="container-fluid" style="margin: 0; padding: 0; width: 100%">
                 <div class="row">
                     {% for service in site.data.services.short %}
-                    <div class="col-lg-4 col-sm-4 col-xs-6  services-table-cell" >
-                        <div class="cell-prev">
-                            <img class="img-responsive"
-                                 style="width: 100px; height: 100px; margin: auto; margin-top: 50px"
-                                 src="{{ service.icon }}"
-                                 alt="{{ service.name }} icon">
-                            <h4>{{ service.name }}</h4>
+                    <a class="link" href="{{ service.link }}">
+                        <div class="col-lg-4 col-sm-4 col-xs-6  services-table-cell" >
+                            <span class="cell-prev">
+                                <img class="img-responsive"
+                                     style="width: 100px; height: 100px; margin: auto; margin-top: 50px"
+                                     src="{{ service.icon }}"
+                                     alt="{{ service.name }} icon">
+                                <h4>{{ service.name }}</h4>
+                            </span>
+                            <span class="cell-text">
+                               {{ service.text }}
+                            </span>
                         </div>
-                        <div class="cell-text">
-                            {{ service.text }}
-                        </div>
-                    </div>
+                    </a>
                     {% endfor %}
                 </div>
             </div>

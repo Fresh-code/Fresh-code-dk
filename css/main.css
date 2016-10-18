@@ -1021,15 +1021,25 @@ a.attach-link:hover { text-decoration: none; }
 }
 
 .services-table-cell .cell-text{
-	display: none;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 40px;
+	border: 2px solid #00e1a4;
+	background-color: #fff;
+	opacity: 0;
+	transition: opacity ease-in-out .4s;
 	color: #1a1a1a;
 	font-size: 22px;
 	font-weight: 500;
 	text-align: justify;
+	-moz-text-align-last: center;
+	text-align-last: center;
 }
-.services-table-cell:hover {  z-index: 2;  border: solid #00e1a4 2px;  padding: 30px 40px 40px 40px}
-.services-table-cell:hover .cell-text{  display: block; }
-.services-table-cell:hover .cell-prev{display: none;  }
+.services-table-cell:hover .cell-text{  opacity: 1; }
 
 .services-table-cell h4 {
 	font-size: 22px;
@@ -1038,6 +1048,19 @@ a.attach-link:hover { text-decoration: none; }
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #1a1a1a;
+}
+.some_class{
+	position: relative;
+	top: -138px;
+	left: 170px;
+	padding: 0;
+	color: #1a1a1a;
+	font-size: 22px;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 30px;
+	margin-bottom: 40px;
+
 }
 .fresh-sub-block dl {
 	padding-bottom: 20px;
