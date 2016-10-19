@@ -5,7 +5,7 @@ layout: default
 
 <section class="section height-fixed height-100 padding-top padding-bottom row-single">
     <div class="image-background bleed">
-        {% adaptive_image {{ site.data.portfolio.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="Portfolio background" title="Portfolio background" %}
+        {% adaptive_image {{ site.data.portfolio.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="{{ site.data.portfolio.alt }}" title="Portfolio background" %}
     </div>
     <div class="container">
         <div class="row row-equal-columns">
@@ -90,10 +90,11 @@ layout: default
     <div class="fresh-sub-block no-padding">
         <div class="row">
         {% for work in site.data.portfolio.works %}
+
             <div class="col-xxs col-xs-6 col-sm-6 col-md-4 col-lg-4 no-padding cube preview-img description no-padding-m"
                  style="background: {{ work.mainColor }} !important;">
                 <a href="{{ work.link }}">
-                    <img class="img-responsive" src="{{ work.cover }}" alt="preview image">
+                    <img class="img-responsive" alt="{{ work.alt }}" src="{{ work.cover }}">
                     <div class="cover caption absolute" style="background: {{ work.mainColor }} !important;">
                         <h3>{{ work.title }}</h3>
                         <p>{{ work.description }}</p>

@@ -6,7 +6,6 @@
  * @depends libraries/prism.min.js
  */
 (function(global) {
-
     $(window).on("load", function() {
         var byMenuBtn = false,
             byMailBtn = false,

@@ -14,6 +14,6 @@
   "buisValue": "RoundForest uses this application to promote its own online shops. One of the main tests was conducted before the Black Friday. Within one week the application managed to draw more than a million visitors, leading to a huge increase in sales and therefore in RoundForest's income. Using the newly developed application the company also provides services for third-party e-Commerce projects.",
   "solutions": "Our team developed the application for automatic advertising campaigns creation. Complicated tree-like structures include all the data, while filters narrow down the core audience. Keywords' and ads' prices are altered in real time according to analytical data derived by the chosen algorithm. The application can be monitored and controlled via the web interface. The app using distributed databases needed 15 servers connected by a local network, while future database expansion will require the increase in the number of servers.",
   "css": "round-forest",
-  "prev": "/iccube",
+  "prev": "/data-parser",
   "next": "/playattention"
 }

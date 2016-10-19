@@ -2,6 +2,7 @@
   "title": "Software development company | Agile Development",
   "text": "<span class='inline-text'>Need a superb online and mobile presence to succeed? </span><span class='inline-text'> We take on any project with infinite passion and devotion, creating efficient and elegant solutions. </span><span class='inline-text'> Consulting, engineering, UI/UX design, maintenance – there’s nothing beyond our power. </span>",
   "background": "/img/main/banner_main.jpg",
+  "alt": "Software and application development process",
   "keywords": "FreshCode, web development company, software development, mobile app",
   "description": "Freshcode is a software development outsourcing company with a team of web and mobile developers who provide a wide range of services following agile methods.",
   "services": [
@@ -39,6 +40,7 @@
       "title": "RHINO SECURITY LABS",
       "description": "Rhino Security Labs is a company known for its insight into the needs of retail and healthcare, financial services and technology as well as other vertical markets. ",
       "cover": "/img/main/work_1.jpg",
+      "alt": "Rhino Security App Preview",
       "link": "/rhino",
       "mainColor": "#2b303c"
     },
@@ -46,6 +48,7 @@
       "title": "GOMMEHD",
       "description": "GommeHD is one of the leading Minecraft Servers with more than 1 million players throughout the world. The site delivers community news and statistics, as well as the latest updates and videos.",
       "cover": "/img/main/work_2.jpg",
+      "alt": "GommeHD platform preview",
       "link": "/gommehd",
       "mainColor": "#775441"
     },
@@ -53,6 +56,7 @@
       "title": "Play Attention",
       "description": "Play Attention is indisputably the best cognitive training system created to improve attention, behavior and cognitive function for children and adults suffering from ADHD.",
       "cover": "/img/main/work_3.jpg",
+      "alt": "Play Attention system preview",
       "link": "/playattention",
       "mainColor": "#253a57"
     },
@@ -60,6 +64,7 @@
       "title": "Tassta",
       "description": "Tassta is a hardware-software solutions platform providing more effective communication for a number of industries, including Public Transportation, Construction, Courier and Emergency Services, etc.",
       "cover": "/img/main/work_4.jpg",
+      "alt": "Tassta platform preview",
       "link": "/tassta",
       "mainColor": "#6e8a6d"
     },
@@ -67,6 +72,7 @@
       "title": "Data Parser",
       "description": "Data Parser is a cloud-based ETL application for unstructured data from any number of sources, including JSON files, with advanced search and data aggregation possibilities.",
       "cover": "/img/main/work_5.jpg",
+      "alt": "Data Parser app preview",
       "link": "/data-parser",
       "mainColor": "#8594b9"
     },
@@ -74,6 +80,7 @@
       "title": "Educadio",
       "description": "Educadio is a Digital Learning Tool that provides a real-time synchronization for instant user collaboration and a wide variety of collaborative work means, including video and text chats.",
       "cover": "/img/main/work_6.jpg",
+      "alt": "Educadio platform preview",
       "link": "/educadio",
       "mainColor": "#364456"
     }
@@ -84,6 +91,7 @@
       "company": "Founder, CEO",
       "text": "We have been working with Freshcode and their programmers for almost 2 years and we highly recommend them as development partners. We highly value their abilities to deliver on time, their hard competences at writing solid, scalable code, etc., but mostly we value their ability to think up and design innovative yet solid solutions. Educadio trust them with all our software developments.",
       "photo": "/img/main/client_1.png",
+      "alt": "Ulrik With Andersen from Educadio",
       "link": "/educadio"
     },
     {
@@ -91,6 +99,7 @@
       "company": "Founder",
       "text": "While working with Freshcode I encountered transparent, accurate and well organized development process. Freshcode employes are open to feedback and flexible to incorporate new practises in their daily works. I'm pretty satisfied with the quality of delivery and will be happy to continue our fruitful cooperation.",
       "photo": "/img/main/client_2.png",
+      "alt": "Ivan Ishchenko from Outdoor",
       "link": "/outdoor"
     }
   ],
@@ -107,10 +116,10 @@
     "description": "<span class='inline-text'>Freshcode is not just another reliable and detail-oriented team. We are a group of audacious purpose-driven individuals with unbeatable IT expertise and an open-minded attitude to provide you with truly ingenious solutions and daring products.</span> We don’t do average, only the best!",
     "cover": "main/people.jpg",
     "info": [
-      { "desc": "Core <br> clients",          "val": 12, "ico": "/img/main/client_icon.png" },
-      { "desc": "In-house <br> developers",   "val": 42, "ico": "/img/main/developer_icon.png" },
-      { "desc": "Programming <br> languages", "val": 7,  "ico": "/img/main/language_icon.png" },
-      { "desc": "Completed <br> projects",    "val": 41, "ico": "/img/main/project_icon.png" }
+      { "desc": "Core <br> clients", "alt": "",         "val": 12, "ico": "/img/main/client_icon.png" },
+      { "desc": "In-house <br> developers", "alt": "",  "val": 42, "ico": "/img/main/developer_icon.png" },
+      { "desc": "Programming <br> languages", "alt": "", "val": 7,  "ico": "/img/main/language_icon.png" },
+      { "desc": "Completed <br> projects", "alt": "",   "val": 41, "ico": "/img/main/project_icon.png" }
     ]
   }
 }

@@ -5,6 +5,7 @@
  * @depends libraries/list.min.js
  */
 (function(global) {
+
     var $monitoring = $('.filter-monitoring'),
         $navigation = $('.filter-navigation'),
         $education = $('.filter-education'),
@@ -24,6 +25,7 @@
             title: '{{ work.title }}',
             description: '{{ work.description }}',
             workcover: '{{ work.cover }}',
+            workalt: '{{ work.alt }}',
             worksrcset: '{{ work.srcsetattr }}',
             worksizes: '{{ work.sizesattr }}',
             workcoverbckg: 'background-color: {{ work.mainColor }} !important',

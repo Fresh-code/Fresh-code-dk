@@ -5,6 +5,7 @@
   "page-title": "Our testimonials",
   "page-text": "<span class='inline-text'>Nothing speaks about our expertise better than the words of our favorite customers. </span><span class='inline-text'> These words make us happy and proud, willing to get better at what we do. </span><span class='inline-text'> Clients help us grow and evolve, that’s why we value every opinion. </span><span class='inline-text'> Check out what our clients have to say about our work! </span>",
   "page-background": "/img/testimonials/banner_testimonials.jpg",
+  "alt":"Man holding an iphone",
   "icons": [
     "/img/testimonials/logo_1.png",
     "/img/testimonials/logo_2.png",

@@ -1136,6 +1136,7 @@ a.attach-link:hover { text-decoration: none; }
 	flex-direction: column;
 	align-content: center; }
 .thx-box img {
+
 	max-width: 120px;
 	align-self: center;
 	margin-bottom: 3rem; }
