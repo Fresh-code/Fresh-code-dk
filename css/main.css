@@ -1147,10 +1147,6 @@ a.attach-link:hover { text-decoration: none; }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
 	.services-table-cell .cell-text {  padding: 40px;  font-size: 22px;  }
 }
-
-/*@media screen and  (max-width: 1200px) and (max-width: 1450px ) {
-	.services-table-cell .cell-text {  padding: 25px;  font-size: 20px;  }
-}*/
 @media screen and (min-width: 1450px) {
 	.services-table-cell .cell-text {  padding: 40px;  font-size: 22px;  }
 }
