@@ -15,9 +15,8 @@
         $current = $all,
         $menu = false,
         $dd = $('#filter-dropdown');
-    
-    var posts = [
 
+    var posts = [
         {% for post in site.posts %}
         {
             posttitle: '{{ post.post-title }}',
