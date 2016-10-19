@@ -26,57 +26,27 @@ layout: default
     </div>
     <div class="fresh-services" >
         <div class="fresh-sub-block"
-             style="margin: 50px 0 50px 0">
-            <!--<div class="container" style="margin: 0; padding: 0; width: 100%">
-                {% for service in site.data.services.serv-textes %}
-                <div class="row">
-                    <div class="col-lg-2" style="padding: 0">
-                        <span>
-                            <img class="img-responsive"
-                                 style="width: 130px; height: 130px"
-                                 src="{{ service.icon }}"
+             style="margin: 20px 0 50px 0">
+            <div class="post-body p-t-6rem">
+                <div class="row post-shorted services-width-fixed">
+                    {% for service in site.data.services.serv-textes %}
+                    <div style="margin-bottom: 40px">
+                        <div class="services-paragr-image">
+                            <img src="{{ service.icon }}"
                                  alt="{{ service.name }} icon">
-                        </span>
+                        </div>
+                        <div class="services-description">
+                            <p style="margin: auto">{{ service.text }}</p>
+                        </div>
                     </div>
-                    <div class="col-lg-10 some_class">
-                        <p>{{ service.text }}</p>
-                    </div>
-                </div>
-                   {% endfor %}
-            </div>-->
-            <!--<div style="margin: 0; padding: 0; width: 100%">
-            {% for service in site.data.services.serv-textes %}
 
-                <div>
-                    <img class="img-responsive"
-                         style="width: 130px; height: 130px"
-                         src="{{ service.icon }}"
-                         alt="{{ service.name }} icon">
+                    {% endfor %}
                 </div>
-                <div class="some_class">
-                    <p>{{ service.text }}</p>
-                </div>
-            {% endfor %}
-            </div>-->
-
-            <div>
-                {% for service in site.data.services.serv-textes %}
-
-                    <div class="services-paragr-image">
-                        <img class="img-responsive" style="margin: auto"
-                             src="{{ service.icon }}"
-                             alt="{{ service.name }} icon">
-                    </div>
-                    <div class="services-description">
-                        <p>{{ service.text }}</p>
-                    </div>
-                <br>
-                {% endfor %}
             </div>
         </div>
     </div>
-    <div class="fresh-services" style="margin: 0 0 65px 0; padding: 0 8%">
-        <div>
+    <div class="fresh-services" style="margin: 0 0 100px 0; padding: 0 8%">
+        <div class="row post-shorted services-width-fixed">
             <div class="container" style="margin: 0; padding: 1px 0 0 0; width: 100%">
                 <div class="row">
                     {% for service in site.data.services.short %}

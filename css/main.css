@@ -1058,11 +1058,14 @@ a.attach-link:hover { text-decoration: none; }
 	margin-top: 50px;
 }
 .services-paragr-image{
-	width: 120px;
-	height: 120px;
+	width: 131px;
 	vertical-align: middle;
 	display: table-cell;
-	margin: auto;
+	text-align: center;
+}
+.services-width-fixed{
+	max-width: 1266px;
+	margin: 0 auto !important;
 }
 .fresh-sub-block dl {
 	padding-bottom: 20px;
@@ -1165,9 +1168,15 @@ a.attach-link:hover { text-decoration: none; }
 	.services-paragr-image{  margin: auto; margin-top:25px; display: block; }
 	.services-description {  padding: 15px 0 0 0;  line-height: 24px;  font-size: 17px;  font-weight: 300;  text-align-last: center;}
 	.services-cell-img{  width: 80px;  height: 80px;  margin: auto;  margin-top: 50px;  }
-	.services-table-cell {  height: 250px;  }
+	.services-table-cell {  height: 250px; }
 	.services-cell-prev-text {  font-size: 19px;  padding: 25px;  font-weight: 600;  }
 	.services-table-cell .cell-text {  padding: 25px;  font-size: 18px;  }
+}
+@media screen and (min-width: 567px) and (max-width: 767px) {
+	.services-table-cell { width: 50%; height: 220px; }
+	.services-table-cell .cell-text {  padding: 22px;  font-size: 14px;  }
+	.services-cell-prev-text {  font-size: 14px;  padding: 25px;  font-weight: 600;  }
+
 }
 @media (max-width: 360px ) {
 	.services-table-cell .cell-text {  padding: 25px;  font-size: 17px;  }
