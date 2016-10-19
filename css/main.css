@@ -772,9 +772,10 @@ body.locked {
 .p-t-6rem { padding-top: 6rem; }
 
 /*Job*/
-.shorted-job h2 strong {
+.shorted-job strong {
 	font-family: "Open Middle", sans-serif;
-	font-size: 32px; }
+	font-size: 32px;
+}
 /*Job*/
 
 /*COLLAPSIBLE*/
