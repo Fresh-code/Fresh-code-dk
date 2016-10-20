@@ -31,7 +31,7 @@ layout: products
         </div>
     </div>
     <div class="proj-screenshot">
-        {% adaptive_image {{ site.data.center-layout.rhino.images[0] }} size="1920 1600 1024" sizes="min 1500 1920;max 1499 1600;max 999 1024" draggable="false" alt="rhino main" title="rhino main" %}
+        {% adaptive_image {{ site.data.center-layout.rhino.images[0].img }} size="1920 1600 1024" sizes="min 1500 1920;max 1499 1600;max 999 1024" draggable="false" alt="{{ site.data.center-layout.rhino.images[0].alt }}" title="rhino main" %}
     </div>
 </section>
 <section class="proj-body proj-body-overflow proj-d-sample">
@@ -39,7 +39,7 @@ layout: products
         <div class="fresh-sub-block no-min-height paddinged">
             <div class="row flex-box-row">
                 <div class="col-sm-12 col-md-3 proj-logo">
-                    <img src="{{ site.data.center-layout.rhino.images[1] }}">
+                    <img src="{{ site.data.center-layout.rhino.images[1].img }}" alt="{{ site.data.center-layout.rhino.images[1].alt }}">
                 </div>
                 <div class="col-md-9 challenges">
                     <h2>Challenges</h2>
@@ -52,7 +52,7 @@ layout: products
                 <!-- Development -->
                 <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 macbook-c txt-big">
                     <div class="img-container">
-                        {% adaptive_image {{ site.data.center-layout.rhino.images[2] }} size="1085 400" sizes="min 1000 1085;max 999 400" class="img-wb-macbook" draggable="false" alt="rhino main" title="rhino main" %}
+                        {% adaptive_image {{ site.data.center-layout.rhino.images[2].img }} size="1085 400" sizes="min 1000 1085;max 999 400" class="img-wb-macbook" draggable="false" alt="{{ site.data.center-layout.rhino.images[2].alt }}" title="rhino main" %}
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 no-padding solutions">

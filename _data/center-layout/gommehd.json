@@ -10,7 +10,11 @@
   "projDuration": "4 months",
   "pdf": "pdf/freshcode_case_studies_gommehd.pdf",
   "workStages": "Development, Quality Assurance, Launch",
-  "images": ["/img/gommehd/iMac.png", "/img/gommehd/iMac_view_left.png", "/img/gommehd/iMac_view_right.png"],
+  "images": [
+    {"alt":"GommeHD Homepage", "img":"/img/gommehd/iMac.png"},
+    {"alt":"GommeHD Products page", "img":"/img/gommehd/iMac_view_left.png"},
+    {"alt":"GommeHD Checkout page", "img":"/img/gommehd/iMac_view_right.png"}
+  ],
   "challenges": "GommeHD is one of the leading Minecraft Servers with more than 1 million players throughout the world. Our team was tasked with creating an online e-Commerce platform with Minecraft Servers full integration and user-friendly package constructor with variables customization options. Public and private coupons support was required as well as numerous payment systems support. Informative dashboard and flexible user-management were a must for admin panel.",
   "buisValue": "GommeHD online e-Commerce platform allowed our client to monetize Minecraft Servers and increase the number of users by providing high-quality services unmatched by the competition. Creating a more sophisticated content and packages constructor with variables customization options considerably boosted online shop's revenue.",
   "solutions": "Clojure was chosen by our developers to speed up the e-Commerce platform's creation. The site was developed as a single-page application to improve responsiveness while Elasticsearch was implemented to decrease full-text search time. VAT calculations, transactions log, demand analysis and automatic reports generation are provided by admin panel. Full Minecraft Servers integration means that all the packages bought become immediately available to players.",

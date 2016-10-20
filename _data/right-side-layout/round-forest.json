@@ -9,7 +9,11 @@
   "techUsed": "Apache Cassandra, RabbitMQ, Google BigQuery, Jetty, MongoDB, Redis, Postgres, Mockito, JUnit, SL4J, Spring, AngularJS, Bootstrap, AWS S3, EC2, ansible",
   "projDuration": "9 months, ongoing",
   "pdf": "pdf/freshcode_case_studies_round_forest.pdf",
-  "images": ["/img/round-forest/logo.png", "/img/round-forest/iMac.png", "/img/round-forest/application1.jpg"],
+  "images": [
+    {"alt":"RoundForest Logo", "img":"/img/round-forest/logo.png"},
+    {"alt":"RoundForest Dashboard", "img":"/img/round-forest/iMac.png"},
+    {"alt":"Round Forest Ads creation page", "img":"/img/round-forest/application1.jpg"}
+  ],
   "challenges": "RoundForest tasked our developers with creating an application for setting up advertising campaigns. The app must allow keywords' price corrections in real time with calculations conducted according to the relevant algorithm. Application must manipulate huge amounts of data in real time with limited analyzing time due to the constant flow of new information. Fast response time was also an important factor.",
   "buisValue": "RoundForest uses this application to promote its own online shops. One of the main tests was conducted before the Black Friday. Within one week the application managed to draw more than a million visitors, leading to a huge increase in sales and therefore in RoundForest's income. Using the newly developed application the company also provides services for third-party e-Commerce projects.",
   "solutions": "Our team developed the application for automatic advertising campaigns creation. Complicated tree-like structures include all the data, while filters narrow down the core audience. Keywords' and ads' prices are altered in real time according to analytical data derived by the chosen algorithm. The application can be monitored and controlled via the web interface. The app using distributed databases needed 15 servers connected by a local network, while future database expansion will require the increase in the number of servers.",

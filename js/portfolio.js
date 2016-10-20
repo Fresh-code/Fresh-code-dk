@@ -36,21 +36,24 @@
         {% endfor %}
     ];
     var options = {
+
         valueNames: [
             'title',
             'description',
             'type',
             { attr: 'src', name: 'workcover' },
+            { attr: 'alt', name: 'workalt' },
             { attr: 'srcset', name: 'worksrcset' },
             { attr: 'sizes', name: 'worksizes' },
             { attr: 'style', name: 'workbckg' },
             { attr: 'style', name: 'workcoverbckg' },
             { attr: 'href', name: 'workurl' }
+
         ],
         item: '<div class="col-xxs col-xs-6 col-sm-6 col-md-4 col-lg-4 no-padding cube preview-img description no-padding-m">' +
         '<a href="" class="workurl">' +
         '<div class="workcoverbckg">' +
-        '<img class="img-responsive workcover worksrcset worksizes" alt="preview image" title="preview image">' +
+        '<img class="img-responsive workcover worksrcset worksizes workalt" title="preview image">' +
         '<div class="cover caption absolute workbckg">' +
         '<h3 class="title"></h3>' +
         '<p class="description"></p>' +
