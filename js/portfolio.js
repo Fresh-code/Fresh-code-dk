@@ -2,6 +2,7 @@
  * @depends libraries/list.min.js
  */
 (function(global) {
+
     var $monitoring = $('.filter-monitoring'),
         $navigation = $('.filter-navigation'),
         $education = $('.filter-education'),
