@@ -8,6 +8,26 @@
 (function(global) {
 
     $(window).on("load", function() {
+
+        $.fn.randomize = function(selector){
+            var $elems = selector ? $(this).find(selector) : $(this).children(),
+                $parents = $elems.parent();
+            $parents.each(function(){
+                $(this).children(selector).sort(function(){
+                    return Math.round(Math.random()) - 0.5;
+                }).detach().appendTo(this);
+            });
+            $( "#testimonials .testimonial").each( function( index, element) {
+                if(index % 2){
+                    $(element).addClass("swap-hr");
+                }
+            });
+
+            $('#testimonials').css({'display':'block'});
+            return this;
+        };
+        $('#testimonials').randomize('section');
+
         var byMenuBtn = false,
             byMailBtn = false,
             byThx = false,
