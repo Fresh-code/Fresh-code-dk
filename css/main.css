@@ -1719,7 +1719,6 @@ textarea.material-input { resize: none; }
 .proj-header-overflow { margin-bottom: 0; }
 .proj-body.proj-body-overflow .fresh-sub-block.overflow { overflow: hidden; }
 .proj-body.proj-body-overflow .challenges { padding: 0; }
-
 .proj-header-overflow .proj-sub-block { position: relative; }
 
 .proj-header-overflow .proj-screenshot img {
