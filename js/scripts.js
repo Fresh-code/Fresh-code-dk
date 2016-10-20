@@ -19,10 +19,10 @@
             });
             $( "#testimonials .testimonial").each( function( index, element) {
                 if(index % 2){
-                    var p = $(element).children("div")[1];
-                    $(p).insertBefore($(p).prev());
+                    $(element).addClass("swap-hr");
                 }
             });
+
             $('#testimonials').css({'display':'block'});
             return this;
         };

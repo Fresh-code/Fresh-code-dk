@@ -585,7 +585,10 @@ body.locked {
 .testi-head-icons img {
     margin: 0 24px 20px 0;
 }
-
+.swap-hr {
+	display: inline-flex;
+	flex-direction: row-reverse;
+}
 .fresh-main.testimonial-block { margin-bottom: 5em; }
 .testimonial img {
 	position: relative;
@@ -1052,10 +1055,14 @@ a.attach-link:hover { text-decoration: none; }
 	color: #1a1a1a;
 }
 .services-cell-img{
-	width: 100px;
-	height: 100px;
 	margin: auto;
-	margin-top: 50px;
+}
+.cell-img-block {
+	margin-top: 60px;
+	height: 30%;
+	text-align: center;
+	display: flex;
+	align-items: center;
 }
 .services-paragr-image{
 	width: 131px;
@@ -1156,14 +1163,12 @@ a.attach-link:hover { text-decoration: none; }
 @media screen and (min-width: 769px) and (max-width: 1000px) {
 	.services-paragr-image{  margin: auto; margin-top:25px; display: block;}
 	.services-description {  padding: 15px 0 0 0;  line-height: 24px;  color: #1a1a1a;  font-size: 22px;  font-weight: 300;  text-align-last: center;  }
-	.services-cell-img{  width: 80px;  height: 80px;  margin: auto;  margin-top: 50px;  }
 	.services-table-cell {  height: 250px;  }
 	.services-cell-prev-text {  font-size: 20px;  padding: 25px;  font-weight: 600;  }
 }
 @media (max-width: 768px ) {
 	.services-paragr-image{  margin: auto; margin-top:25px; display: block; }
 	.services-description {  padding: 15px 0 0 0;  line-height: 24px;  font-size: 17px;  font-weight: 300;  text-align-last: center;}
-	.services-cell-img{  width: 80px;  height: 80px;  margin: auto;  margin-top: 50px;  }
 	.services-table-cell {  height: 250px; }
 	.services-cell-prev-text {  font-size: 19px;  padding: 25px;  font-weight: 600;  }
 	.services-table-cell .cell-text {  padding: 25px;  font-size: 18px;  }
@@ -1176,7 +1181,6 @@ a.attach-link:hover { text-decoration: none; }
 }
 @media (max-width: 360px ) {
 	.services-table-cell .cell-text {  padding: 25px;  font-size: 17px;  }
-	.services-cell-img{  width: 80px;  height: 80px;  margin: auto;  margin-top: 50px;  }
 	.services-table-cell {  height: 250px;  }
 	.services-cell-prev-text {  font-size: 16px;  padding: 25px;  font-weight: 600;  }
 }
@@ -1494,7 +1498,7 @@ textarea.material-input { resize: none; }
 	.footer-list li a,
 	.footer-list li {
 		color: white;
-		text-align: center;
+		text-align: left;
 		line-height: 41px;
 		font-size: 28px;
 		margin-bottom: .5em; }
@@ -1575,14 +1579,14 @@ textarea.material-input { resize: none; }
 		/*margin: 10% auto;*/
 	}
 }
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
 	.list-footer div a,
 	.list-footer div,
 	.footer-list li a,
 	.footer-list li {
 		color: white;
 		text-align: left;
-	}
+	}*/
 }
 @media screen and (max-width: 640px) {
 	.logo-block-main.menu-opened { left: 20px; }
@@ -2108,6 +2112,10 @@ header { color: #ffffff; }
 
 @media (max-width: 1000px), (orientation: portrait) {
 	.height-fixed:not(.height-fixed-xs) { height: auto !important; }
+	.swap-hr {
+		display: block;
+		flex-direction: column;
+	}
 
 }
 @media (max-width: 1000px) and (orientation: landscape) {
@@ -3227,7 +3235,39 @@ span.path {
 	.proj-body .rsl-h1 { margin: -1em 0 0; }
 	.rsl-h1 { font-size: 32px; }
 }
-
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	footer .shorted { text-align: left; width: 55%;}
+	.fresh-footer .hide-on-mobile {  display: none;  }
+	.fresh-footer .show-on-mobile { display: block; }
+	.footer-list {		font-size: 12px;  }
+	.social-icons {  height: 30px;  width: 30px;  }
+	.list-footer {  padding: 26px 0 26px 39px !important;  }
+	.footer-list {  display: block;  margin: 26px 0 26px 39px;  }
+	.li-head {  font-size: 26px !important;  font-weight: 600;  }
+	.list-footer div a,
+	.list-footer div,
+	.footer-list li a,
+	.footer-list li {  color: white;  text-align: left;  line-height: 41px;  font-size: 19px;  !important;  margin-bottom: .4em;  }
+	.list-footer .logo-footer img {
+		bottom: 0;
+	}
+	.list-footer .logo-footer {
+		margin: 0.6em 0;
+	}
+	.copyright.margined {
+		margin-bottom: 0.3em;
+		font-size: 17px;
+	}
+	.social-text {
+		font-family: "Open Middle", sans-serif;
+		font-size: 14px;
+	}
+	.social-icons.footer {
+		height: 52px;
+		width: 52px;
+		margin-right: 10px;
+	}
+}
 @media screen and (min-width: 1001px) {
 	.proj-header { margin: 11% 0 0; }
 }

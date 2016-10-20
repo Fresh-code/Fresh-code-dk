@@ -53,9 +53,12 @@ layout: default
                     <a class="link" href="{{ service.link }}">
                         <div class="col-lg-4 col-sm-6 col-xs-12  services-table-cell" >
                             <span class="cell-prev">
-                                <img class="img-responsive services-cell-img"
-                                     src="{{ service.icon }}"
-                                     alt="{{ service.name }} icon">
+                                <div class="cell-img-block">
+                                    <img class="img-responsive services-cell-img"
+                                         src="{{ service.icon }}"
+                                         alt="{{ service.name }} icon">
+                                </div>
+
                                 <h2 class="services-cell-prev-text">{{ service.name }}</h2>
                             </span>
                             <span class="cell-text">

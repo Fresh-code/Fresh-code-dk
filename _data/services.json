@@ -10,42 +10,42 @@
       "name": "Web development",
       "text": "We create responsive, fast and elegant solutions expertly crafted to suit your business needs using the most efficient technologies like Ruby on Rails, Angular.js, Node.js.",
       "btntext": "more web",
-      "icon": "/img/services/web_dev_icon.svg",
+      "icon": "/img/services/web.png",
       "link": "/web-development"
     },
     {
       "name": "Mobile development",
       "text": "We implement workable solutions for both iOS and Android operation systems and help you build a balanced app with a streamlined design, intuitive interface, and top-notch performance.",
       "btntext": "more mobile",
-      "icon": "/img/services/mobile_dev_icon.svg",
+      "icon": "/img/services/mobile.png",
       "link": "/mobile-development"
     },
     {
       "name": "Desktop development",
       "text": "We provide a stable architecture to fulfill your business needs. We ensure application's rich functionality, user-friendliness, high productivity and guarantee seamless synchronization and integration.",
       "btntext": "more Desktop",
-      "icon": "/img/services/desktop_dev_icon.svg",
+      "icon": "/img/services/desktop.png",
       "link": "/desktop-development"
     },
     {
       "name": "Maintenance",
       "text": "We perform regular maintenance to prevent system's instability. Our fool-proof backup and recovery options minimize risks of unexpected failures and maximize project's uptime.",
       "btntext": "more Maintenance",
-      "icon": "/img/services/maintance_icon.svg",
+      "icon": "/img/services/maintenance.png",
       "link": "/maintenance"
     },
     {
       "name": "Consulting",
       "text": "We estimate the time and resources needed, plan the work and choose the best technologies and solutions for your needs. We provide usability analysis, architecture stability, code and UX audits.",
       "btntext": "more Consulting",
-      "icon": "/img/services/consulting_icon.svg",
+      "icon": "/img/services/consulting.png",
       "link": "/consulting"
     },
     {
       "name": "Dedicated team",
       "text": "We create a dedicated team for your high priority projects. Each team member boasts specialization and skill set best fitted for your needs to ensure successful and timely development.",
       "btntext": "more web",
-      "icon": "/img/services/dedicated_icon.svg",
+      "icon": "/img/services/team.png",
       "link": "/dedicated-team"
     }
   ],
