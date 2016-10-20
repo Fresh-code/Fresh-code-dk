@@ -31,46 +31,13 @@ layout: default
 </section>
 
 <section class="proj-body">
-    <div class="testimonials-container width-fixed">
+    <div class="testimonials-container width-fixed" id="testimonials">
         {% for testimonial in site.data.testimonials.short %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-            {% if loopindex == 1 %}
-                <section class="fresh-main testimonial-block">
-                    <div class="fresh-sub-block no-padding">
-                        <div class="row testimonial flex-box shorted">
-                            <div class="col-xs-12 col-md-6 col-lg-6 testimonial-img testimonial-writtings  flex-item">
-                                {% adaptive_image {{ testimonial.photo }} size="350 250" sizes="min 1000 350, max 999 250" draggable="false" class="img-responsive img-circle" alt="{{ testimonial.author }} photo" title="{{ testimonial.author }} photo" %}
-                                <div class="testi-credit">
-                                    <span class="testi-name">{{ testimonial.author }}</span>
-                                    <span class="testi-company">{{ testimonial.company }}</span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6 col-lg-6 flex-item">
-                                <p class="testimonial-text">{{ testimonial.text }}</p>
-                                <div class="description right">
-                                    <a class="link" href="{{testimonial.link}}">
-                                        <div class="color-fill"></div>
-                                        <span>Case study</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            {% else %}
-                <section class="fresh-main testimonial-block">
-                    <div class="fresh-sub-block no-padding">
-                        <div class="row testimonial flex-box reversed-box shorted">
-                            <div class="col-xs-12 col-md-6 col-lg-6 flex-item">
-                                <p class="testimonial-text">{{ testimonial.text }}</p>
+            <section class="fresh-main testimonial-block">
+                <div class="fresh-sub-block no-padding">
 
-                                <div class="description right">
-                                    <a class="link" href="{{testimonial.link}}">
-                                        <div class="color-fill"></div>
-                                        <span>Case study</span>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="row  flex-box shorted">
+                        <div class="testimonial">
                             <div class="col-xs-12 col-md-6 col-lg-6 testimonial-img testimonial-writtings  flex-item">
                                 {% adaptive_image {{ testimonial.photo }} size="350 250" sizes="min 1000 350, max 999 250" draggable="false" class="img-responsive img-circle" alt="{{ testimonial.author }} photo" title="{{ testimonial.author }} photo" %}
                                 <div class="testi-credit">
@@ -78,10 +45,19 @@ layout: default
                                     <span class="testi-company">{{ testimonial.company }}</span>
                                 </div>
                             </div>
+                            <div class="col-xs-12 col-md-6 col-lg-6 flex-item testimonial-texts">
+                                <p class="testimonial-text">{{ testimonial.text }}</p>
+                                <div class="description right">
+                                    <a class="link" href="{{testimonial.link}}">
+                                        <div class="color-fill"></div>
+                                        <span>Case study</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </section>
-            {% endif %}
+                </div>
+            </section>
         {% endfor %}
     </div>
 </section>
