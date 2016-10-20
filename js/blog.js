@@ -26,6 +26,7 @@
             catauthor: '{{ post.categories-tag }} | {{ post.author }}',
             position: '{{ post.position }}',
             postcover: '{{ post.cover }}',
+            postalt: '{{ post.alt }}',
             postsrcset: '{{ post.srcsetattr }}',
             postsize: '{{ post.sizeattr }}',
             postcoverbckg: 'background-color: {{ post.background-cover }} !important',
@@ -35,6 +36,7 @@
         }{% unless forloop.last %},{% endunless %}
         {% endfor %}
     ];
+
     var options = {
         valueNames: [
             'posttitle',
@@ -42,6 +44,7 @@
             'catauthor',
             'position',
             { attr: 'src', name: 'postcover' },
+            { attr: 'alt', name: 'postalt' },
             { attr: 'srcset', name: 'postsrcset' },
             { attr: 'sizes', name: 'postsize' },
             { attr: 'style', name: 'postbckg' },
@@ -52,7 +55,7 @@
         item: '<div class="col-xxs col-xs-6 col-sm-4 col-md-4 preview-img col-lg-4 no-padding">' +
         '<a href="" class="posturl">' +
         '<div class="description blog postcoverbckg">' +
-        '<img draggable="false" class="img-responsive postcover postsrcset postsize" alt="preview image" title="preview image">' +
+        '<img draggable="false" class="img-responsive postcover postsrcset postsize postalt" title="preview image">' +
         '<div class="bckg-cover postbckg"></div>'+
         '<div class="cover">' +
         '<h3 class="posttitle"></h3>' +
