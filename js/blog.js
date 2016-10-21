@@ -58,7 +58,7 @@
         '<img draggable="false" class="img-responsive postcover postsrcset postsize postalt" title="preview image">' +
         '<div class="bckg-cover postbckg"></div>'+
         '<div class="cover">' +
-        '<h3 class="posttitle"></h3>' +
+        '<h2 class="posttitle"></h2>' +
         '<span class="date catauthor"></span>' +
         '</div>' +
         '</div>' +

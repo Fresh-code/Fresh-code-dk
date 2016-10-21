@@ -39,7 +39,6 @@ layout: default
                             <p style="margin: auto">{{ service.text }}</p>
                         </div>
                     </div>
-
                     {% endfor %}
                 </div>
             </div>
@@ -52,19 +51,17 @@ layout: default
                     {% for service in site.data.services.short %}
                     <a class="link" href="{{ service.link }}">
                         <div class="col-lg-4 col-sm-6 col-xs-12  services-table-cell" >
-                            <span class="cell-prev">
+                            <div class="cell-prev">
                                 <div class="cell-img-block">
                                     <img class="img-responsive services-cell-img"
                                          src="{{ service.icon }}"
                                          alt="{{ service.name }} icon">
                                 </div>
-
                                 <h2 class="services-cell-prev-text">{{ service.name }}</h2>
-                            </span>
-                            <span class="cell-text">
-                               <div>
-                                   {{ service.text }}</div>
-                            </span>
+                            </div>
+                            <div class="cell-text">
+                               {{ service.text }}
+                            </div>
                         </div>
                     </a>
                     {% endfor %}
@@ -73,52 +70,3 @@ layout: default
         </div>
     </div>
 </section>
-
-
-<!--<section class="fresh-services">
-    <div class="fresh-sub-block">
-        <div class="row shorted width-fixed">
-            {% for service in site.data.services.short %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-            {% if loopindex == 1 %}
-            <div class="row">
-                <div class="media fresh-container no-padding">
-                    <div class="media-left preview-block services-icon">
-                        <img class="img-responsive" src="{{ service.icon }}" alt="{{ service.name }} icon">
-                    </div>
-                    <div class="description media-body">
-                        <h3>{{ service.name }}</h3>
-                        <p>{{ service.text }}</p>
-                        <a class="link" href="{{ service.link }}">
-                            <div class="color-fill"></div>
-                            <span>{{ service.btntext }}</span>
-                        </a>
-                    </div>
-                </div>
-                {% else %}
-                <div class="media fresh-container no-padding">
-                    <div class="media-left preview-block services-icon">
-                        <img class="img-responsive" src="{{ service.icon }}" alt="{{ service.name }} icon">
-                    </div>
-                    <div class="description media-body">
-                        <h3>{{ service.name }}</h3>
-                        <p>{{ service.text }}</p>
-                        <a class="link" href="{{ service.link }}">
-                            <div class="color-fill"></div>
-                            <span>{{ service.btntext }}</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            {% endif %}
-            {% endfor %}
-            <div class="serv serv-button-zone">
-                <a id="hire" class="hire-btn serv-request-btn" href="">
-                    <div class="color-fill"></div>
-                    <span>Make a request</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>-->
-<!--Services-->

@@ -2,43 +2,42 @@
 permalink: /job/
 layout: default
 ---
-
-<section class="section height-fixed height-100 padding-top padding-bottom">
-    <div class="image-background bleed">
-        {% adaptive_image {{ site.data.job.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="{{ site.data.job.alt }}" title="Career background" %}
-    </div>
-    <div class="container ">
-        <div class="row row-equal-columns">
-            <div class="column a-center">
-                <div class="flex flex-middle">
-                    <div class="flex-inner">
-                        <div class="block block-text width-fixed">
-                            <header>
-                                <h1 class="fresh-h1 h1">{{ site.data.job.page-title }}</h1>
-                                <h3 class="fresh-h3 centered">{{ site.data.job.page-text }}</h3>
-                            </header>
-                        </div>
-                    </div> <!-- flex-inner -->
+<section>
+    <div class="section height-fixed height-100 padding-top padding-bottom">
+        <div class="image-background bleed">
+            {% adaptive_image {{ site.data.job.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="{{ site.data.job.alt }}" title="Career background" %}
+        </div>
+        <div class="container ">
+            <div class="row row-equal-columns">
+                <div class="column a-center">
+                    <div class="flex flex-middle">
+                        <div class="flex-inner">
+                            <div class="block block-text width-fixed">
+                                <header>
+                                    <h1 class="fresh-h1 h1">{{ site.data.job.page-title }}</h1>
+                                    <span class="fresh-h3 centered">{{ site.data.job.page-text }}</span>
+                                </header>
+                            </div>
+                        </div> <!-- flex-inner -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-<section class="fresh-main">
-    <div class="fresh-container job">
-        <div class="row shorted-job width-fixed">
-            <div class="row m-t-5">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
-                    <h2><strong>VACANCY</strong></h2>
-                    <ul class="collapsible" data-collapsible="expandable">
-                        {% for job in site.data.job.jobs %}
+    <div class="fresh-main">
+        <div class="fresh-container job">
+            <div class="row shorted-job width-fixed">
+                <div class="row m-t-5">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                        <h2><strong>VACANCY</strong></h2>
+                        <ul class="collapsible" data-collapsible="expandable">
+                            {% for job in site.data.job.jobs %}
                             <li {% if forloop.index == 1 %} class="active" {% endif %}>
                                 <div class="collapsible-header {% if forloop.index == 1 %} active {% endif %}">
-                                    <div class="collapsible-title">{{ job.title }}</div>
+                                    <h3 class="collapsible-title">{{ job.title }}</h3>
                                 </div>
                                 <div class="collapsible-body">
-                                    <h3>Necessary skills</h3>
+                                    <div class="job-nes-skills">Necessary skills</div>
                                     <ul>
                                         {% for skill in job.skills %}
                                         <li>{{ skill }}</li>
@@ -46,48 +45,48 @@ layout: default
                                     </ul>
                                 </div>
                             </li>
-                        {% endfor %}
-                    </ul>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="row job">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 m-b-6rem no-padding">
-                    <h2 class="m-b-3"><strong>WRITE ABOUT YOURSELF</strong></h2>
-
-                    <form class="material-form job-form" data-parsley-validate>
-                        <div class="row material-box">
-                            <textarea class="material-input"
-                                      rows="1"
-                                      name="text"
-                                      placeholder="Hi I want to work in your company *"
-                                      data-parsley-trigger="keyup"
-                                      data-parsley-rangelength="[20,200]"
-                                      required></textarea>
-                        </div>
-                        <div class="row material-box">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
-                                <label class="attach-link" onclick="$('#file').trigger('click')">
-                                    <img class="clip-img" src="/img/icon_attach.png" alt="Paperclip icon">
-                                    <span>Attach file</span>
-                                </label>
+                <div class="row job">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 m-b-6rem no-padding">
+                        <h2 class="m-b-3"><strong>WRITE ABOUT YOURSELF</strong></h2>
+                        <form class="material-form job-form" data-parsley-validate>
+                            <div class="row material-box">
+                                <textarea class="material-input"
+                                          rows="1"
+                                          name="text"
+                                          placeholder="Hi I want to work in your company *"
+                                          data-parsley-trigger="keyup"
+                                          data-parsley-rangelength="[20,200]"
+                                          required></textarea>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
-                                <input id="file" class="material-input"
-                                       name="file"
-                                       type="file"
-                                       autocomplete="off"
-                                       data-parsley-required-message="You must add your resume"
-                                       style="display: none"
-                                       required>
+                            <div class="row material-box">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                                    <label class="attach-link" onclick="$('#file').trigger('click')">
+                                        <img class="clip-img" src="/img/icon_attach.png" alt="Paperclip icon">
+                                        <span>Attach file</span>
+                                    </label>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                                    <input id="file" class="material-input"
+                                           name="file"
+                                           type="file"
+                                           autocomplete="off"
+                                           data-parsley-required-message="You must add your resume"
+                                           style="display: none"
+                                           required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="description submit-block">
-                            <button type="submit" class="hire-btn button">
-                                <div class="color-fill"></div>
-                                <span>Submit</span>
-                            </button>
-                        </div>
-                    </form>
+                            <div class="description submit-block">
+                                <button type="submit" class="hire-btn button">
+                                    <div class="color-fill"></div>
+                                    <span>Submit</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

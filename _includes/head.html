@@ -21,10 +21,15 @@
     {% endif %}
 
     {% assign url = page.url | replace:'/','' %}
-    <meta name="description" content="{% if site.data[url].description%}{{ site.data[url].description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if site.data[url].description%}{{ site.data[url].description }}
+               {% elsif site.data.center-layout[url].description%}{{ site.data.center-layout[url].description }}
+                {% elsif site.data.right-side-layout[url].description%}{{ site.data.right-side-layout[url].description }}
+    {% else %}{{ site.description }}{% endif %}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <title>{% if site.data[url].title %}{{ site.data[url].title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if site.data.center-layout[url].title%}{{ site.data.center-layout[url].title }}
+        {% elsif site.data.right-side-layout[url].title%}{{ site.data.right-side-layout[url].title }}
+        {% else %}{{ site.title }}{% endif %}</title>
 
     <link rel="stylesheet" href="{% minified_css_file %}">
 </head>
