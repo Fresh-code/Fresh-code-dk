@@ -713,11 +713,12 @@ body.locked {
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	max-height: 170px;
+	max-height: 180px;
 	text-overflow: ellipsis;
 	color: white;
 	padding: 0;
 	text-align: left;
+	display: inline;
 }
 .post-body li { font-size: 22px; }
 
@@ -1444,7 +1445,9 @@ textarea.material-input { resize: none; }
 @media screen and (max-width: 1150px) {
 	.fresh-sub-block.no-padding .description h3 {
 		font-size: 18px;
+		line-height: 35px;
 		margin-top: 0; }
+	.fresh-sub-block.no-padding .description.blog .date { font-size: 14px; }
 	.fresh-sub-block.no-padding .description p {
 		font-size: 17px;
 		margin: 0;
@@ -1452,8 +1455,7 @@ textarea.material-input { resize: none; }
 		text-align: left;
 		height: 94px; }
 	.description.blog .cover h2 {
-		font-size: 24px;
-		height: 90px;
+		font-size: 20px;
 		line-height: 32px; }
 	.description.blog .cover span { margin-top: 30px; }
 }
@@ -1479,6 +1481,12 @@ textarea.material-input { resize: none; }
 	.testimonials-container .fresh-sub-block.no-padding .description.btn { padding: 0; }
 	/*.count { line-height: 50px; }*/
 }
+
+@media screen and (min-width: 480px) and (max-width: 680px) {
+	.fresh-sub-block.no-padding .description.blog .date{ font-size: 12px;}
+	.description.blog .cover h2{ font-size: 16px;}
+}
+
 @media screen and (max-width: 810px) {
 	.fresh-sub-block.no-padding .description h3 { line-height: 32px; }
 }
@@ -1623,6 +1631,7 @@ textarea.material-input { resize: none; }
 	.employee-card { padding: 2% 0; }
 	.m-t-5 { margin-top: 3em; }
 	.m-b-6 { margin-bottom: 6em; }
+	.fresh-sub-block.no-padding .description h3 {    line-height: 45px;  font-size: 24px;}
 }
 
 @media screen and (max-height: 468px) {
@@ -1640,6 +1649,7 @@ textarea.material-input { resize: none; }
 
 @media screen and (max-width: 360px) {
 	/*IPhone5 styles*/
+	.fresh-sub-block.no-padding .description.blog .date { font-size: 15px; }
 	.preview-block img {
 		top: 5px;
 		bottom: 0; }
