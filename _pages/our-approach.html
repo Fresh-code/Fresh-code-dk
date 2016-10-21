@@ -9,7 +9,7 @@ description: Freshcode developers abide Agile methods to make the process of web
 <section>
     <div class="section height-fixed height-100 padding-top padding-bottom row-single">
         <div class="image-background bleed">
-            {% adaptive_image /img/{{ site.data.approach.background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="{{site.data.approach.alt}}" title="Approach background" %}
+            {% adaptive_image /img/{{ site.data.our-approach.background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="{{site.data.our-approach.alt}}" title="Approach background" %}
         </div>
         <div class="container">
             <div class="row row-equal-columns">
@@ -18,8 +18,8 @@ description: Freshcode developers abide Agile methods to make the process of web
                         <div class="flex-inner">
                             <div class="block block-text width-fixed">
                                 <header>
-                                    <h1 class="fresh-h1 h1">{{ site.data.approach.title }}</h1>
-                                    <span class="fresh-h3 centered">{{ site.data.approach.text }}</span>
+                                    <h1 class="fresh-h1 h1">{{ site.data.our-approach.title }}</h1>
+                                    <span class="fresh-h3 centered">{{ site.data.our-approach.text }}</span>
                                 </header>
                             </div>
                         </div> <!-- flex-inner -->
@@ -31,7 +31,7 @@ description: Freshcode developers abide Agile methods to make the process of web
     <div class="fresh-approach">
         <div class="fresh-sub-block">
             <div class="row shorted width-fixed">
-                {% for approach in site.data.approach.short %}
+                {% for approach in site.data.our-approach.short %}
                 {% assign loopindex = forloop.index | modulo: 2 %}
                 {% if loopindex == 1 %}
                 <div class="row">

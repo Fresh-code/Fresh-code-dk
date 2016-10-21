@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  What is Freshcode
-description: "Learn more about Freshcode company, what industries we’ve developed solution for, and why you should choose us for your project."
+description: Learn more about Freshcode company, what industries we’ve developed solution for, and why you should choose us for your project.
 date:   2016-09-07 10:59:19
 
 permalink: /blog/2016/09/07/what-is-freshcode/
@@ -12,6 +12,7 @@ platform-tag: Apple
 background: /img/blog-post/banner_post_1.jpg
 background-color: '#0582bb'
 type: business
+
 
 cover: /img/blog-post/post_1c-350.jpg
 alt: Freshcode 3D logo

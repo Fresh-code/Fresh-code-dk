@@ -3,6 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+
+    {% assign url = page.url | replace:'/','' %}
     {% if page.layout == 'post' %}
     <meta property="og:url"           content="{{ site.url }}{{ page.url }}">
     <meta property="og:type"          content="article">
@@ -18,19 +20,21 @@
     <meta name="twitter:creator"      content="{{ site.twitter_username }}">
     <meta name="twitter:title"        content="{{ page.share-title }}">
     <meta name="twitter:description"  content="{{ page.share-description }}">
-    {% endif %}
 
-    {% assign url = page.url | replace:'/','' %}
-    <meta name="description" content="{% if site.data[url].description%}{{ site.data[url].description }}
-               {% elsif site.data.center-layout[url].description%}{{ site.data.center-layout[url].description }}
-                {% elsif site.data.right-side-layout[url].description%}{{ site.data.right-side-layout[url].description }}
-    {% else %}{{ site.description }}{% endif %}">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-    <title>{% if site.data.center-layout[url].title%}{{ site.data.center-layout[url].title }}
+    <meta name="description" content="{{ page.description }}">
+    <title>{{ page.title }}</title>
+    {% else %}
+    <meta name="description" content="{% if site.data[url].description %}{{ site.data[url].description }}
+                                      {% elsif site.data.center-layout[url].description %}{{ site.data.center-layout[url].description }}
+                                      {% elsif site.data.right-side-layout[url].description %}{{ site.data.right-side-layout[url].description }}
+                                      {% else %}{{ site.data['main'].description }}{% endif %}">
+    <title>{% if site.data[url].title%}{{ site.data[url].title }}
+        {% elsif site.data.center-layout[url].title%}{{ site.data.center-layout[url].title }}
         {% elsif site.data.right-side-layout[url].title%}{{ site.data.right-side-layout[url].title }}
-        {% else %}{{ site.title }}{% endif %}</title>
-
+        {% else %}{{ site.data['main'].title }}
+        {% endif %}</title>
+    {% endif %}
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="{% minified_css_file %}">
 </head>
 
