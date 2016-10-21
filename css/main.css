@@ -85,7 +85,7 @@ section { position: relative; }
 .rised-t-9em { margin-top: -9em !important; }
 
 
-.post-body h4 {
+.post-body h3 {
     font-size: 22px;
     font-weight: 600; }
 
@@ -215,6 +215,7 @@ body.locked {
 	height: 2px;
 	background-color: white;
 	transition: transform .3s; }
+
 .menu-ico .stripes::before { transform: translateY(-6px) rotate(0deg); }
 .menu-ico .stripes::after { transform: translateY(6px) rotate(0deg); }
 .menu-ico.close-nav .stripes { background: transparent; }
@@ -697,11 +698,10 @@ body.locked {
 	padding: 8%;
 }
 
-.description.blog .cover h3 {
+.description.blog .cover h2 {
 	font-size: 32px;
 	line-height: 45px;
 	font-family: 'Open Middle', sans-serif;
-
 	display: -webkit-box;
 	margin: 0;
 	-webkit-line-clamp: 4;
@@ -709,6 +709,9 @@ body.locked {
 	overflow: hidden;
 	max-height: 170px;
 	text-overflow: ellipsis;
+	color: white;
+	padding: 0;
+	text-align: left;
 }
 .post-body li { font-size: 22px; }
 
@@ -783,6 +786,15 @@ body.locked {
 	font-size: 32px;
 }
 /*Job*/
+
+/*Approach*/
+.approach-h2 h2{
+	color: black;
+	text-align: justify;
+	padding: 0;
+	line-height: 45px;
+}
+/*Approach*/
 
 /*COLLAPSIBLE*/
 .collapsible {
@@ -859,6 +871,14 @@ a.attach-link:hover { text-decoration: none; }
 	text-decoration: none;
 	padding-bottom: 2px;
 	border-bottom: 2px solid #23527c;
+}
+.job-nes-skills{
+	font-family: 'Open Middle';
+	margin-top: 3rem;
+	font-size: 22px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
 }
 
 .clip-img { margin-right: 10px; }
@@ -1425,7 +1445,7 @@ textarea.material-input { resize: none; }
 		line-height: 24px;
 		text-align: left;
 		height: 94px; }
-	.description.blog .cover h3 {
+	.description.blog .cover h2 {
 		font-size: 24px;
 		height: 90px;
 		line-height: 32px; }
@@ -1582,15 +1602,7 @@ textarea.material-input { resize: none; }
 		/*margin: 10% auto;*/
 	}
 }
-/*@media screen and (max-width: 767px) {
-	.list-footer div a,
-	.list-footer div,
-	.footer-list li a,
-	.footer-list li {
-		color: white;
-		text-align: left;
-	}*/
-}
+
 @media screen and (max-width: 640px) {
 	.logo-block-main.menu-opened { left: 20px; }
 	.m-t-5 { margin-top: 6em; }
@@ -1735,6 +1747,10 @@ textarea.material-input { resize: none; }
 	padding: 0;
 	text-align: left; }
 
+.proj-details-body .proj-h2 h2 {
+	font-family: inherit;
+}
+
 .proj-sub-block {
 	padding: 0 8%;
 	width: 75%; }
@@ -1751,6 +1767,16 @@ textarea.material-input { resize: none; }
 
 .proj-body.proj-body-overflow .macbook-c { padding: 0; }
 .proj-body.proj-body-overflow .macbook-c .img-container img { width: 160%; }
+
+.fresh-sub-block .portfolio-h2 h2 {
+	text-align: left;
+	line-height: 32px;
+	color: white;
+	font-family: "Open Middle", sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
 
 .rsl-b-l,
 .rsl-b-r { flex: 1 1; }
@@ -2392,9 +2418,6 @@ header { color: #ffffff; }
 .fresh-header .hamburger.close-nav span,
 .fresh-header .hamburger.close-nav span:before,
 .fresh-header .hamburger.close-nav span:after,
-/*.fresh-header.is-scrolled .hamburger span,*/
-/*.fresh-header.is-scrolled .hamburger span:before,*/
-/*.fresh-header.is-scrolled .hamburger span:after {*/
 .fresh-header.scrolled-by .hamburger span,
 .fresh-header.scrolled-by .hamburger span:before,
 .fresh-header.scrolled-by .hamburger span:after {
@@ -2402,35 +2425,6 @@ header { color: #ffffff; }
 }
 
 @media screen and (max-width: 767px) {
-	/*.fresh-header .logo-sign {*/
-		/*width: 40px;*/
-		/*height: 40px; }*/
-
-	/*.hamburger .stripes,*/
-	/*.hamburger .stripes::before,*/
-	/*.hamburger .stripes::after {*/
-		/*color: black !important;*/
-		/*background-color: black !important; }*/
-
-	/*.form-opened .site-header-slice__fixer {*/
-		/*padding: 20px 0;*/
-		/*overflow-y: auto; }*/
-
-	/*.fresh-header .logo-sign {*/
-		/*width: 40px;*/
-		/*height: 40px; }*/
-
-	/*.fresh-header.is-scrolled .icon-sign,*/
-	/*.fresh-header.is-scrolled .hamburger,*/
-	/*.fresh-header .icon-sign,*/
-	/*.fresh-header .hamburger { margin-top: 14px; }*/
-	/*.fresh-header .logo-sign .logo { height: 40px !important; }*/
-	/*.fresh-header {*/
-		/*padding: 10px 25px;*/
-		/*height: 60px;*/
-		/*!*background-color: rgba(255,255,255,0.9);*!*/
-	/*}*/
-
 	.submit-block { margin-top: 0; }
 	.submit-block .hire-btn { margin-top: 4rem; }
 }
@@ -2607,7 +2601,14 @@ header { color: #ffffff; }
 	font-weight: 300;
 	line-height: 30px; /* Approximation due to font substitution */
 	text-align: justify; }
-.post-body h3 { font-weight: bold; }
+.post-body h2 {
+	font-weight: bold;
+	font-family: inherit;
+	text-transform: uppercase;
+	padding: 0;
+	font-size: 24px;
+	text-align: left;
+}
 span.path {
 	font-size: .8em;
 	padding: 0 5px;
@@ -2679,7 +2680,7 @@ span.path {
 .post-titling .fresh-sub-block { width: 65%; }
 
 .post-body p { margin-bottom: 3rem; }
-.post-body h3 { text-transform: uppercase; margin-bottom: 0; }
+.post-body h2 { text-transform: uppercase; margin-bottom: 0; }
 .post-body pre.language-php {
 	border-radius: 0;
 	font-size: 1em;
@@ -2830,6 +2831,10 @@ span.path {
 	.description.media-body h3 {
 		font-family: "Open Middle", sans-serif;
 		text-align: center; }
+	.approach-h2 h2{
+		font-family: "Open Middle", sans-serif;
+		text-align: center;
+	}
 
 	.main-link { margin-left: 15px; }
 	.main-link img { max-height: 20px; }
@@ -2870,6 +2875,10 @@ span.path {
 		text-align: left;
 		line-height: 32px;
 		font-size: 24px; }
+	.fresh-sub-block .portfolio-h2 h2 {
+		line-height: 32px;
+		font-size: 24px;
+	}
 	.cover.caption.absolute p {
 		font-size: 17px;
 		line-height: 24px;
@@ -3111,7 +3120,7 @@ span.path {
 	.blog-post.padding-bottom {
 		min-height: 500px;
 		padding-bottom: 40px; }
-	.post-body h3 { margin-bottom: 2rem; }
+	.post-body h2 { margin-bottom: 2rem; }
 	.post-body li, .post-body p {
 		font-size: 17px;
 		line-height: 24px; }
@@ -3130,6 +3139,9 @@ span.path {
 		font-size: 24px;
 		line-height: 32px;
 		margin: 0 0 2rem 0; }
+	.proj-details-body .proj-h2 h2 {
+		font-family: 'Open Middle', sans-serif;
+	}
 	.proj-d-sample p {
 		text-align: justify;
 		margin-bottom: 0;
@@ -3237,6 +3249,8 @@ span.path {
 	.rsl-h1 { font-size: 32px; }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+	.fresh-sub-block.no-padding .description.blog .date{  font-size: 13px;  }
 	footer .shorted { text-align: left; width: 55%;}
 	.fresh-footer .hide-on-mobile {  display: none;  }
 	.fresh-footer .show-on-mobile { display: block; }

@@ -163,7 +163,6 @@
         
     ];
     var options = {
-
         valueNames: [
             'title',
             'description',
@@ -181,8 +180,9 @@
         '<a href="" class="workurl">' +
         '<div class="workcoverbckg">' +
         '<img class="img-responsive workcover worksrcset worksizes workalt" title="preview image">' +
-        '<div class="cover caption absolute workbckg">' +
-        '<h3 class="title"></h3>' +
+        '<div class="cover caption absolute workbckg portfolio-h2">' +
+
+        '<h2 class="title"></h2>' +
         '<p class="description"></p>' +
         '</div>' +
         '</div>' +
@@ -388,9 +388,7 @@
     $dd.change(function (e) {
         var t = $(e.target);
         type = t.val();
-
         var nav = $('#nav li:not(.more)').find('.filter-'+type);
-
         clear(nav);
         if(!type.indexOf('all')) hackerList.filter();
         else {
