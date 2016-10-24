@@ -1603,7 +1603,6 @@ textarea.material-input { resize: none; }
 	.overflow-color {
 		height: auto !important;
 		min-height: 600px; }
-
 	.team-body .overflow-color,
 	.cover-bg.team-body { min-height: 100%; }
 	.paddinged { padding: 0 7%; }
