@@ -1,6 +1,2 @@
-User-agent: Twitterbot
-Disallow:
 User-agent: *
-Disallow: /
-User-agent: online-webceo-bot
 Disallow:

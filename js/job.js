@@ -4,8 +4,7 @@
  * @depends libraries/autogrow.min.js
  * @depends libraries/materialize.min.js
  */
-(function(global) {
-
+(function(global)
     $('textarea.material-input').autogrow({ horizontal: false, flickering: false});
     $(document).ready(function(){
         $('.collapsible').collapsible({
