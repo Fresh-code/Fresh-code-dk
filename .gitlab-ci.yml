@@ -1,8 +1,18 @@
+image: docker:latest
+services:
+  - docker:dind
 before_script:
-  - apt-get update -qq && apt-get install -y -qq jekyll
-  - jekyll -v
-
-main:
+  - docker info
+stages:
+  - build
+job_build:
+  stage: "build"
   script:
-    - jekyll build
+    - docker logout
+    - docker login -u blinkme1@ukr.net -p blink182 registry.gitlab.com
+    - docker build -t registry.gitlab.com/freshcode-projects/freshcodeit.com .
+    - docker push registry.gitlab.com/freshcode-projects/freshcodeit.com
 
+    # - docker login -u artem.tymofieiev.freshcode@gmail.com -p glartemfreshcode registry.gitlab.com
+       # - docker build -t registry.gitlab.com/freshcode-projects/crm .
+       #- docker push registry.gitlab.com/freshcode-projects/crm
