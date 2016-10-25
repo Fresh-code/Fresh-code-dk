@@ -12,7 +12,3 @@ job_build:
     - docker login -u blinkme1@ukr.net -p blink182 registry.gitlab.com
     - docker build -t registry.gitlab.com/freshcode-projects/freshcodeit.com .
     - docker push registry.gitlab.com/freshcode-projects/freshcodeit.com
-
-    # - docker login -u artem.tymofieiev.freshcode@gmail.com -p glartemfreshcode registry.gitlab.com
-       # - docker build -t registry.gitlab.com/freshcode-projects/crm .
-       #- docker push registry.gitlab.com/freshcode-projects/crm

@@ -1,0 +1,5 @@
+freshcodeit.com:
+  image: registry.gitlab.com/freshcode-projects/freshcodeit.com
+  ports:
+    - "4000:4000"
+  container_name: "freshcodeit.com"
