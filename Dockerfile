@@ -19,6 +19,5 @@ RUN juicer install jslint
 COPY . /src
 EXPOSE 4000
 WORKDIR /src
-RUN rm -R .idea
 
 RUN jekyll build
