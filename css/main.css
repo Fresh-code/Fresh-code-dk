@@ -1588,7 +1588,6 @@ textarea.material-input { resize: none; }
 		margin-top: 0;
 		padding: 0 7%; }
 	.proj-d-sub-block { padding: 0 5%; }
-
 	.img-container {
 		/*padding: 0 3%;*/
 	}
@@ -1597,7 +1596,6 @@ textarea.material-input { resize: none; }
 	.overflow-color {
 		height: auto !important;
 		min-height: 600px; }
-
 	.team-body .overflow-color,
 	.cover-bg.team-body { min-height: 100%; }
 	.paddinged { padding: 0 7%; }

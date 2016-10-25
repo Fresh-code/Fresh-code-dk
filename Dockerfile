@@ -1,5 +1,4 @@
 FROM ruby
-
 RUN apt-get update
 
 RUN  apt-get install -y build-essential
@@ -18,9 +17,8 @@ RUN gem install \
 RUN juicer install jslint
 
 COPY . /src
-
 EXPOSE 4000
-
 WORKDIR /src
+RUN rm -R .idea
 
 RUN jekyll build
