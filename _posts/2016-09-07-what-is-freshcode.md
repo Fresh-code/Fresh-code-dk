@@ -13,7 +13,6 @@ background: /img/blog-post/banner_post_1.jpg
 background-color: '#0582bb'
 type: business
 
-
 cover: /img/blog-post/post_1c-350.jpg
 alt: Freshcode 3D logo
 srcsetattr: /img/blog-post/post_1c-700.jpg 700w, /img/blog-post/post_1c-450.jpg 450w, /img/blog-post/post_1c-350.jpg 350w

@@ -21,8 +21,8 @@ avatar: /img/blog-post/author_2.png
 author: Marina Danilova
 position: Project manager
 
-share-image: '/img/blog-post/banner_post_5.jpg'
-share-description: 'When choosing an engagement mode for your perfect project, do not overlook the Fixed Price Model or FPM. Many IT teams prefer to create a Dedicated Team (ссылка) or use Time and Material Model (ссылка), but why not consider all possibilities before choosing what’s right for you?'
+share-image: '/img/blog-post/banner_post_6.jpg'
+share-description: 'The Time and Material Model is one of the most widely-used pricing models among the outsourcing crowd. It is a little trickier than the Fixed Price Model but has several important advantages. Let’s take a closer look and determine if the T&M model is right for your project.'
 share-title: Everything You Wanted to Know about the Time and Material Model
 ---
 

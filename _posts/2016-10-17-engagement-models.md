@@ -14,6 +14,7 @@ background-color: '#32576c'
 type: business
 
 cover: /img/blog-post/post_4c-350.jpg
+alt: business session
 srcsetattr: /img/blog-post/post_4c-700.jpg 700w, /img/blog-post/post_4c-450.jpg 450w, /img/blog-post/post_4c-350.jpg 350w
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'
 background-cover: '#32576c'
@@ -21,8 +22,8 @@ avatar: /img/blog-post/author_2.png
 author: Marina Danilova
 position: Project manager
 
-share-image: '/img/blog-post/banner_post_1.jpg'
-share-description: 'Freshcode is not just another faceless software development company. Nothing we do is even remotely ordinary or mediocre. We strive to provide the best services on the huge market, and our high-paced evolution proves that we chose the right path.'
+share-image: '/img/blog-post/banner_post_4.jpg'
+share-description: 'So you have a great business idea and now all you need to do is find the perfect developer team to make it come to life. When you start your search, you will be bombarded by all sorts of quotations. But how do you know which engagement model to choose? Let us help you understand the difference!'
 share-title: Engagement Models. Is Dedicated Team the Perfect One for You?
 ---
 
