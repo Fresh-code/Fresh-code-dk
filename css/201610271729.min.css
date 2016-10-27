@@ -1330,12 +1330,11 @@ a.attach-link:hover { text-decoration: none; }
 .service-icon{
 	width: 24px;
 	height: 25px;
-	background: url(../../img/main/more-sprite.png?jcb=1476967171) 0 0;
+	background: url(../../img/main/icon_more.svg?jcb=1477578345) 0 0;
 }
 .service-icon:hover{
-	background: url(../../img/main/more-sprite.png?jcb=1476967171) 0 -50px;
+	background: url(../../img/main/icon_more.svg?jcb=1477578345) 0 -50px;
 	transition: all 0.4s 0.1s;
-
 }
 
 /*------------------------Form Styles------------------------------------*/

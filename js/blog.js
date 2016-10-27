@@ -23,7 +23,7 @@
             catauthor: 'Business | Marina Danilova',
             position: 'Project manager',
             postcover: '/img/blog-post/post_4c-350.jpg',
-            postalt: '',
+            postalt: 'business session',
             postsrcset: '/img/blog-post/post_4c-700.jpg 700w, /img/blog-post/post_4c-450.jpg 450w, /img/blog-post/post_4c-350.jpg 350w',
             postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
             postcoverbckg: 'background-color: #32576c !important',
