@@ -9,9 +9,8 @@ RUN gem install \
   yui-compressor:0.12.0 \
   kramdown \
   rdiscount \
-  rouge
-
-RUN juicer install jslint
+  rouge && \
+  juicer install jslint
 
 COPY . /src
 EXPOSE 4000
