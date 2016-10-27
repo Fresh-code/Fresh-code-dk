@@ -2,9 +2,9 @@
 layout: post
 title:  Engagement Models. Is Dedicated Team the Perfect One for You?
 description: Common engagement models for outsourcing&#58; dedicated team, time & material, fixed price. How does dedicated team model work?
-date:   2016-09-28 10:59:19
+date:   2016-10-17 10:59:19
 
-permalink: /blog/2016/09/28/is-dedicated-team-the-perfect-one-for-you/
+permalink: /blog/2016/10/17/is-dedicated-team-the-perfect-one-for-you/
 
 post-title: Engagement Models. Is Dedicated Team the Perfect One for You?
 categories-tag: Business
