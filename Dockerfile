@@ -1,8 +1,4 @@
-FROM ruby
-
-RUN apt-get update
-
-RUN  apt-get install -y build-essential
+FROM ianwremmel/docker-node-jre
 
 RUN gem install \
   jekyll:3.2.1 \
@@ -13,14 +9,10 @@ RUN gem install \
   yui-compressor:0.12.0 \
   kramdown \
   rdiscount \
-  rouge
-
-RUN juicer install jslint
+  rouge && \
+  juicer install jslint
 
 COPY . /src
-
 EXPOSE 4000
-
 WORKDIR /src
-
 RUN jekyll build

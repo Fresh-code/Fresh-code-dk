@@ -1314,6 +1314,7 @@ a.attach-link:hover { text-decoration: none; }
 .thx-box.social a:hover {
 	opacity: .9;
 }
+
 .thx-box p {
 	margin: 0;
 	font-size: 18px;
@@ -1514,6 +1515,7 @@ textarea.material-input { resize: none; }
 	.fresh-sub-block.no-padding .description.blog { padding: 0 !important; }
 	.cover h3 { margin-bottom: 21px; }
 	/*Testimonial*/
+
 	.description.team-container.row { align-self: center; }
 	.link.team { left: 0; }
 
@@ -1594,11 +1596,9 @@ textarea.material-input { resize: none; }
 		margin-top: 0;
 		padding: 0 7%; }
 	.proj-d-sub-block { padding: 0 5%; }
-
 	.img-container {
 		/*padding: 0 3%;*/
 	}
-
 	.cover-bg,
 	.overflow-color {
 		height: auto !important;

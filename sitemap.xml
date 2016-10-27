@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://freshcodeit.com/blog/2016/10/17/is-dedicated-team-the-perfect-one-for-you/</loc>
+<lastmod>2016-10-17T13:59:19+03:00</lastmod>
+</url>
+<url>
 <loc>https://freshcodeit.com/blog/2016/09/21/do-you-really-need-mobile-app/</loc>
 <lastmod>2016-09-21T13:59:19+03:00</lastmod>
 </url>
@@ -92,10 +96,6 @@
 </url>
 <url>
 <loc>https://freshcodeit.com/web-development/</loc>
-</url>
-<url>
-<loc>https://freshcodeit.com/email/testimonial.html</loc>
-<lastmod>2016-10-18T10:40:05+03:00</lastmod>
 </url>
 <url>
 <loc>https://freshcodeit.com/pdf/freshcode_case_studies_data_parser.pdf</loc>
