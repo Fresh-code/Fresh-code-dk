@@ -20,7 +20,7 @@ sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 100
 background-cover: '#32576c'
 avatar: /img/blog-post/author_2.png
 author: Marina Danilova
-position: Project manager
+position: Sales manager
 
 share-image: '/img/blog-post/banner_post_4.jpg'
 share-description: 'So you have a great business idea and now all you need to do is find the perfect developer team to make it come to life. When you start your search, you will be bombarded by all sorts of quotations. But how do you know which engagement model to choose? Let us help you understand the difference!'
