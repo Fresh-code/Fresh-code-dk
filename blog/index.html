@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -11,12 +11,13 @@
     <title>Freshcode Blog: Software Development, UX/UI Design, Agile Methods</title>
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/201610281707.min.css">
+    <link rel="stylesheet" href="/css/201610281800.min.css">
 </head>
 
 
 
     <body>
+    <header>
         <section>
 <div class="site-header-slice__fixer">
     <div class="site-header-slice__background-2"></div>
@@ -45,7 +46,6 @@
             <div class="form-header">
                 <h1 class="fresh-h1 h1">WE OFFER A FREE CONSULTATION</h1>
             </div>
-
             <form class="material-form hire-us-form" data-parsley-validate>
                 <div class="row material-box">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -95,10 +95,12 @@
                     </div>
                 </div>
                 <div class="description submit-block">
-                    <button type="submit" class="hire-btn button">
+                    <div class="hire-btn button">
+                        <button type="submit" onclick="ga('send', 'event', 'Form submission', 'Form submission');" class="free-cons-button" ></button>
+
                         <div class="color-fill"></div>
                         <span>Submit</span>
-                    </button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -208,6 +210,10 @@
         </nav>
     </div>
 </div>
+    </header>
+        <main>
+
+        </main>
         <article id="main-section">
             <section>
     <div class="section height-fixed height-100 padding-top padding-bottom row-single">
@@ -283,7 +289,7 @@
             <div class="container">
                 <div class="row">
                     
-                    <div class="col-xxs col-xs-6 col-sm-12 col-md-4 col-lg-4 no-padding">
+                    <div class="col-xxs col-xs-6 col-sm-12 col-md-4 col-lg-4 no-padding post-block">
                         <a href="/blog/2016/10/17/is-dedicated-team-the-perfect-one-for-you/">
                             <div class="description blog">
                                 <img class="img-responsive" src="/img/blog-post/post_4c-350.jpg" alt="preview image">
@@ -296,7 +302,7 @@
                         </a>
                     </div>
                     
-                    <div class="col-xxs col-xs-6 col-sm-12 col-md-4 col-lg-4 no-padding">
+                    <div class="col-xxs col-xs-6 col-sm-12 col-md-4 col-lg-4 no-padding post-block">
                         <a href="/blog/2016/09/21/do-you-really-need-mobile-app/">
                             <div class="description blog">
                                 <img class="img-responsive" src="/img/blog-post/post_3c-350.jpg" alt="preview image">
@@ -309,7 +315,7 @@
                         </a>
                     </div>
                     
-                    <div class="col-xxs col-xs-6 col-sm-12 col-md-4 col-lg-4 no-padding">
+                    <div class="col-xxs col-xs-6 col-sm-12 col-md-4 col-lg-4 no-padding post-block">
                         <a href="/blog/2016/09/14/7-improvements-to-ux-design-that-ensure-brand-trust/">
                             <div class="description blog">
                                 <img class="img-responsive" src="/img/blog-post/post_2c-350.jpg" alt="preview image">
@@ -322,7 +328,7 @@
                         </a>
                     </div>
                     
-                    <div class="col-xxs col-xs-6 col-sm-12 col-md-4 col-lg-4 no-padding">
+                    <div class="col-xxs col-xs-6 col-sm-12 col-md-4 col-lg-4 no-padding post-block">
                         <a href="/blog/2016/09/07/what-is-freshcode/">
                             <div class="description blog">
                                 <img class="img-responsive" src="/img/blog-post/post_1c-350.jpg" alt="preview image">
@@ -343,10 +349,10 @@
     <div class="fresh-main blog serv-tech">
         <div class="fresh-sub-block shorted">
             <div class="serv-button-zone">
-                <a class="hire-btn serv-request-btn" href="">
+                <div class="hire-btn serv-request-btn" id="load-more">
                     <div class="color-fill"></div>
                     <span>Show more</span>
-                </a>
+                </div>
             </div>
         </div>
     </div><!--Services-->

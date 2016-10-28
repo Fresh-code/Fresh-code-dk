@@ -287,6 +287,17 @@ body.locked {
 	/*background: #00e1a4;*/
 	border: solid 2px #00e1a4;
 	color: white; }
+.free-cons-button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	background-color: transparent;
+	border: none;
+}
 .color-fill {
 	position: absolute;
 	background: #00e1a4;
@@ -716,6 +727,15 @@ body.locked {
 }
 .post-body li { font-size: 22px; }
 
+.post-block{
+	display: none;
+}
+.post-block.active {
+	display: block;
+}
+#load-more{
+	cursor: pointer;
+}
 .description.blog .cover span {
 	font-size: 17px;
 	line-height: 20px;
