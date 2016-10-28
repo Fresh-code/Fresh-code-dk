@@ -1,6 +1,4 @@
 /**
- * @depends libraries/jquery-2.2.1.min.js
- * @depends libraries/parsley.min.js
  * @depends libraries/autogrow.min.js
  * @depends libraries/materialize.min.js
  */
