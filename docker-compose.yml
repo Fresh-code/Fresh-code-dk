@@ -1,6 +1,4 @@
 freshcodeit:
-  labels:
-   - io.rancher.scheduler.affinity:host_label: type=staging
   image: registry.gitlab.com/freshcode-projects/freshcodeit.com
   command: jekyll serve -H 0.0.0.0
   ports:
