@@ -26,7 +26,6 @@
             <div class="form-header">
                 <h1 class="fresh-h1 h1">WE OFFER A FREE CONSULTATION</h1>
             </div>
-
             <form class="material-form hire-us-form" data-parsley-validate>
                 <div class="row material-box">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -76,10 +75,11 @@
                     </div>
                 </div>
                 <div class="description submit-block">
-                    <button type="submit" class="hire-btn button">
+                    <div class="hire-btn button">
+                        <button type="submit" onclick="ga('send', 'event', 'buttons', 'click', 'phone-number-middle');"class="free-cons-button" ></button>
                         <div class="color-fill"></div>
                         <span>Submit</span>
-                    </button>
+                    </div>
                 </div>
             </form>
         </div>
