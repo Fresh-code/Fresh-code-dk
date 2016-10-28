@@ -32,6 +32,7 @@
             postcoverbckg: 'background-color: {{ post.background-cover }} !important',
             postbckg: 'background-color: {{ post.background-color }} !important',
             type: '{{ post.type }}',
+            nondisplay: 'display: none',
             posturl: '{{ post.url }}'
         }{% unless forloop.last %},{% endunless %}
         {% endfor %}
@@ -52,7 +53,7 @@
             'type',
             { attr: 'href', name: 'posturl' }
         ],
-        item: '<div class="col-xxs col-xs-6 col-sm-4 col-md-4 preview-img col-lg-4 no-padding">' +
+        item: '<div class="col-xxs col-xs-6 col-sm-4 col-md-4 preview-img col-lg-4 no-padding post-block">' +
         '<a href="" class="posturl">' +
         '<div class="description blog postcoverbckg">' +
         '<img draggable="false" class="img-responsive postcover postsrcset postsize postalt" title="preview image">' +
@@ -248,5 +249,22 @@
             });
         }
     });
+
+    $('.post-block').each(function(i,elem) {
+        if(i < 3){
+           $(elem).addClass('active');
+        }
+    });
+
+    $("#load-more").click(function() {
+        if ($(this).hasClass('disable')) return false;
+        $('.post-block').filter(':hidden').each(function(i,elem) {
+            if(i < 3){
+                $(elem).addClass('active');
+            }
+        });
+    });
+
+
 })(this);
 
