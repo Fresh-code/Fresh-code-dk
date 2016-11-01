@@ -38,7 +38,7 @@
             byThx = false,
             closeMailForm = false;
 
-        $('#hire').on('click', function(e) {
+        $('.hire').on('click', function(e) {
             e.preventDefault();
 
             byMailBtn = true;

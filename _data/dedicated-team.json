@@ -5,41 +5,42 @@
   "name": "Your Own Dedicated Team",
   "text": "Every great project deserves our undivided attention. That’s why we offer to create your own dedicated team. Its members will work on your project exclusively without any outside distractions. All their time and energy will be devoted to making your ideas happen.",
   "page-background": "/img/dedicated_team/table.png",
+  "alt": "Dedicated team working at the table",
   "reasons": [
     {
       "header": "Save Time and Resources",
       "text": "Creating a development team from scratch is a daunting task that robs you of time and money better spent on the other project’s needs. When we create a dedicated team, it is perfectly suited for your requirements. We provide your team with a stimulating workspace and top-notch equipment, tried-and-true organizational structure and project management methodology. While we take care of the mundane tasks, you can stay focused on building and expanding your business.",
       "image_mobile": "/img/dedicated_team/desktop/icon_clock.png",
       "image_desktop": "/img/dedicated_team/mobile/icon_clock.png",
-      "alt": ""
+      "alt": "Alarm clock"
     },
     {
       "header": "Get the Best Team Working on Your Project",
       "text": "Once you create a dedicated team, all its member focus solely on your needs and goals, working on your project without being sidetracked. Every member of the team is selected exclusively on the basis of previous experience, skill set and expertise. Provided with the best equipment and resources the team works tirelessly to reach your goals within the set timeframe.",
       "image_mobile": "/img/dedicated_team/desktop/icon_team.png",
       "image_desktop": "/img/dedicated_team/mobile/icon_team.png",
-      "alt": ""
+      "alt": "Team of three people"
     },
     {
       "header": "Enjoy the High-End Technologies and Solutions",
       "text": "Every complete project is an educational experience for our developers. They never stop working on widening their fields of expertise and learning new and exciting ways to shake up the IT world. They innovate and develop outside of the box solutions giving your project an edge over the competition.",
       "image_mobile": "/img/dedicated_team/desktop/icon_technologies.png",
       "image_desktop": "/img/dedicated_team/mobile/icon_technologies.png",
-      "alt": ""
+      "alt": "JavaScript icons"
     },
     {
       "header": "Keep Your Hand on the Pulse",
       "text": "We implement the tried and true project management and tracking tools so that you can keep a close eye the project’s progress. You only pay for the hours your dedicated team spends working on the project and thus get a chance to allocate your resources efficiently and to stay within the budget.",
       "image_mobile": "/img/dedicated_team/desktop/icon_keep.png",
       "image_desktop": "/img/dedicated_team/mobile/icon_keep.png",
-      "alt": ""
+      "alt": "Binocular"
     },
     {
       "header": "Obtain Timely Support",
       "text": "Every new project is bound to face some challenges and unforeseen problems. Your dedicated team will be there to support you in times of crisis and quickly resolve any occurring troubles. We will assist you in any way we can and prevent further crises from happening.",
       "image_mobile": "/img/dedicated_team/desktop/icon_support.png",
       "image_desktop": "/img/dedicated_team/mobile/icon_support.png",
-      "alt": ""
+      "alt": "Woman with headphones and micro"
     }
   ],
   "works": [
@@ -65,7 +66,7 @@
       "cover": "/img/main/work_3.jpg",
       "alt": "Play Attention system preview",
       "link": "/playattention",
-      "mainColor": "#253a57"
+      "mainColor": "#5d738f"
     }
   ]
 }
