@@ -2,14 +2,70 @@
   "title": "Dedicated Team | Freshcode",
   "keywords":"dedicated team, remote web developers, remote team, outsource services",
   "description": "Freshcode dedicated team of web developers chosen according to project’s requirements is a guarantee to success. Pick up a remote team for your project.",
-  "name": "Dedicated team",
-  "text": [
-    "You don't have to create your own IT team, instead concentrating on project's other aspects.",
-    "Every member of the team is chosen according to specialization and skill set that are best fitted for your project's needs.",
-    "Your project is guaranteed to be completed before the deadline you set.",
-    "You can monitor time and resources spent on your project and keep a close eye on the team's progress.",
-    "You can trust our developers with your project and forget about stress and constant worry.",
-    "You can always count on our support with any problems occurring at any development stage."
+  "name": "Your Own Dedicated Team",
+  "text": "Every great project deserves our undivided attention. That’s why we offer to create your own dedicated team. Its members will work on your project exclusively without any outside distractions. All their time and energy will be devoted to making your ideas happen.",
+  "page-background": "/img/dedicated_team/table.png",
+  "reasons": [
+    {
+      "header": "Save Time and Resources",
+      "text": "Creating a development team from scratch is a daunting task that robs you of time and money better spent on the other project’s needs. When we create a dedicated team, it is perfectly suited for your requirements. We provide your team with a stimulating workspace and top-notch equipment, tried-and-true organizational structure and project management methodology. While we take care of the mundane tasks, you can stay focused on building and expanding your business.",
+      "image_mobile": "/img/dedicated_team/desktop/icon_clock.png",
+      "image_desktop": "/img/dedicated_team/mobile/icon_clock.png",
+      "alt": ""
+    },
+    {
+      "header": "Get the Best Team Working on Your Project",
+      "text": "Once you create a dedicated team, all its member focus solely on your needs and goals, working on your project without being sidetracked. Every member of the team is selected exclusively on the basis of previous experience, skill set and expertise. Provided with the best equipment and resources the team works tirelessly to reach your goals within the set timeframe.",
+      "image_mobile": "/img/dedicated_team/desktop/icon_team.png",
+      "image_desktop": "/img/dedicated_team/mobile/icon_team.png",
+      "alt": ""
+    },
+    {
+      "header": "Enjoy the High-End Technologies and Solutions",
+      "text": "Every complete project is an educational experience for our developers. They never stop working on widening their fields of expertise and learning new and exciting ways to shake up the IT world. They innovate and develop outside of the box solutions giving your project an edge over the competition.",
+      "image_mobile": "/img/dedicated_team/desktop/icon_technologies.png",
+      "image_desktop": "/img/dedicated_team/mobile/icon_technologies.png",
+      "alt": ""
+    },
+    {
+      "header": "Keep Your Hand on the Pulse",
+      "text": "We implement the tried and true project management and tracking tools so that you can keep a close eye the project’s progress. You only pay for the hours your dedicated team spends working on the project and thus get a chance to allocate your resources efficiently and to stay within the budget.",
+      "image_mobile": "/img/dedicated_team/desktop/icon_keep.png",
+      "image_desktop": "/img/dedicated_team/mobile/icon_keep.png",
+      "alt": ""
+    },
+    {
+      "header": "Obtain Timely Support",
+      "text": "Every new project is bound to face some challenges and unforeseen problems. Your dedicated team will be there to support you in times of crisis and quickly resolve any occurring troubles. We will assist you in any way we can and prevent further crises from happening.",
+      "image_mobile": "/img/dedicated_team/desktop/icon_support.png",
+      "image_desktop": "/img/dedicated_team/mobile/icon_support.png",
+      "alt": ""
+    }
   ],
-  "bottext": "Every project is different from others. Every client poses specific requirements and has certain goals in mind. In order to meet your needs, we create a new dedicated team. All team members focus on the project, giving it their full potential and the highest priority. As a result, the project is successfully developed with minimal time and resources spent."
+  "works": [
+    {
+      "title": "GommeHD",
+      "description": "GommeHD is one of the leading Minecraft Servers with more than 1 million players throughout the world. The site delivers community news and statistics, as well as the latest updates and videos.",
+      "cover": "/img/portfolio/work_2p-350.jpg",
+      "alt": "GommeHD platform preview",
+      "link": "/gommehd",
+      "mainColor": "#775441"
+    },
+    {
+      "title": "RoundForest",
+      "description": "RoundForest is an application created for setting up advertising campaigns in real time",
+      "cover": "/img/portfolio/work_13p-350.jpg",
+      "alt": "RoundForest application preview",
+      "link": "/round-forest",
+      "mainColor": "#729542"
+    },
+    {
+      "title": "Play Attention",
+      "description": "Play Attention is indisputably the best cognitive training system created to improve attention, behavior and cognitive function for children and adults suffering from ADHD.",
+      "cover": "/img/main/work_3.jpg",
+      "alt": "Play Attention system preview",
+      "link": "/playattention",
+      "mainColor": "#253a57"
+    }
+  ]
 }
