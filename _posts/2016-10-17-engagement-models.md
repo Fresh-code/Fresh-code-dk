@@ -35,7 +35,7 @@ share-title: Engagement Models. Is Dedicated Team the Perfect One for You?
         <li><strong>Time & Material Model (TM).</strong> This model is best suited for long-term projects if their scope and resources are hard to define and could be altered on the go.</li>
         <li><strong>Fixed Price Model (FP).</strong> If you have a clear understanding of the amount of time and resources your project requires, go for this clear and efficient model.</li>
     </ul>
-    <h3>Why Do You Need a Dedicated Team?</h3><br>
+    <h2>Why Do You Need a Dedicated Team?</h2><br>
     <p>The Dedicated Team Model has become extremely popular across many industries, including eCommerce, Finance, Big Data and even Education. It's actually no wonder, seeing as this model possesses numerous advantages. We'll just name a few for you to get a general idea why having a virtual dedicated team is such a trend today.</p>
     <ol>
         <li>You can choose the members of the team and have full control over every decision, the same way as you can control your in-house employees.</li>
