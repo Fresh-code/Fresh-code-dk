@@ -12,12 +12,12 @@
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/201611011402.min.css">
-    <script>
+    <!--<script>
         window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
         ga('create', 'UA-85297028-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>-->
 </head>
 
 
@@ -98,8 +98,9 @@
                     </div>
                 </div>
                 <div class="description submit-block">
-                    <div class="hire-btn button">
-                        <button type="submit" onClick="ga('send', 'event', 'button', 'submit', 'hire us');"
+                    <div class="hire-btn button"><!--
+                        <button type="submit" onClick="ga('send', 'event', 'button', 'submit', 'hire us');"-->
+                        <button type="submit" onClick="_gaq.push(['_trackPageview','button', 'submit', 'hire us']);"
                                 class="free-cons-button"></button>
                         <div class="color-fill"></div>
                         <span>Submit</span>
