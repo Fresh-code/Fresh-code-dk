@@ -12,6 +12,9 @@
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-85297028-1', 'auto');
+    ga('send', 'pageview');
+
     $(window).on("load", function() {
 
         $.fn.randomize = function(selector){
