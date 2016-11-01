@@ -6,14 +6,10 @@
         {% include menu.html %}
         {% include logo.html %}
     </header>
-        <main>
-
-        </main>
         <div id="main-section">
             {{ content }}
         </div>
         {% assign url = page.url | replace:'/','' %}
-
         {% include footer.html %}
     </body>
 </html>

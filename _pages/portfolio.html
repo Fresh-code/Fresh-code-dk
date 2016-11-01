@@ -2,121 +2,122 @@
 permalink: /portfolio/
 layout: default
 ---
-<section>
-    <div class="section height-fixed height-100 padding-top padding-bottom row-single">
-        <div class="image-background bleed">
-            {% adaptive_image {{ site.data.portfolio.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="{{ site.data.portfolio.alt }}" title="Portfolio background" %}
-        </div>
-        <div class="container">
-            <div class="row row-equal-columns">
-                <div class="column a-center">
-                    <div class="flex flex-middle">
-                        <div class="flex-inner">
-                            <div class="block block-text portfolio width-fixed">
-                                <header>
-                                    <h1 class="fresh-h1 h1">{{ site.data.portfolio.page-title }}</h1>
-                                    <span class="fresh-h3 centered">{{ site.data.portfolio.page-text }}</span>
-                                </header>
-                            </div>
-                        </div> <!-- flex-inner -->
-                    </div>
+<div class="section height-fixed height-100 padding-top padding-bottom row-single">
+    <div class="image-background bleed">
+        {% adaptive_image {{ site.data.portfolio.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600
+        1024;max 599 768" draggable="false" class="image" alt="{{ site.data.portfolio.alt }}" title="Portfolio
+        background" %}
+    </div>
+    <div class="container">
+        <div class="row row-equal-columns">
+            <div class="column a-center">
+                <div class="flex flex-middle">
+                    <div class="flex-inner">
+                        <div class="block block-text portfolio width-fixed">
+                            <header>
+                                <h1 class="fresh-h1 h1">{{ site.data.portfolio.page-title }}</h1>
+                                <span class="fresh-h3 centered">{{ site.data.portfolio.page-text }}</span>
+                            </header>
+                        </div>
+                    </div> <!-- flex-inner -->
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="fresh-main blog">
-        <div class="fresh-sub-block no-padding">
-            <div id="hacker-list">
-                <div class="row filter-shorted">
-                    <div class="testi-head-icons">
-                        <ul id="nav" class="service-d-ul hidden-dd">
-                            <li>
-                                <span class="work-filter filter-all active">All</span>
-                                <span class="badge custom active">0</span>
-                            </li>
-                            <li>
-                                <span class="work-filter filter-education">Education</span>
-                                <span class="badge custom">0</span>
-                            </li>
-                            <li>
-                                <span class="work-filter filter-business">Business Intelligence</span>
-                                <span class="badge custom">0</span>
-                            </li>
-                            <li>
-                                <span class="work-filter filter-data">Big data</span>
-                                <span class="badge custom">0</span>
-                            </li>
-                            <li>
-                                <span class="work-filter filter-navigation">Navigation</span>
-                                <span class="badge custom">0</span>
-                            </li>
-                            <li>
-                                <span class="work-filter filter-ecommerce">Ecommerce</span>
-                                <span class="badge custom">0</span>
-                            </li>
-                            <li>
-                                <span class="work-filter filter-media">Mass media</span>
-                                <span class="badge custom">0</span>
-                            </li>
-                            <li>
-                                <span class="work-filter filter-monitoring">monitoring system</span>
-                                <span class="badge custom">0</span>
-                            </li>
-                            <li>
-                                <span class="work-filter filter-payments">Payments system</span>
-                                <span class="badge custom">0</span>
-                            </li>
-                            <li class="more" style="display: list-item;">
+<div class="fresh-main blog">
+    <div class="fresh-sub-block no-padding">
+        <div id="hacker-list">
+            <div class="row filter-shorted">
+                <div class="testi-head-icons">
+                    <ul id="nav" class="service-d-ul hidden-dd">
+                        <li>
+                            <span class="work-filter filter-all active">All</span>
+                            <span class="badge custom active">0</span>
+                        </li>
+                        <li>
+                            <span class="work-filter filter-education">Education</span>
+                            <span class="badge custom">0</span>
+                        </li>
+                        <li>
+                            <span class="work-filter filter-business">Business Intelligence</span>
+                            <span class="badge custom">0</span>
+                        </li>
+                        <li>
+                            <span class="work-filter filter-data">Big data</span>
+                            <span class="badge custom">0</span>
+                        </li>
+                        <li>
+                            <span class="work-filter filter-navigation">Navigation</span>
+                            <span class="badge custom">0</span>
+                        </li>
+                        <li>
+                            <span class="work-filter filter-ecommerce">Ecommerce</span>
+                            <span class="badge custom">0</span>
+                        </li>
+                        <li>
+                            <span class="work-filter filter-media">Mass media</span>
+                            <span class="badge custom">0</span>
+                        </li>
+                        <li>
+                            <span class="work-filter filter-monitoring">monitoring system</span>
+                            <span class="badge custom">0</span>
+                        </li>
+                        <li>
+                            <span class="work-filter filter-payments">Payments system</span>
+                            <span class="badge custom">0</span>
+                        </li>
+                        <li class="more" style="display: list-item;">
                                 <span>
                                     <img class="img-more" src="/img/icon_more_filters.svg" alt="right arrow">
                                 </span>
-                                <ul id="overflow">
+                            <ul id="overflow">
 
-                                </ul>
-                            </li>
-                        </ul>
-                        <select id="filter-dropdown" class="visible-dd"></select>
+                            </ul>
+                        </li>
+                    </ul>
+                    <select id="filter-dropdown" class="visible-dd"></select>
+                </div>
+            </div>
+            <div class="row works-row">
+                <div class="list"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fresh-main blog" style="display: none">
+    <div class="fresh-sub-block no-padding">
+        <div class="row">
+            {% for work in site.data.portfolio.works %}
+
+            <div class="col-xxs col-xs-6 col-sm-6 col-md-4 col-lg-4 no-padding cube preview-img description no-padding-m"
+                 style="background: {{ work.mainColor }} !important;">
+                <a href="{{ work.link }}">
+                    <img class="img-responsive" src="{{ work.cover }}" alt="{{ work.alt }}">
+                    <div class="cover caption absolute portfolio-h2"
+                         style="background: {{ work.mainColor }} !important;">
+                        <h2>{{ work.title }}</h2>
+                        <p>{{ work.description }}</p>
                     </div>
-                </div>
-                <div class="row works-row">
-                    <div class="list"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="fresh-main blog" style="display: none">
-        <div class="fresh-sub-block no-padding">
-            <div class="row">
-                {% for work in site.data.portfolio.works %}
-
-                <div class="col-xxs col-xs-6 col-sm-6 col-md-4 col-lg-4 no-padding cube preview-img description no-padding-m"
-                     style="background: {{ work.mainColor }} !important;">
-                    <a href="{{ work.link }}">
-                        <img class="img-responsive" src="{{ work.cover }}" alt="{{ work.alt }}">
-                        <div class="cover caption absolute portfolio-h2" style="background: {{ work.mainColor }} !important;">
-                            <h2>{{ work.title }}</h2>
-                            <p>{{ work.description }}</p>
-                        </div>
-                    </a>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-
-    <div class="fresh-main serv-tech">
-        <div class="fresh-sub-block shorted">
-            <div class="row serv-teches">
-                <p class="serv-p">{{ site.data.portfolio.page-textbot }}</p>
-            </div>
-            <div class="serv-button-zone">
-                <a class="hire-btn serv-request-btn hire" href="">
-                    <div class="color-fill"></div>
-                    <span>Make a request</span>
                 </a>
             </div>
+            {% endfor %}
         </div>
-    </div><!--Services-->
-</section>
+    </div>
+</div>
+
+<div class="fresh-main serv-tech">
+    <div class="fresh-sub-block shorted">
+        <div class="row serv-teches">
+            <p class="serv-p">{{ site.data.portfolio.page-textbot }}</p>
+        </div>
+        <div class="serv-button-zone">
+            <a class="hire-btn serv-request-btn hire" href="">
+                <div class="color-fill"></div>
+                <span>Make a request</span>
+            </a>
+        </div>
+    </div>
+</div>

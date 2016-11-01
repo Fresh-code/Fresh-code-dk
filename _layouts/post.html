@@ -5,63 +5,67 @@
 {% include shares.html %}
 {% include menu.html %}
 {% include logo.html %}
-
-<div id="main-section">
-  <section>
-    <div class="section height-fixed height-100 padding-top padding-bottom blog-post">
-      <div class="image-background bleed">
-        {% adaptive_image {{ page.background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="Blog post background" title="Blog post background" %}
-      </div>
-      <div class="post-titling">
-        <div class="fresh-sub-block">
-          <div class="row post-shorted padding-bottom width-fixed ">
-            <div class="category-tag">{{ page.categories-tag }}</div>
-            <h1>{{ page.post-title }}</h1>
-            <div class="meta">{{ page.date | date: '%B %d, %Y' }}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="blog-post-body">
-      <div class="fresh-sub-block">
-        <div class="row post-shorted width-fixed">
-          <div class="row p-t-6rem author-block">
-            <div class="col-md-12">
-              <div class="avatar-wrapper">
-                <img class="avatar" src="{{ page.avatar }}" alt="{{ page.author }}">
-              </div>
-              <div class="post-author">
-                <div class="author-name">{{ page.author }}</div>
-                <div class="author-position">{{ page.position }}</div>
-              </div>
+<main>
+    <div id="main-section">
+        <div class="section height-fixed height-100 padding-top padding-bottom blog-post">
+            <div class="image-background bleed">
+                {% adaptive_image {{ page.background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599
+                768" draggable="false" class="image" alt="Blog post background" title="Blog post background" %}
             </div>
-          </div>
-
-          {{ content }}
-
-          <div class="social-btns">
-            <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.share-title }}&url={{ site.url }}{{ page.url }}" data-via="FreshCode1" data-related="FreshCode1">
-              <div class="social-btn twitter-btn">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </div>
-            </a>
-            <a target="_blank" data-mobile-iframe="true" href="http://www.facebook.com/share.php?u={{ site.url }}{{ page.url }}">
-              <div class="social-btn facebook-btn">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
-            </a>
-            <a target="_blank" data-mobile-iframe="true" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}">
-              <div class="social-btn linkedin-btn">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </div>
-            </a>
-          </div>
+            <div class="post-titling">
+                <div class="fresh-sub-block">
+                    <div class="row post-shorted padding-bottom width-fixed ">
+                        <div class="category-tag">{{ page.categories-tag }}</div>
+                        <h1>{{ page.post-title }}</h1>
+                        <div class="meta">{{ page.date | date: '%B %d, %Y' }}</div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="blog-post-body">
+            <div class="fresh-sub-block">
+                <div class="row post-shorted width-fixed">
+                    <div class="row p-t-6rem author-block">
+                        <div class="col-md-12">
+                            <div class="avatar-wrapper">
+                                <img class="avatar" src="{{ page.avatar }}" alt="{{ page.author }}">
+                            </div>
+                            <div class="post-author">
+                                <div class="author-name">{{ page.author }}</div>
+                                <div class="author-position">{{ page.position }}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{ content }}
+
+                    <div class="social-btns">
+                        <a target="_blank"
+                           href="https://twitter.com/intent/tweet?text={{ page.share-title }}&url={{ site.url }}{{ page.url }}"
+                           data-via="FreshCode1" data-related="FreshCode1">
+                            <div class="social-btn twitter-btn">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                        <a target="_blank" data-mobile-iframe="true"
+                           href="http://www.facebook.com/share.php?u={{ site.url }}{{ page.url }}">
+                            <div class="social-btn facebook-btn">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                        <a target="_blank" data-mobile-iframe="true"
+                           href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}">
+                            <div class="social-btn linkedin-btn">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-</div>
+</main>
 {% include footer.html %}
 </body>
 </html>
