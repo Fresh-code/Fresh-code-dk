@@ -7,7 +7,7 @@
   "industry": "Tourism",
   "country": "Ukraine",
   "teamSize": "3 people",
-  "techUsed": "Ruby on Rails, Elasticsearch",
+  "techUsed": "Ruby on Rails, Elasticsearch, Postgres, Angular.js, CSS 3, HTML 5",
   "projDuration": "3 months",
   "pdf": "pdf/freshcode_case_studies_outdoor.pdf",
   "images": [
