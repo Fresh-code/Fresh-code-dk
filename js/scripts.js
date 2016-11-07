@@ -156,7 +156,6 @@
     }); //$(window).on("load", function()...
 
 
-
     var lastScrollTop = 0;
     $(window).scroll(function() {
         menuOnScroll();

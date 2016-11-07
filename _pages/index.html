@@ -210,7 +210,7 @@ description: Freshcode is a software development outsourcing company with a team
                         <div class="flex-box-row">
                             <div class="flex-item">
                                 <div class="achiev-icon">
-                                    {% adaptive_image {{ item.ico }} size="121 63" sizes="min 1000 121;max 999 63" draggable="false" alt="{{ item.alt }}" title="{{ item.desc }}" %}
+                                    <img draggable="false" alt="{{ item.alt }}" title="{{ item.desc }}" src="{{ item.ico }}">
                                 </div>
                                 <div class="achiev-data">
                                     <span class="count">{{ item.val }}</span>
@@ -220,7 +220,7 @@ description: Freshcode is a software development outsourcing company with a team
                             {% else %}
                             <div class="flex-item">
                                 <div class="achiev-icon">
-                                    {% adaptive_image {{ item.ico }} size="121 63" sizes="min 1000 121;max 999 63" draggable="false" alt="{{ item.alt }}" title="{{ item.desc }}" %}
+                                    <img draggable="false" alt="{{ item.alt }}" title="{{ item.desc }}" src="{{ item.ico }}">
                                 </div>
                                 <div class="achiev-data">
                                     <span class="count">{{ item.val }}</span>

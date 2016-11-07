@@ -79,16 +79,21 @@ layout: default
                 {% for post in site.posts %}
                 <div class="col-xxs col-xs-6 col-sm-12 col-md-4 col-lg-4 no-padding post-block">
                     <a href="{{ post.url }}">
+
+
                         <div class="description blog">
                             <img class="img-responsive" src="{{ post.cover }}" alt="preview image">
                             <div class="cover">
                                 <h2>{{ post.post-title }}</h2>
+
 
                                 <span class="date">{{ post.categories-tag }}  |  {{ post.author }}</span>
                             </div>
                         </div>
                     </a>
                 </div>
+
+
                 {% endfor %}
             </div>
         </div>
