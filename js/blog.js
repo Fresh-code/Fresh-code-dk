@@ -3,6 +3,7 @@
  */
 (function(global) {
 
+
     var $conferences = $('.filter-conferences'),
         $development = $('.filter-development'),
         $management = $('.filter-management'),
@@ -14,7 +15,23 @@
         $dd = $('#filter-dropdown');
 
     var posts = [
-
+        
+        {
+            posttitle: 'Fixed Price Model: Everything You Need to Know',
+            platformtag: 'Apple',
+            avatar: '/img/blog-post/author_1.png',
+            catauthor: 'Business | Alex Slobozhan',
+            position: 'Sales manager',
+            postcover: '/img/blog-post/post_5c-350.jpg',
+            postalt: '',
+            postsrcset: '/img/blog-post/post_5c-700.jpg 700w, /img/blog-post/post_5c-450.jpg 450w, /img/blog-post/post_5c-350.jpg 350w',
+            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+            postcoverbckg: 'background-color: #5f798b !important',
+            postbckg: 'background-color: #5f798b !important',
+            type: 'business',
+            nondisplay: 'display: none',
+            posturl: '/blog/2016/10/05/fixed-price-model/'
+        },
         
         {
             posttitle: 'Engagement Models. Is Dedicated Team the Perfect One for You?',
@@ -297,6 +314,7 @@
             });
         }
     });
+
 
     $('.post-block').each(function(i,elem) {
         if(i < 3){

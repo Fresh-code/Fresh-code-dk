@@ -727,6 +727,40 @@ body.locked {
 }
 .post-body li { font-size: 22px; }
 
+.post-body ul.post_ul_arrow {
+	list-style-image: url("/img/blog-post/icon_marker.png");
+}
+.post-body ul.post_no_list_style {
+	list-style: none;
+}
+.post-body .post_ul_arrow li {
+	padding-left: 20px;
+}
+.post-body .post_no_list_style li {
+	padding-left: 20px;
+	margin-top:15px;
+}
+.post-body ul .list_centered_img {
+	vertical-align: middle;
+	display: table-cell;
+	text-align: center;
+	width: 100px;
+}
+.post-body ul .list_centered_text {
+	vertical-align: middle;
+	display: table-cell;
+	text-align: center;
+	padding-left: 30px;
+}
+
+.post-body ul .post_li_number{
+	color:  #4cacfa;
+	font-size: 61px;
+	font-weight: 100;
+	line-height: 80px;
+	text-align: center;
+	padding-right: 30px;
+}
 .post-block{
 	display: none;
 }
@@ -754,7 +788,7 @@ body.locked {
 .the-team img {
 	/*width: 37vw;*/
     margin: 0 auto;
-	max-width: 120px; }
+	max-width: 122px; }
 .team-desc {
 	display: inline-block;
 	width: 100%;
