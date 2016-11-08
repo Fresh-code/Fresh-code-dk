@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Fixed Price Model: Everything You Need to Know
+title:  Fixed Price Model&#58; Everything You Need to Know
 description: Get to know why you should go for a fixed price engagement model, how it works and what its advantages and weak points are.
-date:   2016-10-05 10:59:19
+date:   2016-11-08 10:59:19
 
 permalink: /blog/2016/10/05/fixed-price-model/
 
@@ -17,9 +17,9 @@ cover: /img/blog-post/post_5c-350.jpg
 srcsetattr: /img/blog-post/post_5c-700.jpg 700w, /img/blog-post/post_5c-450.jpg 450w, /img/blog-post/post_5c-350.jpg 350w
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'
 background-cover: '#5f798b'
-avatar: /img/blog-post/author_2.png
-author: Marina Danilova
-position: Project manager
+avatar: /img/blog-post/author_1.png
+author: Alex Slobozhan
+position: Sales manager
 
 share-image: '/img/blog-post/banner_post_5.jpg'
 share-description: 'When choosing an engagement mode for your perfect project, do not overlook the Fixed Price Model or FPM. Many IT teams prefer to create a Dedicated Team (ссылка) or use Time and Material Model (ссылка), but why not consider all possibilities before choosing what’s right for you?'
@@ -27,7 +27,7 @@ share-title: 'Fixed Price Model: Everything You Need to Know'
 ---
 
 <div class="post-body p-t-6rem">
-    <p>When choosing an engagement mode for your perfect project, do not overlook the Fixed Price Model or FPM. Many IT teams prefer to create a <a href="/blog/2016/09/28/is-dedicated-team-the-perfect-one-for-you/">Dedicated Team</a> or use Time and Material Model, but why not consider all possibilities before choosing what’s right for you?</p>
+    <p>When choosing an engagement mode for your perfect project, do not overlook the Fixed Price Model or FPM. Many IT teams prefer to create a Dedicated Team or use Time and Material Model, but why not consider all possibilities before choosing what’s right for you?</p>
     <p>Fixed Price Model means that you will receive a detailed offer including pricing and timescale upfront, which is more than you can expect with any other engagement mode. Let’s take a closer look for you to decide if the FPM is right for your next project!</p>
     <h3>When Should You Consider Going for the FPM?</h3><br>
     <p>If the project you have in mind is rather straightforward you can go for FPM. Make sure to outline all your requirements, paying attention to every detail. Consider choosing the FPM if your project’s desired features are very well defined and there is little to no chance of them changing over time.</p>

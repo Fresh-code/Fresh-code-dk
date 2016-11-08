@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  What Is MVP and Why Every Startup Needs It?
-description: decs
-date:   2016-11-10 10:59:19
+description: Common engagement models for outsourcing&#58; dedicated team, time & material, fixed price.
+date:   2016-11-6 10:59:19
 
-permalink: /blog/2016/11/10/what-is-mvp-and-why-every-startup-needs-it/
+permalink: /blog/2016/11/6/what-is-mvp-and-why-every-startup-needs-it/
 
 post-title: 'What Is MVP and Why Every Startup Needs It?'
 categories-tag: Business
@@ -13,11 +13,11 @@ background: /img/blog-post/banner_post_7.jpg
 background-color: '#0582bb'
 type: business
 
-cover: /img/blog-post/post_1c-350.jpg
+cover: /img/blog-post/post_7c-350.jpg
 alt: hz
-srcsetattr: /img/blog-post/post_1c-700.jpg 700w, /img/blog-post/post_1c-450.jpg 450w, /img/blog-post/post_1c-350.jpg 350w
+srcsetattr: /img/blog-post/post_7c-700.jpg 700w, /img/blog-post/post_7c-450.jpg 450w, /img/blog-post/post_7c-350.jpg 350w
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'
-background-cover: '#0582bb'
+background-cover: '#7eb5b0'
 avatar: /img/blog-post/author_4.png
 author: Elizabeth Troyanova
 position: Project manager
@@ -30,21 +30,21 @@ share-title: 'What Is MVP and Why Every Startup Needs It?'
 <div class="post-body p-t-6rem">
     <p>The minimum viable product (MVP) is described by the term’s inventor Eric Ries as the “version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort”. Over time the term has gotten new interpretations and is now widely used throughout various business concepts, including Lean Startup or Agile Development.</p>
     <p>Whichever definition you prefer, every MVP must possess:</p>
-    <ul>
-        <li><img src="/img/blog-post/icon_marker.jpg" alt='arrow pointer'> Enough customer value to attract clients willing to use the product and pay for it.</li>
-        <li><img src="/img/blog-post/icon_marker.jpg" alt='arrow pointer'> A clear vision that will make first adopters stick around.</li>
-        <li><img src="/img/blog-post/icon_marker.jpg" alt='arrow pointer'> The comprehensive feedback loop to direct future development.</li>
+    <ul class="post_ul_arrow">
+        <li>Enough customer value to attract clients willing to use the product and pay for it.</li>
+        <li>A clear vision that will make first adopters stick around.</li>
+        <li>The comprehensive feedback loop to direct future development.</li>
     </ul>
     <p>Despite the seeming simplicity of the concept, the MVP is often confused with an unfinished or an overly simplified version of the project. In case you want to create a smartphone, your MVP is not a touchscreen, a power button, or even a processor. You should first give your customers a rotary dial phone. It can solve their problem, as it allows to communicate over distance. Later you can provide a cell phone that combines communication with mobility. And when your customers are sufficiently familiar with most features, you can present them with the smartphone.</p>
     <br>
     <h2>Why Do Startups Use MVPs?</h2>
     <p>Whichever definition you prefer, every MVP must possess:</p>
-    <ul>
-        <li><img src="/img/blog-post/icon_marker.jpg" alt='arrow pointer'>Your product is developed and launched within the tightest deadlines. It means that anything you don’t have time for will be postponed until future product iterations.</li>
-        <li><img src="/img/blog-post/icon_marker.jpg" alt='arrow pointer'>New versions and iterations are finished quicker, and your customers are always content with the product’s increasing quality.</li>
-        <li><img src="/img/blog-post/icon_marker.jpg" alt='arrow pointer'>Customer feedback allows you to concentrate on the most desired features, making your product stand out among the competition.</li>
-        <li><img src="/img/blog-post/icon_marker.jpg" alt='arrow pointer'>Keeping a close eye on the customer feedback makes your MVP’s engagement levels rise which translates into higher sales.	 </li>
-        <li><img src="/img/blog-post/icon_marker.jpg" alt='arrow pointer'>Even if the MVP is not successful, the price of the business error is minimized. You can continue development adjusting the product for other niches or rethinking the idea completely.</li>
+    <ul class="post_ul_arrow">
+        <li>Your product is developed and launched within the tightest deadlines. It means that anything you don’t have time for will be postponed until future product iterations.</li>
+        <li>New versions and iterations are finished quicker, and your customers are always content with the product’s increasing quality.</li>
+        <li>Customer feedback allows you to concentrate on the most desired features, making your product stand out among the competition.</li>
+        <li>Keeping a close eye on the customer feedback makes your MVP’s engagement levels rise which translates into higher sales.	 </li>
+        <li>Even if the MVP is not successful, the price of the business error is minimized. You can continue development adjusting the product for other niches or rethinking the idea completely.</li>
     </ul>
     <h2>How Can You Use the MVP to Kick Start Your Startup?</h2>
     <p>You can consider using the MVP from a variety of angles.</p>
@@ -52,17 +52,52 @@ share-title: 'What Is MVP and Why Every Startup Needs It?'
     <h3>Does anyone need your product?</h3>
     <p>Your MVP can consist of a rough sketch on the back of a used restaurant napkin or a landing page draft or even a simple survey for potential customers. Your MVP will be unique, depending on the industry you wish to conquer, existing solutions and your resources.</p>
     <p>Here are a few common ideas you can implement:</p>
-    <ul>
-        <li><img src="/img/blog-post/icon_1.png" alt='arrow pointer'> Product with a single feature (think Google Search)</li>
-        <li><img src="/img/blog-post/icon_2.png" alt='arrow pointer'> Your product’s landing page</li>
-        <li><img src="/img/blog-post/icon_3.png" alt='arrow pointer'> Short video presentation</li>
-        <li><img src="/img/blog-post/icon_4.png" alt='arrow pointer'> Manual service behind an online front</li>
-        <li><img src="/img/blog-post/icon_5.png" alt='arrow pointer'> Crowdfunding campaign</li>
+    <ul class="post_no_list_style">
+    <li>
+        <div class="list_centered_img">
+            <img style="margin: auto" src="/img/blog-post/icon_1.png" alt='arrow pointer'>
+        </div>
+        <div class="list_centered_text">
+            Product with a single feature (think Google Search)
+        </div>
+    </li>
+    <li>
+        <div class="list_centered_img">
+            <img style="margin: auto" src="/img/blog-post/icon_2.png" alt='arrow pointer'>
+        </div>
+        <div class="list_centered_text">
+            Your product’s landing page
+        </div>
+    </li>
+    <li>
+        <div class="list_centered_img">
+            <img style="margin: auto" src="/img/blog-post/icon_3.png" alt='arrow pointer'>
+        </div>
+        <div class="list_centered_text">
+            Short video presentation
+        </div>
+    </li>
+    <li>
+        <div class="list_centered_img">
+            <img style="margin: auto" src="/img/blog-post/icon_4.png" alt='arrow pointer'>
+        </div>
+        <div class="list_centered_text">
+            Manual service behind an online front
+        </div>
+    </li>
+    <li>
+        <div class="list_centered_img">
+            <img style="margin: auto" src="/img/blog-post/icon_5.png" alt='arrow pointer'>
+        </div>
+        <div class="list_centered_text">
+            Crowdfunding campaign
+        </div>
+    </li>
     </ul>
     <p>Some think of creating the MVP as an endless loop. In this case, the MVP determines business credibility and development paths. You can apply this concept by constantly answering two simple questions:</p>
-        <ul>
-            <li><img src="/img/blog-post/.jpg" alt='arrow pointer'> Which of my business assumptions is most risky?</li>
-            <li><img src="/img/blog-post/.jpg" alt='arrow pointer'> How can I test this assumption with minimum time and effort?</li>
+        <ul class="post_no_list_style">
+            <li> <span class="post_li_number">1.</span> Which of my business assumptions is most risky?</li>
+            <li> <span class="post_li_number">2.</span>How can I test this assumption with minimum time and effort?</li>
         </ul>
     <p>This two-question test would have helped hundreds of failed startups determine that their product was not actually needed on the market, thus saving them from wasting months developing products no one would pay for.</p>
     <p>Let’s say you decided you create an online tool that would help art studios and painters promote their works and tutorials through dedicated websites. Before plunging headfirst into work, ask yourself if artists really need websites. What if they are content with social media? You can test your first assumption by contacting local studios and talking to artists online to gauge their interest.</p>
