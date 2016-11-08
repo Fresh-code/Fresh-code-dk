@@ -22,7 +22,7 @@ author: Alex Slobozhan
 position: Sales manager
 
 share-image: '/img/blog-post/banner_post_5.jpg'
-share-description: 'When choosing an engagement mode for your perfect project, do not overlook the Fixed Price Model or FPM. Many IT teams prefer to create a Dedicated Team (ссылка) or use Time and Material Model (ссылка), but why not consider all possibilities before choosing what’s right for you?'
+share-description: 'When choosing an engagement mode for your perfect project, do not overlook the Fixed Price Model or FPM. Many IT teams prefer to create a Dedicated Team or use Time and Material Model, but why not consider all possibilities before choosing what’s right for you?'
 share-title: 'Fixed Price Model: Everything You Need to Know'
 ---
 
