@@ -147,9 +147,9 @@ description: Freshcode is a software development outsourcing company with a team
     <div class="fresh-main testimonial-block section-outer">
         <div class="fresh-sub-block no-padding width-fixed">
             <h2 class="h2-outer c-h2-link">Testimonials <a href="/testimonials" class="main-link"><span class="service-icon"></span></a></h2>
-            <div class="row shorted">
-                {% for testimonial in site.data.main.testimonial %}
-                <div class="col-xxs col-xs-12 col-sm-12 col-md-6">
+            <div class="row shorted" id="testimonials-main">
+                {% for testimonial in site.data.testimonials.short %}
+                <div class="col-xxs col-xs-12 col-sm-12 col-md-6 testimonial-main">
                     <div class="testi-main">
                         <div class="testimonial-img">
                             <img class="img-responsive img-circle" src="{{ testimonial.photo }}" alt="{{ testimonial.alt }}">

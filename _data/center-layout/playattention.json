@@ -6,8 +6,8 @@
   "industry": "Education, Healthcare",
   "country": "USA",
   "teamSize": "2 people",
-  "techUsed": "NWJS (node.js + webkit), Angular.JS, Typescript, Loki.JS (in-memory database)",
-  "projDuration": "7 months, ongoing",
+  "techUsed": "NWJS (node.js + webkit), Angular.JS, Typescript, Loki.JS (in-memory database), CouchDB",
+  "projDuration": "1 year, ongoing",
   "pdf": "pdf/freshcode_case_studies_play_attention.pdf",
   "images": [
     {"alt":"Play Attention Homepage", "img":"/img/playattention/iMac.png"},

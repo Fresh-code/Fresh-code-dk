@@ -678,7 +678,9 @@ body.locked {
 .testi-main .description {
 	margin-top: 4rem;
 	text-align: center; }
-
+.testimonial-main{
+	display: none;
+}
 .right {
 	position: relative;
 	margin: 0 11%; }
