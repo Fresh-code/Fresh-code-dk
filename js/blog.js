@@ -6,7 +6,6 @@
  */
 (function(global) {
 
-
     var $conferences = $('.filter-conferences'),
         $development = $('.filter-development'),
         $management = $('.filter-management'),
@@ -251,6 +250,7 @@
     });
 
 
+
     $('.post-block').each(function(i,elem) {
         if(i < 3){
            $(elem).addClass('active');
@@ -265,7 +265,6 @@
             }
         });
     });
-
 
 })(this);
 

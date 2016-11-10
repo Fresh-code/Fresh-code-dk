@@ -19,7 +19,7 @@ sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 100
 background-cover: '#4b4f67'
 avatar: /img/blog-post/author_2.png
 author: Marina Danilova
-position: Project manager
+position: Sales manager
 
 share-image: '/img/blog-post/banner_post_6.jpg'
 share-description: 'The Time and Material Model is one of the most widely-used pricing models among the outsourcing crowd. It is a little trickier than the Fixed Price Model but has several important advantages. Let’s take a closer look and determine if the T&M model is right for your project.'
