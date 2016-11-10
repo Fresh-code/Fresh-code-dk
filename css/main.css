@@ -678,7 +678,9 @@ body.locked {
 .testi-main .description {
 	margin-top: 4rem;
 	text-align: center; }
-
+.testimonial-main{
+	display: none;
+}
 .right {
 	position: relative;
 	margin: 0 11%; }
@@ -729,12 +731,18 @@ body.locked {
 
 .post-body ul.post_ul_arrow {
 	list-style-image: url("/img/blog-post/icon_marker.png");
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .post-body ul.post_no_list_style {
 	list-style: none;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .post-body .post_ul_arrow li {
-	padding-left: 20px;
+	padding-left: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 .post-body .post_no_list_style li {
 	padding-left: 20px;
@@ -1290,7 +1298,7 @@ a.attach-link:hover { text-decoration: none; }
 }
 
 .dedicated-page .dedicated-head {
-	background: radial-gradient(circle 500px at 65% 0%,  #02d0d3, #0091d2);
+	background: radial-gradient(circle 500px at 65% 0%,  #02d0d3, transparent);
 	display: table;
 	width: 100%;
 	padding-top: 100px;

@@ -23,11 +23,29 @@
                     $(element).addClass("swap-hr");
                 }
             });
-
             $('#testimonials').css({'display':'block'});
             return this;
         };
         $('#testimonials').randomize('section');
+
+
+
+        $.fn.mainTestimonialsRandomize = function(selector){
+            var $elems = selector ? $(this).find(selector) : $(this).children(),
+                $parents = $elems.parent();
+            $parents.each(function(){
+                $(this).children(selector).sort(function(){
+                    return Math.round(Math.random()) - 0.5;
+                }).detach().appendTo(this);
+            });
+            $( "#testimonials-main .testimonial-main").each( function( index, element) {
+                if((index == 0 )|| (index == 1)){
+                    $(element).css({'display':'block'});
+                }
+            });
+            return this;
+        };
+        $('#testimonials-main').mainTestimonialsRandomize('.testimonial-main');
 
         var byMenuBtn = false,
             byMailBtn = false,
