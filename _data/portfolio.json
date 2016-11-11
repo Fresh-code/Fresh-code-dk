@@ -2,10 +2,10 @@
   "title": "Case Studies | Freshcode",
   "keywords":"Freshcode portfolio, web application development , desktop application development, mobile app development, JavaScript project, Clojure, Java, case studies",
   "description": "Look at Freshcode case studies to have an idea about our expertise in software development and web design.",
-  "page-title": "CASE STUDIES",
-  "page-text": "<span class='inline-text'>We've hand-picked <span id='allWorks' class='service-d-blue-num'></span> most exciting case studies for you to appreciate.</span> <span class='inline-text'> We are proud to have a hand in numerous successful projects.</span>",
-  "page-textbot": "<span class='inline-text'>These projects have long since paid for themselves and are well on their way to success.</span> <span class='inline-text'>It’s time for your idea to shine.</span> <span class='inline-text'>Let’s build the Next Best Thing together!</span>",
-  "page-background": "/img/portfolio/banner_portfolio.jpg",
+  "page_title": "CASE STUDIES",
+  "page_text": "<span class='inline-text'>We've hand-picked <span id='allWorks' class='service-d-blue-num'></span> most exciting case studies for you to appreciate.</span> <span class='inline-text'> We are proud to have a hand in numerous successful projects.</span>",
+  "page_textbot": "<span class='inline-text'>These projects have long since paid for themselves and are well on their way to success.</span> <span class='inline-text'>It’s time for your idea to shine.</span> <span class='inline-text'>Let’s build the Next Best Thing together!</span>",
+  "page_background": "/img/portfolio/banner_portfolio.jpg",
   "alt": "Hand typing on a keyboard",
   "works_excluded": [
     {
