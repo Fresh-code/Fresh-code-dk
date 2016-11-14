@@ -1546,6 +1546,7 @@ textarea.material-input { resize: none; }
     padding: 15px 0;
 	color: black!important;
 }
+
 .material-box { margin-bottom: 2%; }
 .material-input:focus { border-bottom: solid 1px #cacaca; }
 
