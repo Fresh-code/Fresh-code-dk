@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "jsonfile": "2.4.0",
+    "path": "0.12.7",
+    "http": "0.0.0",
+    "fs": "0.0.1-security",
+    "request": "2.78.0"
+  }
+}

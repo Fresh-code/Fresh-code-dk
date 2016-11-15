@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
+node_modules/
 .idea
 _site/
 Fresh-code.github.io.iml

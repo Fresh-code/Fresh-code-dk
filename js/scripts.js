@@ -180,18 +180,26 @@
         menuOnScroll();
     });
 
+
+
     function menuOnScroll() {
         var header = $('.fresh-header');
         var st = $(this).scrollTop();
 
         if ($(window).width() > 1000) {
+
+            $('.parallax-text-blog').css({
+                "transform" : "translate3d(0px, " + st/6 + "px, 0px)"
+            });
             $('.parallax-text').css({
-                "transform" : "translate3d(0px, " + st/4 + "px, 0px)"
+                "transform" : "translate3d(0px, " + st/25 + "px, 0px)"
             });
             $('.parallax-section').css({
-                "transform" : "translate3d(0px, " + st/5 + "px, 0px)"
+                "transform" : "translate3d(0px, " + st/6 + "px, 0px)"
             });
         }
+
+
 
         if (st < 1) {
             header.removeClass('is-scrolled');

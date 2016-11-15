@@ -762,10 +762,9 @@ body.locked {
 }
 
 .post-body ul .post_li_number{
-	color:  #4cacfa;
-	font-size: 61px;
-	font-weight: 100;
-	line-height: 80px;
+	font-size: 60px;
+	color: #02E3F9;
+	font-family: "Josefin", sans-serif;
 	text-align: center;
 	padding-right: 30px;
 }
@@ -1282,7 +1281,7 @@ a.attach-link:hover { text-decoration: none; }
 	display: table-cell;
 	vertical-align: middle;
 	text-align:center;
-	width: 50%;
+	width: 40%;
 	margin: auto;
 }
 
@@ -1290,7 +1289,7 @@ a.attach-link:hover { text-decoration: none; }
 	display: table-cell;
 	vertical-align: middle;
 	text-align:center;
-	width: 50%;
+	width: 60%;
 	margin: auto;
 }
 .gradient-body .dedicated-page .height-100{
@@ -1313,7 +1312,7 @@ a.attach-link:hover { text-decoration: none; }
 
 
 .dedicated-page .fresh-h3 {
-	text-align: center;}
+	text-align: left;}
 
 .dedicated-page .services-paragr-image {
 	width: auto;
@@ -1324,6 +1323,7 @@ a.attach-link:hover { text-decoration: none; }
 }
 
 .dedicated-page .fresh-h1 {
+	text-align: left;
 	margin-bottom: 15px;
 }
 .dedicated-page .dedicated-page .fresh-h3 {
