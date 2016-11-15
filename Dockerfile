@@ -12,9 +12,10 @@ RUN gem install \
   rouge && \
   juicer install jslint
 
-RUN npm install
-
 COPY . /src
 EXPOSE 4000
 WORKDIR /src
+
+RUN npm install
+
 RUN jekyll build
