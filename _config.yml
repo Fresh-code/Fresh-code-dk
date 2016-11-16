@@ -26,12 +26,8 @@ include:
   - _pages
 exclude:
   - _assets-cache
-  - node_modules
-  - dockerignore.yml
   - build.sh
   - CssMinify.yml
-  - docker-compose.yml
-  - Dockerfile
   - Fresh-code.github.io.iml
   - JsMinify.yml
   - package.json
