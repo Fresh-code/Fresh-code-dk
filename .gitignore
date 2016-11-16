@@ -3,6 +3,5 @@
 node_modules/
 .idea
 _site/
-package.json
 index.js
 Fresh-code.github.io.iml
