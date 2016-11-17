@@ -76,10 +76,10 @@ app.get('/build', function (req, res) {
     });
 });
 
-app.get('/push', function (req, res) {
+/*app.get('/push', function (req, res) {
     res.send('Trying to push!');
     exec('./git_push.sh');
-});
+});*/
 
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
