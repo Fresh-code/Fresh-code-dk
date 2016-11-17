@@ -26,6 +26,7 @@ include:
   - _pages
 exclude:
   - _assets-cache
+  - node_modules
   - build.sh
   - package.json
   - index.js
