@@ -26,12 +26,6 @@ include:
   - _pages
 exclude:
   - _assets-cache
-  - build.sh
-  - CssMinify.yml
-  - Fresh-code.github.io.iml
-  - JsMinify.yml
-  - package.json
-  - index.js
 markdown: kramdown
 permalink: pretty
 

@@ -1,4 +1,4 @@
-FROM ianwremmel/docker-node-jre
+FROM azukiapp/ruby:2.1.4
 
 RUN gem install \
   jekyll:3.2.1 \
@@ -13,9 +13,11 @@ RUN gem install \
   juicer install jslint
 
 COPY . /src
-EXPOSE 4000
+
 WORKDIR /src
 
 RUN npm install
 
 RUN jekyll build
+
+ENTRYPOINT ["./run.sh"]

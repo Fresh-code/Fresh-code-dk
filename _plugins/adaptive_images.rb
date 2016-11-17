@@ -17,7 +17,7 @@ module Jekyll
       name = (input.split('/')[3]).split('.')[0]
       output = "#{path}/#{name}-#{size}.#{ext}"
 
-      if flag
+      if flag #or true
         cmd = "convert -strip -interlace Plane -quality 95 -depth 8 -resize #{size} #{input[1..-1]} #{output}"
         system(cmd)
         # pid = spawn(cmd)

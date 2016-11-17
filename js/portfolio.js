@@ -8,6 +8,9 @@
 
 
 
+
+
+
     var $monitoring = $('.filter-monitoring'),
         $navigation = $('.filter-navigation'),
         $education = $('.filter-education'),
