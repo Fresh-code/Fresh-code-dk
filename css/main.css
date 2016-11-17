@@ -240,7 +240,7 @@ body.locked {
 	width: 100%; }
 .fresh-h3,
 .fresh-title h3 {
-	font-size: 22px;
+	font-size: 21px;
 	font-weight: 300;
 	vertical-align: middle;
 	line-height: 35px;
@@ -762,10 +762,9 @@ body.locked {
 }
 
 .post-body ul .post_li_number{
-	color:  #4cacfa;
-	font-size: 61px;
-	font-weight: 100;
-	line-height: 80px;
+	font-size: 60px;
+	color: #02E3F9;
+	font-family: "Josefin", sans-serif;
 	text-align: center;
 	padding-right: 30px;
 }
@@ -1282,7 +1281,7 @@ a.attach-link:hover { text-decoration: none; }
 	display: table-cell;
 	vertical-align: middle;
 	text-align:center;
-	width: 50%;
+	width: 40%;
 	margin: auto;
 }
 
@@ -1290,8 +1289,9 @@ a.attach-link:hover { text-decoration: none; }
 	display: table-cell;
 	vertical-align: middle;
 	text-align:center;
-	width: 50%;
+	width: 60%;
 	margin: auto;
+	padding: 20px;
 }
 .gradient-body .dedicated-page .height-100{
 	height: 100vh;
@@ -1313,7 +1313,7 @@ a.attach-link:hover { text-decoration: none; }
 
 
 .dedicated-page .fresh-h3 {
-	text-align: center;}
+	text-align: left;}
 
 .dedicated-page .services-paragr-image {
 	width: auto;
@@ -1324,6 +1324,7 @@ a.attach-link:hover { text-decoration: none; }
 }
 
 .dedicated-page .fresh-h1 {
+	text-align: left;
 	margin-bottom: 15px;
 }
 .dedicated-page .dedicated-page .fresh-h3 {
@@ -1686,7 +1687,8 @@ textarea.material-input { resize: none; }
 	.dedicated-page .dedicated-head .dedic-head-container {  display: flex;  flex-direction: column-reverse;  }
 	.dedicated-page .dedicated-head-description { width: 80%; margin-bottom: 60px; }
 	.dedicated-page .dedicated-head-img { width: 80%; margin-bottom: 30px; }
-	h1.fresh-h1.h1  { font-size: 34px; line-height: 45px;}
+	h1.fresh-h1.h1  { font-size: 34px; line-height: 45px; text-align: center; }
+	.dedicated-page .fresh-h3 { text-align: center; }
 }
 @media screen and (max-width: 940px) {
 	.testimonial-text { font-size: 20px; }
