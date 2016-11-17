@@ -1,4 +1,5 @@
-.idea
+# Created by .ignore support plugin (hsz.mobi)
 .gitignore
-build.sh
-README
+.idea
+_site/
+Fresh-code.github.io.iml
