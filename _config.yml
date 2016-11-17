@@ -26,6 +26,12 @@ include:
   - _pages
 exclude:
   - _assets-cache
+  - build.sh
+  - package.json
+  - index.js
+  - server.js
+  - run.sh
+  - Dockerfile
 markdown: kramdown
 permalink: pretty
 
