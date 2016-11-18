@@ -1,7 +1,5 @@
 FROM azukiapp/ruby:2.1.4
 
-ENV HOME /root
-
 RUN gem install \
   jekyll:3.2.1 \
   jekyll-sitemap:0.11.0 \
