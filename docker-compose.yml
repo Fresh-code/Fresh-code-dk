@@ -1,7 +1,5 @@
 freshcodeit:
-  labels:
-    io.rancher.scheduler.affinity:host_label: type=staging
-  image: registry.gitlab.com/freshcode-projects/freshcodeit.com
+  image: crazy_try
   ports:
     - "3000:3000"
     - "4000:4000"
