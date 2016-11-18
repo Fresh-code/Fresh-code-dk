@@ -8,6 +8,18 @@ var request = require('request');
 var jsonfile = require('jsonfile');
 var url = 'http://192.168.1.151:8000/?json=get_posts';
 
+var rmDir = function(dirPath) {
+    try { var files = fs.readdirSync(dirPath); }
+    catch(e) { return; }
+    if (files.length > 0)
+        for (var i = 0; i < files.length; i++) {
+            var filePath = dirPath + '/' + files[i];
+            if (fs.statSync(filePath).isFile())
+                fs.unlinkSync(filePath);
+            else
+                rmDir(filePath);
+        }
+};
 
 app.get('/build', function (req, res) {
     res.send('Hello World!');
@@ -21,7 +33,24 @@ app.get('/build', function (req, res) {
             for (var i = 0; i < response.posts.length; i++) {
                 switch (response.posts[i].categories[0].slug) {
                     case "product": {
+
+                        rmDir('img/' + response.posts[i].slug);
+
                         for(var j=0; j<response.posts[i].attachments.length; j++){
+                            /*   var image = response.posts[i].attachments[j].url.replace(/(.*)\/(.*)/g, '$2');
+                             var folder = response.posts[i].slug;*/
+                            /*
+                             fs.exists('img/' + folder + '/' + image, function(exists) {
+                             if(exists) {
+                             console.log('File exists. Deleting now ...');
+
+                             fs.unlink('img/' + folder + '/' + image, function (err) {
+                             if (err) return console.log(err);
+                             console.log('file deleted successfully');
+                             });
+                             }
+                             });*/
+
                             request(response.posts[i].attachments[j].url).pipe(
                                 fs.createWriteStream('img/' + response.posts[i].slug + '/' + response.posts[i].attachments[j].url.replace(/(.*)\/(.*)/g, '$2')));
                         }
@@ -61,10 +90,10 @@ app.get('/build', function (req, res) {
                             "next": response.posts[i].custom_fields.next[0]
                         };
 
-                          jsonfile.writeFile('_data/center-layout/' + json_data.name + '.json', json_data, {spaces: 2}, function (err) {
-                         if(err){ console.error(err); }
-                         else{ console.log('file ' + json_data.name + '.json saved.'); }
-                         });
+                        jsonfile.writeFile('_data/center-layout/' + json_data.name + '.json', json_data, {spaces: 2}, function (err) {
+                            if(err){ console.error(err); }
+                            else{ console.log('file ' + json_data.name + '.json saved.'); }
+                        });
                     }
                         break;
                 }
@@ -77,9 +106,9 @@ app.get('/build', function (req, res) {
 });
 
 /*app.get('/push', function (req, res) {
-    res.send('Trying to push!');
-    exec('./git_push.sh');
-});*/
+ res.send('Trying to push!');
+ exec('./git_push.sh');
+ });*/
 
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
