@@ -9,7 +9,6 @@
     
     $(window).on("load", function() {
 
-
         $.fn.randomize = function(selector){
             var $elems = selector ? $(this).find(selector) : $(this).children(),
                 $parents = $elems.parent();
