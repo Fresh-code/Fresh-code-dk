@@ -78,15 +78,12 @@ app.post('/build', function (req, res) {
                         //rmDir('img/' + response.posts[i].slug);
                         for (var j = 0; j < response.posts[i].attachments.length; j++) {
 
-                            if(j==3){
-                                request(response.posts[i].attachments[j].url).pipe(
-                                    fs.createWriteStream('img/portfolio/' + response.posts[i].slug + "_cover." + response.posts[i].attachments[j].url.split('.').pop()));
-                            }
-                            else{
-                                request(response.posts[i].attachments[j].url).pipe(
-                                    fs.createWriteStream('img/' + response.posts[i].slug + '/' + response.posts[i].slug + j + "." + response.posts[i].attachments[j].url.split('.').pop()));
-
-                            }
+                            /* if(j==3){
+                             request(response.posts[i].attachments[j].url).pipe(
+                             fs.createWriteStream('img/portfolio/' + response.posts[i].slug + "_cover." + response.posts[i].attachments[j].url.split('.').pop()));
+                             }*/
+                            request(response.posts[i].attachments[j].url).pipe(
+                                fs.createWriteStream('img/' + response.posts[i].slug + '/' + response.posts[i].attachments[j].url.replace(/(.*)\/(.*)/g, '$2')));
                         }
                         var json_data = {
                             "name": response.posts[i].slug,
@@ -105,15 +102,15 @@ app.post('/build', function (req, res) {
                             "images": [
                                 {
                                     "alt": response.posts[i].attachments[0].description,
-                                    "img": "/img/" + response.posts[i].slug + "/" + response.posts[i].slug + "0." + response.posts[i].attachments[0].url.split('.').pop()
+                                    "img": "/img/" + response.posts[i].slug + "/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2')
                                 },
                                 {
                                     "alt": response.posts[i].attachments[1].description,
-                                    "img": "/img/" + response.posts[i].slug + "/" + response.posts[i].slug + "1." + response.posts[i].attachments[1].url.split('.').pop()
+                                    "img": "/img/" + response.posts[i].slug + "/" + response.posts[i].attachments[1].url.replace(/(.*)\/(.*)/g, '$2')
                                 },
                                 {
                                     "alt": response.posts[i].attachments[2].description,
-                                    "img": "/img/" + response.posts[i].slug + "/" + response.posts[i].slug + "2." +  response.posts[i].attachments[2].url.split('.').pop()
+                                    "img": "/img/" + response.posts[i].slug + "/" + response.posts[i].attachments[2].url.replace(/(.*)\/(.*)/g, '$2')
                                 }
                             ],
                             "challenges": response.posts[i].custom_fields.challenges[0],
@@ -280,10 +277,12 @@ app.post('/build', function (req, res) {
                         break;
 
                     case "testimonial": {
-                        request(response.posts[i].attachments[q].url).pipe(
+
+
+                        request(response.posts[i].attachments[0].url).pipe(
                             fs.createWriteStream('img/testimonials/' + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2')));
 
-                        if(response.posts[i].custom_fields.preview_show[0] == "show"){
+                        if(response.posts[i].custom_fields.show[0] == "show"){
                             testimonials_json.short[testimonials_json.short.length] =
                             {
                                 "author": response.posts[i].custom_fields.author[0],
@@ -326,34 +325,25 @@ app.post('/build', function (req, res) {
 
                     case "testimonials-page": {
 
-                        //rmDir('img/testimonials');
-                        var testimonial_backgruond;
-                        var testimonial_icon;
-
                         for (var qq = 0; qq < response.posts[i].attachments.length; qq++) {
-                            var img_testimonials = response.posts[i].attachments[qq].url.replace(/(.*)\/(.*)/g, '$2');
 
-                            switch (response.posts[i].attachments[qq].title) {
-                                case 'background':
-                                    testimonial_backgruond = img_testimonials;
-                                    break;
-                                case 'icon':
-                                    testimonial_icon = img_testimonials;
-                                    break;
-                            }
-
+                            switch (response.posts[i].attachments[qq].caption) {
+                             case 'icon':
+                                 testimonials_json.icons[testimonials_json.icons.length] =
+                                     "/img/testimonials/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2');
+                               break;
+                             }
                             request(response.posts[i].attachments[qq].url).pipe(
-                                fs.createWriteStream('img/testimonials/' + img_testimonials));
+                                fs.createWriteStream('img/testimonials/' + response.posts[i].attachments[qq].url.replace(/(.*)\/(.*)/g, '$2')));
                         }
 
-                         testimonials_json.title = response.posts[i].custom_fields.title[0];
-                         testimonials_json.keywords = response.posts[i].custom_fields.keywords[0];
-                         testimonials_json.description = response.posts[i].custom_fields.description[0];
-                         testimonials_json.page_title = response.posts[i].custom_fields.page_title[0];
-                         testimonials_json.page_text = "<span class='inline-text'>" + response.posts[i].custom_fields.page_text[0] + "</span>";
-                         testimonials_json.page_background = "/img/testimonials/" + testimonial_backgruond;
-                         testimonials_json.alt = response.posts[i].attachments[0].description;
-
+                        testimonials_json.title = response.posts[i].custom_fields.title[0];
+                        testimonials_json.keywords = response.posts[i].custom_fields.keywords[0];
+                        testimonials_json.description = response.posts[i].custom_fields.description[0];
+                        testimonials_json.page_title = response.posts[i].custom_fields.page_title[0];
+                        testimonials_json.page_text = "<span class='inline-text'>" + response.posts[i].custom_fields.page_text[0] + "</span>";
+                        testimonials_json.page_background = "/img/testimonials/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2');
+                        testimonials_json.alt = response.posts[i].attachments[0].description;
                     }
                         break;
                 }
@@ -364,10 +354,10 @@ app.post('/build', function (req, res) {
                 else{ console.log('file ' + portfolio_json.title + '.json saved.'); }
             });
 
-            /*jsonfile.writeFile('_data/testimonials.json', testimonials_json, {spaces: 2}, function (err) {
+            jsonfile.writeFile('_data/testimonials.json', testimonials_json, {spaces: 2}, function (err) {
                 if(err){ console.error(err); }
                 else{ console.log('file ' + testimonials_json.title + '.json saved.'); }
-            });*/
+            });
 
         });
     }).on('error', function (e) {
