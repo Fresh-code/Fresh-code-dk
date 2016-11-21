@@ -2,9 +2,9 @@
 layout: post
 title: Everything You Wanted to Know about the Time and Material Model
 description: What kind of projects Time and Material Model is suitable for. What you need to know about this engagement model before going for it.
-date:   2016-10-12 10:59:19
+date:   2016-11-21 10:59:19
 
-permalink: /blog/2016/10/12/everything-you-wanted-to-know/
+permalink: /blog/2016/11/21/everything-you-wanted-to-know/
 
 post-title: 'Everything You Wanted to Know about the Time and Material Model'
 categories-tag: Business
@@ -49,5 +49,5 @@ share-title: Everything You Wanted to Know about the Time and Material Model
     <p>Every member of the team can have their separate rate according to the skill set and the level of expertise. Otherwise, some teams use a single blend rate that is applied to all the developers working on the same project.</p>
     <p>Your requirements will change as the project grows and evolves, therefore staying within the estimated budget can be trying. So it is always a good idea to negotiate an expenses limit that should not be exceeded. This is often referred to as a T&M model with cap.</p>
     <p>For the Time and Material Model to be efficient you should hire qualified project managers that practice modern methodologies to keep track of the project’s schedule and the quality and productivity of the developer’s work. The project manager will make sure to minimize the lag time and your expenses.</p>
-    <p>If after learning the basics of the Time and Material Model you decide against it, you can always go for the <a href="/blog/2016/10/05/fixed-price-model/">Fixed Price</a> rate or create your personal <a href="/blog/2016/09/28/is-dedicated-team-the-perfect-one-for-you/">Dedicated Team</a>.</p>
+    <p>If after learning the basics of the Time and Material Model you decide against it, you can always go for the <a href="/blog/2016/11/08/fixed-price-model/">Fixed Price</a> rate or create your personal Dedicated Team.</p>
 </div>

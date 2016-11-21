@@ -4,7 +4,7 @@ title:  Fixed Price Model&#58; Everything You Need to Know
 description: Get to know why you should go for a fixed price engagement model, how it works and what its advantages and weak points are.
 date:   2016-11-08 10:59:19
 
-permalink: /blog/2016/10/05/fixed-price-model/
+permalink: /blog/2016/11/08/fixed-price-model/
 
 post-title: 'Fixed Price Model: Everything You Need to Know'
 categories-tag: Business

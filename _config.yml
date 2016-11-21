@@ -33,6 +33,7 @@ exclude:
   - server.js
   - run.sh
   - Dockerfile
+  - node_server_index.html
 markdown: kramdown
 permalink: pretty
 
