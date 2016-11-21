@@ -3,6 +3,7 @@
  */
 (function(global) {
 
+
     var $conferences = $('.filter-conferences'),
         $development = $('.filter-development'),
         $management = $('.filter-management'),
@@ -14,6 +15,23 @@
         $dd = $('#filter-dropdown');
 
     var posts = [
+        
+        {
+            posttitle: 'Everything You Wanted to Know about the Time and Material Model',
+            platformtag: 'Apple',
+            avatar: '/img/blog-post/author_2.png',
+            catauthor: 'Business | Marina Danilova',
+            position: 'Sales manager',
+            postcover: '/img/blog-post/post_6c-350.jpg',
+            postalt: '',
+            postsrcset: '/img/blog-post/post_6c-700.jpg 700w, /img/blog-post/post_6c-450.jpg 450w, /img/blog-post/post_6c-350.jpg 350w',
+            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+            postcoverbckg: 'background-color: #4b4f67 !important',
+            postbckg: 'background-color: #4b4f67 !important',
+            type: 'business',
+            nondisplay: 'display: none',
+            posturl: '/blog/2016/11/21/everything-you-wanted-to-know/'
+        },
         
         {
             posttitle: 'Fixed Price Model: Everything You Need to Know',
@@ -29,7 +47,7 @@
             postbckg: 'background-color: #5f798b !important',
             type: 'business',
             nondisplay: 'display: none',
-            posturl: '/blog/2016/10/05/fixed-price-model/'
+            posturl: '/blog/2016/11/08/fixed-price-model/'
         },
         
         {
