@@ -18,6 +18,16 @@
       "link": "/educadio",
       "type": "education",
       "mainColor": "#354356"
+    },
+    {
+      "title": "GommeHD",
+      "description": "GommeHD is one of the leading Minecraft Servers with more than 1 million players throughout the world. The site delivers community news and statistics, as well as the latest updates and videos.",
+      "cover": "/img/portfolio/work_2p-350.jpg",
+      "srcsetattr": "/img/portfolio/work_2p-700.jpg 700w, /img/portfolio/imac-450.jpg 450w, /img/portfolio/imac-350.jpg 350w",
+      "sizesattr": "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px",
+      "link": "/gommehd",
+      "type": "ecommerce",
+      "mainColor": "#775441"
     }
   ]
 }
