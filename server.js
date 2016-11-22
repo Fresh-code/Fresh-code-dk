@@ -187,7 +187,6 @@ app.post('/build', function (req, res) {
                         var cover;
                         var avatar;
 
-
                         for (var q = 0; q < response.posts[i].attachments.length; q++) {
                             var img = response.posts[i].attachments[q].url.replace(/(.*)\/(.*)/g, '$2');
 
@@ -218,12 +217,12 @@ app.post('/build', function (req, res) {
                             'categories-tag: ' + response.posts[i].custom_fields.categories_tag[0] + '\n' +
                             'platform-tag: ' + response.posts[i].custom_fields.platform_tag[0] + '\n' +
                             'background: /img/blog-post/' + backgruond + '\n' +
-                            'background-color: ' + response.posts[i].custom_fields.background_color[0] + '\n' +
+                            'background-color: "' + response.posts[i].custom_fields.background_color[0] + '"\n' +
                             'type: ' + response.posts[i].custom_fields.type[0] + '\n' +
                             'cover: /img/blog-post/' + cover + '-350.jpg \n' +
                             'srcsetattr: /img/blog-post/' + cover + '-700.jpg 700w, /img/blog-post/' + cover + '-450.jpg 450w, /img/blog-post/' + cover + '-350.jpg 350w \n' +
                             'sizeattr: "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px"' + '\n' +
-                            'background-cover: ' + response.posts[i].custom_fields.background_color[0] + '\n' +
+                            'background-cover: "' + response.posts[i].custom_fields.background_color[0] + '"\n' +
                             'avatar: /img/blog-post/' + avatar + '\n' +
                             'author: ' + response.posts[i].custom_fields.author[0] + '\n' +
                             'position: ' + response.posts[i].custom_fields.position[0] + '\n' +
@@ -234,8 +233,6 @@ app.post('/build', function (req, res) {
                             '<div class="post-body p-t-6rem">' +
                             '' + response.posts[i].content.replace(/<figure.*?<\/figure>/g, '').replace(/<p><img class="alignnone.*?><\/p>/g, '') + '\n' +
                             '</div>';
-
-                        var postName = response.posts[i].slug;
 
                         if (response.posts[i].custom_fields.show[0] == "show") {
 
@@ -388,5 +385,5 @@ app.get('/', function (req, res) {
  });*/
 
 app.listen(3000, function () {
-    console.log('Example app listening on port 3000!');
+    console.log('App listening on port 3000');
 });

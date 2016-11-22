@@ -13,7 +13,6 @@ background: /img/blog-post/banner_post_5.jpg
 background-color: '#5f798b'
 type: business
 
-
 cover: /img/blog-post/post_5c-350.jpg
 srcsetattr: /img/blog-post/post_5c-700.jpg 700w, /img/blog-post/post_5c-450.jpg 450w, /img/blog-post/post_5c-350.jpg 350w
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'
