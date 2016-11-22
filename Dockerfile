@@ -14,6 +14,8 @@ RUN gem install \
 
 COPY . /src
 
+RUN mkdir -p /.ssh
+
 WORKDIR /src
 
 RUN npm install
