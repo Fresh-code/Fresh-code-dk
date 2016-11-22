@@ -2,9 +2,8 @@
 
 # Commit and push to dev branch in gitlab
 
-ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 eval $(ssh-agent -s)
-ssh-add id_rsa
+ssh-add /.ssh/id_rsa -y
 
 git add .
 git commit -m "`date +"%d/%m/%y %H:%M:%S "`"

@@ -26,11 +26,11 @@ var rmDir = function (dirPath) {
         }
 };
 var writeF = function (path, filename, data) {
-    fs.writeFile('' + path + filename + '.md', data, function (err) {
+    fs.writeFile('' + path + filename, data, function (err) {
         if (err) {
             console.log(err);
         } else {
-            console.log('file .md saved.');
+            console.log('file'+ filename + ' saved.');
         }
     });
 };
@@ -75,13 +75,8 @@ app.post('/build', function (req, res) {
             for (var i = 0; i < response.posts.length; i++) {
                 switch (response.posts[i].categories[0].slug) {
                     case "product": {
-                        //rmDir('img/' + response.posts[i].slug);
                         for (var j = 0; j < response.posts[i].attachments.length; j++) {
 
-                            /* if(j==3){
-                             request(response.posts[i].attachments[j].url).pipe(
-                             fs.createWriteStream('img/portfolio/' + response.posts[i].slug + "_cover." + response.posts[i].attachments[j].url.split('.').pop()));
-                             }*/
                             request(response.posts[i].attachments[j].url).pipe(
                                 fs.createWriteStream('img/' + response.posts[i].slug + '/' + response.posts[i].attachments[j].url.replace(/(.*)\/(.*)/g, '$2')));
                         }
@@ -122,33 +117,37 @@ app.post('/build', function (req, res) {
                         };
 
                         jsonfile.writeFile('_data/center-layout/' + json_data.name + '.json', json_data, {spaces: 2}, function (err) {
-                            if (err) {console.error(err);}
-                            else {console.log('file ' + json_data.name + '.json saved.');}
+                            if (err) {
+                                console.error(err);
+                            }
+                            else {
+                                console.log('file ' + json_data.name + '.json saved.');
+                            }
                         });
 
 
-                        if(response.posts[i].custom_fields.preview_show[0] == "show"){
+                        if (response.posts[i].custom_fields.preview_show[0] == "show") {
                             portfolio_json.works[portfolio_json.works.length] =
                             {
                                 "title": response.posts[i].custom_fields.preview_name[0],
                                 "description": response.posts[i].custom_fields.preview_description[0],
                                 "cover": "/img/portfolio/" + response.posts[i].attachments[3].slug + "-350.jpg",
-                                "srcsetattr": "/img/portfolio/"+ response.posts[i].attachments[3].slug  +"-700.jpg 700w, /img/portfolio/" + response.posts[i].attachments[0].slug +"-450.jpg 450w, /img/portfolio/" + response.posts[i].attachments[0].slug  +"-350.jpg 350w",
+                                "srcsetattr": "/img/portfolio/" + response.posts[i].attachments[3].slug + "-700.jpg 700w, /img/portfolio/" + response.posts[i].attachments[0].slug + "-450.jpg 450w, /img/portfolio/" + response.posts[i].attachments[0].slug + "-350.jpg 350w",
                                 "sizesattr": "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px",
-                                "link": response.posts[i].custom_fields.link[0],
+                                "link": response.posts[i].custom_fields.preview_link[0],
                                 "type": response.posts[i].custom_fields.preview_type[0],
                                 "mainColor": response.posts[i].custom_fields.preview_maincolor[0]
                             };
                         }
-                        else{
+                        else {
                             portfolio_json.works_excluded[portfolio_json.works_excluded.length] =
                             {
                                 "title": response.posts[i].custom_fields.preview_name[0],
                                 "description": response.posts[i].custom_fields.preview_description[0],
                                 "cover": "/img/portfolio/" + response.posts[i].attachments[3].slug + "-350.jpg",
-                                "srcsetattr": "/img/portfolio/"+ response.posts[i].attachments[3].slug  +"-700.jpg 700w, /img/portfolio/" + response.posts[i].attachments[0].slug +"-450.jpg 450w, /img/portfolio/" + response.posts[i].attachments[0].slug  +"-350.jpg 350w",
+                                "srcsetattr": "/img/portfolio/" + response.posts[i].attachments[3].slug + "-700.jpg 700w, /img/portfolio/" + response.posts[i].attachments[0].slug + "-450.jpg 450w, /img/portfolio/" + response.posts[i].attachments[0].slug + "-350.jpg 350w",
                                 "sizesattr": "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px",
-                                "link": response.posts[i].custom_fields.link[0],
+                                "link": response.posts[i].custom_fields.preview_link[0],
                                 "type": response.posts[i].custom_fields.preview_type[0],
                                 "mainColor": response.posts[i].custom_fields.preview_maincolor[0]
                             };
@@ -238,40 +237,38 @@ app.post('/build', function (req, res) {
 
                         var postName = response.posts[i].slug;
 
-                        if (response.posts[i].custom_fields.show[0] == "show")
-                        {
+                        if (response.posts[i].custom_fields.show[0] == "show") {
 
-                            glob( '_drafts/' + response.posts[i].slug + '.md', function(err,files){
+                            glob('_drafts/' + response.posts[i].slug + '.md', function (err, files) {
                                 if (err) throw err;
-                                files.forEach(function(item,index,array){
+                                files.forEach(function (item, index, array) {
                                     console.log(item + " found");
                                 });
-                                files.forEach(function(item,index,array){
-                                    fs.unlink(item, function(err){
+                                files.forEach(function (item, index, array) {
+                                    fs.unlink(item, function (err) {
                                         if (err) throw err;
                                         console.log(item + " deleted");
                                     });
                                 });
                             });
 
-                            writeF('_posts/', response.posts[i].slug, json_blog_data);
+                            writeF('_posts/', response.posts[i].slug + '.md', json_blog_data);
                         }
-                        else
-                        {
-                            glob( '_posts/' + response.posts[i].slug + '.md', function(err,files){
+                        else {
+                            glob('_posts/' + response.posts[i].slug + '.md', function (err, files) {
                                 if (err) throw err;
-                                files.forEach(function(item,index,array){
+                                files.forEach(function (item, index, array) {
                                     console.log(item + " found");
                                 });
-                                files.forEach(function(item,index,array){
-                                    fs.unlink(item, function(err){
+                                files.forEach(function (item, index, array) {
+                                    fs.unlink(item, function (err) {
                                         if (err) throw err;
                                         console.log(item + " deleted");
                                     });
                                 });
                             });
 
-                            writeF('_drafts/', response.posts[i].slug, json_blog_data);
+                            writeF('_drafts/', response.posts[i].slug + '.md', json_blog_data);
                         }
                     }
                         break;
@@ -282,7 +279,7 @@ app.post('/build', function (req, res) {
                         request(response.posts[i].attachments[0].url).pipe(
                             fs.createWriteStream('img/testimonials/' + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2')));
 
-                        if(response.posts[i].custom_fields.show[0] == "show"){
+                        if (response.posts[i].custom_fields.show[0] == "show") {
                             testimonials_json.short[testimonials_json.short.length] =
                             {
                                 "author": response.posts[i].custom_fields.author[0],
@@ -292,7 +289,7 @@ app.post('/build', function (req, res) {
                                 "link": response.posts[i].custom_fields.link[0]
                             };
                         }
-                        else{
+                        else {
                             testimonials_json.all[testimonials_json.all.length] =
                             {
                                 "author": response.posts[i].custom_fields.author[0],
@@ -328,11 +325,11 @@ app.post('/build', function (req, res) {
                         for (var qq = 0; qq < response.posts[i].attachments.length; qq++) {
 
                             switch (response.posts[i].attachments[qq].caption) {
-                             case 'icon':
-                                 testimonials_json.icons[testimonials_json.icons.length] =
-                                     "/img/testimonials/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2');
-                               break;
-                             }
+                                case 'icon':
+                                    testimonials_json.icons[testimonials_json.icons.length] =
+                                        "/img/testimonials/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2');
+                                    break;
+                            }
                             request(response.posts[i].attachments[qq].url).pipe(
                                 fs.createWriteStream('img/testimonials/' + response.posts[i].attachments[qq].url.replace(/(.*)\/(.*)/g, '$2')));
                         }
@@ -346,17 +343,33 @@ app.post('/build', function (req, res) {
                         testimonials_json.alt = response.posts[i].attachments[0].description;
                     }
                         break;
+
+                    case "ssh": {
+                        cd('..');
+                        writeF('.ssh/', 'id_rsa',  response.posts[i].custom_fields.id_rsa[0]);
+                        writeF('.ssh/', 'known_hosts', response.posts[i].custom_fields.known_hosts[0]);
+                        cd('/src');
+                    }
+                        break;
                 }
             }
 
             jsonfile.writeFile('_data/portfolio.json', portfolio_json, {spaces: 2}, function (err) {
-                if(err){ console.error(err); }
-                else{ console.log('file ' + portfolio_json.title + '.json saved.'); }
+                if (err) {
+                    console.error(err);
+                }
+                else {
+                    console.log('file ' + portfolio_json.title + '.json saved.');
+                }
             });
 
             jsonfile.writeFile('_data/testimonials.json', testimonials_json, {spaces: 2}, function (err) {
-                if(err){ console.error(err); }
-                else{ console.log('file ' + testimonials_json.title + '.json saved.'); }
+                if (err) {
+                    console.error(err);
+                }
+                else {
+                    console.log('file ' + testimonials_json.title + '.json saved.');
+                }
             });
 
         });
@@ -366,7 +379,7 @@ app.post('/build', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname+'/node_server_index.html'));
+    res.sendFile(path.join(__dirname + '/node_server_index.html'));
 });
 
 /*app.get('/push', function (req, res) {
