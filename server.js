@@ -35,7 +35,7 @@ var writeF = function (path, filename, data) {
     });
 };
 
-app.post('/build', function (req, res) {
+app.get('/build', function (req, res) {
     http.get(url, function (res) {
         var body = '';
         res.on('data', function (chunk) {
@@ -376,7 +376,7 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/node_server_index.html'));
 });
 
-app.post('/push', function (req, res) {
+app.get('/push', function (req, res) {
  exec('./git_push.sh');
  });
 
