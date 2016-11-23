@@ -74,7 +74,7 @@ app.get('/build', function (req, res) {
             var response = JSON.parse(body);
             for (var i = 0; i < response.posts.length; i++) {
                 switch (response.posts[i].categories[0].slug) {
-                    /*case "product": {
+                    case "product": {
                         for (var j = 0; j < response.posts[i].attachments.length; j++) {
 
                             request(response.posts[i].attachments[j].url).pipe(
@@ -155,7 +155,7 @@ app.get('/build', function (req, res) {
                     }
                         break;
 
-                    case "blog-page": {
+                    /*case "blog-page": {
                         //rmDir('img/blog');
                         request(response.posts[i].attachments[0].url).pipe(
                             fs.createWriteStream('img/blog/' + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2'))
