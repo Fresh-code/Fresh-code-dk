@@ -300,7 +300,6 @@ app.post('/build', function (req, res) {
 
                    /* case "portfolio-page": {
 
-                        //rmDir('img/portfolio');
                         request(response.posts[i].attachments[0].url).pipe(
                             fs.createWriteStream('img/portfolio/' + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2')));
 
