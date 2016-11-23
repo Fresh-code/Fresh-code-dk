@@ -3,6 +3,7 @@
  */
 (function(global) {
 
+
     var $conferences = $('.filter-conferences'),
         $development = $('.filter-development'),
         $management = $('.filter-management'),

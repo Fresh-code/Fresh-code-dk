@@ -1380,6 +1380,7 @@ a.attach-link:hover { text-decoration: none; }
 	height: 55px;
 	padding: 14px;
 	letter-spacing: 1px;
+	margin-left: 0;
 }
 .dedicated-table-cell {
 	border: solid #d7d7d7 1px;
