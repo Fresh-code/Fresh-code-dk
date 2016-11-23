@@ -74,7 +74,7 @@ app.post('/build', function (req, res) {
             var response = JSON.parse(body);
             for (var i = 0; i < response.posts.length; i++) {
                 switch (response.posts[i].categories[0].slug) {
-                    case "product": {
+                    /*case "product": {
                         for (var j = 0; j < response.posts[i].attachments.length; j++) {
 
                             request(response.posts[i].attachments[j].url).pipe(
@@ -236,7 +236,7 @@ app.post('/build', function (req, res) {
 
                         if (response.posts[i].custom_fields.show[0] == "show") {
 
-                            glob('_drafts/' + response.posts[i].slug + '.md', function (err, files) {
+                            glob('_drafts/' + response.posts[i].title + '.md', function (err, files) {
                                 if (err) throw err;
                                 files.forEach(function (item, index, array) {
                                     console.log(item + " found");
@@ -248,11 +248,10 @@ app.post('/build', function (req, res) {
                                     });
                                 });
                             });
-
-                            writeF('_posts/', response.posts[i].slug + '.md', json_blog_data);
+                            writeF('_posts/', response.posts[i].title + '.md', json_blog_data);
                         }
                         else {
-                            glob('_posts/' + response.posts[i].slug + '.md', function (err, files) {
+                            glob('_posts/' + response.posts[i].title + '.md', function (err, files) {
                                 if (err) throw err;
                                 files.forEach(function (item, index, array) {
                                     console.log(item + " found");
@@ -264,11 +263,10 @@ app.post('/build', function (req, res) {
                                     });
                                 });
                             });
-
-                            writeF('_drafts/', response.posts[i].slug + '.md', json_blog_data);
+                            writeF('_drafts/', response.posts[i].title + '.md', json_blog_data);
                         }
                     }
-                        break;
+                        break;*/
 
                     case "testimonial": {
 
@@ -300,7 +298,7 @@ app.post('/build', function (req, res) {
                     }
                         break;
 
-                    case "portfolio-page": {
+                   /* case "portfolio-page": {
 
                         //rmDir('img/portfolio');
                         request(response.posts[i].attachments[0].url).pipe(
@@ -315,7 +313,7 @@ app.post('/build', function (req, res) {
                         portfolio_json.page_background = "/img/portfolio/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2') + "";
                         portfolio_json.alt = response.posts[i].attachments[0].description;
                     }
-                        break;
+                        break;*/
 
                     case "testimonials-page": {
 
@@ -351,14 +349,14 @@ app.post('/build', function (req, res) {
                 }
             }
 
-            jsonfile.writeFile('_data/portfolio.json', portfolio_json, {spaces: 2}, function (err) {
+           /* jsonfile.writeFile('_data/portfolio.json', portfolio_json, {spaces: 2}, function (err) {
                 if (err) {
                     console.error(err);
                 }
                 else {
                     console.log('file ' + portfolio_json.title + '.json saved.');
                 }
-            });
+            });*/
 
             jsonfile.writeFile('_data/testimonials.json', testimonials_json, {spaces: 2}, function (err) {
                 if (err) {
@@ -379,10 +377,9 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/node_server_index.html'));
 });
 
-/*app.get('/push', function (req, res) {
- res.send('Trying to push!');
+app.post('/push', function (req, res) {
  exec('./git_push.sh');
- });*/
+ });
 
 app.listen(3000, function () {
     console.log('App listening on port 3000');

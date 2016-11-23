@@ -13,6 +13,7 @@ background: /img/blog-post/banner_post_4.jpg
 background-color: '#32576c'
 type: business
 
+
 cover: /img/blog-post/post_4c-350.jpg
 alt: business session
 srcsetattr: /img/blog-post/post_4c-700.jpg 700w, /img/blog-post/post_4c-450.jpg 450w, /img/blog-post/post_4c-350.jpg 350w
