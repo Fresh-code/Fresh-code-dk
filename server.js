@@ -105,7 +105,7 @@ app.get('/build', function (req, res) {
                 switch (response.posts[i].categories[0].slug) {
                     case "product": {
                         response.posts[i].attachments.forEach(function (item, index, array) {
-                            loadImage(item.url, 'img' + response.posts[i].slug + '/', getImageName(item.url));
+                            loadImage(item.url, 'img/' + response.posts[i].slug + '/', getImageName(item.url));
                         });
 
                         var json_data = {
