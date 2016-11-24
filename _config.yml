@@ -29,7 +29,6 @@ exclude:
   - node_modules
   - build.sh
   - package.json
-  - index.js
   - server.js
   - run.sh
   - Dockerfile
