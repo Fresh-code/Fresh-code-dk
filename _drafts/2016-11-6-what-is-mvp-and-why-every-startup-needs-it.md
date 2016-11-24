@@ -27,6 +27,7 @@ share-description: 'The minimum viable product (MVP) is described by the term’
 share-title: 'What Is MVP and Why Every Startup Needs It?'
 ---
 
+
 <div class="post-body p-t-6rem">
     <p>The minimum viable product (MVP) is described by the term’s inventor Eric Ries as the “version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort”. Over time the term has gotten new interpretations and is now widely used throughout various business concepts, including Lean Startup or Agile Development.</p>
     <p>Whichever definition you prefer, every MVP must possess:</p>
@@ -101,8 +102,14 @@ share-title: 'What Is MVP and Why Every Startup Needs It?'
     </ul>
     <p>Some think of creating the MVP as an endless loop. In this case, the MVP determines business credibility and development paths. You can apply this concept by constantly answering two simple questions:</p>
         <ul class="post_no_list_style">
-            <li> <span class="post_li_number">1.</span> Which of my business assumptions is most risky?</li>
-            <li> <span class="post_li_number">2.</span>How can I test this assumption with minimum time and effort?</li>
+            <li>
+             <div class="post_li_number">1.</div>
+             <div class="list_centered_text">Which of my business assumptions is most risky?</div>
+            </li>
+            <li>
+            <div class="post_li_number">2.</div>
+            <div class="list_centered_text"> How can I test this assumption with minimum time and effort?</div>
+           </li>
         </ul>
     <p>This two-question test would have helped hundreds of failed startups determine that their product was not actually needed on the market, thus saving them from wasting months developing products no one would pay for.</p>
     <p>Let’s say you decided you create an online tool that would help art studios and painters promote their works and tutorials through dedicated websites. Before plunging headfirst into work, ask yourself if artists really need websites. What if they are content with social media? You can test your first assumption by contacting local studios and talking to artists online to gauge their interest.</p>

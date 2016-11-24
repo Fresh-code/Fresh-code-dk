@@ -7,6 +7,7 @@ var glob = require("glob");
 var fs = require('fs');
 var request = require('request');
 var jsonfile = require('jsonfile');
+
 var url = 'http://192.168.1.151:8000/?json=get_posts';
 
 var rmDir = function (dirPath) {
@@ -25,13 +26,44 @@ var rmDir = function (dirPath) {
                 rmDir(filePath);
         }
 };
-var writeF = function (path, filename, data) {
-    fs.writeFile('' + path + filename, data, function (err) {
+var writeF = function (path, fileName, data) {
+    fs.writeFile('' + path + fileName, data, function (err) {
         if (err) {
             console.log(err);
         } else {
-            console.log('file'+ filename + ' saved.');
+            console.log('file' + fileName + ' saved.');
         }
+    });
+};
+var writeJsonFile = function (path, fileName, data) {
+    jsonfile.writeFile('' + path + fileName, data, {spaces: 2}, function (err) {
+        if (err) {
+            console.error(err);
+        }
+        else {
+            console.log('json saved.');
+        }
+    });
+};
+var loadImage = function (url, path, imageName) {
+    request(url).pipe(
+        fs.createWriteStream(path + imageName));
+};
+var getImageName = function (url) {
+    return url.replace(/(.*)\/(.*)/g, '$2');
+};
+var removeFile = function (path, fileName) {
+    glob('' + path + fileName, function (err, files) {
+        if (err) throw err;
+        files.forEach(function (item, index, array) {
+            console.log(item + " found");
+        });
+        files.forEach(function (item, index, array) {
+            fs.unlink(item, function (err) {
+                if (err) throw err;
+                console.log(item + " deleted");
+            });
+        });
     });
 };
 
@@ -43,8 +75,7 @@ app.get('/build', function (req, res) {
         });
         res.on('end', function () {
 
-            var portfolio_json =
-            {
+            var portfolio_json = {
                 "title": "",
                 "keywords": "",
                 "description": "",
@@ -56,9 +87,7 @@ app.get('/build', function (req, res) {
                 "works_excluded": [],
                 "works": []
             };
-
-            var testimonials_json =
-            {
+            var testimonials_json = {
                 "title": "",
                 "keywords": "",
                 "description": "",
@@ -75,11 +104,10 @@ app.get('/build', function (req, res) {
             for (var i = 0; i < response.posts.length; i++) {
                 switch (response.posts[i].categories[0].slug) {
                     case "product": {
-                        for (var j = 0; j < response.posts[i].attachments.length; j++) {
+                        response.posts[i].attachments.forEach(function (item, index, array) {
+                            loadImage(item.url, 'img' + response.posts[i].slug + '/', getImageName(item.url));
+                        });
 
-                            request(response.posts[i].attachments[j].url).pipe(
-                                fs.createWriteStream('img/' + response.posts[i].slug + '/' + response.posts[i].attachments[j].url.replace(/(.*)\/(.*)/g, '$2')));
-                        }
                         var json_data = {
                             "name": response.posts[i].slug,
                             "client": response.posts[i].custom_fields.client[0],
@@ -115,51 +143,30 @@ app.get('/build', function (req, res) {
                             "prev": response.posts[i].custom_fields.prev[0],
                             "next": response.posts[i].custom_fields.next[0]
                         };
+                        writeJsonFile('_data/center-layout/', json_data.name + '.json', json_data);
 
-                        jsonfile.writeFile('_data/center-layout/' + json_data.name + '.json', json_data, {spaces: 2}, function (err) {
-                            if (err) {
-                                console.error(err);
-                            }
-                            else {
-                                console.log('file ' + json_data.name + '.json saved.');
-                            }
-                        });
-
-
+                        var tmp = {
+                            "title": response.posts[i].custom_fields.preview_name[0],
+                            "description": response.posts[i].custom_fields.preview_description[0],
+                            "cover": "/img/portfolio/" + response.posts[i].attachments[3].slug + "-350.jpg",
+                            "srcsetattr": "/img/portfolio/" + response.posts[i].attachments[3].slug + "-700.jpg 700w, /img/portfolio/" + response.posts[i].attachments[0].slug + "-450.jpg 450w, /img/portfolio/" + response.posts[i].attachments[0].slug + "-350.jpg 350w",
+                            "sizesattr": "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px",
+                            "link": response.posts[i].custom_fields.preview_link[0],
+                            "type": response.posts[i].custom_fields.preview_type[0],
+                            "mainColor": response.posts[i].custom_fields.preview_maincolor[0]
+                        };
                         if (response.posts[i].custom_fields.preview_show[0] == "show") {
-                            portfolio_json.works[portfolio_json.works.length] =
-                            {
-                                "title": response.posts[i].custom_fields.preview_name[0],
-                                "description": response.posts[i].custom_fields.preview_description[0],
-                                "cover": "/img/portfolio/" + response.posts[i].attachments[3].slug + "-350.jpg",
-                                "srcsetattr": "/img/portfolio/" + response.posts[i].attachments[3].slug + "-700.jpg 700w, /img/portfolio/" + response.posts[i].attachments[0].slug + "-450.jpg 450w, /img/portfolio/" + response.posts[i].attachments[0].slug + "-350.jpg 350w",
-                                "sizesattr": "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px",
-                                "link": response.posts[i].custom_fields.preview_link[0],
-                                "type": response.posts[i].custom_fields.preview_type[0],
-                                "mainColor": response.posts[i].custom_fields.preview_maincolor[0]
-                            };
+                            portfolio_json.works[portfolio_json.works.length] = tmp;
                         }
                         else {
-                            portfolio_json.works_excluded[portfolio_json.works_excluded.length] =
-                            {
-                                "title": response.posts[i].custom_fields.preview_name[0],
-                                "description": response.posts[i].custom_fields.preview_description[0],
-                                "cover": "/img/portfolio/" + response.posts[i].attachments[3].slug + "-350.jpg",
-                                "srcsetattr": "/img/portfolio/" + response.posts[i].attachments[3].slug + "-700.jpg 700w, /img/portfolio/" + response.posts[i].attachments[0].slug + "-450.jpg 450w, /img/portfolio/" + response.posts[i].attachments[0].slug + "-350.jpg 350w",
-                                "sizesattr": "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px",
-                                "link": response.posts[i].custom_fields.preview_link[0],
-                                "type": response.posts[i].custom_fields.preview_type[0],
-                                "mainColor": response.posts[i].custom_fields.preview_maincolor[0]
-                            };
+                            portfolio_json.works_excluded[portfolio_json.works_excluded.length] = tmp;
                         }
                     }
                         break;
 
-                    /*case "blog-page": {
-                        //rmDir('img/blog');
-                        request(response.posts[i].attachments[0].url).pipe(
-                            fs.createWriteStream('img/blog/' + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2'))
-                        );
+                    case "blog-page": {
+
+                        loadImage(response.posts[i].attachments[0].url, 'img/blog/', getImageName(response.posts[i].attachments[0].url));
                         var json_blog_page_data =
                         {
                             "name": response.posts[i].slug,
@@ -171,14 +178,7 @@ app.get('/build', function (req, res) {
                             "page-background": "/img/blog/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2'),
                             "alt": response.posts[i].attachments[0].description
                         };
-                        jsonfile.writeFile('_data/' + json_blog_page_data.name + '.json', json_blog_page_data, {spaces: 2}, function (err) {
-                            if (err) {
-                                console.error(err);
-                            }
-                            else {
-                                console.log('file ' + json_blog_page_data.name + '.json saved.');
-                            }
-                        });
+                        writeJsonFile('_data/', json_blog_page_data.name, json_blog_page_data);
                     }
                         break;
 
@@ -188,7 +188,7 @@ app.get('/build', function (req, res) {
                         var avatar;
 
                         for (var q = 0; q < response.posts[i].attachments.length; q++) {
-                            var img = response.posts[i].attachments[q].url.replace(/(.*)\/(.*)/g, '$2');
+                            var img = getImageName(response.posts[i].attachments[q].url);
 
                             switch (response.posts[i].attachments[q].title) {
                                 case 'background':
@@ -201,9 +201,7 @@ app.get('/build', function (req, res) {
                                     avatar = img;
                                     break;
                             }
-
-                            request(response.posts[i].attachments[q].url).pipe(
-                                fs.createWriteStream('img/blog-post/' + img));
+                            loadImage(response.posts[i].attachments[q].url, 'img/blog-post/', img);
                         }
 
                         var json_blog_data =
@@ -236,97 +234,87 @@ app.get('/build', function (req, res) {
 
                         if (response.posts[i].custom_fields.show[0] == "show") {
 
-                            glob('_drafts/' + response.posts[i].title + '.md', function (err, files) {
-                                if (err) throw err;
-                                files.forEach(function (item, index, array) {
-                                    console.log(item + " found");
-                                });
-                                files.forEach(function (item, index, array) {
-                                    fs.unlink(item, function (err) {
-                                        if (err) throw err;
-                                        console.log(item + " deleted");
-                                    });
-                                });
-                            });
+                            removeFile('_drafts/', response.posts[i].title + '.md');
+
+                            /* glob('_drafts/' + response.posts[i].title + '.md', function (err, files) {
+                             if (err) throw err;
+                             files.forEach(function (item, index, array) {
+                             console.log(item + " found");
+                             });
+                             files.forEach(function (item, index, array) {
+                             fs.unlink(item, function (err) {
+                             if (err) throw err;
+                             console.log(item + " deleted");
+                             });
+                             });
+                             });*/
                             writeF('_posts/', response.posts[i].title + '.md', json_blog_data);
                         }
                         else {
-                            glob('_posts/' + response.posts[i].title + '.md', function (err, files) {
-                                if (err) throw err;
-                                files.forEach(function (item, index, array) {
-                                    console.log(item + " found");
-                                });
-                                files.forEach(function (item, index, array) {
-                                    fs.unlink(item, function (err) {
-                                        if (err) throw err;
-                                        console.log(item + " deleted");
-                                    });
-                                });
-                            });
+                            removeFile('_posts/', response.posts[i].title + '.md');
+
+                            /*glob('_posts/' + response.posts[i].title + '.md', function (err, files) {
+                             if (err) throw err;
+                             files.forEach(function (item, index, array) {
+                             console.log(item + " found");
+                             });
+                             files.forEach(function (item, index, array) {
+                             fs.unlink(item, function (err) {
+                             if (err) throw err;
+                             console.log(item + " deleted");
+                             });
+                             });
+                             });*/
                             writeF('_drafts/', response.posts[i].title + '.md', json_blog_data);
                         }
                     }
-                        break;*/
+                        break;
 
                     case "testimonial": {
-
-
-                        request(response.posts[i].attachments[0].url).pipe(
-                            fs.createWriteStream('img/testimonials/' + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2')));
-
+                        loadImage(response.posts[i].attachments[0].url, 'img/testimonials/', getImageName(response.posts[i].attachments[0].url));
+                        var tmpTestimonial = {
+                            "author": response.posts[i].custom_fields.author[0],
+                            "company": response.posts[i].custom_fields.company[0],
+                            "text": response.posts[i].custom_fields.text[0],
+                            "photo": "/img/testimonials/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2'),
+                            "link": response.posts[i].custom_fields.link[0]
+                        };
                         if (response.posts[i].custom_fields.show[0] == "show") {
-                            testimonials_json.short[testimonials_json.short.length] =
-                            {
-                                "author": response.posts[i].custom_fields.author[0],
-                                "company": response.posts[i].custom_fields.company[0],
-                                "text": response.posts[i].custom_fields.text[0],
-                                "photo": "/img/testimonials/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2'),
-                                "link": response.posts[i].custom_fields.link[0]
-                            };
+                            testimonials_json.short[testimonials_json.short.length] = tmpTestimonial;
                         }
                         else {
-                            testimonials_json.all[testimonials_json.all.length] =
-                            {
-                                "author": response.posts[i].custom_fields.author[0],
-                                "company": response.posts[i].custom_fields.company[0],
-                                "text": response.posts[i].custom_fields.text[0],
-                                "photo": "/img/testimonials/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2'),
-                                "link": response.posts[i].custom_fields.link[0]
-                            };
+                            testimonials_json.all[testimonials_json.all.length] = tmpTestimonial;
                         }
-
                     }
                         break;
 
-                   /* case "portfolio-page": {
+                    /*case "portfolio-page": {
 
-                        request(response.posts[i].attachments[0].url).pipe(
-                            fs.createWriteStream('img/portfolio/' + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2')));
+                     loadImage(response.posts[i].attachments[0].url, 'img/portfolio/', getImageName(response.posts[i].attachments[0].url));
+                     /!*request(response.posts[i].attachments[0].url).pipe(
+                     fs.createWriteStream('img/portfolio/' +
+                     response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2')));*!/
 
-                        portfolio_json.title = response.posts[i].custom_fields.title[0];
-                        portfolio_json.keywords = response.posts[i].custom_fields.keywords[0];
-                        portfolio_json.description = response.posts[i].custom_fields.description[0];
-                        portfolio_json.page_title = response.posts[i].custom_fields.page_title[0];
-                        portfolio_json.page_text = "<span class='inline-text'>" + response.posts[i].custom_fields.page_text[0] + "</span>";
-                        portfolio_json.page_textbot = "<span class='inline-text'>" + response.posts[i].custom_fields.page_textbot[0] + "</span>";
-                        portfolio_json.page_background = "/img/portfolio/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2') + "";
-                        portfolio_json.alt = response.posts[i].attachments[0].description;
-                    }
-                        break;*/
+                     portfolio_json.title = response.posts[i].custom_fields.title[0];
+                     portfolio_json.keywords = response.posts[i].custom_fields.keywords[0];
+                     portfolio_json.description = response.posts[i].custom_fields.description[0];
+                     portfolio_json.page_title = response.posts[i].custom_fields.page_title[0];
+                     portfolio_json.page_text = "<span class='inline-text'>" + response.posts[i].custom_fields.page_text[0] + "</span>";
+                     portfolio_json.page_textbot = "<span class='inline-text'>" + response.posts[i].custom_fields.page_textbot[0] + "</span>";
+                     portfolio_json.page_background = "/img/portfolio/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2') + "";
+                     portfolio_json.alt = response.posts[i].attachments[0].description;
+                     }
+                     break;*/
 
                     case "testimonials-page": {
+                        response.posts[i].attachments.forEach(function (item, index, array) {
 
-                        for (var qq = 0; qq < response.posts[i].attachments.length; qq++) {
-
-                            switch (response.posts[i].attachments[qq].caption) {
-                                case 'icon':
-                                    testimonials_json.icons[testimonials_json.icons.length] =
-                                        "/img/testimonials/" + response.posts[i].attachments[0].url.replace(/(.*)\/(.*)/g, '$2');
-                                    break;
+                            if (item.caption == 'icon') {
+                                testimonials_json.icons[testimonials_json.icons.length] =
+                                    "/img/testimonials/" + getImageName(response.posts[i].attachments[0].url);
                             }
-                            request(response.posts[i].attachments[qq].url).pipe(
-                                fs.createWriteStream('img/testimonials/' + response.posts[i].attachments[qq].url.replace(/(.*)\/(.*)/g, '$2')));
-                        }
+                            loadImage(item.url, 'img/testimonials/', getImageName(item.url));
+                        });
 
                         testimonials_json.title = response.posts[i].custom_fields.title[0];
                         testimonials_json.keywords = response.posts[i].custom_fields.keywords[0];
@@ -340,7 +328,7 @@ app.get('/build', function (req, res) {
 
                     case "ssh": {
                         cd('..');
-                        writeF('.ssh/', 'id_rsa',  response.posts[i].custom_fields.id_rsa[0]);
+                        writeF('.ssh/', 'id_rsa', response.posts[i].custom_fields.id_rsa[0]);
                         writeF('.ssh/', 'known_hosts', response.posts[i].custom_fields.known_hosts[0]);
                         cd('/src');
                     }
@@ -348,37 +336,25 @@ app.get('/build', function (req, res) {
                 }
             }
 
-           /* jsonfile.writeFile('_data/portfolio.json', portfolio_json, {spaces: 2}, function (err) {
-                if (err) {
-                    console.error(err);
-                }
-                else {
-                    console.log('file ' + portfolio_json.title + '.json saved.');
-                }
-            });*/
-
-            jsonfile.writeFile('_data/testimonials.json', testimonials_json, {spaces: 2}, function (err) {
-                if (err) {
-                    console.error(err);
-                }
-                else {
-                    console.log('file ' + testimonials_json.title + '.json saved.');
-                }
-            });
-
+            //writeJsonFile('_data/', 'portfolio.json', portfolio_json);
+            writeJsonFile('_data/', 'testimonials.json', testimonials_json);
         });
     }).on('error', function (e) {
         console.log("Got an error: ", e);
     });
 });
 
+
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/node_server_index.html'));
 });
 
+/*
 app.get('/push', function (req, res) {
- exec('./git_push.sh');
- });
+    exec('./git_push.sh');
+});
+*/
+
 
 app.listen(3000, function () {
     console.log('App listening on port 3000');
