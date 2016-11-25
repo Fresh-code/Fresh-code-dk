@@ -97,19 +97,6 @@
         },
         
         {
-            title: 'Rhino Security Labs',
-            description: 'Rhino Security Labs is a company known for its insight into the needs of retail and healthcare, financial services and technology as well as other vertical markets.',
-            workcover: '/img/portfolio/work_7p-350.jpg',
-            workalt: 'Rhino Security App Preview',
-            worksrcset: '/img/portfolio/work_7p-700.jpg 700w, /img/portfolio/work_7p-450.jpg 450w, /img/portfolio/work_7p-350.jpg 350w',
-            worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            workcoverbckg: 'background-color: #373d4d !important',
-            workbckg: 'background-color: #373d4d !important',
-            type: 'monitoring',
-            workurl: '/rhino'
-        },
-        
-        {
             title: 'Tassta',
             description: 'Tassta is a hardware-software solutions platform providing more effective communication for a number of industries, including Public Transportation, Construction, Courier and Emergency Services, etc.',
             workcover: '/img/portfolio/work_8p-350.jpg',

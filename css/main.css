@@ -757,16 +757,17 @@ body.locked {
 .post-body ul .list_centered_text {
 	vertical-align: middle;
 	display: table-cell;
-	text-align: center;
 	padding-left: 30px;
 }
 
 .post-body ul .post_li_number{
+	vertical-align: middle;
+	display: table-cell;
 	font-size: 60px;
 	color: #02E3F9;
 	font-family: "Josefin", sans-serif;
 	text-align: center;
-	padding-right: 30px;
+	width: 40px;
 }
 .post-block{
 	display: none;
@@ -1669,7 +1670,10 @@ textarea.material-input { resize: none; }
 	.dedicated-page .dedicated-picture-up { display: flex;  flex-direction: column-reverse;  }
 	.dedicated-page .post-body h2 { line-height: 43px;}
 	h1.fresh-h1.h1  { margin-top: 10px;}
-
+	.post-body ul.post_ul_arrow { padding-left: 18px; }
+	.post-body ul.post_no_list_style {padding-left: 0;}
+	.post-body ul .list_centered_img { width: 65px;}
+	.post-body .post_no_list_style li {  padding-left: 0;}
 
 }
 @media screen and (min-width: 1001px) {
@@ -1728,7 +1732,7 @@ textarea.material-input { resize: none; }
 	.fresh-h1 { font-size: 28px; }
 	.fresh-title h3 { font-size: 20px; }
 	.logo-block,
-	.nav-icons { padding: 13.5px 0; }
+	.nav-icons { padding: 13px 0; }
 	.menu-ico { top: 26px; right: 30px; }
 
 	/*Our work*/
