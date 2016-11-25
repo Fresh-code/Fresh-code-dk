@@ -222,7 +222,7 @@ app.get('/build', function (req, res) {
                             'platform-tag: ' + wpDoc.custom_fields.platform_tag[0] + '\n' +
                             'background: /img/blog-post/' + background + '\n' +
                             'background-color: "' + wpDoc.custom_fields.background_color[0] + '"\n' +
-                            'type: ' + wpDoc.custom_fields.type[0] + '\n' +
+                            'type: ' + wpDoc.custom_fields.tag_type[0] + '\n' +
                             'cover: /img/blog-post/' + cover + '-350.jpg \n' +
                             'srcsetattr: /img/blog-post/' + cover + '-700.jpg 700w, /img/blog-post/' + cover + '-450.jpg 450w, /img/blog-post/' + cover + '-350.jpg 350w \n' +
                             'sizeattr: "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px"' + '\n' +
