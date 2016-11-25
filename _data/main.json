@@ -38,12 +38,12 @@
   ],
   "works": [
     {
-      "title": "RHINO SECURITY LABS",
-      "description": "Rhino Security Labs is a company known for its insight into the needs of retail and healthcare, financial services and technology as well as other vertical markets. ",
-      "cover": "/img/main/work_1.jpg",
-      "alt": "Rhino Security App Preview",
-      "link": "/rhino",
-      "mainColor": "#2b303c"
+      "title": "TWENTY ONE LEARNING",
+      "description": "Twenty One Learning is an interactive platform which main objective was to allow collaborative creation of lectures, presentations, slides and text with open access to all materials.",
+      "cover": "/img/portfolio/work_6p-350.jpg",
+      "alt": "Twenty One Learning platform preview",
+      "link":  "/twenty-one-learning",
+      "mainColor": "#576965"
     },
     {
       "title": "GOMMEHD",

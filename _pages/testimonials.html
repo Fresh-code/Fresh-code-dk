@@ -18,9 +18,15 @@ layout: default
                                 <h1 class="fresh-h1 h1">{{ site.data.testimonials.page_title }}</h1>
                                 <span class="fresh-h3 centered">{{ site.data.testimonials.page_text }}</span>
                                 <div class="testi-head-icons">
+                                    {% for icon in site.data.testimonials.icons %}
+
+                                    <img src="{{ icon.img }}" alt="{{ icon.alt }}">
+
+<!--
                                     <img id="outdoor-icon" src="/img/testimonials/outdoor.png" alt="Outdoor.rocks Logo">
                                     <img id="pa-icon" src="/img/testimonials/pa.png" alt="Play Attention Logo">
-                                    <img id="educadio-icon" src="/img/testimonials/educadio.png" alt="Educadio Logo">
+                                    <img id="educadio-icon" src="/img/testimonials/educadio.png" alt="Educadio Logo">-->
+                                    {% endfor %}
                                 </div>
                             </header>
                         </div>

@@ -67,6 +67,18 @@ var removeFile = function (path, fileName) {
     });
 };
 
+/*http.get('192.168.1.151:8000/api/get_post/?post_id=148', function (res) {
+ var httpSsh = '';
+ res.on('data', function (chunk) { httpSsh += chunk; });
+ res.on('end', function () {
+ var sshJson = JSON.parse(httpSsh);
+ cd('..');
+ writeF('.ssh/', 'id_rsa', sshJson.post.custom_fields.id_rsa[0]);
+ writeF('.ssh/', 'known_hosts', sshJson.post.custom_fields.known_hosts[0]);
+ cd('/src');
+ });
+ });*/
+
 app.get('/build', function (req, res) {
     http.get(url, function (res) {
         var body = '';
@@ -152,7 +164,7 @@ app.get('/build', function (req, res) {
                             "type": wpDoc.custom_fields.preview_type[0],
                             "mainColor": wpDoc.custom_fields.preview_maincolor[0]
                         };
-                        if (wpDoc.custom_fields.preview_show[0] == "show") {
+                        if (wpDoc.custom_fields.preview_show[0] == "yes") {
                             portfolio_json.works[portfolio_json.works.length] = tmp;
                         }
                         else {
@@ -205,7 +217,7 @@ app.get('/build', function (req, res) {
                             'description: ' + wpDoc.custom_fields.description[0] + '\n' +
                             'date: ' + wpDoc.custom_fields.date[0] + '\n' +
                             'permalink: ' + wpDoc.custom_fields.permalink[0] + '\n' +
-                            'post-title: ' + wpDoc.custom_fields.post_title[0] + '\n' +
+                            'post-title: ' + wpDoc.custom_fields.title_post[0] + '\n' +
                             'categories-tag: ' + wpDoc.custom_fields.categories_tag[0] + '\n' +
                             'platform-tag: ' + wpDoc.custom_fields.platform_tag[0] + '\n' +
                             'background: /img/blog-post/' + background + '\n' +
@@ -226,7 +238,7 @@ app.get('/build', function (req, res) {
                             '' + wpDoc.content.replace(/<figure.*?<\/figure>/g, '').replace(/<p><img class="alignnone.*?><\/p>/g, '') + '\n' +
                             '</div>';
 
-                        if (wpDoc.custom_fields.show[0] == "show") {
+                        if (wpDoc.custom_fields.show[0] == "yes") {
 
                             removeFile('_drafts/', wpDoc.title + '.md');
                             writeF('_posts/', wpDoc.title + '.md', json_blog_data);
@@ -246,7 +258,7 @@ app.get('/build', function (req, res) {
                             "photo": "/img/testimonials/" + getImageName(wpDoc.attachments[0].url),
                             "link": wpDoc.custom_fields.link[0]
                         };
-                        if (wpDoc.custom_fields.show[0] == "show") {
+                        if (wpDoc.custom_fields.show[0] == "yes") {
                             testimonials_json.short[testimonials_json.short.length] = tmpTestimonial;
                         }
                         else {
@@ -271,9 +283,12 @@ app.get('/build', function (req, res) {
                     case "testimonials-page": {
                         wpDoc.attachments.forEach(function (item, index, array) {
 
-                            if (item.caption == 'icon') {
+                            if (item.title == 'icon') {
                                 testimonials_json.icons[testimonials_json.icons.length] =
-                                    "/img/testimonials/" + getImageName(item.url);
+                                {
+                                    "img": "/img/testimonials/" + getImageName(item.url),
+                                    "alt": item.description
+                                }
                             }
                             loadImage(item.url, 'img/testimonials/', getImageName(item.url));
                         });
@@ -287,13 +302,6 @@ app.get('/build', function (req, res) {
                         testimonials_json.alt = wpDoc.attachments[0].description;
                     }
                         break;
-                    /*case "ssh": {
-                     cd('..');
-                     writeF('.ssh/', 'id_rsa', wpDoc.custom_fields.id_rsa[0]);
-                     writeF('.ssh/', 'known_hosts', wpDoc.custom_fields.known_hosts[0]);
-                     cd('/src');
-                     }
-                     break;*/
                 }
             });
             //writeJsonFile('_data/', 'portfolio.json', portfolio_json);
@@ -307,10 +315,10 @@ app.get('/', function (req, res) {
 });
 
 /*
-app.get('/push', function (req, res) {
-    exec('./git_push.sh');
-});
-*/
+ app.get('/push', function (req, res) {
+ exec('./git_push.sh');
+ });
+ */
 
 app.listen(3000, function () {
     console.log('App listening on port 3000');
