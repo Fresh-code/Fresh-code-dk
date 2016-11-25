@@ -53,12 +53,12 @@
       "mainColor": "#775441"
     },
     {
-      "title": "RoundForest",
-      "description": "RoundForest is an application created for setting up advertising campaigns in real time",
-      "cover": "/img/portfolio/work_13p.jpg",
-      "alt": "RoundForest application preview",
-      "link": "/round-forest",
-      "mainColor": "#729542"
+      "title": "TWENTY ONE LEARNING",
+      "description": "Twenty One Learning is an interactive platform which main objective was to allow collaborative creation of lectures, presentations, slides and text with open access to all materials.",
+      "cover": "/img/portfolio/work_6p.jpg",
+      "alt": "Twenty One Learning platform preview",
+      "link":  "/twenty-one-learning",
+      "mainColor": "#576965"
     },
     {
       "title": "Play Attention",

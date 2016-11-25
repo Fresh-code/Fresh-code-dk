@@ -6,6 +6,10 @@
  */
 (function(global) {
 
+
+
+
+
     var $monitoring = $('.filter-monitoring'),
         $navigation = $('.filter-navigation'),
         $education = $('.filter-education'),
@@ -106,6 +110,7 @@
                     break;
             }
         });
+
         hackerList.filter();
         _.forEach(type, function(t) {
             switch (t) {

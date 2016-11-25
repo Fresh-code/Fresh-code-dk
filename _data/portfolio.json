@@ -129,17 +129,6 @@
       "link": "/data-parser",
       "type": "business",
       "mainColor": "#8e9bbb"
-    },
-    {
-      "title": "RoundForest",
-      "description": "RoundForest is an application created for setting up advertising campaigns in real time",
-      "cover": "/img/portfolio/work_13p-350.jpg",
-      "alt": "RoundForest application preview",
-      "srcsetattr": "/img/portfolio/work_13p-700.jpg 700w, /img/portfolio/work_13p-450.jpg 450w, /img/portfolio/work_13p-350.jpg 350w",
-      "sizesattr": "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px",
-      "link": "/round-forest",
-      "type": "data",
-      "mainColor": "#729542"
     }
   ]
 }
