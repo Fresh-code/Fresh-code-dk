@@ -37,7 +37,7 @@ share-title: 'What Is MVP and Why Every Startup Needs It?'
         <li>The comprehensive feedback loop to direct future development.</li>
     </ul>
     <p>Despite the seeming simplicity of the concept, the MVP is often confused with an unfinished or an overly simplified version of the project. In case you want to create a smartphone, your MVP is not a touchscreen, a power button, or even a processor. You should first give your customers a rotary dial phone. It can solve their problem, as it allows to communicate over distance. Later you can provide a cell phone that combines communication with mobility. And when your customers are sufficiently familiar with most features, you can present them with the smartphone.</p>
-    <br><br>
+    <br>
     <h2>Why Do Startups Use MVPs?</h2>
     <br><br>
     <p>Whichever definition you prefer, every MVP must possess:</p>
@@ -48,12 +48,12 @@ share-title: 'What Is MVP and Why Every Startup Needs It?'
         <li>Keeping a close eye on the customer feedback makes your MVP’s engagement levels rise which translates into higher sales.	 </li>
         <li>Even if the MVP is not successful, the price of the business error is minimized. You can continue development adjusting the product for other niches or rethinking the idea completely.</li>
     </ul>
-    <br><br>
+    <br>
     <h2>How Can You Use the MVP to Kick Start Your Startup?</h2>
     <br><br>
     <p>You can consider using the MVP from a variety of angles.</p>
     <p>Your Minimum Viable Product can be a proof of concept. You should think about all the bells and whistles you want the product to have and then eliminate them one by one. In the end, you are left with a straightforward product that possesses essential features and is easy to launch. Your MVP should ultimately answer the most important question:</p>
-    <br>
+
     <h3>Does anyone need your product?</h3>
     <br>
     <p>Your MVP can consist of a rough sketch on the back of a used restaurant napkin or a landing page draft or even a simple survey for potential customers. Your MVP will be unique, depending on the industry you wish to conquer, existing solutions and your resources.</p>
@@ -115,7 +115,7 @@ share-title: 'What Is MVP and Why Every Startup Needs It?'
     <p>Let’s say you decided you create an online tool that would help art studios and painters promote their works and tutorials through dedicated websites. Before plunging headfirst into work, ask yourself if artists really need websites. What if they are content with social media? You can test your first assumption by contacting local studios and talking to artists online to gauge their interest.</p>
     <p>If you’ve found several interested people, ask them how much they are willing to pay. If the sum is enough for you, create draft websites for some of them. The first round of testing will determine if the artists are tech savvy enough to use the features and services you provide.</p>
     <p>You should repeat the MVP process from developing the idea till the launch of the finished product. These two questions will keep you grounded and on the way to success.</p>
-    <br><br>
+    <br>
     <h2>Can You Skip the MVP Stage?</h2>
     <br><br>
     <p>You’ve already created dozens of successful products, and you know exactly what the customers need. In this case, the MVP might be useless to you. Or maybe you have access to unlimited resources, and you are not pressed for time. If that is the case, skip the MVP and go straight to the top.</p>

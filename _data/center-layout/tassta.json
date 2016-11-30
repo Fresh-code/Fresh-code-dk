@@ -19,6 +19,6 @@
   "buisValue": "Before the platform launch, Tassta specialized mainly in logistics services. The development of a new platform diversified company's range of services. As a result, the number of happy clients exceeded 2300 companies spread over 11 countries.",
   "solutions": "Admin panel development was based on JavaFX technology and was integrated with other components of the platform . While minimizing traffic and indoors positioning margin of  error we managed to keep synchronization time of devices with the server under 3 seconds. Along the way our developers created an innovative custom map visualization widget and an original algorithm for quick map scaling.",
   "css": "tassta",
-  "prev": "/rhino",
+  "prev": "/twenty-one-learning",
   "next": "/outdoor"
 }

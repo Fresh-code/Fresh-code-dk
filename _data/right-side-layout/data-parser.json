@@ -20,5 +20,5 @@
   "solutions": "The unique pre-processor to facilitate the work of Elastic Search with unstructured data was created. The self-adapting algorithm was implemented for join-type operations to accelerate processing speed and improve system's productivity. For quick and secure data exchange, message broker was created based on RabbitMQ and MongoDB. The user-friendly ETL editor was developed for entry-level customers with synchronization abilities to prevent conflicts. The number of users can be adapted by changing allocation block’s parameters.",
   "css": "data-parser",
   "prev": "/outdoor",
-  "next": "/round-forest"
+  "next": "/playattention"
 }

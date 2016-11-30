@@ -736,17 +736,17 @@ body.locked {
 }
 .post-body ul.post_no_list_style {
 	list-style: none;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 3em;
+	margin-bottom: 3em;
 }
 .post-body .post_ul_arrow li {
 	padding-left: 25px;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 17px;
+	margin-bottom: 17px;
 }
 .post-body .post_no_list_style li {
 	padding-left: 20px;
-	margin-top:15px;
+	margin-top:20px;
 }
 .post-body ul .list_centered_img {
 	vertical-align: middle;
@@ -757,7 +757,7 @@ body.locked {
 .post-body ul .list_centered_text {
 	vertical-align: middle;
 	display: table-cell;
-	padding-left: 30px;
+	padding-left: 25px;
 }
 
 .post-body ul .post_li_number{
@@ -768,6 +768,7 @@ body.locked {
 	font-family: "Josefin", sans-serif;
 	text-align: center;
 	width: 100px;
+	height: 60px;
 }
 .post-block{
 	display: none;
@@ -2931,7 +2932,7 @@ span.path {
 .post-titling h1 {
 	margin-top: 0;
 	color: #ffffff;
-	font-size: 32px;
+	font-size: 31px;
 	font-weight: 600;
 	line-height: 45px;
 	text-transform: uppercase; }
