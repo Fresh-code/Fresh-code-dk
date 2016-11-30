@@ -2,9 +2,9 @@
 layout: post
 title:  What Is MVP and Why Every Startup Needs It?
 description: Common engagement models for outsourcing&#58; dedicated team, time & material, fixed price.
-date:   2016-11-6 10:59:19
+date:   2016-11-30 10:59:19
 
-permalink: /blog/2016/11/6/what-is-mvp-and-why-every-startup-needs-it/
+permalink: /blog/2016/11/30/what-is-mvp-and-why-every-startup-needs-it/
 
 post-title: 'What Is MVP and Why Every Startup Needs It?'
 categories-tag: Business
@@ -14,7 +14,7 @@ background-color: '#679894'
 type: business
 
 cover: /img/blog-post/post_7c-350.jpg
-alt: hz
+alt: monitors
 srcsetattr: /img/blog-post/post_7c-700.jpg 700w, /img/blog-post/post_7c-450.jpg 450w, /img/blog-post/post_7c-350.jpg 350w
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'
 background-cover: '#7eb5b0'

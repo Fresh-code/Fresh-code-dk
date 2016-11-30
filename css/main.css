@@ -767,7 +767,7 @@ body.locked {
 	color: #02E3F9;
 	font-family: "Josefin", sans-serif;
 	text-align: center;
-	width: 40px;
+	width: 100px;
 }
 .post-block{
 	display: none;
@@ -1674,6 +1674,8 @@ textarea.material-input { resize: none; }
 	.post-body ul.post_ul_arrow { padding-left: 18px; }
 	.post-body ul.post_no_list_style {padding-left: 0;}
 	.post-body ul .list_centered_img { width: 65px;}
+	.post-body ul .post_li_number { width: 65px;}
+
 	.post-body .post_no_list_style li {  padding-left: 0;}
 
 }

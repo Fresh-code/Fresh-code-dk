@@ -252,7 +252,7 @@
 
 
     $('.post-block').each(function(i,elem) {
-        if(i < 3){
+        if(i < 6){
            $(elem).addClass('active');
         }
     });
@@ -260,7 +260,7 @@
     $("#load-more").click(function() {
         if ($(this).hasClass('disable')) return false;
         $('.post-block').filter(':hidden').each(function(i,elem) {
-            if(i < 3){
+            if(i < 6){
                 $(elem).addClass('active');
             }
         });
