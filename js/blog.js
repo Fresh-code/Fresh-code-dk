@@ -16,23 +16,6 @@
     var posts = [
         
         {
-            posttitle: 'What Is MVP and Why Every Startup Needs It?',
-            platformtag: 'JS',
-            avatar: '/img/blog-post/author_4.png',
-            catauthor: 'Business | Elizabeth Troyanova',
-            position: 'Project manager',
-            postcover: '/img/blog-post/post_7c-350.jpg',
-            postalt: 'monitors',
-            postsrcset: '/img/blog-post/post_7c-700.jpg 700w, /img/blog-post/post_7c-450.jpg 450w, /img/blog-post/post_7c-350.jpg 350w',
-            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            postcoverbckg: 'background-color: #7eb5b0 !important',
-            postbckg: 'background-color: #679894 !important',
-            type: 'business',
-            nondisplay: 'display: none',
-            posturl: '/blog/2016/11/30/what-is-mvp-and-why-every-startup-needs-it/'
-        },
-        
-        {
             posttitle: 'Everything You Wanted to Know about the Time and Material Model',
             platformtag: 'Apple',
             avatar: '/img/blog-post/author_2.png',
