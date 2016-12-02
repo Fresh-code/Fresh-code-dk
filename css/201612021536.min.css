@@ -1391,13 +1391,14 @@ a.attach-link:hover { text-decoration: none; }
 	height: 100px;
 }
 .dedicated-table-cell:hover {
+	border: solid #00DFA3 1px;
 	background: #00DFA3;
 	transition: .9s .1s;
 }
 .dedicated-table-cell:hover h3.dedicated-h3 {
 	color: #ffffff;
 }
-.service-selected{  background: #00DFA3;  }
+.service-selected{  background: #00DFA3; border: solid #00DFA3 1px; }
 .service-selected h3.dedicated-h3 {  color: #ffffff;  }
  h3.dedicated-h3{
 	color:  #1a1a1a;
@@ -2828,7 +2829,7 @@ header { color: #ffffff; }
 	left: 7%;
 	padding: 0.1rem 1rem !important; }
 .category-tag {
-	margin: 2.8rem 0;
+	margin: 1.6rem 0;
 	text-transform: uppercase;
 	color: #00c9e8;
 	font-size: 22px;
@@ -3365,7 +3366,7 @@ span.path {
 		margin-top: 15px;
 		line-height: 24px;
 		font-size: 16px; }
-	.post-titling .fresh-sub-block { width: 100%; }
+	.post-titling .fresh-sub-block { width: 100%; position: relative; top: 15px; }
 	.author-block { text-align: center; }
 	.avatar-wrapper,
 	.post-author { float: none; }
@@ -3387,8 +3388,9 @@ span.path {
 		font-size: 17px;
 		line-height: 24px; }
 	.row.post-shorted.padding-bottom { padding-bottom: 0; }
+	.post-titling .row.post-shorted.padding-bottom { margin-left: 0!important;}
 	.blog-post.padding-bottom {
-		min-height: 500px;
+		min-height: 100vh;
 		padding-bottom: 40px; }
 	.post-body h2 { margin-bottom: 2rem; }
 	.post-body li, .post-body p {
@@ -3518,7 +3520,10 @@ span.path {
 	.proj-body .rsl-h1 { margin: -1em 0 0; }
 	.rsl-h1 { font-size: 32px; }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+
+
+
+	@media screen and (min-width: 768px) and (max-width: 992px) {
 
 	.fresh-sub-block.no-padding .description.blog .date{  font-size: 13px;  }
 	footer .shorted { text-align: left; width: 55%;}
@@ -3564,6 +3569,7 @@ span.path {
 	.show-on-mobile { display: none; }
 }
 @media screen and (max-width: 768px) {
+	.post-titling .fresh-sub-block { top: 40px;}
 	.hide-on-mobile { display: none; }
 	.proj-header-overflow .proj-screenshot img { margin-top: -5em; }
 	.footer-width-fixed {
@@ -3593,6 +3599,10 @@ span.path {
 		line-height: 28px; }
 	.copyright.margined { text-align: right; }
 	.list-footer .logo-footer img { margin-right: 5px; }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	.post-titling .fresh-sub-block {  top: 30px;  }
 }
 
 @media screen and (max-width: 568px) {
@@ -3653,6 +3663,17 @@ span.path {
 		align-items: center; }
 }
 
+.show-img-on-mobile { display: none; }
+.hide-img-on-mobile { display: block; }
+@media screen and (max-width: 768px) {
+	.show-img-on-mobile {
+		display: block;
+	}
+
+	.hide-img-on-mobile {
+		display: none;
+	}
+}
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
