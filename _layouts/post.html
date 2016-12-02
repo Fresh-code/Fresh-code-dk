@@ -8,10 +8,20 @@
 <main>
     <div id="main-section">
         <div class="section height-fixed height-100 padding-top padding-bottom blog-post">
+            {% if page.img_type == 'twooimgs' %}
+            <div class="image-background bleed parallax-section hide-img-on-mobile">
+                {% adaptive_image {{ page.background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599
+                768" draggable="false" class="image" alt="Blog post background" title="Blog post background" %}
+            </div>
+            <div class="image-background bleed show-img-on-mobile parallax-section">
+                <img src="{{ page.small_background }}" alt="Blog post background" />
+            </div>
+            {% else %}
             <div class="image-background bleed parallax-section">
                 {% adaptive_image {{ page.background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599
                 768" draggable="false" class="image" alt="Blog post background" title="Blog post background" %}
             </div>
+            {% endif %}
             <div class="post-titling parallax-text-blog">
                 <div class="fresh-sub-block">
                     <div class="row post-shorted padding-bottom width-fixed ">

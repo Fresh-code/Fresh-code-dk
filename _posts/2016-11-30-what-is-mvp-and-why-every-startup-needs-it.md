@@ -1,5 +1,6 @@
 ---
 layout: post
+img_type: twooimgs
 title:  What Is MVP and Why Every Startup Needs It?
 description: Common engagement models for outsourcing&#58; dedicated team, time & material, fixed price.
 date:   2016-11-30 10:59:19
@@ -15,6 +16,8 @@ type: business
 
 cover: /img/blog-post/post_7c-350.jpg
 alt: monitors
+small_background: /img/blog-post/banner_post_7_small.jpg
+
 srcsetattr: /img/blog-post/post_7c-700.jpg 700w, /img/blog-post/post_7c-450.jpg 450w, /img/blog-post/post_7c-350.jpg 350w
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'
 background-cover: '#7eb5b0'
@@ -27,7 +30,6 @@ share-description: 'The minimum viable product (MVP) is described by the term’
 share-title: 'What Is MVP and Why Every Startup Needs It?'
 ---
 
-
 <div class="post-body p-t-6rem">
     <p>The minimum viable product (MVP) is described by the term’s inventor Eric Ries as the “version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort”. Over time the term has gotten new interpretations and is now widely used throughout various business concepts, including Lean Startup or Agile Development.</p>
     <p>Whichever definition you prefer, every MVP must possess:</p>
@@ -39,7 +41,7 @@ share-title: 'What Is MVP and Why Every Startup Needs It?'
     <p>Despite the seeming simplicity of the concept, the MVP is often confused with an unfinished or an overly simplified version of the project. In case you want to create a smartphone, your MVP is not a touchscreen, a power button, or even a processor. You should first give your customers a rotary dial phone. It can solve their problem, as it allows to communicate over distance. Later you can provide a cell phone that combines communication with mobility. And when your customers are sufficiently familiar with most features, you can present them with the smartphone.</p>
     <br>
     <h2>Why Do Startups Use MVPs?</h2>
-    <br><br>
+    <br>
     <p>Whichever definition you prefer, every MVP must possess:</p>
     <ul class="post_ul_arrow">
         <li>Your product is developed and launched within the tightest deadlines. It means that anything you don’t have time for will be postponed until future product iterations.</li>
@@ -50,7 +52,7 @@ share-title: 'What Is MVP and Why Every Startup Needs It?'
     </ul>
     <br>
     <h2>How Can You Use the MVP to Kick Start Your Startup?</h2>
-    <br><br>
+    <br>
     <p>You can consider using the MVP from a variety of angles.</p>
     <p>Your Minimum Viable Product can be a proof of concept. You should think about all the bells and whistles you want the product to have and then eliminate them one by one. In the end, you are left with a straightforward product that possesses essential features and is easy to launch. Your MVP should ultimately answer the most important question:</p>
 
@@ -117,7 +119,7 @@ share-title: 'What Is MVP and Why Every Startup Needs It?'
     <p>You should repeat the MVP process from developing the idea till the launch of the finished product. These two questions will keep you grounded and on the way to success.</p>
     <br>
     <h2>Can You Skip the MVP Stage?</h2>
-    <br><br>
+    <br>
     <p>You’ve already created dozens of successful products, and you know exactly what the customers need. In this case, the MVP might be useless to you. Or maybe you have access to unlimited resources, and you are not pressed for time. If that is the case, skip the MVP and go straight to the top.</p>
     <p>Otherwise, the MVP might be just what you need to actually get in touch with your customers and receive first payments. Even if the process of creating the MVP seems difficult, remember that it will save you time and money in the long run.</p>
     <p>The MVP should not be your ultimate goal. It’s only the first of many steps that will lead your business to success. Think about any of the modern IT giants: Google, Apple, Facebook… Every one of them started small and constantly evolved the product, taking into account customer feedback and making adjustments. That is why decades later their products are still desirable. Others, who refused to adjust and stopped at the MVP stage, are long forgotten. Or does anyone still use MySpace?</p>
