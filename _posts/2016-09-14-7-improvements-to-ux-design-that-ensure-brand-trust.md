@@ -14,6 +14,7 @@ background-color: '#164a77'
 type: front
 
 cover: /img/blog-post/post_2c-350.jpg
+recent-cover: /img/blog-post/recent_post_2.png
 alt: Graphic design mockups
 srcsetattr: /img/blog-post/post_2c-700.jpg 700w, /img/blog-post/post_2c-450.jpg 450w, /img/blog-post/post_2c-350.jpg 350w
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'

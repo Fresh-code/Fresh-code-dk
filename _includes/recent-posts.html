@@ -1,0 +1,38 @@
+<div class="fresh-sub-block">
+    <h2 class="h2-outer c-h2-link">More recent posts</h2>
+</div>
+<div class="fresh-sub-block no-padding">
+    <div class="container-fluid" style="padding: 0">
+        <div class="row">
+            {% for post in site.posts %}
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 no-padding post-block recent-post">
+                <div class="recent-post-img">
+                    <img class="img-responsive" src="{{ post.recent-cover }}" alt="{{ post.alt }}">
+                </div>
+                <div class="recent-post-text">
+                    <div class="description">
+                        <div class="recent-post-name">{{ post.post-title }}</div>
+                        <div class="date ctg-auth">{{ post.categories-tag }}  |  {{ post.author }}</div>
+                        <div>
+                            <a class="link recent-read-more"  href="{{ post.permalink }}">
+                                <div class="color-fill"></div>
+                                <span>read more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="fresh-main blog serv-tech">
+    <div class="fresh-sub-block shorted">
+        <div class="serv-button-zone">
+            <div class="hire-btn serv-request-btn" id="load-more">
+                <div class="color-fill"></div>
+                <span>Show more</span>
+            </div>
+        </div>
+    </div>
+</div>

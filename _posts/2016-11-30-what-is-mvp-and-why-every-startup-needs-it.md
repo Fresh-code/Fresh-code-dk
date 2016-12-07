@@ -15,6 +15,7 @@ background-color: '#679894'
 type: business
 
 cover: /img/blog-post/post_7c-350.jpg
+recent-cover: /img/blog-post/recent_post_7.png
 alt: monitors
 small_background: /img/blog-post/banner_post_7_small.jpg
 

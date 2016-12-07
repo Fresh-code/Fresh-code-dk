@@ -1,6 +1,6 @@
 {
   "title": "Freshcode Consulting",
-  "keywords":"Freshcode consulting, best solutions, time and cost estimation, project quotation",
+  "keywords": "Freshcode consulting, best solutions, time and cost estimation, project quotation",
   "description": "Get in touch with Freshcode for a thorough consultation to plan the development of the project and get time and cost estimation.",
   "name": "Consulting",
   "text": [
@@ -10,3 +10,26 @@
   ],
   "bottext": "We know how important is to plan the work on the project and we will be glad to help you. At any project stage you can get usability analysis, code audit, consultation about design and optimization of project's architecture."
 }
+/*"text": "Without prior experience, it may be difficult to secure high-quality IT products for your business on the first try. That’s why before springing for web or mobile development, you should always consider hiring a trustworthy IT consultant. <br><br>  At Freshcode, we take consulting services to the next level by providing an accurate estimate of the time and resources needed to complete your project. With our help, you do not have to take any chances in planning the workflow and choosing technologies and solutions for your particular needs. Our experienced specialists are always one call away and ready to provide you with a thorough consultation involving any development issues or new requirements.",
+"page-background": "/img/consulting/main_pic.png",
+"alt": "Dedicated team working at the table",
+"services": [
+  {"img": "/img/consulting/services/icon_brain.png", "img_mobile": "/img/consulting/services/mobile/icon_brain.png",  "alt": "", "text": "IT strategy consulting" },
+  {"img": "/img/consulting/services/icon_cloud.png", "img_mobile": "/img/consulting/services/mobile/icon_cloud.png",  "alt": "", "text": "Code review service" },
+  {"img": "/img/consulting/services/icon_code.png", "img_mobile": "/img/consulting/services/mobile/icon_code.png",  "alt": "", "text": "Usability and architecture stability analysis" },
+  {"img": "/img/consulting/services/icon_phone.png", "img_mobile": "/img/consulting/services/mobile/icon_phone.png",  "alt": "", "text": "Scalability and cloud services consulting" },
+  {"img": "/img/consulting/services/icon_security.png", "img_mobile": "/img/consulting/services/mobile/icon_security.png",  "alt": "", "text": "Security consulting and threat analysis" }
+],
+
+"industries": [
+  {"img": "/img/consulting/industries/pic_1.png", "text": "Entertainment" },
+  {"img": "/img/consulting/industries/pic_2.png", "text": "Healthcare" },
+  {"img": "/img/consulting/industries/pic_3.png", "text": "eCommerce" },
+  {"img": "/img/consulting/industries/pic_4.png", "text": "Education" },
+  {"img": "/img/consulting/industries/pic_5.png", "text": "Mass Media" },
+  {"img": "/img/consulting/industries/pic_6.png", "text": "Business Intelligence" },
+  {"img": "/img/consulting/industries/pic_7.png", "text": "Logistics" },
+  {"img": "/img/consulting/industries/pic_8.png", "text": "Travel" },
+  {"img": "/img/consulting/industries/pic_9.png", "text": "Telecoms" }
+]
+}*/

@@ -26,7 +26,7 @@
                 <div class="fresh-sub-block">
                     <div class="row post-shorted padding-bottom width-fixed ">
                         <div class="category-tag">{{ page.categories-tag }}</div>
-                        <h1>{{ page.post-title }}</h1>
+                        <h1 class="post-name">{{ page.post-title }}</h1>
                         <div class="meta">{{ page.date | date: '%B %d, %Y' }}</div>
                     </div>
                 </div>
@@ -71,6 +71,7 @@
                             </div>
                         </a>
                     </div>
+                    {% include recent-posts.html %}
                 </div>
             </div>
         </div>

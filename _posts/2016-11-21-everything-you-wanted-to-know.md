@@ -15,6 +15,7 @@ type: business
 
 
 cover: /img/blog-post/post_6c-350.jpg
+recent-cover: /img/blog-post/recent_post_6.png
 srcsetattr: /img/blog-post/post_6c-700.jpg 700w, /img/blog-post/post_6c-450.jpg 450w, /img/blog-post/post_6c-350.jpg 350w
 sizeattr: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px'
 background-cover: '#4b4f67'
