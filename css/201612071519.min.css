@@ -521,6 +521,57 @@ body.locked {
 .pixel-down .cover.absolute {
 	bottom: 0;
 }
+
+/*Consulting*/
+
+.consulting-service {
+	width:19.7%;
+	height: 230px;
+	text-align: center;
+	display: inline-table;
+}
+
+.consulting-service img{
+	margin: auto;
+	max-width: 100%;
+}
+
+.consulting-service.industry {
+	width: 19%;
+	height: 320px;
+	padding: 20px;
+}
+
+.post-body .consulting-service p, .consulting-service .cons-item-text{
+	font-size: 22px;
+	font-weight: 300;
+	text-align: center;
+	color: black;
+	padding-top: 10px;
+}
+
+.consulting-items-group {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.consulting-vert-line{
+	height: 40px;
+	margin: auto;
+	width: 1px;
+	background-color: #d8d8d8;
+}
+.consulting-horiz-line{
+	height: 1px;
+	position: relative;
+	left: 0;
+	width: 100%;
+	background-color: #d8d8d8;
+}
+
+/*Consulting*/
+
+
 /*Testimonial*/
 
 
@@ -1694,6 +1745,12 @@ textarea.material-input { resize: none; }
 }
 
 @media screen and (max-width: 991px) {
+	.consulting-service{
+		width:100%;
+	}
+	.consulting-service.industry{
+		width:48.7%;
+	}
 	.description.blog .cover span { margin-top: 20px; }
 	.main-team { margin-top: -38.7%; }
 	.main .fresh-h3.centered {
@@ -1854,6 +1911,10 @@ textarea.material-input { resize: none; }
 	.logo-block-main.menu-opened { left: 20px; }
 	.m-t-5 { margin-top: 6em; }
 	.m-b-6 { margin-bottom: 10em; }
+	.dedicated-page .dedicated-head-description {
+		width: 100%;
+		padding: 0;
+	}
 }
 @media screen and (max-width: 568px) {
 	.fresh-sub-block h2 { font-size: 24px; }
@@ -2404,6 +2465,7 @@ header { color: #ffffff; }
 	width: 100%; }
 
 @media (max-width: 1000px), (orientation: portrait) {
+	.recent-post .recent-post-text .description { text-align: left; }
 	.height-fixed:not(.height-fixed-xs) { height: auto !important; }
 	.swap-hr {
 		display: block;
@@ -2784,7 +2846,7 @@ header { color: #ffffff; }
 @media screen and (max-width: 370px) {
 	h3.dedicated-h3 {  font-size: 14px;     padding: 27px;  }
 	.dedicated-table-cell {height: 85px; }
-	.dedicated-page .serv-button-zone {  padding: 20px 8% 70px 8%;  }
+	.dedicated-page .serv-button-zone {  padding: 70px 8% 70px 8%;  }
 }
 
 @media screen and (max-width: 450px) {
@@ -2905,7 +2967,7 @@ span.path {
 .social-btn.linkedin-btn:hover { background: #016FA2; }
 .social-btns {
 	padding-left: 0;
-	margin-bottom: 15rem;
+	margin-bottom: 5rem;
 	margin-top: 6rem; }
 /*margin-bottom: 15rem; }*/
 .next-post { margin: 60px 0 150px; }
@@ -2970,6 +3032,33 @@ span.path {
 .post-body pre.line-numbers .line-numbers-rows > span::before {
 	padding-right: 0;
 	text-align: center; }
+
+.recent-post {
+	margin-bottom: 35px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.recent-post .ctg-auth {
+	color: #94a7ae;
+	padding: 10px 0 5px 0;
+}
+.recent-post .recent-post-text{
+	padding: 0 30px 0 30px;
+	vertical-align: middle;
+	display: table-cell;
+}
+.recent-post .recent-post-img {
+	width: 201px;
+	vertical-align: middle;
+	display: table-cell;
+}
+.recent-post .recent-post-img {
+	width: 201px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
 /* Blog-post end */
 
 @media (min-width: 1000px) {
@@ -2989,6 +3078,7 @@ span.path {
 }
 @media screen and (max-width: 1000px) {
 
+	.blog .serv-button-zone { padding: 6em 0 6em 0; }
 	/** thx **/
 	.thx-header, .thx-block {
 		display: block;
@@ -3524,7 +3614,6 @@ span.path {
 
 
 	@media screen and (min-width: 768px) and (max-width: 992px) {
-
 	.fresh-sub-block.no-padding .description.blog .date{  font-size: 13px;  }
 	footer .shorted { text-align: left; width: 55%;}
 	.fresh-footer .hide-on-mobile {  display: none;  }
@@ -3602,32 +3691,47 @@ span.path {
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-	.post-titling .fresh-sub-block {  top: 30px;  }
+	.post-titling .fresh-sub-block {  top: 20px;  }
 }
 
 @media screen and (max-width: 568px) {
-	.serv-row .count {
-		bottom: 6px;
-		min-width: 0;
-		font-size: 71px;
-		text-align: center;
-		padding-left: 0;
-		margin-right: 15px;
-		line-height: 70px; }
-
-	.shorted-job .attach-link {
-		width: 110px;
-		margin-left: 20px; }
-
+	.serv-row .count {  bottom: 6px;  min-width: 0;  font-size: 71px;  text-align: center;
+		padding-left: 0;  margin-right: 15px;  line-height: 70px; }
+	.shorted-job .attach-link {  width: 110px;  margin-left: 20px; }
 	.proj-header-overflow .proj-screenshot img { margin-top: -3em; }
 }
+@media screen and (max-width: 520px) {
+	.blog .serv-button-zone { padding: 1em 0 3em 0; }
+	.consulting-service.industry img { max-width: 150px; }
+	.recent-post .recent-post-text { font-size: 12px; padding: 0 0 0 20px; }
+	.recent-post .recent-post-img { width: 100px; }
+	.recent-post .recent-read-more {  font-size: 12px; margin-top: 0; }
 
+}
 @media screen and (max-width: 450px) {
 	.proj-header-overflow .proj-screenshot img { margin-top: -1em; }
 	.proj-body.proj-body-overflow .macbook-c .img-container img { width: 160%; }
 }
+@media screen and (max-width: 450px) {
+	.consulting-service.industry {
+		height: 260px;
+		padding: 10px;
+	}
+	.consulting-service .cons-item-text {
+		font-size: 17px;
+	}
+}
 
 @media screen and (max-width: 350px) {
+	.consulting-service.industry img { max-width: 120px; }
+	.consulting-service.industry {
+		width: 48%;
+		height: 190px;
+		padding: 10px;
+	}
+	.consulting-service .cons-item-text {
+		font-size: 15px;
+	}
 	.padding-bottom { padding-bottom: 90px; }
 	.padding-top { padding-top: 90px; }
 
