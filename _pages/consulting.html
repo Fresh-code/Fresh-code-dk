@@ -3,35 +3,6 @@ permalink: /consulting/
 layout: service
 ---
 
-<div class="serv-container height-fixed height-100 shorted width-fixed">
-    <div class="main-icon-container">
-        <img class="serv-icon" src="/img/consulting/consulting_white_icon.png" alt="consulting icon">
-    </div>
-    <h1 class="serv-h1 h1">{{ site.data.consulting.name }}</h1>
-    <div class="serv-list container-fluid">
-        {% for row in site.data.consulting.text %}
-        <div class="row serv-row">
-            <div class="count col-xs-1 col-sm-1 col-md-1 col-lg-1">{{ forloop.index }}</div>
-            <div class="description-text col-xs-10 col-sm-10 col-md-10 col-lg-10">{{ row }}</div>
-        </div>
-        {% endfor %}
-    </div>
-</div>
-<div class="fresh-main serv-tech">
-    <div class="fresh-sub-block shorted width-fixed">
-        <div class="row serv-teches">
-            <p class="serv-p">{{ site.data.consulting.bottext }}</p>
-        </div>
-        <div class="serv-button-zone">
-            <a class="hire-btn serv-request-btn hire" href="">
-                <div class="color-fill"></div>
-                <span>Make a request</span>
-            </a>
-        </div>
-    </div>
-</div>
-<!--
-
 <div class="dedicated-page">
     <div style="background-image: url(../img/dedicated_team/bg_noise_blue.jpg);">
         <div class="height-100 dedicated-head">
@@ -45,7 +16,7 @@ layout: service
                         <header style="margin: auto; max-width: 700px;">
                             <h1 class="fresh-h1 h1">{{ site.data.consulting.name }}</h1>
                             <span class="fresh-h3">{{ site.data.consulting.text }}</span>
-                            <a class="hire-btn dedicated-book-btn mail-activator hire" style="width: 225px; "  href="">
+                            <a class="hire-btn dedicated-book-btn mail-activator hire" style="width: 225px; " href="">
                                 <div class="color-fill"></div>
                                 <span style="white-space: nowrap; font-weight: 600">Make a request</span>
                             </a>
@@ -56,10 +27,12 @@ layout: service
         </div>
     </div>
 
-    <div class="fresh-sub-block">
+    <div class="fresh-sub-block ">
         <div class="post-body">
             <div class="row consulting-items-group">
                 <h2>We provide a wide range of services</h2>
+            </div>
+            <div class="row consulting-items-group hide-on-pc">
                 <table style="width: 100%; margin-bottom: 35px; margin-top: -50px;">
                     <tr>
                         <td></td>
@@ -94,14 +67,28 @@ layout: service
                         </td>
                     </tr>
                 </table>
+            </div>
+        </div>
+    </div>
 
-                {% for service in site.data.consulting.services %}
-                <div class="consulting-service">
-                    <img class="hide-on-pc " src="{{ service.img }}" alt="{{ service.text }}">
-                    <img class="hide-on-mobile" src="{{ service.img_mobile }}" alt="{{ service.text }}">
-                    <p>{{ service.text }}</p>
-                </div>
-                {% endfor %}
+
+    <div class="fresh-sub-block">
+        <div class="post-body">
+            <div class="row consulting-items-group">
+                    {% for service in site.data.consulting.services %}
+                    <div class="consulting-service consulting-left-lines">
+<!--
+                        <div style="position: absolute; height: 80px; width: 1px;    margin-left: -1px; background-color: #761c19;"></div>
+-->
+                        <div class="cons-vert-lines"></div>
+
+                        <div style="display: inline-table">
+                            <img class="hide-on-pc " src="{{ service.img }}" alt="{{ service.text }}">
+                            <img class="hide-on-mobile" src="{{ service.img_mobile }}" alt="{{ service.text }}">
+                        </div>
+                        <p>{{ service.text }}</p>
+                    </div>
+                    {% endfor %}
             </div>
         </div>
     </div>
@@ -203,4 +190,3 @@ layout: service
         </div>
     </div>
 </div>
--->
