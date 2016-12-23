@@ -519,7 +519,7 @@ body.locked {
 /*Consulting*/
 
 .consulting-service {
-	width:19.7%;
+	width:19%;
 	height: 230px;
 	text-align: center;
 	display: inline-table;
@@ -562,6 +562,7 @@ body.locked {
 	width: 100%;
 	background-color: #d8d8d8;
 }
+
 
 /*Consulting*/
 
@@ -1731,16 +1732,28 @@ textarea.material-input { resize: none; }
 
 	.post-body .post_no_list_style li {  padding-left: 0;}
 
+
 }
 @media screen and (min-width: 1001px) {
 	.hide-on-pc { display: none; }
 	.dedicated-page .hide-on-mobile{ display: none; }
 	.dedicated-page .hide-on-pc{ display: block; }
+
 }
 
 @media screen and (max-width: 991px) {
-	.consulting-service{
+
+	.consulting-left-lines{
+		border-left: solid #d8d8d8 1px;
 		width:100%;
+	}
+
+	.cons-vert-lines{
+		height: 1px;
+		position: relative;
+		top: 83px;
+		width: 100px;
+		background-color: #d8d8d8;
 	}
 	.consulting-service.industry{
 		width:48.7%;
@@ -1779,6 +1792,7 @@ textarea.material-input { resize: none; }
 }
 
 @media screen and (max-width: 768px) {
+	.cons-vert-lines{  width: 80px;  }
 	.the-team h2{ margin-top: 4rem; }
 	.testimonial-block h2 { margin-bottom: 10px; }
 	.blog.section-outer { margin-top: 0; }
@@ -1912,6 +1926,12 @@ textarea.material-input { resize: none; }
 }
 @media screen and (max-width: 568px) {
 	.fresh-sub-block h2 { font-size: 24px; }
+	.cons-vert-lines{  width: 50px;  }
+	.dedicated-page .post-body h2 {  margin: 40px 0 40px 0;  }
+	.consulting-items-group{  margin-bottom: 40px;  }
+	.p-t-6rem{  padding-top: 20px;  }
+	#dedic_h2_works{ margin-top: -33px!important; }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1927,16 +1947,14 @@ textarea.material-input { resize: none; }
 }
 
 @media screen and (max-height: 468px) {
-	.hire-btn {
-		/*top: 20px;*/
-		padding: 10px 32px; }
+	.hire-btn {  padding: 10px 32px; }
 	.fresh-title h3 { line-height: 25px; }
-	.main-nav-menu li {
-		margin: 5px 0;
-		font-size: 16px;
-		text-transform: uppercase; }
+	.main-nav-menu li {  margin: 5px 0;  font-size: 16px;  text-transform: uppercase; }
 	.main-nav-menu .description { margin-top: 15px; }
 	.row.shorted-job .attach-link { padding: 17px 0; }
+}
+@media screen and (max-width: 380px) {
+	.cons-vert-lines{  width: 32px;  }
 }
 
 @media screen and (max-width: 360px) {
@@ -2198,15 +2216,6 @@ textarea.material-input { resize: none; }
 	.dedicated-page .dedicated-block { width: 100%; }
 }
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 450px) {
 	.fresh-left-sub-block { padding: 0 0 0 5%; }
 	.rsl-b-r { margin-top: -3em !important;  }
@@ -2222,23 +2231,18 @@ textarea.material-input { resize: none; }
 	.proj-logo img {
 		max-width: 120px;
 		max-height: 60px; }
+	.cons-vert-lines{ width: 18px; }
 }
 /* ------------------------------- end PROJECTS ----------------------------------------  */
+
+
+
 
 /* ------------------------------- start SERVICES ----------------------------------------  */
 .gradient-body {
 	background: #306cd1;
 	animation: background 6s infinite alternate;
 }
-/*.gradient-body {*/
-/*background: -webkit-linear-gradient(150deg, #00ffbd, #15b5ff, #3187ff, #00d579);*/
-/*background: -o-linear-gradient(150deg, #00ffbd, #15b5ff, #3187ff, #00d579);*/
-/*background: linear-gradient(240deg, #00ffbd, #15b5ff, #3187ff, #00d579);*/
-/*background-size: 800% 800%;*/
-/*-webkit-animation: AnimationName 12s ease infinite;*/
-/*-moz-animation: AnimationName 12s ease infinite;*/
-/*-o-animation: AnimationName 12s ease infinite;*/
-/*animation: AnimationName 12s ease infinite; }*/
 .main-icon-container {
 	display: block;
 	width: 100%;
@@ -2314,6 +2318,13 @@ textarea.material-input { resize: none; }
 	.media-left.preview-block { padding: 0; }
 }
 /* ------------------------------- end SERVICES ----------------------------------------  */
+
+
+
+
+
+
+
 
 
 /* ------------------------------- start FILTER MENU ----------------------------------------  */
@@ -2465,7 +2476,6 @@ header { color: #ffffff; }
 		display: block;
 		flex-direction: column;
 	}
-
 }
 @media (max-width: 1000px) and (orientation: landscape) {
 	#one, #two { width: 100% !important; }
@@ -3697,6 +3707,7 @@ span.path {
 @media screen and (max-width: 520px) {
 	.blog .serv-button-zone { padding: 1em 0 3em 0; }
 	.consulting-service.industry img { max-width: 150px; }
+	.consulting-service.industry { height: auto; }
 	.recent-post .recent-post-text { font-size: 12px; padding: 0 0 0 20px; }
 	.recent-post .recent-post-img { width: 100px; }
 	.recent-post .recent-read-more {  font-size: 12px; margin-top: 0; }
@@ -3705,15 +3716,8 @@ span.path {
 @media screen and (max-width: 450px) {
 	.proj-header-overflow .proj-screenshot img { margin-top: -1em; }
 	.proj-body.proj-body-overflow .macbook-c .img-container img { width: 160%; }
-}
-@media screen and (max-width: 450px) {
-	.consulting-service.industry {
-		height: 260px;
-		padding: 10px;
-	}
-	.consulting-service .cons-item-text {
-		font-size: 17px;
-	}
+	.consulting-service.industry {  height: auto;  padding: 10px;  }
+	.consulting-service .cons-item-text {  font-size: 17px;  }
 }
 
 @media screen and (max-width: 350px) {
