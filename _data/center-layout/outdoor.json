@@ -19,6 +19,7 @@
   "buisValue": "Outdoor.rocks site is still undergoing development. Our client is now widening the range of services available to users and filling the site with useful content. Industry experts have already given high praise to the project, making it a desirable investment opportunity for several US companies. At the moment, our client conducts negotiations with several potential investors interested in site's further development.",
   "solutions": "This project was developed using Ruby on Rails framework. Three editing modes were implemented: automatic, manual and mixed. Users got access to the banks of geo referenced photos at Flickr.com to attach pictures to new routes along with any additional information. Working on this challenging project our team created the unique trail points thinning algorithm for GPS files downloads and devised the library for Google Charts and seamless performance of elevation profile data.",
   "css": "outdoor",
-  "prev": "/transacumen",
+  "prev": "/tassta",
   "next": "/data-parser"
 }
+

@@ -189,6 +189,10 @@
             $('.parallax-text-blog').css({
                 "transform" : "translate3d(0px, " + st/6 + "px, 0px)"
             });
+            $('.paralax-text').css({
+                "transform" : "translate3d(0px, " + st/-0.4 + "px, 0px)",
+                "opacity" : 1 - st/120
+            });
             $('.parallax-text').css({
                 "transform" : "translate3d(0px, " + st/25 + "px, 0px)"
             });
