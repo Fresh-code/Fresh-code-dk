@@ -17,8 +17,8 @@
     {"alt":"Wallbreaker Dynamics Poll page on a laptop", "img":"/img/wallbreaker/macbook_left.png"}
   ],
   "challenges": "Wallbreaker is a successful Danish start-up that provides unique services for mass-media. Our team worked on creating Pollmaker Suite for administrators and Pollbreaker mobile app for users. This platform will be used to create content instantly, monitor polls voting process and visualize analytic results in real time.",
-  "buisValue": "Our client is going to provide Big Data services to IT giants such as Google and IBM. Data Parser customers will be able to choose between two subscription plans. Large companies with a huge amount of data will get access to dedicated large storage servers for quick calculations. Shared services with lower productivity will be provided to smaller customers with simpler needs.",
-  "solutions": "Wallbreaker Dynamics platform was demonstrated at an expo in the USA and received high praise from media industry representatives. Initial success allowed our client to secure investments for the next development stages. Several contracts have already been signed with European TV channels.",
+  "buisValue": "Wallbreaker Dynamics platform was demonstrated at an expo in the USA and received high praise from media industry representatives. Initial success allowed our client to secure investments for the next development stages. Several contracts have already been signed with European TV channels.",
+  "solutions": "Our team created the platform able to  withstand a significant number of users (up to 300,000) while maintaining a good response time (up to 1 second). A simple interface allows polls creation, live processing and survey results displaying in real time. Pollmaker Suite has possibilities for access rights administration and shared use and includes polls constructor and settings for calculations and data visualization.",
   "css": "wallbreaker",
   "prev": "/gommehd",
   "next": "/flotron"

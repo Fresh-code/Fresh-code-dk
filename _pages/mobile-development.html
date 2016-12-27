@@ -2,6 +2,144 @@
 permalink: /mobile-development/
 layout: service
 ---
+
+<!--<div class="dedicated-page">
+    <div style="background-image: url(../img/dedicated_team/bg_noise_blue.jpg);">
+        <div class="height-100 dedicated-head">
+            <div style="display: table-cell;vertical-align: middle; ">
+                <div class="dedic-head-container ">
+                    <div class="dedicated-head-img">
+                        <img style="margin: auto; max-width: 100%;" src="{{ site.data.mobile-development.page-background }}"
+                             alt="{{ site.data.mobile-development.alt }}">
+                    </div>
+                    <div class="dedicated-head-description">
+                        <header style="margin: auto; max-width: 700px;">
+                            <h1 class="fresh-h1 h1">{{ site.data.mobile-development.name }}</h1>
+                            <span class="fresh-h3">{{ site.data.mobile-development.text }}</span>
+                            <a class="hire-btn dedicated-book-btn mail-activator hire" style="width: 225px; " href="">
+                                <div class="color-fill"></div>
+                                <span style="white-space: nowrap; font-weight: 600">Make a request</span>
+                            </a>
+                        </header>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fresh-sub-block ">
+        <div class="post-body">
+            <div class="row consulting-items-group">
+                <h2>We provide a wide range of services</h2>
+            </div>
+            <div class="row consulting-items-group hide-on-pc">
+                <table style="width: 100%; margin-bottom: 35px; margin-top: -50px;">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="consulting-vert-line"></div>
+                        </td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="consulting-horiz-line" style="left: 50%;"></div>
+                            <div class="consulting-vert-line"></div>
+                        </td>
+                        <td>
+                            <div class="consulting-horiz-line"></div>
+                            <div class="consulting-vert-line"></div>
+                        </td>
+                        <td>
+                            <div class="consulting-horiz-line"></div>
+                            <div class="consulting-vert-line"></div>
+                        </td>
+                        <td>
+                            <div class="consulting-horiz-line"></div>
+                            <div class="consulting-vert-line"></div>
+                        </td>
+                        <td>
+                            <div class="consulting-horiz-line" style=" left: 0; width: 50.4%"></div>
+                            <div class="consulting-vert-line"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="fresh-sub-block">
+        <div class="post-body">
+            <div class="row consulting-items-group">
+                {% for service in site.data.mobile-development.services %}
+                <div class="consulting-service consulting-left-lines">
+
+                    <div class="cons-vert-lines"></div>
+
+                    <div style="display: inline-table">
+                        <img class="hide-on-pc " src="{{ service.img }}" alt="{{ service.text }}">
+                        <img class="hide-on-mobile" src="{{ service.img_mobile }}" alt="{{ service.text }}">
+                    </div>
+                    <p>{{ service.text }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="fresh-sub-block">
+        <div class="post-body">
+            <h2>We cater to a number of industries:</h2>
+        </div>
+    </div>
+    <div class="consulting-items-group">
+        {% for industry in site.data.mobile-development.industries %}
+        <div class="consulting-service industry">
+            <img src="{{ industry.img }}" alt="{{ industry.text }}">
+            <div class="cons-item-text">{{ industry.text }}</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="post-body p-t-6rem" style="padding-top: 0">
+        <h2 style="margin: 40px 0 50px 0;">Our services</h2>
+    </div>
+    <div class="fresh-services fresh-sub-block">
+        <div class="row post-shorted services-width-fixed">
+            <div class="container" style="margin: 0; padding: 1px 0 0 0; width: 100%">
+                <div class="row">
+                    {% for service in site.data.services.short %}
+                    <a class="link" href="{{ service.link }}">
+                        {% if service.link == '/mobile-development' %}
+                        <div class="col-lg-4 col-sm-6 col-xs-12  dedicated-table-cell service-selected">
+                            <h3 class="dedicated-h3">{{ service.name }}</h3>
+                        </div>
+                        {% else %}
+                        <div class="col-lg-4 col-sm-6 col-xs-12  dedicated-table-cell">
+                            <h3 class="dedicated-h3">{{ service.name }}</h3>
+                        </div>
+                        {% endif %}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fresh-services">
+        <div class="serv-button-zone post-shorted services-width-fixed fresh-sub-block">
+            <a class="hire-btn dedicated-book-btn mail-activator hire" href="" style="width: 225px; margin: auto;">
+                <div class="color-fill"></div>
+                <span style="white-space: nowrap; font-weight: 600">Make a request</span>
+            </a>
+        </div>
+    </div>
+</div>-->
+
+
 <div class="serv-container height-fixed height-100 shorted width-fixed">
     <div class="main-icon-container">
         <img class="serv-icon" src="/img/mobile_dev/mobile_white_icon.svg" alt="wev-dev icon">
