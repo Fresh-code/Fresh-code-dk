@@ -525,7 +525,7 @@ body.locked {
 /*Consulting*/
 
 .consulting-service {
-	width:19.7%;
+	width:19.8%;
 	height: 230px;
 	text-align: center;
 	display: inline-table;
@@ -1293,6 +1293,9 @@ a.attach-link:hover { text-decoration: none; }
 .service-h1 {
     margin-bottom: 62px;
 }
+@media screen and (max-width: 1660px){
+	.consulting-service {  width:19.6%;  }
+}
 
 @media screen and (min-width: 769px) and (max-width: 1199px) {
 	.services-table-cell .cell-text {  padding: 40px;  font-size: 22px;  }
@@ -1593,6 +1596,7 @@ h1.fresh-h1.h1  { margin-top: -25px;}
 }
 
 /*------------------------Form Styles------------------------------------*/
+.form-header { margin-bottom: 40px;}
 .form-header .fresh-h1 { margin-bottom: 9%; }
 .form-header, .material-form {
 	/*width: 75%;*/
@@ -1747,8 +1751,13 @@ textarea.material-input { resize: none; }
 
 }
 
-@media screen and (max-width: 991px) {
+.hide-on-mobile-service { display: none; }
+.hide-on-pc-service { display: block; }
 
+@media screen and (max-width: 991px) {
+	.mobile-service-main-img{ max-width: 270px; width: 100%;}
+	.hide-on-mobile-service { display: block; }
+	.hide-on-pc-service { display: none; }
 	.consulting-left-lines{
 		border-left: solid #d8d8d8 1px;
 		width:100%;
@@ -1937,7 +1946,8 @@ textarea.material-input { resize: none; }
 	.consulting-items-group{  margin-bottom: 40px;  }
 	.p-t-6rem{  padding-top: 20px;  }
 	#dedic_h2_works{ margin-top: -33px!important; }
-
+	.service-mobile-img{ width: 70%; }
+	.cons-vert-lines{ top: 60px; }
 }
 
 @media screen and (max-width: 480px) {
