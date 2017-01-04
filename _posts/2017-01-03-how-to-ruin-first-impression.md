@@ -18,7 +18,7 @@ background-cover: "#48818c"
 avatar: /img/blog-post/author_1.png
 author: Alex Slobozhan
 position: Sales manager
-share-image: /img/blog-post/post_banner_321.jpg
+share-image: '/img/blog-post/post_banner_321.jpg'
 share-description: First impressions are important. Even the scientists have finally agreed that first impressions are spot on most of the time. So when you go looking for a software company to develop your newest project, listen to your gut and listen carefully to what is actually being said. There are some phrases professional development teams will never use. Let’s see what separates great developers from mediocre.
 share-title: How to Ruin a First Impression. Things You Should Never Hear from a Software Company
 ---
