@@ -1329,6 +1329,7 @@ a.attach-link:hover { text-decoration: none; }
 
 .dedicated-page{
     background-color: #ffffff;
+	color: #333333;
 }
 .dedicated-page .block {
 	width: 50%;
@@ -1393,7 +1394,7 @@ a.attach-link:hover { text-decoration: none; }
 }
 
 .dedicated-page .post-body h2 {
-	color: #000000;
+	color: #333;
 	font-size: 32px;
 	font-weight: 600;
 	line-height: 30px;
@@ -1401,7 +1402,7 @@ a.attach-link:hover { text-decoration: none; }
 	margin: 90px 0 90px 0;
 }
 .post-body .dedicated-description h3{
-	color:  #000000;
+	color:  #333;
 	text-transform: uppercase;
 	font-size: 21px;
 	font-weight: 600;
@@ -1413,7 +1414,7 @@ a.attach-link:hover { text-decoration: none; }
 	vertical-align: middle;
 	display: table-cell;
 	font-size: 22px;
-	color:  #000000;
+	color:  #333;
 	line-height: 30px;
 	font-weight: 300;
 	text-align: justify;
