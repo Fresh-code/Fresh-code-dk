@@ -3073,6 +3073,14 @@ span.path {
 	vertical-align: middle;
 	display: table-cell;
 }
+.recent-post .recent-post-name {
+	text-decoration: none;
+	color: #333;
+
+}
+.recent-post .recent-post-name:hover {
+	color: #333;
+}
 
 /* Blog-post end */
 

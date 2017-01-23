@@ -3,6 +3,7 @@
  */
 (function(global) {
 
+
     var $conferences = $('.filter-conferences'),
         $development = $('.filter-development'),
         $management = $('.filter-management'),
@@ -14,6 +15,23 @@
         $dd = $('#filter-dropdown');
 
     var posts = [
+        
+        {
+            posttitle: 'How Does Software Testing Ensure High-Quality Development?',
+            platformtag: '',
+            avatar: '/img/blog-post/author_4.png',
+            catauthor: 'Business | Elizabeth Troyanova',
+            position: 'Project manager',
+            postcover: '/img/blog-post/post_877c-350.jpg',
+            postalt: '',
+            postsrcset: '/img/blog-post/post_877c-700.jpg 700w, /img/blog-post/post_877c-450.jpg 450w, /img/blog-post/post_877c-350.jpg 350w',
+            postsize: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
+            postcoverbckg: 'background-color: #616a9b !important',
+            postbckg: 'background-color: #55609b !important',
+            type: 'business',
+            nondisplay: 'display: none',
+            posturl: '/blog/2017/01/22/software/testing/'
+        },
         
         {
             posttitle: 'How to Ruin a First Impression. Things You Should Never Hear from a Software Company',
