@@ -3073,12 +3073,12 @@ span.path {
 	vertical-align: middle;
 	display: table-cell;
 }
-.recent-post .recent-post-name {
+.recent-post .recent-post-title {
 	text-decoration: none;
 	color: #333;
 
 }
-.recent-post .recent-post-name:hover {
+.recent-post .recent-post-title:hover {
 	color: #333;
 }
 
