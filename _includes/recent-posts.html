@@ -7,11 +7,15 @@
             {% for post in site.posts %}
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 no-padding post-block recent-post">
                 <div class="recent-post-img">
+                    <a href="{{ post.permalink }}">
                     <img class="img-responsive" src="{{ post.recent-cover }}" alt="{{ post.alt }}">
+                        </a>
                 </div>
                 <div class="recent-post-text">
                     <div class="description">
-                        <div class="recent-post-name">{{ post.post-title }}</div>
+                        <a  class="recent-post-name" href="{{ post.permalink }}">
+                        {{ post.post-title }}
+                            </a>
                         <div class="date ctg-auth">{{ post.categories-tag }}  |  {{ post.author }}</div>
                         <div>
                             <a class="link recent-read-more"  href="{{ post.permalink }}">

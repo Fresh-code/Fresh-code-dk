@@ -58,10 +58,10 @@ img/portfolio/work_9p.jpg: 219ce5c84aa7da6ed6fa665489bee2b6
 "/img/wallbreaker/macbook_left.png": db7d32cb0a5cf4b33d8e301a34602333
 js/portfolio.js: a01f7daab490693e72e4afe133b5a39c
 js/scripts.js: a6e6314a9df3344a327490757959945a
-js/blog.js: 068343e1e8c03d56f2fd260a9857a691
+js/blog.js: 63eda96ea8bbd540d1f2efdbbdc270c5
 js/job.js: 8ba4a16840d4b681af8eda4142c5e0e2
 css/bootstrap/bootstrap.min.css: 7027334fa6dd5f695f1b832cb3cd9319
-css/main.css: 6caeb21a0db50a84c85478356c630e7c
+css/main.css: 7180957ee2e556f239ca7072593fcbab
 css/font-awesome-4.6.3/css/font-awesome.min.css: 4083f5d376eb849a458cc790b53ba080
 css/prism.css: fc8dca674b79b3997a46ddcd3877e2ad
 img/blog-post/post_1c.jpg: b4e20b83ca08a825ebfc065e899a7309
@@ -97,3 +97,5 @@ img/blog-post/post_7c.jpg: fcac378076a7fae1b5881501aa776d69
 "/img/portfolio/work_5p.jpg": 0e3eb9c09e47edd7a1504e07a006c085
 img/blog-post/post_321c.jpg: b5153f540267f5eed33ee3e0c2a4985d
 "/img/blog-post/banner_post_321.jpg": 5580aacbd821dc288468498a175f2b0a
+"/img/blog-post/banner_post_877.jpg": 99c5ac12feff6c255116dab108ed8e51
+img/blog-post/post_877c.jpg: b5ab8f25b2084ff6aa04efc8b330fd21

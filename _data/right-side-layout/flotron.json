@@ -7,10 +7,11 @@
   "industry": "Microelectronics",
   "country": "Lithuania",
   "teamSize": "7 people",
-  "techUsed": "JavaFX",
+  "techUsed": "Java, JavaFX, WCF, C#, WebSocket",
   "projDuration": "3 months",
   "workStage": "Development, Testing",
   "pdf": "pdf/freshcode_case_studies_flotron.pdf",
+  "body-color": "#4fabf0",
   "images": [
     {"alt":"Nova Fabrica Ltd Logo", "img":"/img/flotron/logo.jpg"},
     {"alt":"Flotron Main page", "img":"/img/flotron/iMac.png"},
