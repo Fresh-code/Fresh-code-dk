@@ -11,6 +11,7 @@
   "projDuration": "9 months",
   "pdf": "pdf/freshcode_case_studies_wallbreaker.pdf",
   "workStages": "Development, Quality Assurance, Launch",
+  "body_color": "#3e3f43",
   "images": [
     {"alt":"Wallbreaker Dynamics Lobby manager page", "img":"/img/wallbreaker/Curves.jpg"},
     {"alt":"Wallbreaker Dynamics Logo", "img":"/img/wallbreaker/logo.png"},

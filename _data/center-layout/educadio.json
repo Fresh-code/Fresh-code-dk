@@ -12,6 +12,7 @@
   "projDuration": "4 month, ongoing",
   "pdf": "pdf/freshcode_case_studies_educadio.pdf",
   "workStages": "Development",
+  "body_color": "#2a3543",
   "images": [
     {
       "alt": "Educadio Admin panel",

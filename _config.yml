@@ -33,6 +33,13 @@ exclude:
   - run.sh
   - Dockerfile
   - node_server_index.html
+  - _templates/
+
+  - wp-data/_data/
+  - wp-data/img/
+  - wp-data/_pages/
+  - wp-data/_posts/
+  - server/
 markdown: kramdown
 permalink: pretty
 

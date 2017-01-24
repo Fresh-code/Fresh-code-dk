@@ -2,7 +2,7 @@
 permalink: /outdoor/
 layout: products
 ---
-<div class="proj-header proj-header-overflow">
+<div class="proj-header proj-header-overflow" style="background-color:{{ site.data.center-layout.outdoor.body-color }}">
     <div class="row shorted width-fixed">
         <div class="proj-sub-block">
             <h1 class="proj-h1 h1">Details</h1>
@@ -32,7 +32,9 @@ layout: products
         </div>
     </div>
     <div class="proj-screenshot">
-        {% adaptive_image {{ site.data.center-layout.outdoor.images[0].img }} size="1920 1600 1024" sizes="min 15001920;max 1499 1600;max 999 1024" draggable="false" alt="{{ site.data.center-layout.outdoor.images[0].alt }}"title="Outdoor main" %}
+        {% adaptive_image {{ site.data.center-layout.outdoor.images[0].img }} size="1920 1600 1024" sizes="min 1500
+        1920;max 1499 1600;max 999 1024" draggable="false" alt="{{ site.data.center-layout.outdoor.images[0].alt }}"
+        title="Outdoor main" %}
     </div>
 </div>
 <div class="proj-body proj-body-overflow proj-d-sample">
@@ -55,7 +57,9 @@ layout: products
                 <!-- Development -->
                 <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 macbook-c txt-big">
                     <div class="img-container">
-                        {% adaptive_image {{ site.data.center-layout.outdoor.images[2].img }} size="1085 400" sizes="min 1000 1085;max 999 400" class="img-wb-macbook" draggable="false" alt="{{ site.data.center-layout.outdoor.images[2].alt }}" title="Outdoor main" %}
+                        {% adaptive_image {{ site.data.center-layout.outdoor.images[2].img }} size="1085 400" sizes="min
+                        1000 1085;max 999 400" class="img-wb-macbook" draggable="false" alt="{{
+                        site.data.center-layout.outdoor.images[2].alt }}" title="Outdoor main" %}
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 no-padding solutions">

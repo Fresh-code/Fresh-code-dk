@@ -10,6 +10,7 @@
   "techUsed": "Java, MongoDB, Elasticsearch, RabbitMQ, PostgresSQL, Spring, Hibernate, AngularJS, Bootstrap, RequireJS",
   "projDuration": "9 months",
   "pdf": "pdf/freshcode_case_studies_data_parser.pdf",
+  "body_color": "#7d91b5",
   "images": [
     {"alt":"Data Parser App in work", "img":"/img/data-parser/iMac.png"},
     {"alt":"Data Parser Data Analysis", "img":"/img/data-parser/application.png"},

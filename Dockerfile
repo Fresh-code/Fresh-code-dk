@@ -1,25 +1,8 @@
-FROM azukiapp/ruby:2.1.4
-
-RUN gem install \
-  jekyll:3.2.1 \
-  jekyll-sitemap:0.11.0 \
-  cmdparse:2.0.6 \
-  juicer:1.2.0 \
-  uglifier:3.0.1 \
-  yui-compressor:0.12.0 \
-  kramdown \
-  rdiscount \
-  rouge && \
-  juicer install jslint
+FROM blinkme1/jekyll-java-node
 
 COPY . /src
-
-RUN mkdir -p /.ssh
-
-WORKDIR /src
-
+RUN mkdir -p ~/.ssh && touch ~/.ssh/known_hosts
+WORKDIR /src/server
 RUN npm install
-
-RUN jekyll build
-
+WORKDIR /src
 ENTRYPOINT ["./run.sh"]

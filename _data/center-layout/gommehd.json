@@ -12,6 +12,7 @@
   "projDuration": "4 months",
   "pdf": "pdf/freshcode_case_studies_gommehd.pdf",
   "workStages": "Development, Quality Assurance, Launch",
+  "body_color": "#353f49",
   "images": [
     {
       "alt": "main",

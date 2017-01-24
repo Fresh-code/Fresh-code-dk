@@ -10,6 +10,7 @@
   "techUsed": "JavaFX",
   "projDuration": "4 months",
   "pdf": "pdf/freshcode_case_studies_tassta.pdf",
+  "body_color": "#4a4748",
   "images": [
     {"alt":"Tassta Homepage", "img":"/img/tassta/iMac.png"},
     {"alt":"Tassta Admin panel", "img":"/img/tassta/iMac_view_left.png"},
