@@ -1513,7 +1513,7 @@ h1.fresh-h1.h1  { margin-top: -25px;}
 
 /*------------------------Project Details--------------------------------*/
 .proj-details-body {
-	background: #7EB1A8;
+	background: #ffffff;
 	color: white;
 }
 .proj-d-h1 { text-align: left; }
@@ -1521,7 +1521,7 @@ h1.fresh-h1.h1  { margin-top: -25px;}
 .proj-d-thin  { font-size: 22px; }
 .proj-d-bold { font-family: "Open Middle", sans-serif; }
 .proj-d-sub-block { margin: 9% 0; }
-.img-container img { margin: 0 auto 7% auto }
+.img-container img { margin: 0 auto 15% auto }
 .proj-details-body.wallbreaker .scroll-activate { color: #000; }
 
 /*------------------------Thx page Styles------------------------------------*/
@@ -2042,8 +2042,8 @@ textarea.material-input { resize: none; }
 
 .fresh-left-sub-block { padding: 0 0 0 7%; }
 .proj-header { text-align: justify; }
-.proj-header.rsl { margin: 11% 0 16%; }
-.proj-header.proj-header-overflow { margin: 11% 0 0; }
+.proj-header.rsl { padding: 11% 0 16%; }
+.proj-header.proj-header-overflow { padding: 11% 0 0; }
 .proj-header p {
 	font-size: 22px;
 	font-weight: 300; }
@@ -2222,7 +2222,7 @@ textarea.material-input { resize: none; }
 @media screen and (max-width: 568px) {
 	.row.flex-box-row .challenges,
 	.row.flex-box-row .proj-logo { margin-top: 0; }
-	.proj-header { margin: 8em 0 14em; }
+	.proj-header { padding: 8em 0 14em; }
 	.fresh-sub-block.overflow { margin-bottom: 0; }
 	.dedicated-page .dedicated-block { width: 100%; }
 }
@@ -2818,7 +2818,7 @@ header { color: #ffffff; }
 
 @media (max-width: 768px) and (orientation: landscape) {
 	.post-titling { bottom: 0 !important; }
-	.proj-header.rsl, .proj-header{ margin: 8em 0; }
+	.proj-header.rsl, .proj-header{ padding: 8em 0; }
 	.main-icon-container { margin-top: 8em; }
 }
 
@@ -3561,8 +3561,8 @@ span.path {
 
 	.proj-header.p-b-0 { margin-bottom: 16%; }
 	.proj-header.rsl,
-	.proj-header { margin: 8em 0 13em; }
-	.proj-header.proj-header-overflow { margin: 8em 0 0; }
+	.proj-header { padding: 8em 0 13em; }
+	.proj-header.proj-header-overflow { padding: 8em 0 0; }
 
 	.proj-header .shorted { text-align: left; }
 
@@ -3671,7 +3671,7 @@ span.path {
 	}
 }
 @media screen and (min-width: 1001px) {
-	.proj-header { margin: 11% 0 0; }
+	.proj-header { padding: 11% 0 0; }
 }
 
 @media screen and (max-width: 850px) {
