@@ -52,8 +52,6 @@ var writeState = function () {
     Utils.writeJsonFile(ConfigJson.PATH_TO_WP_JSON_DATA, 'bd.json', previousSiteState);
 };
 var deleteIds = function () {
-    console.log(deletedIds);
-    console.log(previousSiteState);
     deletedIds.forEach(function (id) {
         previousSiteState.forEach(function (dbKey, index) {
             if (dbKey.id == id) {

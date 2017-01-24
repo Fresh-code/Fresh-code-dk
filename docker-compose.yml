@@ -2,7 +2,7 @@ fc-site:
   image: fc-site-main
   #labels:
   #   io.rancher.scheduler.affinity:host_label: type=staging
-  #image: registry.gitlab.com/freshcode-projects/freshcodeit.com-main
+  #image: registry.gitlab.com/freshcode-projects/freshcodeit.com
   ports:
     - "3000:3000"
     - "4000:4000"
