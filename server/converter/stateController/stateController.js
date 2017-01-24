@@ -27,7 +27,6 @@ var getState = function (id) {
 var createNewState = function (id, type, name, modified) {
     if (type == "product") {
         previousSiteState[previousSiteState.length] = {
-            num: previousSiteState.length,
             id: id,
             type: type,
             fileName: name + '.json',
@@ -36,7 +35,6 @@ var createNewState = function (id, type, name, modified) {
         };
     } else {
         previousSiteState[previousSiteState.length] = {
-            num: previousSiteState.length,
             id: id,
             type: type,
             fileName: name + '.json',
@@ -46,26 +44,30 @@ var createNewState = function (id, type, name, modified) {
     return previousSiteState[previousSiteState.length - 1];
 };
 var updateState = function (state) {
-    previousSiteState[state.num] = state;
+    previousSiteState.forEach(function (oldState, index) {
+        if(oldState.id === state.id){
+            previousSiteState[index] = state;
+        }
+    });
 };
 var writeState = function () {
     Utils.writeJsonFile(ConfigJson.PATH_TO_WP_JSON_DATA, 'bd.json', previousSiteState);
 };
 var deleteIds = function () {
     deletedIds.forEach(function (id) {
-        previousSiteState.forEach(function (dbKey, index) {
-            if (dbKey.id == id) {
-                switch (dbKey.type) {
+        previousSiteState.forEach(function (state, index) {
+            if (state.id == id) {
+                switch (state.type) {
                     case "product": {
-                        Utils.removeFile(ConfigJson.PATH_TO_JSON_PROJECTS, dbKey.fileName, true);
-                        Utils.removeFile(ConfigJson.PATH_TO_HTML_PROJECTS, dbKey.htmlFileName, true);
-                        Utils.removeDir(__dirname + '/../../../wp-data/img/' + dbKey.fileName.replace(/\..*/, ''));
-                        Utils.removeDir(__dirname + '/../../../img/' + dbKey.fileName.replace(/\..*/, ''));
+                        Utils.removeFile(ConfigJson.PATH_TO_JSON_PROJECTS, state.fileName, true);
+                        Utils.removeFile(ConfigJson.PATH_TO_HTML_PROJECTS, state.htmlFileName, true);
+                        Utils.removeDir(__dirname + '/../../../wp-data/img/' + state.fileName.replace(/\..*/, ''));
+                        Utils.removeDir(__dirname + '/../../../img/' + state.fileName.replace(/\..*/, ''));
                         previousSiteState.splice(index, 1);
                     }
                         break;
                     case "post": {
-                        Utils.removeFile('wp-data/_posts/', dbKey.fileName);
+                        Utils.removeFile('wp-data/_posts/', state.fileName);
                         Utils.removePostImages(id);
                         previousSiteState.splice(index, 1);
                     }
