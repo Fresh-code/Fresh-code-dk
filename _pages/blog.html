@@ -4,7 +4,7 @@ layout: default
 ---
 <div class="section height-fixed height-100 padding-top padding-bottom row-single">
     <div class="image-background bleed parallax-section">
-        {% adaptive_image {{ site.data.blog.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="{{ site.data.blog.alt }}" title="Blog background" %}
+        {% adaptive_image {{ site.data.blog.page_background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="{{ site.data.blog.alt }}" title="Blog background" %}
     </div>
     <div class="container parallax-text">
         <div class="row row-equal-columns">
@@ -13,8 +13,8 @@ layout: default
                     <div class="flex-inner">
                         <div class="block block-text blog width-fixed">
                             <header>
-                                <h1 class="fresh-h1 h1">{{ site.data.blog.page-title }}</h1>
-                                <span class="fresh-h3 centered">{{ site.data.blog.page-text }}</span>
+                                <h1 class="fresh-h1 h1">{{ site.data.blog.page_title }}</h1>
+                                <span class="fresh-h3 centered">{{ site.data.blog.page_text }}</span>
                             </header>
                         </div>
                     </div> <!-- flex-inner -->

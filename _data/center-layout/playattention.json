@@ -9,7 +9,7 @@
   "techUsed": "NWJS (node.js + webkit), Angular.JS, Typescript, Loki.JS (in-memory database), CouchDB",
   "projDuration": "1 year, ongoing",
   "pdf": "pdf/freshcode_case_studies_play_attention.pdf",
-  "body_color": "#19762b",
+  "body_color": "#586987",
   "images": [
     {"alt":"Play Attention Homepage", "img":"/img/playattention/iMac.png"},
     {"alt":"Play Attention Students page", "img":"/img/playattention/iMac_view_left.png"},

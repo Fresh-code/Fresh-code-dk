@@ -16,6 +16,7 @@ var stateInit = function () {
 };
 var getState = function (id) {
     deletedIds.splice(deletedIds.indexOf(id), 1);
+
     for (var i = 0; i < previousSiteState.length; i++) {
         if (typeof previousSiteState[i].id == 'number' && previousSiteState[i].id == id) {
             return previousSiteState[i];
@@ -51,6 +52,8 @@ var writeState = function () {
     Utils.writeJsonFile(ConfigJson.PATH_TO_WP_JSON_DATA, 'bd.json', previousSiteState);
 };
 var deleteIds = function () {
+    console.log(deletedIds);
+    console.log(previousSiteState);
     deletedIds.forEach(function (id) {
         previousSiteState.forEach(function (dbKey, index) {
             if (dbKey.id == id) {
@@ -65,7 +68,6 @@ var deleteIds = function () {
                         break;
                     case "post": {
                         Utils.removeFile('wp-data/_posts/', dbKey.fileName);
-                        //Utils.removeFile('wp-data/_drafts/', dbKey.fileName);
                         Utils.removePostImages(id);
                         previousSiteState.splice(index, 1);
                     }

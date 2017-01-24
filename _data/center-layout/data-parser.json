@@ -12,9 +12,18 @@
   "pdf": "pdf/freshcode_case_studies_data_parser.pdf",
   "body_color": "#7d91b5",
   "images": [
-    {"alt":"Data Parser App in work", "img":"/img/data-parser/iMac.png"},
-    {"alt":"Data Parser Data Analysis", "img":"/img/data-parser/application.png"},
-    {"alt":"Data Parser Logo", "img":"/img/data-parser/data_parser_logo.png"}
+    {
+      "alt": "Data Parser App in work",
+      "img": "/img/data-parser/work_first_img_251p.png"
+    },
+    {
+      "alt": "Data Parser Data Analysis",
+      "img": "/img/data-parser/work_second_img_251p.png"
+    },
+    {
+      "alt": "Data Parser Logo",
+      "img": "/img/data-parser/work_third_img_251p.png"
+    }
   ],
   "challenges": "Our client needed a cloud-based ETL application for unstructured data from any number of sources, including JSON files, with advanced search and data aggregation possibilities. The structure was supposed to have scaling up possibilities and user-friendly interface for entry-level users. Regular index synchronization with external sources was a must along with providing API for third-party services.",
   "buisValue": "Our client is going to provide Big Data services to IT giants such as Google and IBM. Data Parser customers will be able to choose between two subscription plans. Large companies with a huge amount of data will get access to dedicated large storage servers for quick calculations. Shared services with lower productivity will be provided to smaller customers with simpler needs.",
