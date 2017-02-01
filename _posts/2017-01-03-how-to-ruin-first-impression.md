@@ -3,7 +3,7 @@ layout: post
 title: How to Ruin a First Impression. Things You Should Never Hear from a Software Company
 description: description
 date: 2017-01-03 14:50:06
-permalink: /blog/2017/01/03/how/to/ruin/first/impression/
+permalink: /blog/2017/01/03/how-to-ruin-first-impression/
 post-title: How to Ruin a First Impression. Things You Should Never Hear from a Software Company
 categories-tag: business
 platform-tag: Java

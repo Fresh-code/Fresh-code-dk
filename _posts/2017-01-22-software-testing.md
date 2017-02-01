@@ -3,7 +3,7 @@ layout: post
 title: How Does Software Testing Ensure High-Quality Development?
 description: Let’s say you found an ideal development team that created a perfect app you ordered. How do you know it is not just a pretty picture, but a flawless piece of software engineering that will earn you a good profit? That is exactly why quality control practices, including software testing, were created.
 date: 2017-01-22 15:46:38 
-permalink: /blog/2017/01/22/software/testing/
+permalink: /blog/2017/01/22/software-testing/
 post-title: How Does Software Testing Ensure High-Quality Development?
 categories-tag: Business
 background: /img/blog-post/banner_post_877.jpg

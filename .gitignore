@@ -1,22 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
-node_modules/
 .idea
 _site/
-Fresh-code.github.io.iml
-
-img/blog/
-img/blog-post/
-img/job/
-img/our_approach/
-img/testimonials/
-
-img/data-parser/
-img/educadio/
-img/gommehd/
-img/outdoor/
-img/playattention/
-img/portfolio/
-img/tassta/
-img/flotron/
-img/wallbreaker/
-img/twenty-one-learning/
+Fresh-code-dk.iml
