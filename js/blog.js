@@ -29,7 +29,7 @@
             postbckg: 'background-color: #55609b !important',
             type: 'business',
             nondisplay: 'display: none',
-            posturl: '/blog/2017/01/22/software/testing/'
+            posturl: '/blog/2017/01/22/software-testing/'
         },
         
         {
@@ -46,7 +46,7 @@
             postbckg: 'background-color: #48818c !important',
             type: 'business',
             nondisplay: 'display: none',
-            posturl: '/blog/2017/01/03/how/to/ruin/first/impression/'
+            posturl: '/blog/2017/01/03/how-to-ruin-first-impression/'
         },
         
         {
