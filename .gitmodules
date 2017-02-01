@@ -1,3 +1,0 @@
-[submodule "wp-data"]
-	path = wp-data
-	url = git@gitlab.com:freshcode-projects/freshcodeit.com-json.git
