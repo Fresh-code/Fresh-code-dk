@@ -18,12 +18,12 @@
         <nav>
             <ul class="main-nav-menu">
                 {% assign p = page.url | replace:'/','' %}
+                <li class="nav-link {% if p == 'our-approach' %}active{% endif %}"><a href="/startup-os"><span>Startup OS</span></a></li>
                 <li class="nav-link {% if p == 'services' %}active{% endif %}"><a href="/services"><span>Services</span></a></li>
                 <li class="nav-link {% if p == 'portfolio' %}active{% endif %}"><a href="/portfolio"><span>Portfolio</span></a></li>
-                <li class="nav-link {% if p == 'blog' %}active{% endif %}"><a href="/blog"><span>Blog</span></a></li>
-                <li class="nav-link {% if p == 'testimonials' %}active{% endif %}"><a href="/testimonials"><span>Testimonials</span></a></li>
-                <li class="nav-link {% if p == 'job' %}active{% endif %}"><a href="/job"><span>Career</span></a></li>
-                <li class="nav-link {% if p == 'our-approach' %}active{% endif %}"><a href="/our-approach"><span>Our approach</span></a></li>
+                <li class="nav-link {% if p == 'blog' %}active{% endif %}"><a href="/blog"><span>Free Tools</span></a></li>
+                <li class="nav-link {% if p == 'testimonials' %}active{% endif %}"><a href="/cases"><span>Cases</span></a></li>
+                <li class="nav-link {% if p == 'job' %}active{% endif %}"><a href="/contact"><span>Contact</span></a></li>
                 <li class="mail-icon">
                     <div class="icon-sign">
                         <img class="mail-icon-b mail-activator" src="/img/email_icon.svg" alt="Contact Us">

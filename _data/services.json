@@ -2,10 +2,69 @@
   "title": "Software Development Services | Freshcode",
   "keywords":"web development services, mobile development services, technology ",
   "description": "Software, web and mobile development services provided by Frescode: mobile, web and desktop development and technology consulting.",
-  "page-title": "Full Range of Software Development Services",
-  "page-text": "Below are our areas of expertise. These are the business dimensions where we collaborate with our clients and help them build great products. Choose those that fit your needs most to learn more.",
+  "page-title": "HOW WE CAN HELP YOU GET TO V. 1.0 AND BEYOND",
+  "page-text": "Getting your Startup from idea to product market fit is a complex task. Therefore we have build both tools and methods to help - not only getting started but also getting to Version 1. and beyond.",
   "page-background": "/img/services/banner_services.jpg",
   "alt": "Tablet and a cup of coffee on a table ",
+  "arrows": [
+    {
+      "icon": "/img/services/arrow-up.png"
+    },
+    {
+      "icon": "/img/services/arrow-right.png"
+    },
+    {
+      "icon": "/img/services/arrow-down.png"
+    },
+    {
+      "icon": "/img/services/arrow-left.png"
+    }
+  ],
+  "arrow-alt": "arrow icon",
+  "short_dk": [
+    {
+      "name": "Web development",
+      "text": "We create responsive, fast and elegant solutions expertly crafted to suit your business needs using the most efficient technologies like Ruby on Rails, Angular.js, Node.js.",
+      "btntext": "more web",
+      "icon": "/img/services/web.png",
+      "link": "/web-development"
+    },
+    {
+      "name": "Dedicated team",
+      "text": "We create a dedicated team for your high priority projects. Each team member boasts specialization and skill set best fitted for your needs to ensure successful and timely development.",
+      "btntext": "more web",
+      "icon": "/img/services/team.png",
+      "link": "/dedicated-team"
+    },
+    {
+      "name": "Mobile / Desktop development",
+      "text": "We implement workable solutions for both iOS and Android operation systems and help you build a balanced app with a streamlined design, intuitive interface, and top-notch performance.",
+      "btntext": "more mobile",
+      "icon": "/img/services/desktop.png",
+      "link": "/mobile-development"
+    },
+    {
+      "name": "Consulting",
+      "text": "We estimate the time and resources needed, plan the work and choose the best technologies and solutions for your needs. We provide usability analysis, architecture stability, code and UX audits.",
+      "btntext": "more Consulting",
+      "icon": "/img/services/consulting.png",
+      "link": "/consulting"
+    },
+    {
+      "name": "Maintenance",
+      "text": "We perform regular maintenance to prevent system's instability. Our fool-proof backup and recovery options minimize risks of unexpected failures and maximize project's uptime.",
+      "btntext": "more Maintenance",
+      "icon": "/img/services/maintenance.png",
+      "link": "/maintenance"
+    },
+    {
+      "name": "Dedicated team",
+      "text": "We create a dedicated team for your high priority projects. Each team member boasts specialization and skill set best fitted for your needs to ensure successful and timely development.",
+      "btntext": "more web",
+      "icon": "/img/services/team.png",
+      "link": "/dedicated-team"
+    }
+  ],
   "short": [
     {
       "name": "Web development",
@@ -52,22 +111,22 @@
   ],
   "serv-textes":[
     {
-      "text":"Whatever your IT needs are, look no further. You’ve found the one company that will provide you with a full range of software development services. Whether you need to outpace the competition, set a hot trend or give your business a long overdue overhaul, FreshCode is here to make your ideas happen.",
+      "text":"Business Goals are being analysed, understood and validated.",
       "icon": "/img/services/Services-tor.png",
       "alt": "Segmented circle"
     },
     {
-      "text":"We start by getting to know you, your business goals and needs. We help develop a comprehensive list of requirements, set a defined outline of the project and design a thorough plan that will culminate with your success. We utilize the best modern technologies and methods to make our work as efficient and quick as is humanly possible so that you get measurable results here and now.",
+      "text":"You decide to work with us (or not) based on our feedback and your needs.",
       "icon": "/img/services/Services-chart.png",
       "alt": "Chart with arrow"
     },
     {
-      "text":"Pick and choose the services you need or spring for a full-cycle treatment. Select the most suitable engagement model for your budget and kick back to enjoy the deliverables as they come. All your needs will be met thanks to our hands-on customer-oriented approach and flexible project management.",
+      "text":"Together we setup a roadmap dependant on your need (MVP, v.1, v.2). This roadmap includes tech development, customer validations and market research using our tools.",
       "icon": "/img/services/Services-list.png",
       "alt": "Project plan icon"
     },
     {
-      "text":"We combine a passion for creating quality products with deep expertise and years of experience in a wide range of business fields. Feel free to browse the variety of services we provide and contact us for a quote when you are ready to succeed.",
+      "text":"We begin our work together. Within 30-45 days a working prototype is ready or we will not be paid.",
       "icon": "/img/services/Services-question.png",
       "alt": "Comic cloud icon"
     }

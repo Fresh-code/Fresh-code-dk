@@ -4,7 +4,8 @@ layout: default
 ---
 <div class="section height-fixed height-100 padding-top padding-bottom row-single">
     <div class="image-background bleed parallax-section">
-        {% adaptive_image {{ site.data.services.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="Services background" title="Services background" %}
+        {% adaptive_image {{ site.data.services.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600
+        1024;max 599 768" draggable="false" class="image" alt="Services background" title="Services background" %}
     </div>
     <div class="container parallax-text">
         <div class="row row-equal-columns">
@@ -26,6 +27,9 @@ layout: default
 <div class="fresh-services">
     <div class="fresh-sub-block"
          style="margin: 20px 0 50px 0">
+        <div class="row consulting-items-group">
+            <h2>When you decide to work with us here is what happens:</h2>
+        </div>
         <div class="post-body p-t-6rem">
             <div class="row post-shorted services-width-fixed">
                 {% for service in site.data.services.serv-textes %}
@@ -43,6 +47,80 @@ layout: default
         </div>
     </div>
 </div>
+
+
+<div class="fresh-services" style="margin: 0 0 100px 0; padding: 0 8%">
+    <div class="row post-shorted services-width-fixed">
+        <div class="container" style="margin: auto; padding: 1px 0 0 0; max-width: 900px;">
+            <div class="row">
+
+                {% for service in site.data.services.short_dk %}
+                {% assign loopindex = forloop.index | modulo: 2 %}
+                {% if loopindex == 1 %}
+
+                <a class="link" href="{{ service.link }}">
+                    <div class="col-lg-6 col-sm-6 col-xs-12  services-table-cell">
+                        <div>
+                            <div class="cell-img-block">
+                                <img class="img-responsive services-cell-img"
+                                     src="{{ service.icon }}"
+                                     alt="{{ service.name }} icon">
+                            </div>
+                            <h2 class="services-cell-prev-text">{{ service.name }}</h2>
+                        </div>
+                        <div class="cell-text">
+                            {{ service.text }}
+                        </div>
+                        <div class="arrow-thing">
+                            <img class="leftimg"
+                                 src="{{ site.data.services.arrows[3].icon }}"
+                                 alt="{{ site.data.services.arrow-alt }}">
+                        </div>
+                        <div class="arrow-thing-mobile">
+                            <img class="downimg"
+                                 src="{{ site.data.services.arrows[0].icon }}"
+                                 alt="{{ site.data.services.arrow-alt }}">
+                        </div>
+                    </div>
+                </a>
+
+                {% else %}
+
+                <a class="link" href="{{ service.link }}">
+                    <div class="col-lg-6 col-sm-6 col-xs-12  services-table-cell">
+                        <div class="cell-prev">
+                            <div class="cell-img-block">
+                                <img class="img-responsive services-cell-img"
+                                     src="{{ service.icon }}"
+                                     alt="{{ service.name }} icon">
+                            </div>
+                            <h2 class="services-cell-prev-text">{{ service.name }}</h2>
+                        </div>
+                        <div class="cell-text">
+                            {{ service.text }}
+                        </div>
+                        <div class="arrow-thing">
+                            <img class="rightimg"
+                                 src="{{ site.data.services.arrows[1].icon }}"
+                                 alt="{{ site.data.services.arrow-alt }}">
+                        </div>
+                        <div class="arrow-thing-mobile">
+                            <img class="upimg"
+                                 src="{{ site.data.services.arrows[2].icon }}"
+                                 alt="{{ site.data.services.arrow-alt }}">
+                        </div>
+                    </div>
+                </a>
+
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--
 <div class="fresh-services" style="margin: 0 0 100px 0; padding: 0 8%">
     <div class="row post-shorted services-width-fixed">
         <div class="container" style="margin: 0; padding: 1px 0 0 0; width: 100%">
@@ -67,4 +145,4 @@ layout: default
             </div>
         </div>
     </div>
-</div>
+</div>-->
