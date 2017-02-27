@@ -3,6 +3,7 @@
  */
 (function(global) {
 
+
     var $monitoring = $('.filter-monitoring'),
         $navigation = $('.filter-navigation'),
         $education = $('.filter-education'),
@@ -81,19 +82,6 @@
             workbckg: 'background-color: #354356 !important',
             type: 'education',
             workurl: '/educadio'
-        },
-        
-        {
-            title: 'Twenty One Learning',
-            description: 'Twenty One Learning is an interactive platform which main objective was to allow collaborative creation of lectures, presentations, slides and text with open access to all materials.',
-            workcover: '/img/portfolio/work_6p-350.jpg',
-            workalt: 'Twenty One Learning platform preview',
-            worksrcset: '/img/portfolio/work_6p-700.jpg 700w, /img/portfolio/work_6p-450.jpg 450w, /img/portfolio/work_6p-350.jpg 350w',
-            worksizes: '(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px',
-            workcoverbckg: 'background-color: #576965 !important',
-            workbckg: 'background-color: #576965 !important',
-            type: 'education',
-            workurl: '/twenty-one-learning'
         },
         
         {
