@@ -28,7 +28,7 @@ position: Project manager
 
 share-image: '/img/blog-post/banner_post_7.jpg'
 share-description: 'The minimum viable product (MVP) is described by the term’s inventor Eric Ries as the “version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort”. Over time the term has gotten new interpretations and is now widely used throughout various business concepts, including Lean Startup or Agile Development'
-share-title: 'What Is MVP and Why Every Startup Needs It?'
+share-title: 'What%20Is%20MVP%20and%20Why%20Every%20Startup%20Needs%20It?'
 ---
 
 <div class="post-body p-t-6rem">

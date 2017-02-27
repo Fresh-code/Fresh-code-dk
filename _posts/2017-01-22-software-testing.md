@@ -19,7 +19,7 @@ author: Elizabeth Troyanova
 position: Project manager
 share-image: /img/blog-post/banner_post_877.jpg
 share-description: Let’s say you found an ideal development team that created a perfect app you ordered. How do you know it is not just a pretty picture, but a flawless piece of software engineering that will earn you a good profit? That is exactly why quality control practices, including software testing, were created.
-share-title: How Does Software Testing Ensure High-Quality Development?
+share-title: How%20Does%20Software%20Testing%20Ensure%20High-Quality%20Development?
 ---
 <div class="post-body p-t-6rem">
 <p>Let’s say you found an ideal development team that created a perfect app you ordered. How do you know it is not just a pretty picture, but a flawless piece of software engineering that will earn you a good profit? That is exactly why quality control practices, including software testing, were created.</p>

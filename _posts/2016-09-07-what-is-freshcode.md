@@ -25,7 +25,7 @@ position: Sales manager
 
 share-image: '/img/blog-post/banner_post_1.jpg'
 share-description: 'Freshcode is not just another faceless software development company. Nothing we do is even remotely ordinary or mediocre. We strive to provide the best services on the huge market, and our high-paced evolution proves that we chose the right path.'
-share-title: 'What Is Freshcode?'
+share-title: 'What%20Is%20Freshcode?'
 ---
 
 <div class="post-body p-t-6rem">

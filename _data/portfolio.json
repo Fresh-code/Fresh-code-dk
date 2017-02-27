@@ -27,6 +27,18 @@
       "link": "/iccube",
       "type": "business",
       "mainColor": "#965793"
+    },
+    {
+      "title": "Twenty One Learning",
+      "description": "Twenty One Learning is an interactive platform which main objective was to allow collaborative creation of lectures, presentations, slides and text with open access to all materials.",
+      "cover": "/img/portfolio/work_6p-350.jpg",
+      "alt": "Twenty One Learning platform preview",
+      "srcsetattr": "/img/portfolio/work_6p-700.jpg 700w, /img/portfolio/work_6p-450.jpg 450w, /img/portfolio/work_6p-350.jpg 350w",
+      "sizesattr": "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px",
+      "link": "/twenty-one-learning",
+      "type": "education",
+      "mainColor": "#576965"
+
     }
   ],
   "works": [
@@ -84,18 +96,6 @@
       "link": "/educadio",
       "type": "education",
       "mainColor": "#354356"
-    },
-    {
-      "title": "Twenty One Learning",
-      "description": "Twenty One Learning is an interactive platform which main objective was to allow collaborative creation of lectures, presentations, slides and text with open access to all materials.",
-      "cover": "/img/portfolio/work_6p-350.jpg",
-      "alt": "Twenty One Learning platform preview",
-      "srcsetattr": "/img/portfolio/work_6p-700.jpg 700w, /img/portfolio/work_6p-450.jpg 450w, /img/portfolio/work_6p-350.jpg 350w",
-      "sizesattr": "(min-width: 1500px) 700px, (max-width: 1499px) 450px, (max-width: 1000px) 350px, 700px",
-      "link": "/twenty-one-learning",
-      "type": "education",
-      "mainColor": "#576965"
-
     },
     {
       "title": "Tassta",

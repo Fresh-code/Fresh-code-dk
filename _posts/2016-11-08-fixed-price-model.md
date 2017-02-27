@@ -24,7 +24,7 @@ position: Sales manager
 
 share-image: '/img/blog-post/banner_post_5.jpg'
 share-description: 'When choosing an engagement mode for your perfect project, do not overlook the Fixed Price Model or FPM. Many IT teams prefer to create a Dedicated Team or use Time and Material Model, but why not consider all possibilities before choosing what’s right for you?'
-share-title: 'Fixed Price Model: Everything You Need to Know'
+share-title: 'Fixed%20Price%20Model:%20Everything%20You%20Need%20to%20Know'
 ---
 
 <div class="post-body p-t-6rem">

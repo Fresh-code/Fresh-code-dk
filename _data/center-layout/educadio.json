@@ -32,5 +32,5 @@
   "solutions": "Digital Training Tool was implemented as a web-interface as well as a desktop application. The architecture was split into two parts. Sessions module was developed using CouchDB and PouchDB to allow off-line synchronization and collaborative work. Meteor.js was implemented for other utility modules of the application. Besides video and text chats for students interaction, video and audio upload support was carried out.",
   "css": "educatio",
   "prev": "/flotron",
-  "next": "/twenty-one-learning"
+  "next": "/tassta"
 }

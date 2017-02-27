@@ -26,7 +26,7 @@ position: Sales manager
 
 share-image: '/img/blog-post/banner_post_4.jpg'
 share-description: 'So you have a great business idea and now all you need to do is find the perfect developer team to make it come to life. When you start your search, you will be bombarded by all sorts of quotations. But how do you know which engagement model to choose? Let us help you understand the difference!'
-share-title: Engagement Models. Is Dedicated Team the Perfect One for You?
+share-title: Engagement%20Models.%20Is%20Dedicated%20Team%20the%20Perfect%20One%20for%20You?
 ---
 
 <div class="post-body p-t-6rem">

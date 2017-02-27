@@ -25,7 +25,7 @@ position: Sales manager
 
 share-image: /img/blog-post/banner_post_3.jpg
 share-description: When you start working on your application with a project manager, he or she will always ask you if you want post-release support. And while at the beginning of the journey it may seem like a long shot, DO NOT brush the suggestion off unthinkingly. You will remember the moment you declined this offer clearly when your app crashes for the first time.
-share-title: Do You Really Need Mobile App Post-Release Support or Is It an Exercise in Futility
+share-title: Do%20You%20Really%20Need%20Mobile%20App%20Post-Release%20Support%20or%20Is%20It%20an%20Exercise%20in%20Futility
 ---
 
 <div class="post-body p-t-6rem">

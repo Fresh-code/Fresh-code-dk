@@ -25,7 +25,7 @@ position: Sales manager
 
 share-image: '/img/blog-post/banner_post_6.jpg'
 share-description: 'The Time and Material Model is one of the most widely-used pricing models among the outsourcing crowd. It is a little trickier than the Fixed Price Model but has several important advantages. Let’s take a closer look and determine if the T&M model is right for your project.'
-share-title: Everything You Wanted to Know about the Time and Material Model
+share-title: Everything%20You%20Wanted%20to%20Know%20about%20the%20Time%20and%20Material%20Model
 ---
 
 <div class="post-body p-t-6rem">

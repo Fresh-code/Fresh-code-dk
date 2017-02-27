@@ -4,8 +4,7 @@ layout: default
 ---
 <div class="section height-fixed height-100 padding-top padding-bottom row-single">
     <div class="image-background bleed parallax-section">
-        {% adaptive_image {{ site.data.services.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600
-        1024;max 599 768" draggable="false" class="image" alt="Services background" title="Services background" %}
+        {% adaptive_image {{ site.data.services.page-background }} size="1920 1024 768" sizes="min 1000 1920;min 600 1024;max 599 768" draggable="false" class="image" alt="Services background" title="Services background" %}
     </div>
     <div class="container parallax-text">
         <div class="row row-equal-columns">
@@ -47,7 +46,6 @@ layout: default
         </div>
     </div>
 </div>
-
 
 <div class="fresh-services" style="margin: 0 0 100px 0; padding: 0 8%">
     <div class="row post-shorted services-width-fixed">
@@ -118,31 +116,3 @@ layout: default
         </div>
     </div>
 </div>
-
-
-<!--
-<div class="fresh-services" style="margin: 0 0 100px 0; padding: 0 8%">
-    <div class="row post-shorted services-width-fixed">
-        <div class="container" style="margin: 0; padding: 1px 0 0 0; width: 100%">
-            <div class="row">
-                {% for service in site.data.services.short %}
-                <a class="link" href="{{ service.link }}">
-                    <div class="col-lg-4 col-sm-6 col-xs-12  services-table-cell">
-                        <div class="cell-prev">
-                            <div class="cell-img-block">
-                                <img class="img-responsive services-cell-img"
-                                     src="{{ service.icon }}"
-                                     alt="{{ service.name }} icon">
-                            </div>
-                            <h2 class="services-cell-prev-text">{{ service.name }}</h2>
-                        </div>
-                        <div class="cell-text">
-                            {{ service.text }}
-                        </div>
-                    </div>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>-->
