@@ -1,8 +1,8 @@
 ---
 img/portfolio/work_2p.jpg: a1ec78c0e1691a1dfeeca0d158b09372
 js/portfolio.js: 913de1fab2dd9bdc6e12b33a8c0be8cc
-js/scripts.js: a6e6314a9df3344a327490757959945a
-js/blog.js: 9f03888c20a28d987d22e261da57c43f
+js/scripts.js: e00d3a71939eb8f0b2884aca7f58f6dd
+js/blog.js: b2aa21d8353db5a41f437191f022deb6
 js/job.js: bf9b19f43d7037bd6787f55c8f6a726f
 img/portfolio/work_276p.jpg: 1b43a92e8a0e30b85b037aa6f9c0ae37
 img/portfolio/work_36p.jpg: 0e3eb9c09e47edd7a1504e07a006c085
@@ -125,3 +125,4 @@ img/blog-post/post_5c.jpg: bcc44aa4d7273cbcc4977a93bac70f2c
 "/img/wallbreaker/macbook_left.png": db7d32cb0a5cf4b33d8e301a34602333
 "/img/main/work_10.jpg": 1b43a92e8a0e30b85b037aa6f9c0ae37
 "/img/portfolio/work_10p.jpg": 1b43a92e8a0e30b85b037aa6f9c0ae37
+js/post.js: 933accb24c2210a77e6bed378af480f4

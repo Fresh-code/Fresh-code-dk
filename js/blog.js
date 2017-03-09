@@ -154,6 +154,8 @@
                 return item.values().type == type;
             });
         }
+        hidePosts();
+        showPosts();
     });
 
     var clear = function (el) {
@@ -247,24 +249,34 @@
                 return item.values().type == type;
             });
         }
+        hidePosts();
+        showPosts();
     });
 
+    function showPosts() {
+        $('.post-block').each(function(i,elem) {
+            if(i < 6){
+                $(elem).addClass('active');
+            }
+        });
+    }
 
-    $('.post-block').each(function(i,elem) {
-        if(i < 6){
-           $(elem).addClass('active');
-        }
-    });
+    function hidePosts() {
+        $('.post-block').each(function(i,elem) {
+            $(elem).removeClass('active');
+        });
+    }
 
     $("#load-more").click(function() {
         if ($(this).hasClass('disable')) return false;
-
         $('.post-block').filter(':hidden').each(function(i,elem) {
             if(i < 6){
                 $(elem).addClass('active');
             }
         });
     });
+
+    showPosts();
 
 })(this);
 
