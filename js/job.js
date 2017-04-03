@@ -11,6 +11,7 @@
         });
     });
 
+
     var $form = $('form.job-form');
 
     $form.parsley();

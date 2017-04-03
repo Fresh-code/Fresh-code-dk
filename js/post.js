@@ -15,6 +15,7 @@
         }
     });
 
+
     $("#load-more").click(function () {
         if ($(this).hasClass('disable')) return false;
         $('.post-block').filter(':hidden').each(function (i, elem) {
