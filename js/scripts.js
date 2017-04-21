@@ -201,7 +201,6 @@
             });
         }
 
-
         if (st < 1) {
             header.removeClass('is-scrolled');
             header.removeClass('scrolled-by');
